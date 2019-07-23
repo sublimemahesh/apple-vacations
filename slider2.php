@@ -1,43 +1,4 @@
-<!DOCTYPE html>
-<?php
-include './class/include.php';
-$ABOUT_US = new Page(1);
-?>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <meta name="description" content="Citytours - Premium site template for city tours agencies, transfers and tickets.">
-        <meta name="author" content="Ansonika">
-        <title>Apple Vacations - Home</title>
-
-        <!-- Favicons-->
-        <link rel="shortcut icon" href="img/logo_fvg.jpg" type="image/x-icon">
-        <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
-        <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
-        <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
-        <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
-        <link href="js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet" type="text/css"/>
-        <!-- Google web fonts -->
-
-        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Pavanam' rel='stylesheet'>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-        <!-- BASE CSS -->
-        <link href="css/base.css" rel="stylesheet">
-
-        <!-- REVOLUTION SLIDER CSS -->
-        <link href="rs-plugin/css/settings.css" rel="stylesheet">
-        <link href="css/extralayers.css" rel="stylesheet">
-        <link href="css/finaltilesgallery.css" rel="stylesheet">
-        <link href="css/lightbox2.css" rel="stylesheet"> 
-        <link href="css/comment.css" rel="stylesheet" type="text/css"/>
-
-        <!-- REVOLUTION SLIDER CSS -->
+  <!-- REVOLUTION SLIDER CSS -->
         <link href="rs-plugin/css/settings.css" rel="stylesheet">
         <link href="css/extralayers.css" rel="stylesheet">
 
@@ -395,9 +356,9 @@ $ABOUT_US = new Page(1);
         <!-- Back to top button --> 
         <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery-2.2.4.min.js"></script>
         <script src="js/common_scripts_min.js"></script>
-        <script src="js/functions.js"></script>         
+           
         <!-- Specific scripts -->
-
+        <script src="js/functions.js"></script>
         <script src="js/icheck.js"></script>
         <script src="js/jquery.sliderPro.min.js"></script> 
         <script src="js/infobox.js"></script>        

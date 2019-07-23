@@ -2,7 +2,7 @@
  			'use strict';
             jQuery('.tp-banner').show().revolution({
                 dottedOverlay: "none",
-                delay: 16000,
+                delay: 6000,
                 startwidth: 1170,
                 startheight: 750,
                 hideThumbs: 200,
