@@ -89,12 +89,10 @@ $TOUR_PACKAGE = new TourPackage($id);
                                         ?>
 
                                     </ul>
-                                </li>
-
+                                </li> 
                             </ul>
                         </div>
-                    </div>
-
+                    </div> 
                 </div>
             </div>
             <!-- End Position -->
@@ -107,12 +105,9 @@ $TOUR_PACKAGE = new TourPackage($id);
 
             <div class="container margin_60">
                 <div class="row">
-                    <div class="col-md-8" id="single_tour_desc">
-
+                    <div class="col-md-8" id="single_tour_desc"> 
                         <p class="visible-sm visible-xs"><a class="btn_map" data-toggle="collapse" href="#collapseMap" aria-expanded="false" aria-controls="collapseMap" data-text-swap="Hide map" data-text-original="View on map">View on map</a>
-                        </p>
-                        <!-- Map button for tablets/mobiles -->
-
+                        </p>  
                         <div id="Img_carousel" class="slider-pro">
                             <div class="sp-slides">
                                 <?php
@@ -137,8 +132,7 @@ $TOUR_PACKAGE = new TourPackage($id);
                                 <?php }
                                 ?>
                             </div>
-                        </div>
-
+                        </div> 
                         <hr>
 
                         <div class="row">

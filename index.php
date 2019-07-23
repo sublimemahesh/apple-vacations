@@ -21,8 +21,10 @@ $ABOUT_US = new Page(1);
         <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
         <link href="js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet" type="text/css"/>
         <!-- Google web fonts -->
-        <link href='https://fonts.googleapis.com/css?family=Fjalla One,Roboto:300,300italic,400,400italic,500,500italic,700,700italic' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Fjalla One' rel='stylesheet'> 
+         
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Pavanam' rel='stylesheet'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
         <!-- BASE CSS -->
@@ -36,12 +38,9 @@ $ABOUT_US = new Page(1);
         <link href="css/comment.css" rel="stylesheet" type="text/css"/>
 
         <!-- REVOLUTION SLIDER CSS -->
-        <link rel="stylesheet" type="text/css" href="rev-slider-files/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
-        <link rel="stylesheet" type="text/css" href="rev-slider-files/fonts/font-awesome/css/font-awesome.css">
-        <link rel="stylesheet" type="text/css" href="rev-slider-files/css/settings.css">
-        <style>
-           
-        </style>
+        <link href="layerslider/css/layerslider.css" rel="stylesheet">
+        <link href="layerslider/skins/v5/skin.css" rel="stylesheet" type="text/css"/>
+       
     </head>
 
     <body>  
@@ -55,6 +54,8 @@ $ABOUT_US = new Page(1);
         <main>
             <?php include './slider.php' ?>
             <!-- END REVOLUTION SLIDER -->
+
+            <!--search-->
             <section id="search_container"  >
                 <div id="search"> 
                     <div class="tab-content">
@@ -63,10 +64,8 @@ $ABOUT_US = new Page(1);
                                 <div class="col-md-2  search-bar-top-padd"  >                                   
                                     <span class="search-bar-padd text-center" ><p >My Dream Holiday</p></span>
                                 </div>
-                                <div class="col-md-2  ">
-
+                                <div class="col-md-2  "> 
                                     <input type="text" class="form-control" id="firstname_booking" name="firstname_booking" placeholder="Type your search terms">
-
                                 </div>
                                 <div class="col-md-3  ">
                                     <div class="form-group">
@@ -75,8 +74,7 @@ $ABOUT_US = new Page(1);
                                     </div>
                                 </div>
                                 <div class="col-md-3  ">
-                                    <div class="form-group">
-
+                                    <div class="form-group"> 
                                         <select class="ddslick" name="category">
                                             <option value="0" data-imagesrc="img/icons_search/sightseeing.png" selected>All tours</option>
                                             <option value="1" data-imagesrc="img/icons_search/sightseeing.png">City sightseeing</option>
@@ -93,15 +91,15 @@ $ABOUT_US = new Page(1);
                                     <button class="btn_1 green"><i class="icon-search"></i>Search now</button>
                                 </div>
                             </div> 
-                        </div>
-                        <!-- End rab -->
-
+                        </div> 
                     </div>
                 </div>
             </section>
+
+            <!--About us -->
             <div class="container margin_60">
                 <div class="main_title">
-                    <h2>Discover <span>Sri Lanka with </span> Apple Vacation</h2>
+                    <h2>Discover <span>Sri Lanka With </span> Apple Vacation</h2>
                     <p>
                         Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.
                     </p>
@@ -141,7 +139,7 @@ $ABOUT_US = new Page(1);
                             <i class="icon_set_1_icon-30"></i>
                             <h3><span>Vision</span> Apple Vacations </h3>
                             <p>
-                                Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.
+                                Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, 
                             </p>
                         </div>
                     </div>
@@ -155,45 +153,9 @@ $ABOUT_US = new Page(1);
                         </div>
                     </div>
                 </div>  
-                
-<!--                <div class="row">
-        
-            <div class="col-md-4 wow zoomIn" data-wow-delay="0.2s">
-                <div class="feature_home">
-                    <i class="icon_set_1_icon-41"></i>
-                    <h3><span>+120</span> Premium tours</h3>
-                    <p>
-                         Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset.
-                    </p>
-                    <a href="about.html" class="btn_1 outline">Read more</a>
-                </div>
-            </div>
-            
-            <div class="col-md-4 wow zoomIn" data-wow-delay="0.4s">
-                <div class="feature_home">
-                    <i class="icon_set_1_icon-30"></i>
-                    <h3><span>+1000</span> Customers</h3>
-                    <p>
-                         Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset.
-                    </p>
-                    <a href="about.html" class="btn_1 outline">Read more</a>
-                </div>
-            </div>
-            
-            <div class="col-md-4 wow zoomIn" data-wow-delay="0.6s">
-                <div class="feature_home">
-                    <i class="icon_set_1_icon-57"></i>
-                    <h3><span>H24 </span> Support</h3>
-                    <p>
-                         Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset.
-                    </p>
-                    <a href="about.html" class="btn_1 outline">Read more</a>
-                </div>
-            </div>
-            
-        </div>-->
             </div>
 
+            <!--Tour Packages-->
             <div class="container-fluid margin_60_2 img-paralax">
                 <div class="row">
                     <div class="main_title " >
@@ -209,21 +171,19 @@ $ABOUT_US = new Page(1);
                             <div class="  wow zoomIn" data-wow-delay="0.1s">
                                 <div class="tour_container"> 
                                     <div class="img_container">
-                                        <a href="view-tourpackage.php?id=<?php echo $tour_package['id'] ?>&type=<?php echo $tour_package['tour_type'] ?>">
+                                        <a href="#">
                                             <img src="upload/tour-package/<?php echo $tour_package['image_name'] ?>" width="800" height="533" class="img-responsive" alt="image">
-                                            <div class="short_info">
-                                                <i class="icon_set_1_icon-30"></i>Working Tours                                         </div>
                                         </a>
                                     </div>
 
                                     <div class="tour_title">
-                                        <a href="view-tourpackage.php?id=<?php echo $tour_package['id'] ?>&type=<?php echo $tour_package['tour_type'] ?>">
+                                        <a href="#">
                                             <h3 class="tour-padd"><strong> <?php echo $tour_package['title'] ?></strong> </h3>
                                         </a>
                                         <p>
                                             <?php echo substr($tour_package['short_description'], 0, 120) ?>...
                                         </p>
-                                        <a href="view-tourpackage.php?id=<?php echo $tour_package['id'] ?>&type=<?php echo $tour_package['tour_type'] ?>">
+                                        <a href="#">
                                             <div class="pull-right" style="margin-top: -20px;">
                                                 <b> Read More</b> 
                                             </div> 
@@ -236,13 +196,14 @@ $ABOUT_US = new Page(1);
                 </div>
             </div> 
 
+            <!--Gallery-->
             <div class="container margin_60_9 "> 
                 <div class="  wow fadeIn" data-wow-delay="0.1s">
                     <div class="row "> 
                         <div class="container margin_60">
                             <div class="main_title"> 
 
-                                <h2>Some <span>images</span> from travellers</h2>
+                                <h2>Some <span>Images</span> From Travellers</h2>
                                 <p>
                                     Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.
                                 </p>
@@ -325,8 +286,7 @@ $ABOUT_US = new Page(1);
                                             <img class="item" src="img/gallery/11.jpg" data-src="img/gallery/11.jpg" alt="Image">
                                             <span class='title'>Adventure</span> 
                                         </a>                                         
-                                    </div> 
-
+                                    </div>  
                                 </div>
                             </div> 
                         </div>
@@ -334,78 +294,13 @@ $ABOUT_US = new Page(1);
                 </div>
             </div> 
 
-            <!--            <div class="container-fluid  margin_60_5 "> 
-                            <div class="  wow fadeIn" data-wow-delay="0.1s">
-                                <div class="row">
-                                    <div class="  margin_60">
-                                        <div class="main_title">
-                                            <h2>Airport & <span> other transfers</span> from travellers</h2>
-                                            <p>
-                                                Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.
-                                            </p>
-                                        </div> 
-                                    </div>
-                                    <div class="col-md-5 service-index-row" >
-                                        <div class="service-index"> </div>
-                                        <img src="img/service.png" class="service-index-row_image"/>
-                                    </div>
-                                    <div class="col-md-7">
-                                        <div class="step"> 
-            
-                                            <div class="row">
-                                                <div class="col-md-6 col-sm-6">
-                                                    <div class="form-group">
-                                                        <label>First Name</label>
-                                                        <input type="text" class="form-control" id="name_contact" name="name_contact" placeholder="Enter Name">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 col-sm-6">
-                                                    <div class="form-group">
-                                                        <label>Last Name</label>
-                                                        <input type="text" class="form-control" id="lastname_contact" name="lastname_contact" placeholder="Enter Last Name">
-                                                    </div>
-                                                </div>
-                                            </div>
-            
-                                            <div class="row">
-                                                <div class="col-md-6 col-sm-6">
-                                                    <div class="form-group">
-                                                        <label>Email</label>
-                                                        <input type="email" id="email_contact" name="email_contact" class="form-control" placeholder="Enter Email">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 col-sm-6">
-                                                    <div class="form-group">
-                                                        <label>Phone</label>
-                                                        <input type="text" id="phone_contact" name="phone_contact" class="form-control" placeholder="Enter Phone number">
-                                                    </div>
-                                                </div>
-                                            </div>
-            
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>Human verification</label>
-                                                    <input type="text" id="verify_contact" class=" form-control add_bottom_30" placeholder="Are you human? 3 + 1 =">
-                                                    <input type="submit" value="Submit" class="btn_1" id="submit-contact">
-                                                </div>
-                                            </div>
-            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>            
-                        </div> -->
-
+            <!--Excursion-->
             <div class="container-fluid  margin_60_4 img-paralax-comment ">
                 <div class="row"> 
-                    <div class="main_title " >
-                    </div>
                     <div class="container margin_60">
-                        <div class="main_title">
-
+                        <div class="main_title"> 
                             <h2 class="color-white">Popular <span>Top</span> Excursion </h2>
                             <p  class="color-white">  Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in.</p>
-
                         </div> 
                     </div>  
                     <div class="owl-carousel excursion">
@@ -416,11 +311,11 @@ $ABOUT_US = new Page(1);
                             <div class="  wow zoomIn" data-wow-delay="0.2s">
                                 <div class="tour_container2">
                                     <div class="img_container">
-                                        <a href="view-excursion.php?id=<?php echo $attraction['id'] ?>">
+                                        <a href="#">
                                             <img src="upload/attraction/<?php echo $attraction['image_name'] ?>"  class="img-responsive" alt="image">
                                         </a>
                                     </div>
-                                    <a href="view-excursion.php?id=<?php echo $attraction['id'] ?>">
+                                    <a href="#">
                                         <div class="tour_title">
                                             <h3><strong><?php echo $attraction['title'] ?> </strong> </h3>
                                             <div class="pull-right m-top" >
@@ -429,16 +324,13 @@ $ABOUT_US = new Page(1);
                                         </div>
                                     </a>
                                 </div> 
-                            </div> 
-
-
+                            </div>  
                         <?php } ?>
-                    </div>
-
-                </div>
-
+                    </div> 
+                </div> 
             </div>  
 
+            <!--Comment-->
             <div class="container-fluid  margin_60  "> 
                 <div class="  wow fadeIn" data-wow-delay="0.1s">
                     <div class="container margin_60">
@@ -470,7 +362,7 @@ $ABOUT_US = new Page(1);
                                             <?php } else { ?>
                                                 <div class="item carousel-item">
                                                     <div class="img-box"><img src="upload/comments/<?php echo $comments['image_name'] ?>" alt=""></div>
-                                                    <span class="testimonial"> <?php echo $comments['comment'] ?></span>
+                                                    <span class="testimonial text-center"> <?php echo $comments['comment'] ?></span>
                                                     <p class="overview"><b><?php echo $comments['name'] ?></b>, <?php echo $comments['country'] ?></p>
                                                 </div>
                                                 <?php
@@ -492,34 +384,47 @@ $ABOUT_US = new Page(1);
                         <div class="col-md-2"> 
                         </div>
                     </div>
-                </div>
-
-            </div> 
-
-
-            <!-- End container -->
+                </div> 
+            </div>  
         </main>
         <!-- End main -->
 
         <?php include './footer.php' ?>
 
         <div id="toTop"><i class="fa fa-arrow-up"></i></div>
-        <!-- Back to top button -->
-
-
+        <!-- Back to top button --> 
         <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery-2.2.4.min.js"></script>
         <script src="js/common_scripts_min.js"></script>
         <script src="js/functions.js"></script>         
         <!-- Specific scripts -->
+
         <script src="js/icheck.js"></script>
         <script src="js/jquery.sliderPro.min.js"></script> 
         <script src="js/infobox.js"></script>        
         <script src="js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js" type="text/javascript"></script>
-
         <script src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
         <script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
         <script src="js/revolution_func.js"></script>
+        <script src="js/notify_func.js"></script>
+        <script src="js/custom.js" type="text/javascript"></script>
 
+        <!-- SLIDER REVOLUTION SCRIPTS  --> 
+        <script src="layerslider/js/greensock.js"></script>
+        <script src="layerslider/js/layerslider.transitions.js"></script>
+        <script src="layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                'use strict';
+                $('#layerslider').layerSlider({
+                    autoStart: true,
+                    responsive: true,
+                    responsiveUnder: 1280,
+                    layersContainer: 1170,
+                    skinsPath: 'layerslider/skins/',
+                      
+                });
+            });
+        </script>
 
         <script type="text/javascript" src="js/pop_up.min.js"></script> 
         <script src="js/jquery.finaltilesgallery.js"></script>
@@ -531,7 +436,7 @@ $ABOUT_US = new Page(1);
                 $(".final-tiles-gallery").finalTilesGallery();
             });
         </script> 
-        
+        <script src="js/jquery.ddslick.js"></script>
         <script>
             $("select.ddslick").each(function () {
                 $(this).ddslick({
@@ -539,15 +444,10 @@ $ABOUT_US = new Page(1);
                 });
             });
         </script>
-        <script src="js/notify_func.js"></script>
-        <script src="js/custom.js" type="text/javascript"></script>
 
 
 
-        <!-- SLIDER REVOLUTION SCRIPTS  --> 
-        <script type="text/javascript" src="rev-slider-files/js/jquery.themepunch.revolution.min.js"></script> 
-        <script type="text/javascript" src="rev-slider-files/js/extensions/revolution.extension.carousel.min.js"></script>  
-        <script src="js/slider.js" type="text/javascript"></script>
+      
 
 
 </html>

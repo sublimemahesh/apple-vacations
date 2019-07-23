@@ -22,8 +22,8 @@ if (isset($_POST['create'])) {
         $handle->file_new_name_ext = 'jpg';
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body = Helper::randamId();
-        $handle->image_x = 1280;
-        $handle->image_y = 565;
+        $handle->image_x = 1600;
+        $handle->image_y = 709;
 
         $handle->Process($dir_dest);
 
@@ -34,11 +34,17 @@ if (isset($_POST['create'])) {
     }
 
     $SLIDER->image_name = $imgName;
-    $SLIDER->create();
-
-    $result = ["status" => 'success'];
-    echo json_encode($result);
-    exit();
+    $result = $SLIDER->create();
+    
+    if ($result->id) {
+        $result = ["status" => 'success'];
+        echo json_encode($result);
+        exit();
+    } else {
+        $result = ["status" => 'error'];
+        echo json_encode($result);
+        exit();
+    }
 }
 
 if (isset($_POST['update'])) {
@@ -55,8 +61,8 @@ if (isset($_POST['update'])) {
         $handle->file_new_name_ext = FALSE;
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body = $_POST ["oldImageName"];
-        $handle->image_x = 1280;
-        $handle->image_y = 565;
+        $handle->image_x = 1600;
+        $handle->image_y = 709;
 
         $handle->Process($dir_dest);
 

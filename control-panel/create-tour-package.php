@@ -59,7 +59,7 @@ include_once(dirname(__FILE__) . '/auth.php');
                                                     $TOUR_TYPE = new TourType(NULL);
                                                     foreach ($TOUR_TYPE->all() as $key => $tour_type) {
                                                         ?>
-                                                        <option value=" <?php echo $tour_type['id'] ?>">
+                                                        <option value="<?php echo $tour_type['id'] ?>">
                                                             <?php echo $tour_type['name'] ?>
                                                         </option> 
                                                     <?php } ?>

@@ -58,8 +58,7 @@ include './class/include.php';
                         <li><a href="index.php">Home<i class="fa fa-angle-right fa-i"></i></a>
                         </li>
                         <li><a href="#">Excursions</a>
-                        </li>
-
+                        </li> 
                     </ul>
                 </div>
             </div>
@@ -76,7 +75,7 @@ include './class/include.php';
                                 <div class="tour_container">
                                     <div class="img_container">
                                         <a href="view-excursion.php?id=<?php echo $attraction['id'] ?>">
-                                            <img src="upload/attraction/thumb/<?php echo $attraction['image_name'] ?>"  class="img-responsive" alt="image">
+                                            <img src="upload/attraction/<?php echo $attraction['image_name'] ?>"  class="img-responsive" alt="image">
                                         </a>
                                     </div>
                                     <a href="view-excursion.php?id=<?php echo $attraction['id'] ?>">
@@ -107,22 +106,11 @@ include './class/include.php';
         <!-- Common scripts -->
         <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery-2.2.4.min.js"></script>
         <script src="js/common_scripts_min.js"></script>
-        <script src="js/functions.js"></script>
-
-        <!-- Specific scripts -->
+        <script src="js/functions.js"></script> 
         <!-- Cat nav mobile -->
-        <script src="js/cat_nav_mobile.js"></script>
-        <script>
-            $('#cat_nav').mobileMenu();
-        </script>
+        <script src="js/cat_nav_mobile.js"></script> 
         <!-- Check and radio inputs -->
-        <script src="js/icheck.js"></script>
-        <script>
-            $('input').iCheck({
-                checkboxClass: 'icheckbox_square-grey',
-                radioClass: 'iradio_square-grey'
-            });
-        </script>
+        <script src="js/icheck.js"></script> 
         <!-- Map --> 
         <script src="js/infobox.js"></script>
 

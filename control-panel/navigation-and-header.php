@@ -305,7 +305,7 @@
                 </li><li class="qqq">
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
-                        <span>Attraction</span>
+                        <span>Excursion</span>
                     </a>
                     <ul class="ml-menu">
                         <li>

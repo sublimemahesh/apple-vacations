@@ -40,7 +40,7 @@ include './class/include.php';
         <section class="parallax-window" data-parallax="scroll" data-image-src="img/gallery.jpg" data-natural-width="1400" data-natural-height="470">
             <div class="parallax-content-1">
                 <div class="animated fadeInDown">
-                    <h1>Gallery page</h1>
+                    <h1>Gallery </h1>
                     <p>Ridiculus sociosqu cursus neque cursus curae ante scelerisque vehicula.</p>
                 </div>
             </div>
@@ -54,8 +54,7 @@ include './class/include.php';
                         <li><a href="index.php">Home<i class="fa fa-angle-right fa-i"></i></a>
                         </li>
                         <li><a href="#">Gallery</a>
-                        </li>
-
+                        </li> 
                     </ul>
                 </div>
             </div> 

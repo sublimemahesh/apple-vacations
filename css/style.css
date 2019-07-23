@@ -8,7 +8,7 @@ h4,
 h5,
 h6 {
     -webkit-font-smoothing: antialiased;
-    font-family: Signika; 
+    font-family: 'Oswald', sans-serif; 
 }
 
 a,
@@ -82,9 +82,9 @@ ul#top_links li {
 
 body {
     background: #f9f9f9;
-    font-size: 12px;
-    line-height: 20px;
-    /*    font-family: Signika;*/
+    font-size: 17px;
+    line-height: 25px;
+    font-family: 'Pavanam', sans-serif;
     color: #444
 }
 
@@ -108,16 +108,16 @@ h3 {
 }
 
 .main_title h2 {
-    text-transform: uppercase;
+/*    text-transform: uppercase;*/
     font-weight: 700;
     letter-spacing: -1px;
-    font-size: 30px;
+    font-size: 36px;
     margin-bottom: 0;
     margin-top: 0
 }
 
 .main_title p {
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
     font-weight: 300;
     font-size: 20px
 }
@@ -158,7 +158,7 @@ a.button_drop,
 a.button_intro {
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
     cursor: pointer;
     display: inline-block;
     outline: 0;
@@ -260,7 +260,7 @@ a.button_drop.outline:hover {
 .btn_1,
 a.btn_1 {
     border: none;
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
     color: #fff;
     background: #51bce6;
     cursor: pointer;
@@ -367,7 +367,7 @@ a.btn_map {
     padding: 12px 20px;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
     cursor: pointer;
     font-size: 12px;
     text-transform: uppercase;
@@ -381,7 +381,7 @@ a.btn_map {
     padding: 15px 5px;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
     cursor: pointer;
     font-size: 14px;
     text-transform: uppercase;
@@ -426,7 +426,7 @@ a.btn_full:hover {
 }
 
 a.btn_full_outline {
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
     color: #85c99d;
     background: 0 0;
     border: 2px solid #85c99d;
@@ -446,7 +446,7 @@ a.btn_full_outline {
     text-align: center
 }
 .btn_full_outline {
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
     color: #85c99d;
     background: 0 0;
     border: 2px solid #85c99d;
@@ -502,22 +502,24 @@ header.sticky #logo .logo_sticky {
 }
 
 #logo_home h1 {
-    margin: 10px 0 0;
-    padding: 0
+    margin: -38px 0 0;
+    padding: 0;
+    position: absolute;
+    background-color: white;
 }
+#logo_home h1 :before{
 
+}
 #logo_home h1 a,
 header#colored #logo_home h1 a,
 header#plain #logo_home h1 a,
 header.sticky #logo_home h1 a {
-    width: 160px;
-    height: 34px;
-    display: block;
-    background-image: url(../img/logo.png);
+    width: 148px; 
+    display: block; 
     background-repeat: no-repeat;
-    background-position: left top;
-    background-size: 160px 34px;
-    text-indent: -9999px
+    background-position: center top;
+
+
 }
 
 header.sticky #logo_home h1 {
@@ -527,8 +529,16 @@ header.sticky #logo_home h1 {
 
 header#plain #logo_home h1 a,
 header.sticky #logo_home h1 a {
-    background-image: url(../img/logo_sticky.png)
-}
+    background-image: url(../img/logo_sticky.png);
+    width: 160px;
+    height: 34px;    
+    background-size: 160px 34px;
+    text-indent: -9999px
+} 
+header.sticky #logo_home hide-a{
+    visibility: hidden;
+} 
+
 
 header.sticky#colored #logo_home h1 a {
     background-image: url(../img/logo_sticky_colored.png)
@@ -572,11 +582,11 @@ header.sticky {
 }
 
 nav {
-    margin-top: 10px
+    margin-top: 0px
 }
 
 .sticky nav {
-    margin-top: 10px
+    margin-top: 3px
 }
 
 .sticky #logo {
@@ -608,12 +618,13 @@ ul#top_tools li {
 
 #top_line {
     height: 28px;
-    border-bottom: 1px solid rgba(233, 233, 233, 0.68);
-    font-size: 12px;
+/*    border-bottom: 1px solid rgba(233, 233, 233, 0.68);*/
+    font-size: 14px;
     visibility: visible;
     opacity: 1;
     margin-bottom: 5px;
     z-index: 999999;
+    letter-spacing: 1px;
 
 }
 
@@ -634,7 +645,7 @@ a#wishlist_link {
 #wishlist_link:before {
     font-style: normal;
     font-weight: 400;
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
     font-size: 14px;
     position: absolute;
     left: 0;
@@ -1027,7 +1038,7 @@ a#email_footer:before,
 a#phone:before {
     font-style: normal;
     font-weight: 400;
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
     position: absolute
 }
 
@@ -1256,7 +1267,7 @@ video {
     background: #fff;
     border: 1px solid #DDD;
     color: #000;
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
     left: 5px;
     margin: 0;
     outline: 0;
@@ -1276,7 +1287,7 @@ video {
     padding: 5px;
     position: realtive;
     width: 100%;
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
     border: none;
     height: 45px;
     font-weight: 600;
@@ -1350,7 +1361,7 @@ ul#cat_nav li a span {
 }
 
 ul#cat_nav li a:after {
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
     content: "\e89b";
     position: absolute;
     right: 15px;
@@ -1411,7 +1422,7 @@ ul#cat_nav i {
     background: rgba(255, 255, 255, .9);
     position: relative;
     z-index: 9999999;
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
 }
 
 .marker_info img {
@@ -2258,7 +2269,7 @@ input.qty2 {
 }
 
 .features-content h3 {
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
     color: #fff;
     font-size: 32px;
     line-height: 34px
@@ -2594,7 +2605,7 @@ ul.list_icons li i {
 .wishlist_close:before {
     font-style: normal;
     font-weight: 400;
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
     font-size: 30px;
     content: "\72";
     color: #F66;
@@ -2611,13 +2622,13 @@ ul.list_icons li i {
     background: rgba(255, 255, 255, .9);
     position: relative;
     z-index: 9999999;
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
 }
 
 #toTop:before,
 .view_on_map:before {
     font-weight: 400;
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
     font-style: normal
 }
 
@@ -2896,7 +2907,7 @@ ul.list_ok li {
 ul.list_ok li:before {
     font-style: normal;
     font-weight: 700;
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
     font-size: 14px;
     content: "\6c";
     color: #e04f67;
@@ -3118,7 +3129,7 @@ ul.list_order li span {
 
 .strip_all_tour_list .wishlist:before,
 .wishlist:before {
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
     content: "\72";
     left: 0;
     font-weight: 400;
@@ -3452,7 +3463,7 @@ ul.list_order li span {
 /*#position ul li:after,
 #position ul li:first-child:before {
     font-weight: 400;
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
     font-style: normal
 }*/
 
@@ -3606,7 +3617,7 @@ ul.list_order li span {
 
 .banner h4,
 blockquote.styled {
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
 }
 
 #position ul li:last-child:after {
@@ -3823,7 +3834,7 @@ blockquote.styled {
 
 .plan-price,
 .pricing-table-header .price-value {
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
 }
 
 .tab-content {
@@ -4344,7 +4355,7 @@ footer #logo {
 
 .question_box:before {
     content: "\ec7e";
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
     font-style: normal;
     font-weight: 400;
     text-decoration: inherit;
@@ -4553,7 +4564,7 @@ footer#pattern_2 {
 
 #newsletter_container h3 {
     font-size: 32px;
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
     font-weight: 300;
     margin: 0 0 20px
 }
@@ -4779,7 +4790,7 @@ a#lang_link {
 #lang_link:before {
     font-style: normal;
     font-weight: 400;
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
     font-size: 14px;
     position: absolute;
     left: 0;
@@ -4856,7 +4867,7 @@ a.btn_infobox_detail:before,
 a.btn_infobox_phone:before {
     font-style: normal;
     font-weight: 400;
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
     font-size: 20px;
     cursor: pointer
 }
@@ -4899,7 +4910,7 @@ a.btn_infobox_phone:before {
 .btn_infobox,
 a.btn_infobox {
     border: none;
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
     color: #fff;
     background: #51bce6;
     cursor: pointer;
@@ -5106,7 +5117,7 @@ header.sticky nav.full-horizontal {
 
 .td-wrap,
 div.datedropper {
-    font-family: Signika;
+    font-family: 'Oswald', sans-serif;
 }
 
 div.datedropper .picker .pick-lg ul.pick-lg-b li.pick-v:hover {
@@ -5238,7 +5249,7 @@ div.datedropper.primary .pick-y.pick-jump {
     background-color: black;height: 43px;
 }
 .about-li{
-    font-size: 12px;
+    font-size: 17px;
     line-height: 14px;
     color: #111111;
     position: relative;
@@ -5315,14 +5326,15 @@ div.datedropper.primary .pick-y.pick-jump {
     margin-top: -20px;
 }
 .about-f{
-    text-transform: uppercase;
+/*    text-transform: uppercase;*/
     font-weight: 700;
+    margin-top: 10px;
 }
 .about-f-color{
     color: red; 
 }
 .about-f-btn{
-    margin-top: 30px;
+    margin-top: -19px;
 }
 .about-f-img{
     padding-left: 0px; 

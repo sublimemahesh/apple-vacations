@@ -63,9 +63,7 @@ include './class/include.php';
             <div class="container margin_60_7">
                 <div class="row">
                     <div class="col-md-8 col-sm-8">
-                        <div class="step">
-
-
+                        <div class="step"> 
                             <div class="row">
                                 <div class="col-md-6 col-sm-6">
                                     <div class="form-group">
@@ -146,8 +144,7 @@ include './class/include.php';
                             <p>
                                 If you have any questions simply use the following contact details.
                             </p>
-                            <ul id="contact-info">
-
+                            <ul id="contact-info"> 
                                 <li>
                                     <a href="https://api.whatsapp.com/send?phone=">
                                         <h3><img src="img/socia/001-whatsapp.png" alt="" class="f-marging">(+94) 11 433 8831 </h3>
@@ -156,7 +153,8 @@ include './class/include.php';
                                 <li>
                                     <a href="viber://chat?number= ">
                                         <h3>
-                                            <img src="img/socia/002-viber.png" alt="" class="f-marging"/> (+94) 76 281 6641  </h3> 
+                                            <img src="img/socia/002-viber.png" alt="" class="f-marging"/> (+94) 76 281 6641  
+                                        </h3> 
                                     </a>
                                 </li>
 
@@ -168,10 +166,8 @@ include './class/include.php';
                             <a href="tel://004542344599" class="phone"> (+94) 77 256 58965 </a>
                             <small>Monday to Friday 9.00am - 7.30pm</small>
                         </div>
-                    </div>
-                    <!-- End col-md-4 -->
-                </div>
-                <!-- End row -->
+                    </div> 
+                </div> 
             </div>
             <!-- End container -->
             <div id="" style="position: relative;overflow: hidden;width: 100%;height: 450px;background-color: #1e1a1aed;">
@@ -182,9 +178,7 @@ include './class/include.php';
 
         <?php include './footer.php' ?>
         <div id="toTop"><i class="fa fa-arrow-up"></i></div>
-        <!-- Back to top button -->
-
-
+        <!-- Back to top button --> 
 
         <!-- Common scripts -->
         <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery-2.2.4.min.js"></script>
