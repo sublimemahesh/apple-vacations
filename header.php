@@ -121,12 +121,12 @@ foreach ($TOUR_TYPE->all() as $tour_type) {
                         <li class="text-center">
 
                             <span>
-                                <a href="tel: " id="color-black"><i class="icon-phone"></i><strong>    (+94) 77 876 6545</strong> </a>
+                                <a href="tel: " id="color-black"><i class="icon-phone"></i><strong>    +94 114338831</strong> </a>
                             </span>
                         </li> | 
                         <li class="text-center" >
                             <span>
-                                <a class="box" href="mailto:" id="color-black">    <i class="icon-mail"></i> <strong> info@applevacation.com </strong>  </a>
+                                <a class="box" href="mailto:" id="color-black">    <i class="icon-mail"></i> <strong> info@applevacation.com.co </strong>  </a>
                             </span>
                         </li>
 

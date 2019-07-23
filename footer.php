@@ -9,11 +9,11 @@
                     Colombo 15. </p>
                 <ul>
                    
-                    <li>Tel : <a href="tel: ">(+94) 77 256 58965 </a>
+                    <li>Tel : <a href="tel: ">(+94) 11 433 8831 </a>
                     </li>
-                    <li>Fax :<a href="tel: ">(+94) 77 256 58965 </a>
+                    <li>Fax :<a href="tel: ">(+94) 76 2816641 </a>
                     </li>
-                    <li>Email :  <a href="mailto:" >info@applevacations.com</a>
+                    <li>Email :  <a href="mailto:" >info@applevacations.com.co</a>
                     </li> 
                 </ul>
             </div>
