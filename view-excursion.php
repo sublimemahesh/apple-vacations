@@ -75,7 +75,7 @@ $ATTRACTION = new Attraction($id);
                                         foreach ($ATTRACTIONS->all() as $attraction) {
                                             if ($attraction['id'] != $ATTRACTION->id) {
                                                 ?>
-                                        <li><a href="view-excursion.php?id<?php echo $attraction['id'] ?>"  class="view-drop"><strong><?php echo $attraction['title'] ?></strong></a>   </li> 
+                                        <li><a href="view-excursion.php?id=<?php echo $attraction['id'] ?>"  class="view-drop"><strong><?php echo $attraction['title'] ?></strong></a>   </li> 
                                                 <?php
                                             }
                                         }

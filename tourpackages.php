@@ -79,20 +79,17 @@ $TOUR_TYPES = new TourType($id);
                                     <div class="img_container">
                                         <a href="view-tourpackage.php?id=<?php echo $tour_package['id'] ?>&type=<?php echo $id ?>">
                                             <img src="upload/tour-package/<?php echo $tour_package['image_name'] ?>" width="800" height="533" class="img-responsive" alt="image">
-                                            <div class="short_info">
-                                                <i class="icon_set_1_icon-30"></i>Working Tours                                    
-                                            </div>
                                         </a>
                                     </div>
 
                                     <div class="tour_title">
-                                        <a href="view-tourpackage.php?id=<?php echo $tour_package['id'] ?>&type=<?php echo $id?>">
+                                        <a href="view-tourpackage.php?id=<?php echo $tour_package['id'] ?>&type=<?php echo $id ?>">
                                             <h3 class="tour-padd"><strong> <?php echo $tour_package['title'] ?></strong> </h3>
                                         </a>
                                         <p>
-                                        <?php echo substr($tour_package['short_description'], 0, 120) ?>...
+                                            <?php echo substr($tour_package['short_description'], 0, 120) ?>...
                                         </p>
-                                        <a href="view-tourpackage.php?id=<?php echo $tour_package['id'] ?>&type=<?php echo $id?>">
+                                        <a href="view-tourpackage.php?id=<?php echo $tour_package['id'] ?>&type=<?php echo $id ?>">
                                             <div class="pull-right" style="margin-top: -20px;">
                                                 <b> Read More</b> 
                                             </div> 

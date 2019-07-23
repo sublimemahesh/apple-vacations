@@ -22,16 +22,16 @@
                 <ul>
                     <li><a href="index.php">- Home</a>
                     </li>
-                    <li><a href="about-us.php">- Who are we?</a>
+                    <li><a href="#">- Who are we?</a>
                     </li> 
-                    <li><a href="excursion.php">- Excursion</a>
+                    <li><a href="#">- Excursion</a>
                     </li>
-                    <li><a href="service.php">- Service</a>
-                    <li><a href="gallery.php">- Gallery</a>
+                    <li><a href="#">- Service</a>
+                    <li><a href="#">- Gallery</a>
                     </li>
-                    <li><a href="gest-book.php">- Gest Book</a>
+                    <li><a href="#">- Gest Book</a>
                     </li>
-                    <li><a href="contact.php">- Contact Us</a>
+                    <li><a href="#">- Contact Us</a>
                     </li>
                 </ul>
             </div>

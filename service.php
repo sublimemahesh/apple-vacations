@@ -38,6 +38,7 @@ include './class/include.php';
 
         <div class="layer"></div>
         <!-- Mobile menu overlay mask -->
+
         <!-- Header  -->
         <?php include './header.php'; ?>
         <!-- End Header -->
@@ -76,7 +77,7 @@ include './class/include.php';
                             <div class="  wow zoomIn" data-wow-delay="0.1s">
                                 <div class="img_container">
                                     <div class="hovereffect">
-                                        <img class="img-responsive" src="img/family-fun.jpg" alt="">
+                                        <img class="img-responsive" src="upload/service/<?php echo $service['image_name'] ?>" alt="">
                                         <div class="overlay">
                                             <h2><?php echo $service['title'] ?></h2>
                                             <a   href="#" class="btn_map add_bottom_30 info" data-toggle="modal" data-target="#service">  <button type="submit" class="btn btn-warning btn-sm">INQUIRE NOW</button>
@@ -93,8 +94,7 @@ include './class/include.php';
                                 </div>
                             </div>
                         </div>
-                    <?php } ?>
-
+                    <?php } ?> 
                 </div>
             </div>
 
@@ -195,8 +195,8 @@ include './class/include.php';
                                 </div>
                             </div>
                         </div>
-                        <input type="submit" value="Submit" class="btn_1" id="Submit">
-
+                        <input type="submit" value="Submit" class="btn_1" id="Submit"> 
+                        <div id="dismessage" align="center"></div>       
                     </div>
                 </div>
             </div>
