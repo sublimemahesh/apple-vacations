@@ -8,8 +8,8 @@ include './class/include.php';
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="Citytours - Premium site template for city tours agencies, transfers and tickets.">
-        <meta name="author" content="Ansonika">
+        <meta name="description" content=" ">
+        <meta name="author" content=" ">
         <title>Apple Vacations - Excursion</title>
 
         <!-- Favicons-->
@@ -19,8 +19,8 @@ include './class/include.php';
         <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
         <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
 
-        <link href='https://fonts.googleapis.com/css?family=Fjalla One,Roboto:300,300italic,400,400italic,500,500italic,700,700italic' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Fjalla One' rel='stylesheet'>
+       <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Pavanam' rel='stylesheet'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- CSS -->
         <link href="css/base.css" rel="stylesheet">
@@ -35,8 +35,7 @@ include './class/include.php';
     </head>
 
     <body> 
-        <div class="layer"></div>
-        <!-- Mobile menu overlay mask -->
+        
         <!-- Header  -->
         <?php include './header.php'; ?>
         <!-- End Header -->
@@ -70,19 +69,19 @@ include './class/include.php';
                     $ATTRACTION = new Attraction(NULL);
                     foreach ($ATTRACTION->all() as $attraction) {
                         ?>
-                        <div class="col-md-4"  >
+                        <div class="col-md-4 col-xs-12 col-sm-6"  >
                             <div class="  wow zoomIn" data-wow-delay="0.2s">
                                 <div class="tour_container">
                                     <div class="img_container">
                                         <a href="view-excursion.php?id=<?php echo $attraction['id'] ?>">
-                                            <img src="upload/attraction/<?php echo $attraction['image_name'] ?>"  class="img-responsive" alt="image">
+                                            <img src="upload/attraction/<?php echo $attraction['image_name'] ?>"  class="img-responsive" alt="image" width="100%">
                                         </a>
                                     </div>
                                     <a href="view-excursion.php?id=<?php echo $attraction['id'] ?>">
                                         <div class="tour_title">
                                             <h3><strong><?php echo $attraction['title'] ?> </strong> </h3>
                                             <div class="pull-right m-top" >
-                                                <b> View More</b> 
+                                                <b><p> View More</p></b> 
                                             </div> 
                                         </div>
                                     </a>

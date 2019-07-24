@@ -11,23 +11,18 @@ $ATTRACTION = new Attraction($id);
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="Citytours - Premium site template for city tours agencies, transfers and tickets.">
-        <meta name="author" content="Ansonika">
+        <meta name="description" content="">
+        <meta name="author" content="">
         <title>Apple Vacations - <?php echo $ATTRACTION->title ?></title>
 
         <!-- Favicons-->
-        <link rel="shortcut icon" href="img/logo_fvg.jpg" type="image/x-icon">
-        <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
-        <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
-        <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
-        <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png"> 
+        <link rel="shortcut icon" href="img/logo_fvg.jpg" type="image/x-icon"> 
         <!-- Google web fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Lato:300,400|Montserrat:400,400i,700,700i" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Pavanam' rel='stylesheet'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- CSS -->
         <link href="css/base.css" rel="stylesheet">
-
-        <!-- CSS -->
         <link href="css/slider-pro.min.css" rel="stylesheet">
         <link href="css/date_time_picker.css" rel="stylesheet">
 
@@ -65,7 +60,7 @@ $ATTRACTION = new Attraction($id);
                                 <li><?php echo $ATTRACTION->title ?></li>
                             </ul>
                         </div>
-                        <div class="col-md-6 col-xs-6 view-ul-top " >
+                        <div class="col-md-6 col-xs-12 col-sm-12 view-ul-top " >
                             <ul class="ul-style"  >
                                 <li>
                                     <a href="#"  class="view-ul">Related Excursion </a>
@@ -75,7 +70,11 @@ $ATTRACTION = new Attraction($id);
                                         foreach ($ATTRACTIONS->all() as $attraction) {
                                             if ($attraction['id'] != $ATTRACTION->id) {
                                                 ?>
-                                        <li><a href="view-excursion.php?id=<?php echo $attraction['id'] ?>"  class="view-drop"><strong><?php echo $attraction['title'] ?></strong></a>   </li> 
+                                                <li>
+                                                    <a href="view-excursion.php?id=<?php echo $attraction['id'] ?>"  class="view-drop">
+                                                        <p><?php echo $attraction['title'] ?></p>
+                                                    </a> 
+                                                </li> 
                                                 <?php
                                             }
                                         }
@@ -93,9 +92,7 @@ $ATTRACTION = new Attraction($id);
             <div class="container margin_60_7">
                 <div class="row">
                     <div class="col-md-12" id="single_tour_desc">
-                        <p class="visible-sm visible-xs">
-                            <a class="btn_map" data-toggle="collapse" href="#collapseMap" aria-expanded="false" aria-controls="collapseMap" data-text-swap="Hide map" data-text-original="View on map">View on map</a>
-                        </p>
+
 
                         <div id="Img_carousel" class="slider-pro">
                             <div class="sp-slides">
@@ -172,12 +169,12 @@ $ATTRACTION = new Attraction($id);
                 arrows: true,
                 buttons: false,
                 fullScreen: false,
-                smallSize: 500,
+                smallSize: 200,
                 startSlide: 0,
                 mediumSize: 1000,
                 largeSize: 3000,
                 thumbnailArrows: true,
-                autoplay: false
+                autoplay: true
             });
         </script>
 

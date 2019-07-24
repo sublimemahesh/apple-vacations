@@ -11,8 +11,8 @@ $TOUR_TYPES = new TourType($id);
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="Citytours - Premium site template for city tours agencies, transfers and tickets.">
-        <meta name="author" content="Ansonika">
+        <meta name="description" content=" ">
+        <meta name="author" content=" ">
         <title>Apple Vacations - <?php echo $TOUR_TYPES->name ?></title>
 
         <!-- Favicons-->
@@ -23,23 +23,18 @@ $TOUR_TYPES = new TourType($id);
         <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href='https://fonts.googleapis.com/css?family=Fjalla One,Roboto:300,300italic,400,400italic,500,500italic,700,700italic' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Fjalla One' rel='stylesheet'>
-        <!-- CSS -->
-        <link href="css/base.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Pavanam' rel='stylesheet'>
 
-        <!-- Radio and check inputs -->
-        <link href="css/skins/square/grey.css" rel="stylesheet"> 
-        <!-- Range slider -->
+        <!-- CSS -->
+        <link href="css/base.css" rel="stylesheet"> 
+        <link href="css/skins/square/grey.css" rel="stylesheet">  
         <link href="css/ion.rangeSlider.css" rel="stylesheet">
         <link href="css/ion.rangeSlider.skinFlat.css" rel="stylesheet"> 
 
     </head>
 
     <body> 
-
-        <div class="layer"></div>
-        <!-- Mobile menu overlay mask -->
 
         <!-- Header -->
         <?php include './header.php'; ?>

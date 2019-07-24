@@ -2,7 +2,7 @@
 <footer class="revealed">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-4 col-xs-4">
+            <div class="col-lg-3 col-md-3 col-xs-4 col-sm-3">
                 <h3>Contact Us</h3>
                 <p> Apple vacations(PVT) Ltd.<br>
                     162 1/1 Vystwyke Road, <br>
@@ -17,7 +17,7 @@
                     </li> 
                 </ul>
             </div>
-            <div class="col-lg-3 col-md-3 ml-md-auto col-xs-4">
+            <div class="col-lg-3 col-md-3 ml-md-auto col-xs-4 col-sm-3">
                 <h3>Quick Links</h3>
                 <ul>
                     <li><a href="index.php">- Home</a>
@@ -35,7 +35,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-3 col-md-3 col-xs-4" id="newsletter">
+            <div class="col-lg-3 col-md-3 col-xs-4 col-sm-3" id="newsletter">
                 <h3>Services</h3>
                 <p>Join our newsletter to keep be informed about offers and news.</p>
                 <ul>
@@ -44,11 +44,9 @@
                     <li><a href="#">- Taxi</a>
                     </li>
                 </ul>
-            </div>
+            </div> 
 
-
-
-            <div class="col-lg-3 col-md-3 ml-lg-auto hidden-xs">
+            <div class="col-lg-3 col-md-3 ml-lg-auto hidden-xs col-sm-3">
                 <h3>About us</h3>
                 <div class="text-justify">
                     <p>Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in.   octus civibus efficiantur in.Lorem ipsum dolor sit amet, </p>
@@ -79,44 +77,35 @@
                     </ul>
                 </div>
             </div>
-        </div>
-        <!-- End row -->
+        </div> 
         <div class="row">
             <hr>
-            <div class="col-lg-4 col-xs-6">
+            <div class="col-lg-4 col-xs-6 col-sm-4">
                 <p class="pull-left  "><?php echo date('Y') ?> Apple Vacations Travels All right reserved</p>
             </div>
-            <div class="col-lg-4 text-center hidden-xs">
-
+            <div class="col-lg-4 text-center hidden-xs col-sm-4">
                 <div id="google_translate_element"></div>
             </div>
-            <div class="col-lg-4 col-xs-6">
-                <p class="pull-right  ">Design By <i class="fa fa-hand-o-right text-primary heart"></i> <a href="https://www.sublime.lk/" >Sublime Holdings </a></p>
-
+            <div class="col-lg-4 col-xs-6 col-sm-4">
+                <p class="pull-right  ">Design By <i class="fa fa-hand-o-right text-primary heart"></i> <a href="https://www.sublime.lk/" > Synotec Holdings (Pvt) Ltd. </a></p>
             </div>
-        </div>
-        <!-- End row -->
-    </div>
-    <!-- End container -->
+        </div> 
+    </div> 
 </footer>
 <div class="feed-main">
     <div class="feed-main-sub"> 
-
         <a href="#" class=" btn_feed  feed-main-sub-2" data-toggle="modal" data-target="#myReview" style="color:white;">  contact</a>
-
     </div>
-
 </div>
 <div class="modal fade" id="myReview" tabindex="-1" role="dialog" aria-labelledby="myReviewLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
                 </button>
                 <h3 class="modal-title text-center" id="myReviewLabel">Contact With Us</h3>
             </div>
             <div class="modal-body">
-
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -179,8 +168,6 @@
                     </div>
                     <div id="dismessage" align="center"></div>  
                 </div>
-
-
             </div>
         </div>
     </div>

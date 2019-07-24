@@ -9,17 +9,13 @@ $ABOUT_US = new Page(1);
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="Citytours - Premium site template for city tours agencies, transfers and tickets.">
-        <meta name="author" content="Ansonika">
+        <meta name="description" content="">
+        <meta name="author" content="">
         <title>Apple Vacations - Home</title>
 
         <!-- Favicons-->
         <link rel="shortcut icon" href="img/logo_fvg.jpg" type="image/x-icon">
-        <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
-        <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
-        <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
-        <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
-        <link href="js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet" type="text/css"/>
+
         <!-- Google web fonts -->
 
         <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
@@ -28,9 +24,7 @@ $ABOUT_US = new Page(1);
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
         <!-- BASE CSS -->
-        <link href="css/base.css" rel="stylesheet">
-
-        <!-- REVOLUTION SLIDER CSS -->
+        <link href="css/base.css" rel="stylesheet"> 
         <link href="rs-plugin/css/settings.css" rel="stylesheet">
         <link href="css/extralayers.css" rel="stylesheet">
         <link href="css/finaltilesgallery.css" rel="stylesheet">
@@ -44,8 +38,7 @@ $ABOUT_US = new Page(1);
     </head>
 
     <body>  
-        <div class="layer"></div>
-        <!-- Mobile menu overlay mask -->
+
 
         <!-- Header-->
         <?php include './header.php'; ?>
@@ -61,19 +54,18 @@ $ABOUT_US = new Page(1);
                     <div class="tab-content">
                         <div class="tab-pane active" id="tours"> 
                             <div class="row hidden-xs">
-                                <div class="col-md-2  search-bar-top-padd"  >                                   
+                                <div class="col-md-2  col-sm-3 search-bar-top-padd"  >                                   
                                     <span class="search-bar-padd text-center" ><p >My Dream Holiday</p></span>
                                 </div>
-                                <div class="col-md-2  "> 
+                                <div class="col-md-2  col-sm-2"> 
                                     <input type="text" class="form-control" id="firstname_booking" name="firstname_booking" placeholder="Type your search terms">
                                 </div>
-                                <div class="col-md-3  ">
+                                <div class="col-md-3  col-sm-2">
                                     <div class="form-group">
-
                                         <input type="text" class="form-control" id="firstname_booking" name="firstname_booking" placeholder="Type your search terms">
                                     </div>
                                 </div>
-                                <div class="col-md-3  ">
+                                <div class="col-md-3 col-sm-3 ">
                                     <div class="form-group"> 
                                         <select class="ddslick" name="category">
                                             <option value="0" data-imagesrc="img/icons_search/sightseeing.png" selected>All tours</option>
@@ -87,7 +79,7 @@ $ABOUT_US = new Page(1);
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-md-2  col-xs-4">
+                                <div class="col-md-2  col-xs-4 col-sm-2">
                                     <button class="btn_1 green"><i class="icon-search"></i>Search now</button>
                                 </div>
                             </div> 
@@ -99,7 +91,7 @@ $ABOUT_US = new Page(1);
             <!--About us -->
             <div class="container margin_60">
                 <div class="main_title">
-                    <h2>Discover <span>Sri Lanka with </span> Apple Vacation</h2>
+                    <h2>Discover <span>Sri Lanka With </span> Apple Vacation</h2>
                     <p>
                         Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.
                     </p>
@@ -111,14 +103,14 @@ $ABOUT_US = new Page(1);
                         <div class="text-justify">
                             <?php echo $ABOUT_US->description ?>
                         </div>
-                        <div class="pull-right">
+                        <div class="pull-right hidden-sm hidden-xs">
                             <a href="#" class="btn_1 about-f-btn">About Us</a>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 hidden-xs about-f-img">                         
+                    <div class="col-md-4  col-sm-6 hidden-xs about-f-img">                         
                         <img src="img/aboutus-optimized.jpg" class="img-responsive">                         
                     </div>
-                    <div class="col-md-2 col-sm-6 hidden-xs  about-back-color" >
+                    <div class="col-md-2 hidden-sm  hidden-xs  about-back-color" >
                         <h3 class="text-center about-f-w"  ><span>Why Book</span>  With Us?.</h3>
                         <ul  class="about-back-color-padd">
                             <li  class="about-li">Lorem ipsum dolor</li>
@@ -134,20 +126,20 @@ $ABOUT_US = new Page(1);
                 </div>
                 <hr> 
                 <div class="row">
-                    <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="col-md-6  wow fadeIn" data-wow-delay="0.1s">
                         <div class="feature">
                             <i class="icon_set_1_icon-30"></i>
                             <h3><span>Our</span> Vision </h3>
-                            <p>
+                            <p class="text-justify">
                                 Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-6 wow fadeIn" data-wow-delay="0.2s">
+                    <div class="col-md-6   wow fadeIn" data-wow-delay="0.2s">
                         <div class="feature">
                             <i class="icon_set_1_icon-41"></i>
                             <h3><span>Our</span> Mission </h3>
-                            <p>
+                            <p class="text-justify">
                                 Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.
                             </p>
                         </div>
@@ -171,11 +163,11 @@ $ABOUT_US = new Page(1);
                             <div class="  wow zoomIn" data-wow-delay="0.1s">
                                 <div class="tour_container"> 
                                     <div class="img_container">
-                                        <a href="view-tourpackage.php?id=<?php echo $tour_package['id'] ?>&type=<?php echo $tour_package['tour_type'] ?>">
+    <!--                                        <a href="view-tourpackage.php?id=<?php echo $tour_package['id'] ?>&type=<?php echo $tour_package['tour_type'] ?>">-->
+                                        <a href="#">
                                             <img src="upload/tour-package/<?php echo $tour_package['image_name'] ?>" width="800" height="533" class="img-responsive" alt="image">
                                         </a>
                                     </div>
-
                                     <div class="tour_title">
                                         <a href="view-tourpackage.php?id=<?php echo $tour_package['id'] ?>&type=<?php echo $tour_package['tour_type'] ?>">
                                             <h3 class="tour-padd"><strong> <?php echo $tour_package['title'] ?></strong> </h3>
@@ -183,7 +175,7 @@ $ABOUT_US = new Page(1);
                                         <p>
                                             <?php echo substr($tour_package['short_description'], 0, 120) ?>...
                                         </p>
-                                        <a href="view-tourpackage.php?id=<?php echo $tour_package['id'] ?>&type=<?php echo $tour_package['tour_type'] ?>">
+                                        <a href="#">
                                             <div class="pull-right" style="margin-top: -20px;">
                                                 <b> Read More</b> 
                                             </div> 
@@ -202,7 +194,6 @@ $ABOUT_US = new Page(1);
                     <div class="row "> 
                         <div class="container margin_60">
                             <div class="main_title"> 
-
                                 <h2>Some <span>images</span> from travellers</h2>
                                 <p>
                                     Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.
@@ -218,55 +209,55 @@ $ABOUT_US = new Page(1);
                                     <div class="tile ftg-set-rome ftg-set-milan">
                                         <a class="tile-inner" data-title="Lorem ipsum" data-lightbox="gallery" href="img/gallery/1.jpg">
                                             <img class="item" src="img/gallery/1.jpg" data-src="img/gallery/1.jpg" alt="Image">
-                                            <span class='title'>Tour Title 1</span> 
+                                            <span class='title'>Wild Life </span> 
                                         </a> 
                                     </div> 
 
                                     <div class="tile ftg-set-rome">
                                         <a class="tile-inner" data-title="Lorem ipsum" data-lightbox="gallery" href="img/gallery/2.jpg">
                                             <img class="item" src="img/gallery/2.jpg" data-src="img/gallery/2.jpg" alt="Image">
-                                            <span class='title'>Tour Title 2</span> 
+                                            <span class='title'>Cultural</span> 
                                         </a> 
                                     </div> 
 
                                     <div class="tile   ftg-set-rome">
                                         <a class="tile-inner" data-title="Lorem ipsum" data-lightbox="gallery" href="img/gallery/3.jpg">
                                             <img class="item" src="img/gallery/3.jpg" data-src="img/gallery/3.jpg" alt="Image">
-                                            <span class='title'>Tour Title 3</span> 
+                                            <span class='title'>Cultural</span> 
                                         </a> 
                                     </div> 
 
                                     <div class="tile   ftg-set-milan">
                                         <a class="tile-inner" data-title="Lorem ipsum" data-lightbox="gallery" href="img/gallery/4.jpg">
                                             <img class="item" src="img/gallery/4.jpg" data-src="img/gallery/4.jpg" alt="Image">
-                                            <span class='title'>Tour Title 4</span> 
+                                            <span class='title'>Traveling</span> 
                                         </a> 
                                     </div> 
 
                                     <div class="tile ftg-set-florence  ">
                                         <a class="tile-inner" data-title="Lorem ipsum" data-lightbox="gallery" href="img/gallery/5.jpg">
                                             <img class="item" src="img/gallery/5.jpg" data-src="img/gallery/5.jpg" alt="Image">
-                                            <span class='title'>Tour Title 5</span> 
+                                            <span class='title'>Life</span> 
                                         </a> 
                                     </div> 
 
                                     <div class="tile ftg-set-rome ftg-set-florence">
                                         <a class="tile-inner" data-title="Lorem ipsum" data-lightbox="gallery" href="img/gallery/6.jpg">
                                             <img class="item" src="img/gallery/6.jpg" data-src="img/gallery/6.jpg" alt="Image">
-                                            <span class='title'>Tour Title 6</span> 
+                                            <span class='title'>Natural</span> 
                                         </a> 
                                     </div> 
 
                                     <div class="tile  ftg-set-florence">
                                         <a class="tile-inner" data-title="Lorem ipsum" data-lightbox="gallery" href="img/gallery/7.jpg">
                                             <img class="item" src="img/gallery/7.jpg" data-src="img/gallery/7.jpg" alt="Image">
-                                            <span class='title'>Tour Title 7</span> 
+                                            <span class='title'>Cultural</span> 
                                         </a>                                         
                                     </div> 
                                     <div class="tile  ftg-set-milan">
                                         <a class="tile-inner" data-title="Lorem ipsum" data-lightbox="gallery" href="img/gallery/8.jpg">
                                             <img class="item" src="img/gallery/8.jpg" data-src="img/gallery/8.jpg" alt="Image">
-                                            <span class='title'>Adventure</span> 
+                                            <span class='title'>Cultural</span> 
                                         </a>                                         
                                     </div> 
                                     <div class="tile  ftg-set-milan">
@@ -311,11 +302,12 @@ $ABOUT_US = new Page(1);
                             <div class="  wow zoomIn" data-wow-delay="0.2s">
                                 <div class="tour_container2">
                                     <div class="img_container">
-                                        <a href="view-excursion.php?id=<?php echo $attraction['id'] ?>">
+    <!--                                        <a href="view-excursion.php?id=<?php echo $attraction['id'] ?>">-->
+                                        <a href="#">
                                             <img src="upload/attraction/<?php echo $attraction['image_name'] ?>"  class="img-responsive" alt="image">
                                         </a>
                                     </div>
-                                    <a href="view-excursion.php?id=<?php echo $attraction['id'] ?>">
+                                    <a href="#">
                                         <div class="tour_title">
                                             <h3><strong><?php echo $attraction['title'] ?> </strong> </h3>
                                             <div class="pull-right m-top" >
@@ -331,7 +323,7 @@ $ABOUT_US = new Page(1);
             </div>  
 
             <!--Comment-->
-            <div class="container-fluid  margin_60  "> 
+            <div class="container  margin_60  "> 
                 <div class="  wow fadeIn" data-wow-delay="0.1s">
                     <div class="container margin_60">
                         <div class="main_title">
@@ -343,9 +335,7 @@ $ABOUT_US = new Page(1);
                     </div> 
 
                     <div class="row">
-                        <div class="col-md-2"> 
-                        </div>
-                        <div class="col-md-8"> 
+                        <div class="col-md-9 col-xs-12 col-sm-9"> 
                             <div class="  col-center m-auto">
                                 <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
                                     <div class="carousel-inner">
@@ -357,13 +347,25 @@ $ABOUT_US = new Page(1);
                                                 <div class="item carousel-item active">
                                                     <div class="img-box"><img src="upload/comments/<?php echo $comments['image_name'] ?>" alt=""></div>
                                                     <span class="testimonial"> <?php echo $comments['comment'] ?></span> 
-                                                    <p class="overview"><b><?php echo $comments['name'] ?></b>, <?php echo $comments['country'] ?></p>
+
+                                                    <p ><?php echo $comments['title'] ?></p>
+                                                    <p class="overview tripadvisor-v">
+                                                        <b>
+                                                            <?php echo $comments['name'] ?>
+                                                        </b>
+                                                    </p>
                                                 </div>
                                             <?php } else { ?>
                                                 <div class="item carousel-item">
                                                     <div class="img-box"><img src="upload/comments/<?php echo $comments['image_name'] ?>" alt=""></div>
                                                     <span class="testimonial text-center"> <?php echo $comments['comment'] ?></span>
-                                                    <p class="overview"><b><?php echo $comments['name'] ?></b>, <?php echo $comments['country'] ?></p>
+
+                                                    <p><?php echo $comments['title'] ?></p>
+                                                    <p class="overview tripadvisor-v">
+                                                        <b>
+                                                            <?php echo $comments['name'] ?>
+                                                        </b>
+                                                    </p>
                                                 </div>
                                                 <?php
                                             }
@@ -381,7 +383,20 @@ $ABOUT_US = new Page(1);
 
                             </div>                                 		                            
                         </div>
-                        <div class="col-md-2"> 
+                        <div class="col-md-3 hidden-xs col-sm-3"> 
+                            <a href="https://www.tripadvisor.com/Attraction_Review-g293962-d13827740-Reviews-Apple_Vacations_Srilanka-Colombo_Western_Province.html">
+                                <img  src="img/rec-trip.png" class="img-responsive " width="95%"/>
+                            </a>
+                            <div id="TA_selfserveprop837" class="TA_selfserveprop tripadvisor-v">
+                                <ul id="KEWHRuWIMV" class="TA_links JexZnt">
+                                    <li id="jgAYPb" class="l6iiPyjaMW">
+                                        <a target="_blank" href="https://www.tripadvisor.com/"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/150_logo-11900-2.png" alt="TripAdvisor"/>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <script async src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=837&amp;locationId=13827740&amp;lang=en_US&amp;rating=true&amp;nreviews=0&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=false&amp;border=true&amp;display_version=2" data-loadtrk onload="this.loadtrk = true"></script>
+
                         </div>
                     </div>
                 </div> 
@@ -397,15 +412,11 @@ $ABOUT_US = new Page(1);
         <script src="js/common_scripts_min.js"></script>
         <script src="js/functions.js"></script>         
         <!-- Specific scripts -->
-
-        <script src="js/icheck.js"></script>
-        <script src="js/jquery.sliderPro.min.js"></script> 
-        <script src="js/infobox.js"></script>        
+        <link href="js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet" type="text/css"/>
+        <script src="js/icheck.js"></script> 
         <script src="js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js" type="text/javascript"></script>
         <script src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-        <script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-
-
+        <script src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>  
         <script src="js/notify_func.js"></script>
         <script src="js/custom.js" type="text/javascript"></script>
 
@@ -418,24 +429,19 @@ $ABOUT_US = new Page(1);
         <script src="js/jquery.finaltilesgallery.js"></script>
         <script src="js/lightbox2.js"></script>
         <script>
-            $(function () {
-                'use strict';
+                                $(function () {
+                                    'use strict';
 
-                $(".final-tiles-gallery").finalTilesGallery();
-            });
+                                    $(".final-tiles-gallery").finalTilesGallery();
+                                });
         </script> 
         <script src="js/jquery.ddslick.js"></script>
         <script>
-            $("select.ddslick").each(function () {
-                $(this).ddslick({
-                    showSelectedHTML: true
-                });
-            });
-        </script>
-
-
-
-
-
+                                $("select.ddslick").each(function () {
+                                    $(this).ddslick({
+                                        showSelectedHTML: true
+                                    });
+                                });
+        </script> 
 
 </html>
