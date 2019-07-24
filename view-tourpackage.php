@@ -13,8 +13,8 @@ $TOUR_PACKAGE = new TourPackage($id);
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="Citytours - Premium site template for city tours agencies, transfers and tickets.">
-        <meta name="author" content="Ansonika">
+        <meta name="description" content="">
+        <meta name="author" content="">
         <title>Apple Vacations - Tour Package Name</title>
 
         <!-- Favicons-->
@@ -23,13 +23,14 @@ $TOUR_PACKAGE = new TourPackage($id);
         <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
         <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
         <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png"> 
+       
         <!-- Google web fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Lato:300,400|Montserrat:400,400i,700,700i" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Pavanam' rel='stylesheet'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+       
         <!-- CSS -->
         <link href="css/base.css" rel="stylesheet">
-
-        <!-- CSS -->
         <link href="css/slider-pro.min.css" rel="stylesheet">
         <link href="css/date_time_picker.css" rel="stylesheet">
 
@@ -37,9 +38,6 @@ $TOUR_PACKAGE = new TourPackage($id);
     </head>
 
     <body> 
-
-        <div class="layer"></div>
-        <!-- Mobile menu overlay mask -->
 
         <!-- Header -->
         <?php include './header.php'; ?>
@@ -67,7 +65,7 @@ $TOUR_PACKAGE = new TourPackage($id);
                             <ul>
                                 <li><a href="index.php">Home<i class="fa fa-angle-right fa-i"></i></a>
                                 </li>
-                                <li><a href="tourpackages.php?id=<?php echo $TOUR_TYPES->id?>"><?php echo $TOUR_TYPES->name ?><i class="fa fa-angle-right fa-i"></i></a>
+                                <li><a href="tourpackages.php?id=<?php echo $TOUR_TYPES->id ?>"><?php echo $TOUR_TYPES->name ?><i class="fa fa-angle-right fa-i"></i></a>
                                 </li>
                                 <li><?php echo $TOUR_PACKAGE->title ?></li>
                             </ul>
@@ -108,14 +106,14 @@ $TOUR_PACKAGE = new TourPackage($id);
                     <div class="col-md-8" id="single_tour_desc"> 
                         <p class="visible-sm visible-xs"><a class="btn_map" data-toggle="collapse" href="#collapseMap" aria-expanded="false" aria-controls="collapseMap" data-text-swap="Hide map" data-text-original="View on map">View on map</a>
                         </p>  
-                        <div id="Img_carousel" class="slider-pro">
+                        <div id="Img_carousel" class="slider-pro  padd-top-tour">
                             <div class="sp-slides">
                                 <?php
                                 $TOUR_DATE = new TourDate(NULL);
                                 foreach ($TOUR_DATE->getTourDatesById($id) as $tour_date) {
                                     ?>
                                     <div class="sp-slide">
-                                        <img alt="Image" class="sp-image" src="css/images/blank.gif" data-src="img/slider_single_tour/1_medium.jpg" data-small="img/slider_single_tour/1_small.jpg" data-medium="upload/tour-package/date/<?php echo $tour_date['image_name'] ?>" data-large="upload/tour-package/date/<?php echo $tour_date['image_name'] ?>" data-retina="img/slider_single_tour/1_large.jpg">
+                                        <img alt="Image" class="sp-image" src="css/images/blank.gif" data-src="img/slider_single_tour/1_medium.jpg" data-small="img/slider_single_tour/1_small.jpg" data-medium="upload/tour-package/date/<?php echo $tour_date['image_name'] ?>" data-large="upload/tour-package/date/<?php echo $tour_date['image_name'] ?>" data-retina="img/slider_single_tour/1_large.jpg" width="100%">
                                         <p class="sp-layer sp-black sp-padding" data-position="bottomLeft" data-vertical="0" data-width="100%" data-show-transition="up">
                                             <?php echo $tour_date['title'] ?>
                                         </p>
@@ -128,7 +126,7 @@ $TOUR_PACKAGE = new TourPackage($id);
                                 $TOUR_DATE = new TourDate(NULL);
                                 foreach ($TOUR_DATE->getTourDatesById($id) as $tour_date) {
                                     ?>
-                                <img alt="Image" class="sp-thumbnail" src="upload/tour-package/date/<?php echo $tour_date['image_name'] ?>">
+                                    <img alt="Image" class="sp-thumbnail" src="upload/tour-package/date/<?php echo $tour_date['image_name'] ?>" width="100%">
                                 <?php }
                                 ?>
                             </div>
@@ -190,7 +188,7 @@ $TOUR_PACKAGE = new TourPackage($id);
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-md-12 col-sm-6">
+                                    <div class="col-md-12 col-sm-6 col-xs-12">
                                         <div class="form-group">
                                             <label><i class="icon-mobile"></i>Mobile Number </label>
                                             <input class="form-control"  name="txtContact" type="text" placeholder="mobile *" required="">
@@ -218,6 +216,7 @@ $TOUR_PACKAGE = new TourPackage($id);
                                 <br>  
                                 <input type="hidden" name="id" value="<?php echo $id ?>"/>
                                 <button class="  btn_full_outline" type="submit"><i class=" icon-calendar-7"></i> Book now   </button>
+
                             </form>
                         </div>  
                     </aside>
@@ -234,8 +233,7 @@ $TOUR_PACKAGE = new TourPackage($id);
                                 <?php echo $tour_date['description'] ?>
                             </p>
                         </div> 
-                    </div>
-
+                    </div> 
                     <div class="row magnific-gallery   "> 
                         <?php
                         $TOUR_DATE_PHOTO = new TourDatePhoto(NULL);
@@ -245,7 +243,7 @@ $TOUR_PACKAGE = new TourPackage($id);
                             <div class="col-md-3 col-sm-4">
                                 <div class="img_wrapper_gallery">
                                     <div class="img_container_gallery">
-                                        <a href="upload/tour-package/date/gallery/<?php echo $tour_date_photo['image_name'] ?>" title="<?php echo $tour_date_photo['caption'] ?>"><img src="upload/tour-package/date/gallery/thumb/<?php echo $tour_date_photo['image_name'] ?>" alt="Image" class="img-responsive">
+                                        <a href="upload/tour-package/date/gallery/<?php echo $tour_date_photo['image_name'] ?>" title="<?php echo $tour_date_photo['caption'] ?>"><img src="upload/tour-package/date/gallery/thumb/<?php echo $tour_date_photo['image_name'] ?>" alt="Image" class="img-responsive" width="100%">
                                             <i class="icon-resize-full-2"></i>
                                         </a>
                                     </div>
@@ -302,7 +300,7 @@ $TOUR_PACKAGE = new TourPackage($id);
                 arrows: true,
                 buttons: false,
                 fullScreen: false,
-                smallSize: 500,
+                smallSize: 200,
                 startSlide: 0,
                 mediumSize: 1000,
                 largeSize: 3000,

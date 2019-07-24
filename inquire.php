@@ -47,8 +47,8 @@ $TOUR_PACKAGE = new TourPackage($id);
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="Citytours - Premium site template for city tours agencies, transfers and tickets.">
-        <meta name="author" content="Ansonika">
+        <meta name="description" content=" ">
+        <meta name="author" content=" ">
         <title>Apple Vacations -Inquire Now</title>
 
         <!-- Favicons-->
@@ -59,7 +59,8 @@ $TOUR_PACKAGE = new TourPackage($id);
         <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
 
         <!-- Google web fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Lato:300,400|Montserrat:400,400i,700,700i" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Pavanam' rel='stylesheet'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- CSS -->
         <link href="css/base.css" rel="stylesheet">
@@ -71,10 +72,6 @@ $TOUR_PACKAGE = new TourPackage($id);
     </head>
 
     <body> 
-
-        <div class="layer"></div>
-        <!-- Mobile menu overlay mask -->
-
         <!-- Header -->
         <?php include './header.php'; ?>
         <!-- End Header -->
@@ -86,7 +83,6 @@ $TOUR_PACKAGE = new TourPackage($id);
                 </div>
             </div>
         </section>
-
         <!-- End Section hero_2 -->
 
         <main>

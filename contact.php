@@ -8,8 +8,8 @@ include './class/include.php';
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="Citytours - Premium site template for city tours agencies, transfers and tickets.">
-        <meta name="author" content="Ansonika">
+        <meta name="description" content=" ">
+        <meta name="author" content=" ">
         <title>Apple Vacations -Contact us</title>
 
         <!-- Favicons-->
@@ -20,19 +20,15 @@ include './class/include.php';
         <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href='https://fonts.googleapis.com/css?family=Fjalla One,Roboto:300,300italic,400,400italic,500,500italic,700,700italic' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Fjalla One' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Pavanam' rel='stylesheet'>
         <!-- CSS -->
         <link href="css/base.css" rel="stylesheet">
 
         <link href="contact-form/style.css" rel="stylesheet" type="text/css"/>
     </head>
 
-    <body>
-
-
-        <div class="layer"></div>
-        <!-- Mobile menu overlay mask -->
+    <body> 
 
         <!-- Header -->
         <?php include './header.php'; ?>
@@ -108,17 +104,17 @@ include './class/include.php';
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-6 col-xs-6"  >
+                                <div class="col-lg-6 col-xs-12"  >
                                     <label for="comment">Security Code:</label>
                                     <input  type="text" name="captchacode" id="captchacode" class="form-control input-validater" placeholder="Enter the code " style="color: black">
                                     <span id="capspan" ></span>
                                 </div>
-                                <div class="col-lg-6 col-xs-6"  >
+                                <div class="col-lg-6 col-xs-12"  >
                                     <?php include("./contact-form/captchacode-widget.php"); ?>
                                 </div>  
                             </div>
                             <div class="row">
-                                <div class="col-lg-4 col-xs-12"  >
+                                <div class="col-lg-4 col-xs-12 col-sm-12"  >
                                     <div class="form-group">
                                         <input type="submit" value="Submit" class="btn_1" id="btnSubmit">
                                     </div>

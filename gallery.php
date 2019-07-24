@@ -8,8 +8,8 @@ include './class/include.php';
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="Citytours - Premium site template for city tours agencies, transfers and tickets.">
-        <meta name="author" content="Ansonika">
+        <meta name="description" content=" ">
+        <meta name="author" content=" ">
         <title>Apple Vacations - Gallery</title>
 
         <!-- Favicons-->
@@ -20,19 +20,15 @@ include './class/include.php';
         <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
 
         <!-- Google web fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Lato:300,400|Montserrat:400,400i,700,700i" rel="stylesheet">
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href='https://fonts.googleapis.com/css?family=Fjalla One,Roboto:300,300italic,400,400italic,500,500italic,700,700italic' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Fjalla One' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Pavanam' rel='stylesheet'>
         <!-- CSS -->
         <link href="css/base.css" rel="stylesheet"> 
     </head>
 
-    <body> 
-
-        <div class="layer"></div>
-        <!-- Mobile menu overlay mask -->
-
+    <body>  
         <!-- Header -->
         <?php include './header.php'; ?>
         <!-- End Header -->
@@ -68,7 +64,7 @@ include './class/include.php';
                         <div class="col-md-3 col-sm-4">
                             <div class="img_wrapper_gallery">
                                 <div class="img_container_gallery">
-                                    <a href="upload/photo-album/gallery/<?php echo $album_photo['image_name'] ?>" title="<?php echo $album_photo['caption'] ?>"><img src="upload/photo-album/gallery/thumb/<?php echo $album_photo['image_name'] ?>" alt="Image" class="img-responsive">
+                                    <a href="upload/photo-album/gallery/<?php echo $album_photo['image_name'] ?>" title="<?php echo $album_photo['caption'] ?>"><img src="upload/photo-album/gallery/thumb/<?php echo $album_photo['image_name'] ?>" alt="Image" class="img-responsive" width="100%">
                                         <i class="icon-resize-full-2"></i>
                                     </a>
                                 </div>

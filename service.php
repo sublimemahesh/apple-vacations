@@ -8,8 +8,8 @@ include './class/include.php';
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="Citytours - Premium site template for city tours agencies, transfers and tickets.">
-        <meta name="author" content="Ansonika">
+        <meta name="description" content=" ">
+        <meta name="author" content=" ">
         <title>Apple Vacations - Services</title>
 
         <!-- Favicons-->
@@ -19,25 +19,19 @@ include './class/include.php';
         <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
         <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
 
-        <link href='https://fonts.googleapis.com/css?family=Fjalla One,Roboto:300,300italic,400,400italic,500,500italic,700,700italic' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Fjalla One' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Pavanam' rel='stylesheet'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <!-- CSS -->
-        <link href="css/base.css" rel="stylesheet">
-
-        <!-- Radio and check inputs -->
-        <link href="css/skins/square/grey.css" rel="stylesheet">
-
-        <!-- Range slider -->
+        <link href="css/base.css" rel="stylesheet"> 
+        <link href="css/skins/square/grey.css" rel="stylesheet"> 
         <link href="css/ion.rangeSlider.css" rel="stylesheet">
         <link href="css/ion.rangeSlider.skinFlat.css" rel="stylesheet">  
         <link href="service-form/style.css" rel="stylesheet" type="text/css"/>
     </head>
 
     <body> 
-
-        <div class="layer"></div>
-        <!-- Mobile menu overlay mask -->
 
         <!-- Header  -->
         <?php include './header.php'; ?>
@@ -73,11 +67,11 @@ include './class/include.php';
                     $SERVICE = new Service(NULL);
                     foreach ($SERVICE->all() as $service) {
                         ?>
-                        <div class="col-md-6 col-xs-6 service-btm">
+                        <div class="col-md-6 col-xs-12 col-sm-12 service-btm service-padd">
                             <div class="  wow zoomIn" data-wow-delay="0.1s">
                                 <div class="img_container">
                                     <div class="hovereffect">
-                                        <img class="img-responsive" src="upload/service/<?php echo $service['image_name'] ?>" alt="">
+                                        <img class="img-responsive" src="upload/service/<?php echo $service['image_name'] ?>" alt="" width="100%">
                                         <div class="overlay">
                                             <h2><?php echo $service['title'] ?></h2>
                                             <a   href="#" class="btn_map add_bottom_30 info" data-toggle="modal" data-target="#service">  <button type="submit" class="btn btn-warning btn-sm">INQUIRE NOW</button>

@@ -1,7 +1,6 @@
-<!-- Slider -->
 <div class="tp-banner-container">
     <div class="tp-banner">
-        <ul>
+        <ul style="list-style: none;">
             <?php
             $SLIDER = new Slider(NULL);
             foreach ($SLIDER->all() as $key => $slider) {
@@ -17,14 +16,9 @@
                         <div style="color:#ffffff; font-size:16px; text-transform:uppercase;text-shadow: 0 2px 5px rgba(0, 0, 0, .5);   font-family: 'Oswald', sans-serif; ">
                            <?php echo $slider['description'] ?>
                         </div>
-                    </div>
-                    
-                </li>
-                <!-- SLIDE  -->
-
-            <?php } ?>
-
-
+                    </div> 
+                </li> 
+            <?php } ?>  
         </ul>
         <div class="tp-bannertimer tp-bottom"></div>
     </div>

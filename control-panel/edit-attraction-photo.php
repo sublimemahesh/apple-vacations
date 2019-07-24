@@ -45,7 +45,7 @@ $ATTRACTION_PHOTO = new AttractionPhoto($id);
                         <div class="card">
                             <div class="header">
                                 <h2>
-                                    Edit Excursion Photo
+                                    Edit Attraction Photo
                                 </h2>
 
                             </div>

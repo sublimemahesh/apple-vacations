@@ -8,8 +8,8 @@ include './class/include.php';
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="Citytours - Premium site template for city tours agencies, transfers and tickets.">
-        <meta name="author" content="Ansonika">
+        <meta name="description" content=" ">
+        <meta name="author" content=" ">
         <title>Apple Vacations - Gest Book</title>
 
         <!-- Favicons-->
@@ -19,20 +19,16 @@ include './class/include.php';
         <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
         <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
 
-        <!-- Google web fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Lato:300,400|Montserrat:400,400i,700,700i" rel="stylesheet">
+        <!-- Google web fonts -->       
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href='https://fonts.googleapis.com/css?family=Fjalla One,Roboto:300,300italic,400,400italic,500,500italic,700,700italic' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Fjalla One' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Pavanam' rel='stylesheet'>
         <!-- CSS -->
         <link href="css/base.css" rel="stylesheet"> 
         <link href="comment/sweetalert.css" rel="stylesheet" type="text/css"/>
     </head>
 
     <body> 
-
-        <div class="layer"></div>
-        <!-- Mobile menu overlay mask -->
 
         <!-- Header -->
         <?php include './header.php'; ?>
@@ -121,14 +117,14 @@ include './class/include.php';
                             <div id="message-contact"></div>
                             <form id="form-data" method="POST" autocomplete="off">
                             <div class="row">
-                                <div class="col-md-6 col-sm-6">
+                                <div class="col-md-6 col-sm-12">
                                     <div class="form-group">
                                         <label>Name</label>
                                         <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name">
 
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-sm-6">
+                                <div class="col-md-6 col-sm-12">
                                     <div class="form-group">
                                         <label>Title</label>
                                         <input type="email" name="title" id="title" class="form-control" placeholder="Enter Email">
@@ -138,14 +134,14 @@ include './class/include.php';
                             </div>
                             <!-- End row -->
                             <div class="row">                                    
-                                <div class="col-md-6 col-sm-6">
+                                <div class="col-md-6 col-sm-12">
                                     <div class="form-group">
                                         <label>Country</label>
                                         <input type="text" name="country" id="country" class="form-control" placeholder="Enter Country">
 
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-sm-6">
+                                <div class="col-md-6 col-sm-12">
                                     <div class="form-group">
                                         <label>Image</label>
                                         <input type="file" name="image_name" id="image_name" class="form-control"  >
@@ -154,7 +150,7 @@ include './class/include.php';
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-12">
+                                <div class="col-md-12 col-sm-12">
                                     <div class="form-group">
                                         <label>Message</label>
                                         <textarea rows="5"  id="comment" name="comment" class="form-control" placeholder="Write your Message" ></textarea>
@@ -163,18 +159,18 @@ include './class/include.php';
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-6"  >
+                                <div class="col-lg-6 col-sm-6"  >
                                     <label for="comment">Security Code:</label>
                                   <input  type="text" name="captchacode" id="captchacode" class="form-control input-validater" placeholder="Enter the code " style="color: black">
                                                               
                                     
                                 </div>
-                                <div class="col-lg-6"  >
+                                <div class="col-lg-6 col-sm-6"  >
                                     <?php include("./contact-form/captchacode-widget.php"); ?>
                                 </div>  
                             </div>
                             <div class="row">
-                                <div class="col-lg-4"  >
+                                <div class="col-lg-4 col-sm-12"  >
                                     <div class="form-group">
                                         <input type="submit" value="Submit" class="btn_1" id="create">
                                     </div>

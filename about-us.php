@@ -9,8 +9,8 @@ $ABOUT_US = new Page(1);
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="Citytours - Premium site template for city tours agencies, transfers and tickets.">
-        <meta name="author" content="Ansonika">
+        <meta name="description" content=" ">
+        <meta name="author" content=" ">
         <title>Apple Vacations -About us</title>
 
         <!-- Favicons-->
@@ -20,8 +20,8 @@ $ABOUT_US = new Page(1);
         <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
         <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
         <!-- Google web fonts -->
-        <link href='https://fonts.googleapis.com/css?family=Fjalla One,Roboto:300,300italic,400,400italic,500,500italic,700,700italic' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Fjalla One' rel='stylesheet'>
+         <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Pavanam' rel='stylesheet'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -29,14 +29,10 @@ $ABOUT_US = new Page(1);
         <link href="css/base.css" rel="stylesheet">
     </head>
 
-    <body>  
-   
-        <div class="layer"></div>
-        <!-- Mobile menu overlay mask -->
+    <body>   
 
         <!-- Header -->
         <?php include './header.php'; ?>
-
         <!-- End Header -->
 
         <section class="parallax-window" data-parallax="scroll" data-image-src="img/about.jpg" data-natural-width="1400" data-natural-height="470">
@@ -64,17 +60,17 @@ $ABOUT_US = new Page(1);
 
             <div class="container margin_60_7"> 
                 <div class="row"   >
-                    <div class="col-md-6 col-sm-6   about-back"  >
+                    <div class="col-md-6 col-sm-12   about-back"  >
                         <span>Sri Lanka Tour with us</span>
                         <h1 class="about-f"><span  class="about-f-color">Get started</span> your Tours</h1>
                         <div class="text-justify">
                             <?php echo $ABOUT_US->description ?>
                         </div> 
                     </div>
-                    <div class="col-md-4 col-sm-6 about-f-img">                         
+                    <div class="col-md-4 col-sm-6 about-f-img hidden-sm hidden-xs">                         
                         <img src="img/aboutus-optimized.jpg" class="img-responsive">                         
                     </div>
-                    <div class="col-md-2 col-sm-6 about-back-color" >
+                    <div class="col-md-2 col-sm-6 about-back-color  hidden-sm hidden-xs" >
                         <h3 class="text-center" style="font-weight: 700"><span>Why Book</span>  With Us?.</h3>
                         <ul  class="about-back-color-padd">
                             <li  class="about-li">Lorem ipsum dolor</li>
@@ -93,7 +89,7 @@ $ABOUT_US = new Page(1);
                     <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
                         <div class="feature">
                             <i class="icon_set_1_icon-30"></i>
-                            <h3><span>+ 1000</span> Customers</h3>
+                            <h3><span>Our</span> Vision</h3>
                             <p>
                                 Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.
                             </p>
@@ -102,34 +98,14 @@ $ABOUT_US = new Page(1);
                     <div class="col-md-6 wow fadeIn" data-wow-delay="0.2s">
                         <div class="feature">
                             <i class="icon_set_1_icon-41"></i>
-                            <h3><span>+120</span> Premium city tours</h3>
+                            <h3><span>Our</span> Mission</h3>
                             <p>
                                 Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.
                             </p>
                         </div>
                     </div>
                 </div>
-                <!-- End row -->
-                <div class="row">
-                    <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
-                        <div class="feature">
-                            <i class="icon_set_1_icon-57"></i>
-                            <h3><span>H24</span> Support</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 wow fadeIn" data-wow-delay="0.4s">
-                        <div class="feature">
-                            <i class="icon_set_1_icon-61"></i>
-                            <h3><span>10 Languages</span> available</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu.
-                            </p>
-                        </div>
-                    </div>
-                </div> 
+                
             </div> 
         </main>
         <!-- End main -->

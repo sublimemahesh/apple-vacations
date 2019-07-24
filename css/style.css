@@ -369,9 +369,9 @@ a.btn_map {
     -moz-transition: all .3s;
     font-family: 'Oswald', sans-serif;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 20px;
     text-transform: uppercase;
-    font-weight: 700;
+
     display: block;
     text-align: center;
     outline: 0
@@ -385,7 +385,7 @@ a.btn_map {
     cursor: pointer;
     font-size: 14px;
     text-transform: uppercase;
-    font-weight: 600;
+    letter-spacing: 1.5px;
     display: block;
     text-align: center;
     outline: 0;
@@ -3569,7 +3569,7 @@ ul.list_order li span {
 #position {
     background-color: #333;
     padding: 10px 0;
-    font-size: 11px
+    font-size: 16px
 }
 
 #position ul li:first-child {
@@ -5382,7 +5382,7 @@ div.datedropper.primary .pick-y.pick-jump {
 }
 .ul-style li a{
     display: block;
-    padding: 4px 25px;
+    padding: 4px 100px;
     color: black;
     text-decoration: none;
 }
@@ -5615,4 +5615,12 @@ div.datedropper.primary .pick-y.pick-jump {
     border-width: 1px;
     border-radius: 0px 0px 0px 0px;
     cursor: pointer
+}
+.close-btn{
+    margin-top: -19px !important;
+    font-size: 50px;
+
+}
+.tripadvisor-v{
+    margin-top: -23px;
 }
