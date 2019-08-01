@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
- <head>
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -30,7 +30,7 @@
         <?php include './mobile-header.php'; ?>
         <!--Mobile Header-->
 
-        <?php include './page-header.php'; ?>
+        <?php include './header.php'; ?>
 
         <section>
             <div class="block-in-pages  banner-image">
@@ -52,180 +52,182 @@
         <section>
             <div class="block-in-page-section gray   tab_row_hide"> 
                 <div class="listing-carousel">
-                    <div class="row"  >
-                        <div class="col-md-3"   >
-                            <div class="listing-box ">
-                                <a href="view-tour-packages.php">   <div class="listing-box-thumb">
-                                        <span class="price-list">2 Days</span> 
-                                        <img src="images/tour/1-1.jpg" alt="" /> 
-                                        <div class="listing-box-title">
-                                            <h3> 
-                                                Sigiriya and Dambulla
+                    <div class="container">
+                        <div class="row"  >
+                            <div class="col-md-3"   >
+                                <div class="listing-box ">
+                                    <a href="view-tour-packages.php">   <div class="listing-box-thumb">
+                                            <span class="price-list">2 Days</span> 
+                                            <img src="images/tour/1-1.jpg" alt="" /> 
+                                            <div class="listing-box-title">
+                                                <h3> 
+                                                    Sigiriya and Dambulla
 
-                                            </h3> 
+                                                </h3> 
+                                            </div>
+                                        </div> </a>
+                                    <div class="tour-list-bottom text-justify ">
+                                        <p class="p-padd" >  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+                                        <div class="col-md-8   " id="p-padd-2">
+                                            <h4 class="p--bottom">
+                                                <strong>
+                                                    US$: 560.00</strong>
+                                            </h4>
+                                            <span>
+                                                <p>Starting From</p>
+                                            </span>
                                         </div>
-                                    </div> </a>
-                                <div class="tour-list-bottom text-justify ">
-                                    <p class="p-padd" >  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
-                                    <div class="col-md-8   " id="p-padd-2">
-                                        <h4 class="p--bottom">
-                                            <strong>
-                                                US$: 560.00</strong>
-                                        </h4>
-                                        <span>
-                                            <p>Starting From</p>
-                                        </span>
+                                        <a href="view-tour-packages.php">  
+                                            <div class="col-md-4 tour-btn" >
+                                                <p  class="p-tab-b">View</p>
+                                            </div>
+                                        </a>
+                                    </div> 
+
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="listing-box">
+                                    <div class="listing-box-thumb">
+                                        <span class="price-list">One Day</span>
+                                        <img src="images/tour/1-2.jpg" alt="" />
+                                        <div class="listing-box-title">
+                                            <h3><a href="#" title="">Galle Tour</a></h3>
+
+                                        </div>
                                     </div>
-                                    <a href="view-tour-packages.php">  
-                                        <div class="col-md-4 tour-btn" >
+                                    <div class="  text-justify tour-list-bottom">
+                                        <p class="p-padd" >  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+                                        <div class="col-md-8   " id="p-padd-2">
+                                            <h4 class="p--bottom">
+                                                <strong>
+                                                    US$: 700.00</strong>
+                                            </h4>
+                                            <span>
+                                                <p>Starting From</p>
+                                            </span>
+                                        </div>
+                                        <div class="col-md-4 tour-btn"  >
                                             <p  class="p-tab-b">View</p>
                                         </div>
-                                    </a>
-                                </div> 
+                                    </div> 
 
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="listing-box">
-                                <div class="listing-box-thumb">
-                                    <span class="price-list">One Day</span>
-                                    <img src="images/tour/1-2.jpg" alt="" />
-                                    <div class="listing-box-title">
-                                        <h3><a href="#" title="">Galle Tour</a></h3>
-
-                                    </div>
                                 </div>
-                                <div class="  text-justify tour-list-bottom">
-                                    <p class="p-padd" >  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
-                                    <div class="col-md-8   " id="p-padd-2">
-                                        <h4 class="p--bottom">
-                                            <strong>
-                                                US$: 700.00</strong>
-                                        </h4>
-                                        <span>
-                                            <p>Starting From</p>
-                                        </span>
-                                    </div>
-                                    <div class="col-md-4 tour-btn"  >
-                                        <p  class="p-tab-b">View</p>
-                                    </div>
-                                </div> 
-
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="listing-box">
-                                <div class="listing-box-thumb">
-                                    <span class="price-list">One Day</span>
-                                    <img src="images/tour/1-3.jpg" alt="" />
-                                    <div class="listing-box-title">
-                                        <h3><a href="#" title="">Kandy and Pinnawala</a></h3>
+                            <div class="col-md-3">
+                                <div class="listing-box">
+                                    <div class="listing-box-thumb">
+                                        <span class="price-list">One Day</span>
+                                        <img src="images/tour/1-3.jpg" alt="" />
+                                        <div class="listing-box-title">
+                                            <h3><a href="#" title="">Kandy and Pinnawala</a></h3>
 
+                                        </div>
                                     </div>
+                                    <div class="tour-list-bottom text-justify ">
+                                        <p class="p-padd" >  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+                                        <div class="col-md-8   " id="p-padd-2">
+                                            <h4 class="p--bottom">
+                                                <strong>
+                                                    US$: 1200.00</strong>
+                                            </h4>
+                                            <span>
+                                                <p>Starting From</p>
+                                            </span>
+                                        </div>
+                                        <div class="col-md-4 tour-btn"  >
+                                            <p  class="p-tab-b">View</p>
+                                        </div>
+                                    </div> 
+
                                 </div>
-                                <div class="tour-list-bottom text-justify ">
-                                    <p class="p-padd" >  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
-                                    <div class="col-md-8   " id="p-padd-2">
-                                        <h4 class="p--bottom">
-                                            <strong>
-                                                US$: 1200.00</strong>
-                                        </h4>
-                                        <span>
-                                            <p>Starting From</p>
-                                        </span>
-                                    </div>
-                                    <div class="col-md-4 tour-btn"  >
-                                        <p  class="p-tab-b">View</p>
-                                    </div>
-                                </div> 
-
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="listing-box">
-                                <div class="listing-box-thumb">
-                                    <span class="price-list">One Day</span>
-                                    <img src="images/tour/1-4.jpg" alt="" />
-                                    <div class="listing-box-title">
-                                        <h3><a href="#" title="">City Tour</a></h3>
+                            <div class="col-md-3">
+                                <div class="listing-box">
+                                    <div class="listing-box-thumb">
+                                        <span class="price-list">One Day</span>
+                                        <img src="images/tour/1-4.jpg" alt="" />
+                                        <div class="listing-box-title">
+                                            <h3><a href="#" title="">City Tour</a></h3>
 
+                                        </div>
                                     </div>
+                                    <div class="tour-list-bottom text-justify ">
+                                        <p class="p-padd" >  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+                                        <div class="col-md-8 " id="p-padd-2">
+                                            <h4 class="p--bottom">
+                                                <strong>
+                                                    US$: 800.00</strong>
+                                            </h4>
+                                            <span>
+                                                <p>Starting From</p>
+                                            </span>
+                                        </div>
+                                        <div class="col-md-4 tour-btn"  >
+                                            <p  class="p-tab-b">View</p>
+                                        </div>
+                                    </div> 
+
                                 </div>
-                                <div class="tour-list-bottom text-justify ">
-                                    <p class="p-padd" >  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
-                                    <div class="col-md-8 " id="p-padd-2">
-                                        <h4 class="p--bottom">
-                                            <strong>
-                                                US$: 800.00</strong>
-                                        </h4>
-                                        <span>
-                                            <p>Starting From</p>
-                                        </span>
-                                    </div>
-                                    <div class="col-md-4 tour-btn"  >
-                                        <p  class="p-tab-b">View</p>
-                                    </div>
-                                </div> 
-
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="listing-box">
-                                <div class="listing-box-thumb">
-                                    <span class="price-list">One Day</span>
-                                    <img src="images/tour/1-4.jpg" alt="" />
-                                    <div class="listing-box-title">
-                                        <h3><a href="#" title="">City Tour</a></h3>
+                            <div class="col-md-3">
+                                <div class="listing-box">
+                                    <div class="listing-box-thumb">
+                                        <span class="price-list">One Day</span>
+                                        <img src="images/tour/1-4.jpg" alt="" />
+                                        <div class="listing-box-title">
+                                            <h3><a href="#" title="">City Tour</a></h3>
 
+                                        </div>
                                     </div>
+                                    <div class="tour-list-bottom text-justify ">
+                                        <p class="p-padd" >  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+                                        <div class="col-md-8 " id="p-padd-2">
+                                            <h4 class="p--bottom">
+                                                <strong>
+                                                    US$: 800.00</strong>
+                                            </h4>
+                                            <span>
+                                                <p>Starting From</p>
+                                            </span>
+                                        </div>
+                                        <div class="col-md-4 tour-btn"  >
+                                            <p  class="p-tab-b">View</p>
+                                        </div>
+                                    </div> 
+
                                 </div>
-                                <div class="tour-list-bottom text-justify ">
-                                    <p class="p-padd" >  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
-                                    <div class="col-md-8 " id="p-padd-2">
-                                        <h4 class="p--bottom">
-                                            <strong>
-                                                US$: 800.00</strong>
-                                        </h4>
-                                        <span>
-                                            <p>Starting From</p>
-                                        </span>
-                                    </div>
-                                    <div class="col-md-4 tour-btn"  >
-                                        <p  class="p-tab-b">View</p>
-                                    </div>
-                                </div> 
-
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="listing-box">
-                                <div class="listing-box-thumb">
-                                    <span class="price-list">One Day</span>
-                                    <img src="images/tour/1-4.jpg" alt="" />
-                                    <div class="listing-box-title">
-                                        <h3><a href="#" title="">City Tour</a></h3>
-
+                            <div class="col-md-3">
+                                <div class="listing-box">
+                                    <div class="listing-box-thumb">
+                                        <span class="price-list">One Day</span>
+                                        <img src="images/tour/1-4.jpg" alt="" />
+                                        <div class="listing-box-title">
+                                            <h3><a href="#" title="">City Tour</a></h3> 
+                                        </div>
                                     </div>
+                                    <div class="tour-list-bottom text-justify ">
+                                        <p class="p-padd" >  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+                                        <div class="col-md-8 " id="p-padd-2">
+                                            <h4 class="p--bottom">
+                                                <strong>
+                                                    US$: 800.00</strong>
+                                            </h4>
+                                            <span>
+                                                <p>Starting From</p>
+                                            </span>
+                                        </div>
+                                        <div class="col-md-4 tour-btn"  >
+                                            <p  class="p-tab-b">View</p>
+                                        </div>
+                                    </div> 
+
                                 </div>
-                                <div class="tour-list-bottom text-justify ">
-                                    <p class="p-padd" >  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
-                                    <div class="col-md-8 " id="p-padd-2">
-                                        <h4 class="p--bottom">
-                                            <strong>
-                                                US$: 800.00</strong>
-                                        </h4>
-                                        <span>
-                                            <p>Starting From</p>
-                                        </span>
-                                    </div>
-                                    <div class="col-md-4 tour-btn"  >
-                                        <p  class="p-tab-b">View</p>
-                                    </div>
-                                </div> 
-
-                            </div>
-                        </div> 
+                            </div> 
+                        </div>
                     </div>
+
                 </div> 
             </div>
         </section> 

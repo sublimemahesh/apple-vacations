@@ -29,7 +29,7 @@
         <?php include './mobile-header.php'; ?>
         <!--Mobile Header-->
 
-         <?php include './page-header.php'; ?>
+        <?php include './header.php'; ?>
 
         <section>
             <div class="block-in-pages banner-image ">
