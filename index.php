@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/responsive.css" type="text/css" /><!-- Responsive -->	
     <link rel="stylesheet" href="css/colors/colors.css" type="text/css" /><!-- color -->		
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-   
+
     <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
     <link href="../apple-vacations/css/comment.css" rel="stylesheet" type="text/css"/> 
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -405,124 +405,126 @@
 
         <section>
             <div class="block gray remove-top tab_row_hide">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="heading">
-                            <h2>Tour Packages</h2>
-                            <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</span>
-                        </div>
-                        <div class="listing-carousel">
-                            <div class="row" id="listing-carousel">
-                                <div class="col-md-3">
-                                    <div class="listing-box">
-                                        <div class="listing-box-thumb">
-                                            <span class="price-list">2 Days</span>
-                                            <img src="images/tour/1-1.jpg" alt="" />
-                                            <div class="listing-box-title">
-                                                <h3><a href="#" title="">Sigiriya and Dambulla</a></h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="heading">
+                                <h2>Tour Packages</h2>
+                                <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</span>
+                            </div>
+                            <div class="listing-carousel">
+                                <div class="row" id="listing-carousel">
+                                    <div class="col-md-3">
+                                        <div class="listing-box">
+                                            <div class="listing-box-thumb">
+                                                <span class="price-list">2 Days</span>
+                                                <img src="images/tour/1-1.jpg" alt="" />
+                                                <div class="listing-box-title">
+                                                    <h3><a href="#" title="">Sigiriya and Dambulla</a></h3>
 
+                                                </div>
                                             </div>
+                                            <div class="listing-rate-share text-justify ">
+                                                <p class="p-padd" >  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+                                                <div class="col-md-8   " id="p-padd-2">
+                                                    <h4 class="p--bottom">
+                                                        <strong>
+                                                            US$: 560.00</strong>
+                                                    </h4>
+                                                    <span>
+                                                        <p>Starting From</p>
+                                                    </span>
+                                                </div>
+                                                <div class="col-md-4" style="margin-top: 20px;">
+                                                    <p  class="p-tab-b">View</p>
+                                                </div>
+                                            </div> 
+
                                         </div>
-                                        <div class="listing-rate-share text-justify ">
-                                            <p class="p-padd" >  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
-                                            <div class="col-md-8   " id="p-padd-2">
-                                                <h4 class="p--bottom">
-                                                    <strong>
-                                                        US$: 560.00</strong>
-                                                </h4>
-                                                <span>
-                                                    <p>Starting From</p>
-                                                </span>
-                                            </div>
-                                            <div class="col-md-4" style="margin-top: 20px;">
-                                                <p  class="p-tab-b">View</p>
-                                            </div>
-                                        </div> 
-
                                     </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="listing-box">
-                                        <div class="listing-box-thumb">
-                                            <span class="price-list">One Day</span>
-                                            <img src="images/tour/1-2.jpg" alt="" />
-                                            <div class="listing-box-title">
-                                                <h3><a href="#" title="">Galle Tour</a></h3>
+                                    <div class="col-md-3">
+                                        <div class="listing-box">
+                                            <div class="listing-box-thumb">
+                                                <span class="price-list">One Day</span>
+                                                <img src="images/tour/1-2.jpg" alt="" />
+                                                <div class="listing-box-title">
+                                                    <h3><a href="#" title="">Galle Tour</a></h3>
 
+                                                </div>
                                             </div>
+                                            <div class="listing-rate-share text-justify ">
+                                                <p class="p-padd" >  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+                                                <div class="col-md-8   " id="p-padd-2">
+                                                    <h4 class="p--bottom">
+                                                        <strong>
+                                                            US$: 700.00</strong>
+                                                    </h4>
+                                                    <span>
+                                                        <p>Starting From</p>
+                                                    </span>
+                                                </div>
+                                                <div class="col-md-4" style="margin-top: 20px;">
+                                                    <p  class="p-tab-b">View</p>
+                                                </div>
+                                            </div> 
+
                                         </div>
-                                        <div class="listing-rate-share text-justify ">
-                                            <p class="p-padd" >  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
-                                            <div class="col-md-8   " id="p-padd-2">
-                                                <h4 class="p--bottom">
-                                                    <strong>
-                                                        US$: 700.00</strong>
-                                                </h4>
-                                                <span>
-                                                    <p>Starting From</p>
-                                                </span>
-                                            </div>
-                                            <div class="col-md-4" style="margin-top: 20px;">
-                                                <p  class="p-tab-b">View</p>
-                                            </div>
-                                        </div> 
-
                                     </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="listing-box">
-                                        <div class="listing-box-thumb">
-                                            <span class="price-list">One Day</span>
-                                            <img src="images/tour/1-3.jpg" alt="" />
-                                            <div class="listing-box-title">
-                                                <h3><a href="#" title="">Kandy and Pinnawala</a></h3>
+                                    <div class="col-md-3">
+                                        <div class="listing-box">
+                                            <div class="listing-box-thumb">
+                                                <span class="price-list">One Day</span>
+                                                <img src="images/tour/1-3.jpg" alt="" />
+                                                <div class="listing-box-title">
+                                                    <h3><a href="#" title="">Kandy and Pinnawala</a></h3>
 
+                                                </div>
                                             </div>
+                                            <div class="listing-rate-share text-justify ">
+                                                <p class="p-padd" >  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+                                                <div class="col-md-8   " id="p-padd-2">
+                                                    <h4 class="p--bottom">
+                                                        <strong>
+                                                            US$: 1200.00</strong>
+                                                    </h4>
+                                                    <span>
+                                                        <p>Starting From</p>
+                                                    </span>
+                                                </div>
+                                                <div class="col-md-4" style="margin-top: 20px;">
+                                                    <p  class="p-tab-b">View</p>
+                                                </div>
+                                            </div> 
+
                                         </div>
-                                        <div class="listing-rate-share text-justify ">
-                                            <p class="p-padd" >  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
-                                            <div class="col-md-8   " id="p-padd-2">
-                                                <h4 class="p--bottom">
-                                                    <strong>
-                                                        US$: 1200.00</strong>
-                                                </h4>
-                                                <span>
-                                                    <p>Starting From</p>
-                                                </span>
-                                            </div>
-                                            <div class="col-md-4" style="margin-top: 20px;">
-                                                <p  class="p-tab-b">View</p>
-                                            </div>
-                                        </div> 
-
                                     </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="listing-box">
-                                        <div class="listing-box-thumb">
-                                            <span class="price-list">One Day</span>
-                                            <img src="images/tour/1-4.jpg" alt="" />
-                                            <div class="listing-box-title">
-                                                <h3><a href="#" title="">City Tour</a></h3>
+                                    <div class="col-md-3">
+                                        <div class="listing-box">
+                                            <div class="listing-box-thumb">
+                                                <span class="price-list">One Day</span>
+                                                <img src="images/tour/1-4.jpg" alt="" />
+                                                <div class="listing-box-title">
+                                                    <h3><a href="#" title="">City Tour</a></h3>
 
+                                                </div>
                                             </div>
+                                            <div class="listing-rate-share text-justify ">
+                                                <p class="p-padd" >  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+                                                <div class="col-md-8 " id="p-padd-2">
+                                                    <h4 class="p--bottom">
+                                                        <strong>
+                                                            US$: 800.00</strong>
+                                                    </h4>
+                                                    <span>
+                                                        <p>Starting From</p>
+                                                    </span>
+                                                </div>
+                                                <div class="col-md-4" style="margin-top: 20px;">
+                                                    <p  class="p-tab-b">View</p>
+                                                </div>
+                                            </div> 
+
                                         </div>
-                                        <div class="listing-rate-share text-justify ">
-                                            <p class="p-padd" >  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
-                                            <div class="col-md-8 " id="p-padd-2">
-                                                <h4 class="p--bottom">
-                                                    <strong>
-                                                        US$: 800.00</strong>
-                                                </h4>
-                                                <span>
-                                                    <p>Starting From</p>
-                                                </span>
-                                            </div>
-                                            <div class="col-md-4" style="margin-top: 20px;">
-                                                <p  class="p-tab-b">View</p>
-                                            </div>
-                                        </div> 
-
                                     </div>
                                 </div>
                             </div>
@@ -542,36 +544,37 @@
                                 <span>Discover & connect with great local businesses in Toronto.</span>
                             </div>
                         </div>
-                        <div class="do-tonight-sec">
-                            <div class="row">
-                                <div class="col-md-8">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="dt-box">
-                                                <a href="#" title=""><img src="images/1.jpeg" alt="" class="img-responsive"/><span>Wild Life </span></a>
+                    </div>
+                    <div class="do-tonight-sec">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="dt-box">
+                                            <a href="#" title=""><img src="images/1.jpeg" alt="" class="img-responsive"/><span>Wild Life </span></a>
 
-                                            </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="dt-box">
-                                                <a href="#" title=""><img src="images/3.jpg" alt="" /><span>Cultural</span></a>
-                                            </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="dt-box">
+                                            <a href="#" title=""><img src="images/3.jpg" alt="" /><span>Cultural</span></a>
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="dt-box">
-                                                <a href="#" title=""><img src="images/2.jpg" alt="" /><span>Ella</span></a>
-                                            </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="dt-box">
+                                            <a href="#" title=""><img src="images/2.jpg" alt="" /><span>Ella</span></a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="dt-box">
-                                        <a href="#" title=""><img src="images/resource/dt4.jpg" alt="" /><span>Adventure</span></a>
-                                    </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="dt-box">
+                                    <a href="#" title=""><img src="images/resource/dt4.jpg" alt="" /><span>Adventure</span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -602,7 +605,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-md-3 hidden-xs col-sm-3 " style="padding-right: 0px;margin-top: -113px;"> 
+                        <div class="col-md-3 hidden-xs col-sm-3 " style=" margin-top: -113px;"> 
                             <a href="https://www.tripadvisor.com/Attraction_Review-g293962-d13827740-Reviews-Apple_Vacations_Srilanka-Colombo_Western_Province.html">
                                 <img  src="images/rec-trip.png" class="img-responsive pull-right" width="85%"/>
                             </a>
@@ -624,52 +627,57 @@
         <section>
             <div class="block remove-top  gray  ">
                 <div class="container">
-                    <div class="col-md-12">
-                        <div class="heading">
-                            <h2>Our Partners</h2>                  
-                            <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</span>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="heading">
+                                <h2>Our Partners</h2>                  
+                                <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</span>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="list-detail-carousel container" >
-                        <div class="row" id="listing-carousel-company">
+
+                    <div class="list-detail-carousel  " >
+                        <div class="row">
+                            <div   id="listing-carousel-company">
 
 
-                            <div class="list-detail-box col-md-3">
-                                <img src="images/resource/client1.png" alt=""  class="img-responsive"/>
+                                <div class="list-detail-box col-md-3">
+                                    <img src="images/resource/client1.png" alt=""  class="img-responsive"/>
+
+                                </div>
+
+                                <div class="list-detail-box col-md-3">
+                                    <img src="images/resource/client2.png" alt=""  class="img-responsive"/>
+
+                                </div>
+
+                                <div class="list-detail-box col-md-3">
+                                    <img src="images/resource/client3.png" alt=""  class="img-responsive"/>
+
+                                </div>
+
+                                <div class="list-detail-box col-md-3">
+                                    <img src="images/resource/client4.png" alt="" class="img-responsive" />
+
+                                </div>
+                                <div class="list-detail-box col-md-3">
+                                    <img src="images/resource/client5.png" alt="" class="img-responsive" />
+
+                                </div>
+                                <div class="list-detail-box col-md-3">
+                                    <img src="images/resource/client6.png" alt="" class="img-responsive" />
+
+                                </div>
+                                <div class="list-detail-box col-md-3">
+                                    <img src="images/resource/client7.png" alt="" class="img-responsive" />
+
+                                </div>
+
 
                             </div>
-
-                            <div class="list-detail-box col-md-3">
-                                <img src="images/resource/client2.png" alt=""  class="img-responsive"/>
-
-                            </div>
-
-                            <div class="list-detail-box col-md-3">
-                                <img src="images/resource/client3.png" alt=""  class="img-responsive"/>
-
-                            </div>
-
-                            <div class="list-detail-box col-md-3">
-                                <img src="images/resource/client4.png" alt="" class="img-responsive" />
-
-                            </div>
-                            <div class="list-detail-box col-md-3">
-                                <img src="images/resource/client5.png" alt="" class="img-responsive" />
-
-                            </div>
-                            <div class="list-detail-box col-md-3">
-                                <img src="images/resource/client6.png" alt="" class="img-responsive" />
-
-                            </div>
-                            <div class="list-detail-box col-md-3">
-                                <img src="images/resource/client7.png" alt="" class="img-responsive" />
-
-                            </div>
-
 
                         </div>
-
                     </div>
                 </div>
             </div>

@@ -1,17 +1,13 @@
 <footer >
-    <div class="block remove-bottom"  style="
-             background: url(images/resource/footer.png);
-             background-repeat: no-repeat;
-             background-size: auto;
-             " >
+    <div class="block remove-bottom"  style="  background: url(images/resource/footer.png);  background-repeat: no-repeat;   background-size: auto;" >
        
         <div class="container">
             <div class="row">
-                <div class="col-md-4  column">
+                <div class="col-md-5  column">
                     <div class="widget">
                         <h3 class="footer-title">About us</h3>
                         <div class="about-widget">
-                            <p class="text-justify">  Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. octus civibus efficiantur in.Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. octus civibus efficiantur in.Lorem ipsum dolor sit amet, </p>
+                            <p class="text-justify">  Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. octus civibus efficiantur in.Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. octus civibus efficiantur in.Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. octus civibus efficiantur in.Lorem ipsum dolor sit amet, </p>
                             <ul class="footer-social-link"  >
                                 <li class="social-icon" style="">
                                     <a href="https://api.whatsapp.com/send?phone=">
@@ -35,12 +31,13 @@
                         </div>
                     </div><!-- Widget -->
                 </div>
+               
                 <div class="col-md-4 column">
                     <div class="widget">
                         <h3 class="footer-title">Quick Link</h3>
                         <div class="link-widget">
                             <ul>
-                                <li><a href="#" title="">About Us</a></li>
+                                <li><a href="#" title="">Home</a></li>
                                 <li><a href="#" title="">Partner Login </a></li>
                                 <li><a href="#" title="">Affiliate Partnership</a></li>
                                 <li><a href="#" title="">Influencer Program</a></li>
@@ -54,7 +51,7 @@
                         </div>
                     </div><!-- Widget -->
                 </div>
-                <div class="col-md-4 column">
+                <div class="col-md-3 column">
                     <div class="widget">
                         <h3 class="footer-title">CONTACT INFORMATION</h3>
                         <div class="contact-widget">
@@ -84,16 +81,19 @@
             </div>
         </div>
         <div class="bottom-line container ">
-            <div class="row">
+            <div class="container">
+                <div class="row">
 
-                <div class="col-md-6 col-xs-12 col-sm-4 pull-left">
-                    <p class=" white-color  "><?php echo date('Y') ?> Apple Vacations Travels All right reserved</p>
-                </div>
+                    <div class="col-md-6 col-xs-12 col-sm-4 ">
+                        <p class=" white-color pull-left "><?php echo date('Y') ?> Apple Vacations Travels All right reserved</p>
+                    </div>
 
-                <div class="col-md-6 col-xs-12  col-sm-4 ">
-                    <p class="  white-color pull-right">Design By <i class="fa fa-hand-o-right text-primary heart white-color"></i> <a href="https://www.sublime.lk/" > Synotec Holdings (Pvt) Ltd. </a></p>
-                </div>
-            </div> 
+                    <div class="col-md-6 col-xs-12  col-sm-4 ">
+                        <p class="  white-color pull-right">Design By <i class="fa fa-hand-o-right text-primary heart white-color"></i> <a href="https://www.sublime.lk/" > Synotec Holdings (Pvt) Ltd. </a></p>
+                    </div>
+                </div> 
+            </div>
+            
         </div>
     </div>
 </footer>
