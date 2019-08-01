@@ -1,0 +1,34 @@
+ 
+<section  >
+    <div class="block no-padding gray">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-featured-sec">
+                    <ul class="featured-bg-slide  tab_row_hide">
+                        <li><img src="images/slider/index.jpg" alt="" style="height: 100%" /></li>
+                        <li><img src="images/slider/2.jpg" alt="" /></li>
+                        <li><img src="images/slider/3.jpg" alt="" /></li>
+                        <li><img src="images/slider/4.jpg" alt="" /></li>
+                    </ul>
+                    <div class="mian-featured-area">
+                        <div class="main-featured-text tab_row_hide " id="text-scroll">
+                            <h1>YOURS TO EXPLORE</h1>
+                            <span>Discover and book amazing things to do at excusing price. </span>
+                        </div>
+                        <div class="directory-searcher">
+                            <form>
+                                <div class="field" style="width: 78%">
+                                    <input type="text" placeholder="Search by destination, activity or attraction. " class="search" name="search" /> 
+                                </div> 
+                                <div class="field">
+                                    <button type="submit"  ><i class="la la-search"></i>SEARCH</button>
+                                </div>
+                            </form>
+                        </div>
+ 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
