@@ -29,7 +29,7 @@
         <?php include './mobile-header.php'; ?>
         <!--Mobile Header-->
 
-        <?php include './page-header.php'; ?>
+        <?php include './header.php'; ?>
 
         <section>
             <div class="block-in-pages banner-image " >
@@ -53,13 +53,16 @@
             <div class="block gray  ">
                 <div class="container">
                     <div class="row" > 
-                        <div class="col-md-8 col-sm-12    "  style="background-color: white; padding-right: 0px;padding: 40px;margin-top: 40px;">
-                            <span>Sri Lanka Tour with us</span>
+                        <div class="col-md-8 col-sm-12 about-row">
+                            <div class="about-padd">
+                                <span>Sri Lanka Tour with us</span>
                             <h1 class="about-f"><span  class="about-f-color">Get started</span> your Tours</h1>
                             <div class="text-justify"  >
                                 <p style="text-align: justify;">Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu. Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu. .....</p>                    
                                 <p style="text-align: justify;">Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu. Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu. .....</p>                    
                             </div> 
+                            </div>
+                            
                         </div>
                         <div class="col-md-4 col-sm-6  "  style="  padding-left:  0px;">                         
                             <img src="images/about.jpg" class="img-responsive">                         

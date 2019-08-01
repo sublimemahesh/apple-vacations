@@ -51,8 +51,9 @@
 
         <section>
             <div class="block gray ">
-                <div class="container"> 
-                    <div class="  column"> 
+                <div class="container">
+                   
+                    <div class="column"> 
                         <div class="row">  
                             <div class="col-md-12">
                                 <h2>Tour Date 1</h2>

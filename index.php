@@ -607,7 +607,7 @@
                         </div>
                         <div class="col-md-3 hidden-xs col-sm-3 " style=" margin-top: -113px;"> 
                             <a href="https://www.tripadvisor.com/Attraction_Review-g293962-d13827740-Reviews-Apple_Vacations_Srilanka-Colombo_Western_Province.html">
-                                <img  src="images/rec-trip.png" class="img-responsive pull-right" width="85%"/>
+                                <img  src="images/rec-trip.png" class="img-responsive pull-right" width="90%"/>
                             </a>
                             <div id="TA_selfserveprop837" class="TA_selfserveprop tripadvisor-v pull-right">
                                 <ul id="KEWHRuWIMV" class="TA_links JexZnt">

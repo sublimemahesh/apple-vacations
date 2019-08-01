@@ -1,11 +1,58 @@
 <footer >
     <div class="block remove-bottom"  style="  background: url(images/resource/footer.png);  background-repeat: no-repeat;   background-size: auto;" >
-       
+
         <div class="container">
             <div class="row">
-                <div class="col-md-5  column">
+                <div class="col-md-4 column">
                     <div class="widget">
-                        <h3 class="footer-title">About us</h3>
+                        <h3 class="footer-title  ">CONTACT INFORMATION</h3>
+                        <div class="contact-widget">
+                            <ul>
+                                <li>
+                                    <i class="la la-map"></i>
+                                    <span>Address</span>
+                                    <span>Apple vacations(PVT) Ltd.<br>
+                                        162 1/1 Vystwyke Road,<br>
+                                        Colombo 15.</span>
+                                </li>
+                                <li>
+                                    <i class="la la-mobile"></i>
+                                    <span>Cell Phone</span>
+                                    <span>(+94) 11 433 8831 </span>
+                                    <span>(+94) 76 281 6641  </span>
+                                </li>
+                                <li>
+                                    <i class="la la-envelope"></i>
+                                    <span>E-mail Address</span>
+                                    <span><a href="   "><span class="__cf_email__" data-cfemail="036a6d656c4373716c6f6a70772d606c6e">info@applevacations.com.co</span></a> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div><!-- Widget -->
+                </div>
+
+                <div class="col-md-4 column">
+                    <div class="widget">
+                        <h3 class="footer-title">Quick Link</h3>
+                        <div class="link-widget">
+                            <ul>
+                                <li><a href="#" title="">Home</a></li>
+                                <li><a href="#" title="">Who we are?</a></li>
+                                <li><a href="#" title="">Tour Packages</a></li>
+                                <li><a href="#" title="">Destination</a></li>
+                                <li><a href="#" title="">Gallery</a></li>
+                                <li><a href="#" title="">Gest Book</a></li>
+                                <li><a href="#" title="">Contact US</a></li>
+                                <li><a href="#" title="">Careers</a></li>
+                                <li><a href="#" title="">Partner With Us</a></li>
+                                <li><a href="#" title="">Help</a></li>
+                            </ul>
+                        </div>
+                    </div><!-- Widget -->
+                </div>
+                <div class="col-md-4  column">
+                    <div class="widget">
+                        <h3 class="footer-title">Who we are?</h3>
                         <div class="about-widget">
                             <p class="text-justify">  Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. octus civibus efficiantur in.Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. octus civibus efficiantur in.Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. octus civibus efficiantur in.Lorem ipsum dolor sit amet, </p>
                             <ul class="footer-social-link"  >
@@ -31,58 +78,11 @@
                         </div>
                     </div><!-- Widget -->
                 </div>
-               
-                <div class="col-md-4 column">
-                    <div class="widget">
-                        <h3 class="footer-title">Quick Link</h3>
-                        <div class="link-widget">
-                            <ul>
-                                <li><a href="#" title="">Home</a></li>
-                                <li><a href="#" title="">Partner Login </a></li>
-                                <li><a href="#" title="">Affiliate Partnership</a></li>
-                                <li><a href="#" title="">Influencer Program</a></li>
-                                <li><a href="#" title="">Agent Marketplace</a></li>
-                                <li><a href="#" title="">Terms And Conditions</a></li>
-                                <li><a href="#" title="">Privacy Policy</a></li>
-                                <li><a href="#" title="">Careers</a></li>
-                                <li><a href="#" title="">Partner With Us</a></li>
-                                <li><a href="#" title="">Help</a></li>
-                            </ul>
-                        </div>
-                    </div><!-- Widget -->
-                </div>
-                <div class="col-md-3 column">
-                    <div class="widget">
-                        <h3 class="footer-title">CONTACT INFORMATION</h3>
-                        <div class="contact-widget">
-                            <ul>
-                                <li>
-                                    <i class="la la-map"></i>
-                                    <span>Address</span>
-                                    <span>Apple vacations(PVT) Ltd.<br>
-                                        162 1/1 Vystwyke Road,<br>
-                                        Colombo 15.</span>
-                                </li>
-                                <li>
-                                    <i class="la la-mobile"></i>
-                                    <span>Cell Phone</span>
-                                    <span>(+94) 11 433 8831 </span>
-                                    <span>(+94) 76 281 6641  </span>
-                                </li>
-                                <li>
-                                    <i class="la la-envelope"></i>
-                                    <span>E-mail Address</span>
-                                    <span><a href="   "><span class="__cf_email__" data-cfemail="036a6d656c4373716c6f6a70772d606c6e">info@applevacations.com.co</span></a> 
-                                </li>
-                            </ul>
-                        </div>
-                    </div><!-- Widget -->
-                </div>
             </div>
         </div>
         <div class="bottom-line container ">
             <div class="container">
-                <div class="row">
+                <div class="row bootom-padd">
 
                     <div class="col-md-6 col-xs-12 col-sm-4 ">
                         <p class=" white-color pull-left "><?php echo date('Y') ?> Apple Vacations Travels All right reserved</p>
@@ -93,7 +93,7 @@
                     </div>
                 </div> 
             </div>
-            
+
         </div>
     </div>
 </footer>

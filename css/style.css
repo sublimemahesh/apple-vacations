@@ -1358,7 +1358,7 @@ header.on-top {
     /*    border-bottom: 1px solid rgba(141, 153, 174, 0.81);*/
     display: table;
     float: left;
-     
+
     position: absolute;
     top: 0;
     width: 100%;
@@ -1369,16 +1369,16 @@ header.on-top {
     display: table-cell;
     vertical-align: middle;
     margin: 5px 0 0;
-    
+
     position: absolute;
-   
+
     width: 10%;
 
 }
 
 .logo > a {
     float: left;
-     background-color: white;
+    background-color: white;
 }
 .menu-sec {
     display: table-cell;
@@ -1643,7 +1643,7 @@ header .SumoSelect > .optWrapper > .options > li.opt.selected label {
 }
 .menu-sec nav {
     float: right;
-    margin-right: 80px;
+    
 }
 .menu-sec nav > ul {
     float: left;
@@ -1662,7 +1662,7 @@ header .SumoSelect > .optWrapper > .options > li.opt.selected label {
     float: left;
     font-family: Oswald;
     font-size: 16px;
-   padding: 16px 0px 11px 14px;
+    padding: 16px 0px 11px 14px;
     position: relative;
     text-transform: uppercase;
     letter-spacing: 0.7px;
@@ -1848,7 +1848,7 @@ header .SumoSelect > .optWrapper > .options > li.opt.selected label {
 
 .listing-carousel {
     float: left;
-   
+
     width: 100%;
 }
 .listing-box {
@@ -2197,7 +2197,7 @@ header .SumoSelect > .optWrapper > .options > li.opt.selected label {
 }
 .blog-detail {
     float: left;
-    margin-top: 20px;
+    margin-top: 0px;
     width: 100%;
 }
 .blog-metas {
@@ -2478,7 +2478,7 @@ footer .block::before {
     font-family: Roboto;
     font-size: 14px;
     line-height: 24px;
-    padding-right: 10px;
+    
     width: 100%;
 }
 .about-widget > ul {
@@ -8571,4 +8571,21 @@ section#map-with-listing {
 }
 .padd-tour-desc{
     padding: 15px 0px 15px 0px;
+}
+.about-padd{
+    background-color: white;
+    padding: 20px;
+}
+.about-row{
+     margin-top: 40px;
+     padding-right: 0px;
+}
+.text-align-p{
+    text-align: right;
+}
+.bootom-padd{
+    padding-top: 10px;
+}
+.gallery-padd{
+    padding-bottom: 30px;
 }
