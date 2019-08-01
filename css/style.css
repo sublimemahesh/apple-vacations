@@ -7084,6 +7084,7 @@ blockquote::before {
 }
 .tab-content.current {
     display: block;
+    margin-top: 70px;
 }
 .custom-tabs {
     float: left;
@@ -7111,8 +7112,8 @@ blockquote::before {
     cursor: pointer;
     float: left;
     font-family: Roboto;
-    font-size: 14px;
-    padding: 13px 14px 15px;
+    font-size: 16px;
+    padding: 15px 35px 15px;
     margin-right: -1px !important;
     font-family: Oswald;
 }
@@ -7196,7 +7197,7 @@ blockquote::before {
 }
 .related-products {
     float: left;
-    margin-top: 30px;
+    margin-top: 50px;
     width: 100%;
 }
 .related-products #related-carousel {
