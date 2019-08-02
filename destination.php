@@ -57,10 +57,10 @@
                             <div class="col-md-4 col-sm-6 col-xs-12">
                                 <div class="blog-post">
                                     <div class="blog-post-thumb"> 
-                                        <a href="view-destination.php" title=""><img src="images/resource/blog1.jpg" alt="" /></a></div>
+                                        <a href="view-destination.php" title=""><img src="images/destinations/des-1.jpg" alt="" /></a></div>
                                     <div class="blog-detail">
 
-                                        <h3><a href="view-destination.php" title="">Sample Destination </a></h3>
+                                        <h3><a href="view-destination.php" title="">Kandy</a></h3>
                                         <p class="text-justify">Dating is a part of the human mating process whereby two people meet sociallyDating is a part of the human mating process whereby two people meet socially for…</p>
                                         <a href="view-destination.php">  
                                             <div class=" pull-right  des-with" >
@@ -72,9 +72,9 @@
                             </div>
                             <div class="col-md-4 col-sm-6 col-xs-12">
                                 <div class="blog-post">
-                                    <div class="blog-post-thumb"> <a href="view-destination.php">  <img src="images/resource/blog2.jpg" alt="" /></a></div>
+                                    <div class="blog-post-thumb"> <a href="view-destination.php">  <img src="images/destinations/des-2.jpg" alt="" /></a></div>
                                     <div class="blog-detail"> 
-                                        <h3><a href="#" title="">Sample Destination</a></h3>
+                                        <h3><a href="#" title="">Dambulla </a></h3>
                                         <p class="text-justify">Dating is a part of the human mating process whereby two people meet sociallyDating is a part of the human mating process whereby two people meet socially for…</p>
                                       <a href="view-destination.php">  
                                             <div class=" pull-right  des-with" >
@@ -86,9 +86,9 @@
                             </div>
                             <div class="col-md-4 col-sm-6 col-xs-12">
                                 <div class="blog-post">
-                                    <div class="blog-post-thumb">  <a href="view-destination.php">  <img src="images/resource/blog3.jpg" alt="" /></a></div>
+                                    <div class="blog-post-thumb">  <a href="view-destination.php">  <img src="images/destinations/des-3.jpg" alt="" /></a></div>
                                     <div class="blog-detail"> 
-                                        <h3><a href="#" title="">Sample Destination</a></h3>
+                                        <h3><a href="#" title="">Polonnaruwa</a></h3>
                                         <p class="text-justify">Dating is a part of the human mating process whereby two people meet sociallyDating is a part of the human mating process whereby two people meet socially for…</p>
                                       <a href="view-destination.php">  
                                             <div class=" pull-right  des-with" >
@@ -100,9 +100,9 @@
                             </div>
                             <div class="col-md-4 col-sm-6 col-xs-12">
                                 <div class="blog-post">
-                                    <div class="blog-post-thumb"> <a href="#" title=""><img src="images/resource/blog4.jpg" alt="" /></a></div>
+                                    <div class="blog-post-thumb"> <a href="#" title=""><img src="images/destinations/des-4.jpg" alt="" /></a></div>
                                     <div class="blog-detail"> 
-                                        <h3><a href="#" title="">Sample Destination </a></h3>
+                                        <h3><a href="#" title="">Anuradapura</a></h3>
                                         <p class="text-justify">Dating is a part of the human mating process whereby two people meet sociallyDating is a part of the human mating process whereby two people meet socially for…</p>
                                        <a href="view-tour-packages.php">  
                                             <div class=" pull-right  des-with" >
@@ -115,9 +115,9 @@
 
                             <div class="col-md-4 col-sm-6 col-xs-12">
                                 <div class="blog-post">
-                                    <div class="blog-post-thumb"> <a href="#" title=""><img src="images/resource/blog6.jpg" alt="" /></a></div>
+                                    <div class="blog-post-thumb"> <a href="#" title=""><img src="images/destinations/des-5.jpg" alt="" /></a></div>
                                     <div class="blog-detail"> 
-                                        <h3><a href="#" title="">Sample Destination</a></h3>
+                                        <h3><a href="#" title="">Galle</a></h3>
                                         <p class="text-justify">Dating is a part of the human mating process whereby two people meet sociallyDating is a part of the human mating process whereby two people meet socially for…</p>
                                        <a href="view-tour-packages.php">  
                                             <div class=" pull-right  des-with" >
@@ -129,9 +129,9 @@
                             </div>
                             <div class="col-md-4 col-sm-6 col-xs-12">
                                 <div class="blog-post">
-                                    <div class="blog-post-thumb"> <a href="#" title=""><img src="images/resource/blog6.jpg" alt="" /></a></div>
+                                    <div class="blog-post-thumb"> <a href="#" title=""><img src="images/destinations/des-6.jpg" alt="" /></a></div>
                                     <div class="blog-detail"> 
-                                        <h3><a href="#" title="">Sample Destination</a></h3>
+                                        <h3><a href="#" title="">Sigiriya</a></h3>
                                         <p class="text-justify">Dating is a part of the human mating process whereby two people meet sociallyDating is a part of the human mating process whereby two people meet socially for…</p>
                                        <a href="view-tour-packages.php">  
                                             <div class=" pull-right  des-with" >

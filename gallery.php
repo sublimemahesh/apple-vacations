@@ -50,21 +50,33 @@
         </section>
 
         <section>
-            <div class="block gray ">
-                <div class="container"> 
+            <div class="block gray "> 
                     <div class="  column"> 
+                        <div class="container"> 
                         <div class="row">  
-                            <div class="col-md-3 gallery"> 
-                                <a href="images/destinations/1.jpg" class="big"><img src=" images/destinations/1.jpg" alt=" test" title="test" /></a>
+                            <div class="col-md-3 gallery gallery-padd"> 
+                                <a href="images/gallery/g-b-1.jpg" class="big"><img src="images/gallery/g-1.jpg" alt="Surfing Sri Lanka" title="Surfing Sri Lanka" class="img-responsive" /></a>
                             </div>
-                            <div class="col-md-3 gallery"> 
-                                <a href="images/destinations/1.jpg" class="big"><img src=" images/destinations/1.jpg" alt=" test" title="test" /></a>
+                            <div class="col-md-3 gallery gallery-padd"> 
+                                <a href="images/gallery/g-b-2.jpg" class="big"><img src="images/gallery/g-2.jpg" alt=" Pinnawala" title="Pinnawala " class="img-responsive"/></a>
+                            </div>
+                            <div class="col-md-3 gallery gallery-padd">
+                                <a href="images/gallery/g-b-3.jpg" class="big"><img src="images/gallery/g-3.jpg" alt="Sigiriya" title="Sigiriya" class="img-responsive"/></a>
+                            </div>
+                            <div class="col-md-3 gallery gallery-padd">
+                                <a href="images/gallery/g-b-4.jpg" class="big"><img src="images/gallery/g-4.jpg" alt="Yala National Park" title="Yala National Park" class="img-responsive"/></a>
+                            </div>
+                            <div class="col-md-3 gallery ">
+                                <a href="images/gallery/g-b-5.jpg" class="big"><img src="images/gallery/g-5.jpg" alt="Yala National Park" title="Yala National Park" class="img-responsive"/></a>
                             </div>
                             <div class="col-md-3 gallery">
-                                <a href="images/destinations/1.jpg" class="big"><img src=" images/destinations/1.jpg" alt="test" title="test" /></a>
+                                <a href="images/gallery/g-b-6.jpg" class="big"><img src="images/gallery/g-6.jpg" alt="Yala National Park" title="Yala National Park" class="img-responsive"/></a>
                             </div>
                             <div class="col-md-3 gallery">
-                                <a href="images/destinations/1.jpg" class="big"><img src=" images/destinations/1.jpg" alt="test" title="test" /></a>
+                                <a href="images/gallery/g-b-7.jpg" class="big"><img src="images/gallery/g-7.jpg" alt="Yala National Park" title="Yala National Park" class="img-responsive"/></a>
+                            </div>
+                            <div class="col-md-3 gallery">
+                                <a href="images/gallery/g-b-8.jpg" class="big"><img src="images/gallery/g-8.jpg" alt="Yala National Park" title="Yala National Park" class="img-responsive"/></a>
                             </div>
                         </div>                         
                     </div>

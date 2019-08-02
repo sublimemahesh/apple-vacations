@@ -115,13 +115,11 @@
                     </div>  
                 </div> 
             </div>
-    </div>
-
-
+    </div> 
 </section>
 
 <section>
-    <div class="block gray">
+    <div class="block gray remove-top">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 column">
