@@ -245,7 +245,7 @@
             </div> 
         </div>
 
-
+        <!--top Destination-->
         <section>
             <div class="block gray   tab_row_hide">
                 <div class="container">
@@ -258,17 +258,13 @@
                             <div class="recent-place-sec" id="places-carousel">
 
                                 <div class="row">
-                                    <div class="col-md-3 col-sm-4 col-xs-12">
-
-
+                                    <div class="col-md-3 col-sm-4 col-xs-12"> 
                                         <div class="category-box">
                                             <a href="#" title=""><img src="images/destinations/1.jpg" alt="" /></a>
                                             <div class="carousel-caption padd-top-cap">
                                                 <p  class="white-color font-newsize ">Sigiriya</p>
                                             </div>
-                                        </div>
-
-
+                                        </div> 
 
                                         <div class="category-box">
                                             <a href="#" title=""><img src="images/destinations/4.jpg" alt="" /></a>
@@ -277,15 +273,14 @@
                                             </div>
                                         </div> 
                                     </div>
+
                                     <div class="col-md-3 col-sm-4 col-xs-12">
                                         <div class="category-box">
                                             <a href="#" title=""><img src="images/destinations/12.jpg" alt="" /></a>
                                             <div class="carousel-caption padd-top-cap">
                                                 <p  class="white-color font-newsize">Galle</p>
                                             </div>
-                                        </div> 
-
-
+                                        </div>  
                                         <div class="category-box">
                                             <a href="#" title=""><img src="images/44.jpg" alt="" /></a>
                                             <div class="carousel-caption padd-bottom-cap">
@@ -402,7 +397,9 @@
                 </div>
             </div>
         </section> 
+        <!--end top Destination-->
 
+        <!--tour Packages-->
         <section>
             <div class="block gray remove-top tab_row_hide">
                 <div class="container">
@@ -533,7 +530,104 @@
                 </div>
             </div>
         </section>
+        <!--end tour Packages-->
 
+        <!--top Destination-->
+        <section>
+            <div class="block gray remove-top tab_row_hide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="heading">
+                                <h2>Top Things to do</h2>
+                                <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</span>
+                            </div>
+                            <div class="listing-carousel">
+                                <div class="row"  id="list-activity">
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="blog-post-2 ">
+                                            <div class="blog-post-thumb"> 
+                                                <a href="view-destination.php" title=""><img src="images/destinations/des-1.jpg" alt="" /></a></div>
+                                            <div class="blog-detail">
+
+                                                <h3><a href="view-destination.php" title="">Kandy</a></h3>
+                                                <p class="text-justify">Dating is a part of the human mating process whereby two people meet sociallyDating is a part of the human mating process whereby two people meet socially for…</p>
+                                                <a href="view-destination.php">  
+                                                    <div class=" pull-right  des-with" >
+                                                        <p  class="p-tab-b">View</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div><!-- BLog Post  -->
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="blog-post-2">
+                                            <div class="blog-post-thumb"> <a href="view-destination.php">  <img src="images/destinations/des-2.jpg" alt="" /></a></div>
+                                            <div class="blog-detail"> 
+                                                <h3><a href="#" title="">Dambulla </a></h3>
+                                                <p class="text-justify">Dating is a part of the human mating process whereby two people meet sociallyDating is a part of the human mating process whereby two people meet socially for…</p>
+                                                <a href="view-destination.php">  
+                                                    <div class=" pull-right  des-with" >
+                                                        <p  class="p-tab-b">View</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div><!-- BLog Post  -->
+                                    </div>
+                                    
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="blog-post-2">
+                                            <div class="blog-post-thumb">  <a href="view-destination.php">  <img src="images/destinations/des-3.jpg" alt="" /></a></div>
+                                            <div class="blog-detail"> 
+                                                <h3><a href="#" title="">Polonnaruwa</a></h3>
+                                                <p class="text-justify">Dating is a part of the human mating process whereby two people meet sociallyDating is a part of the human mating process whereby two people meet socially for…</p>
+                                                <a href="view-destination.php">  
+                                                    <div class=" pull-right  des-with" >
+                                                        <p  class="p-tab-b">View</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div><!-- BLog Post  -->
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="blog-post-2">
+                                            <div class="blog-post-thumb"> <a href="#" title=""><img src="images/destinations/des-4.jpg" alt="" /></a></div>
+                                            <div class="blog-detail"> 
+                                                <h3><a href="#" title="">Anuradapura</a></h3>
+                                                <p class="text-justify">Dating is a part of the human mating process whereby two people meet sociallyDating is a part of the human mating process whereby two people meet socially for…</p>
+                                                <a href="view-tour-packages.php">  
+                                                    <div class=" pull-right  des-with" >
+                                                        <p  class="p-tab-b">View</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div><!-- BLog Post  -->
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-6 col-xs-12">
+                                        <div class="blog-post-2">
+                                            <div class="blog-post-thumb"> <a href="#" title=""><img src="images/destinations/des-5.jpg" alt="" /></a></div>
+                                            <div class="blog-detail"> 
+                                                <h3><a href="#" title="">Galle</a></h3>
+                                                <p class="text-justify">Dating is a part of the human mating process whereby two people meet sociallyDating is a part of the human mating process whereby two people meet socially for…</p>
+                                                <a href="view-tour-packages.php">  
+                                                    <div class=" pull-right  des-with" >
+                                                        <p  class="p-tab-b">View</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div><!-- BLog Post  -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--end top Destination-->
+        <!--INSPIRATION-->
         <section id="scroll-here  " >
             <div class="block gray tab_row_hide remove-top">
                 <div class="container">
@@ -578,6 +672,9 @@
                 </div>
             </div>
         </section>
+        <!--INSPIRATION-->
+
+        <!--comment-->  
         <section>
             <div class="block   gray remove-top" style="padding-top: 20px;">
                 <div class="container">
@@ -624,6 +721,8 @@
                 </div>
             </div>
         </section>
+        <!--comment-->  
+
         <section>
             <div class="block remove-top  gray  ">
                 <div class="container">

@@ -1662,7 +1662,7 @@ header .SumoSelect > .optWrapper > .options > li.opt.selected label {
     float: left;
     font-family: Oswald;
     font-size: 16px;
-    padding: 16px 0px 11px 14px;
+    padding: 16px 0px 11px 16px;
     position: relative;
     text-transform: uppercase;
     letter-spacing: 0.7px;
@@ -2174,6 +2174,26 @@ header .SumoSelect > .optWrapper > .options > li.opt.selected label {
 
     float: left;
     margin-top: 30px;
+    padding: 15px;
+    width: 100%;
+}
+.blog-post-2 {
+    background: #ffffff none repeat scroll 0 0;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+
+    float: left;
+   
     padding: 15px;
     width: 100%;
 }
