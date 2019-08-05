@@ -19,8 +19,9 @@
                             <li class="menu-item-has-children"> 
                                 <a href="index.php" title="">HOME</a> 
                                 <a href="about-us.php" title="">Who we are?</a> 
-                                <a href="tour-packages.php" title="">Tour Packages</a>  
-                                <a href="destination.php" title="">Destination</a> 
+                                <a href="destination.php" title="">Destination</a>
+                                <a href="tour-packages.php" title="">Tour Packages</a>   
+                                <a href="things-to-do.php" title="">Things to do</a>
                                 <a href="gallery.php" title="">Gallery</a> 
                                 <a href="gest-book.php" title="">Gest Book</a> 
                                 <a href="contact.php" title="">Contact US</a> 
