@@ -61,7 +61,7 @@ include './class/include.php';
                                     if ($key < 12) {
                                         ?> 
                                         <div class="col-md-3">
-                                            <img src="upload/attraction/thumb/<?php echo $attraction['image_name'] ?>" alt="<?php echo $attraction['title'] ?>" class="img-responsive img-res-p "  />
+                                            <img src="upload/attraction/thumb/gallery/<?php echo $attraction['image_name'] ?>" alt="<?php echo $attraction['title'] ?>" class="img-responsive img-res-p "  />
                                             <div class="carousel-caption padd-top-cap">
                                                 <p  class="white-color font-newsize-2">Kandy</p>
                                             </div>
@@ -287,7 +287,7 @@ include './class/include.php';
                                     foreach ($TOUR_PACKAGE->getTourPackagesByType(1) as $tour_package) {
                                         ?>
                                         <div class="col-md-3"> 
-                                            <a href="view-tour-packages.php?id=<?php echo $tour_package['id'] ?>" title="<?php echo $tour_package['title'] ?>">
+                                            <a href="view-tour-package.php?id=<?php echo $tour_package['id'] ?>" title="<?php echo $tour_package['title'] ?>">
                                                 <div class="listing-box">
                                                     <div class="listing-box-thumb">
                                                         <span class="price-list"><?php echo $tour_package['dates'] ?></span>
@@ -359,7 +359,7 @@ include './class/include.php';
                                                         </div>
                                                     </a>
                                                 </div>
-                                            </div><!-- BLog Post  -->
+                                            </div> 
                                         </div> 
                                     <?php } ?>
                                 </div>

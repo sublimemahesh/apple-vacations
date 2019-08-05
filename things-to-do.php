@@ -64,7 +64,7 @@ include './class/include.php';
                                 <div class="col-md-4 col-sm-6 col-xs-12">
                                     <div class="blog-post">
                                         <div class="blog-post-thumb"> 
-                                            <a href="view-things-to-do.php?id=<?php echo $activity['id'] ?>" title=""><img src="images/destinations/des-1.jpg" alt="" /></a></div>
+                                            <a href="view-things-to-do.php?id=<?php echo $activity['id'] ?>" title=""><img src="upload/activity/<?php echo $activity['image_name'] ?>" alt="" /></a></div>
                                         <div class="blog-detail">
 
                                             <h3><a href="view-things-to-do.php?id=<?php echo $activity['id'] ?>" title=""><?php echo $activity['title'] ?></a></h3>

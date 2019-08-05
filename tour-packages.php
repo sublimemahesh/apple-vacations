@@ -64,7 +64,7 @@ $TOUR_TYPES = new TourType($id);
                             foreach ($TOUR_PACKAGE->getTourPackagesByType($id) as $tour_package) {
                                 ?>
                                 <div class="col-md-3" >
-                                    <a href="view-tour-packages.php?id=<?php echo $tour_package['id'] ?>" title="<?php echo $tour_package['title'] ?>">  
+                                    <a href="view-tour-package.php?id=<?php echo $tour_package['id'] ?>" title="<?php echo $tour_package['title'] ?>">  
                                         <div class="listing-box ">
                                             <div class="listing-box-thumb">
                                                 <span class="price-list"><?php echo $tour_package['dates'] ?></span> 

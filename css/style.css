@@ -1728,12 +1728,12 @@ header .SumoSelect > .optWrapper > .options > li.opt.selected label {
     width: 100%;
 }
 .menu-sec nav > ul > li.menu-item-has-children > ul li > a {
-    color: #8d99ae;
-    font-family: Roboto;
+    color: #fff;
+    font-family: Oswald;
     font-size: 16px;
     padding: 4px 50px;
     position: relative;
-    text-transform: none;
+    text-transform:uppercase;
     width: 100%;
 }
 .menu-sec nav > ul > li.menu-item-has-children > ul li > a::before {
@@ -8620,4 +8620,7 @@ section#map-with-listing {
 }
 .custom-tabs .nav-tabs > li > a {
     border-radius: 0px 0px 0 0;
+}
+.M-row{
+    margin-bottom: 30px;
 }
