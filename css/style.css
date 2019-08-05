@@ -6504,7 +6504,7 @@ blockquote::before {
     padding: 40px 30px;
     width: 100%;
 }
-.contactus-form  form input, .contactus-form form textarea {
+.contactus-form  .form-type input, .contactus-form .form-type textarea {
     border: 1px solid #dedede;
 
     -webkit-border-radius: 3px;
@@ -6518,10 +6518,10 @@ blockquote::before {
     font-family: Roboto;
     font-size: 14px;
     margin-bottom: 30px;
-    padding: 13px 30px;
+    padding: 5px 30px;
     width: 100%;
 }
-.contactus-form form textarea {
+.contactus-form .form-type textarea {
     min-height: 170px;
 }
 .contactus-form input[type="submit"] {
@@ -7132,12 +7132,10 @@ blockquote::before {
     cursor: pointer;
     float: left;
     font-family: Roboto;
-    font-size: 20px;
-    padding: 20px 82px 20px;
+    font-size: 16px;
+    padding: 15px 35px 15px;
     margin-right: -1px !important;
     font-family: Oswald;
-    width: 105%;
-    background: #eaeaea;
 }
 .tab-sec > .nav-tabs > li a:hover {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
