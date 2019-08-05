@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<?php
+include './class/include.php';
+$id = '';
+$id = $_GET['id'];
+$ATTRACTION = new Attraction($id);
+?>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,7 +12,7 @@
     <meta name="keywords" content="">
     <meta name="author" content="creativelayers">
 
-    <title>Destination View - Apple Vacation</title>
+    <title><?php echo $ATTRACTION->title ?> - Apple Vacation</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" /><!-- Bootstrap -->
@@ -37,10 +43,11 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="inner-header">
-                                <h2>Destination Name</h2>
+                                <h2><?php echo $ATTRACTION->title ?></h2>
                                 <ul class="breadcrumbs">
-                                    <li><a href="#" title="">Home</a></li>
-                                    <li><a href="#" title="">Destination</a></li>  
+                                    <li><a href="index.php" title="">Home</a></li>
+                                    <li><a href="destination.php" title="">Destination</a></li>  
+                                    <li><a href="#" title=""> <?php echo $ATTRACTION->title ?></a></li>  
                                 </ul>	
                             </div>
                         </div>
@@ -57,18 +64,22 @@
                             <div class="col-md-8">
                                 <div class="single-product-gallery">
                                     <ul class="single-product-images">
-                                        <li><img src="images/des-b.jpg" alt="" class="img-responsive"  /> </li>
-                                        <li><img src="images/des-b-2.jpg" alt="" class="img-responsive" /> </li>
-                                        <li><img src="images/des-b-3.jpg" alt="" class="img-responsive" /> </li>
-                                        <li><img src="images/des-4.jpg" alt="" class="img-responsive" /> </li>
-                                       
+                                        <?php
+                                        $ATTRACTION_PHOTO = new AttractionPhoto(NULL);
+                                        foreach ($ATTRACTION_PHOTO->getAttractionPhotosById($id) as $attraction_photo) {
+                                            ?>
+                                            <li><img src="upload/attraction/gallery/<?php echo $attraction_photo['image_name'] ?>" alt="<?php echo $attraction_photo['caption'] ?>" /> </li>
+                                        <?php } ?>
+
                                     </ul>
                                     <ul class="single-product-thumb">
-                                        <li><span><img src="images/des-b-1.jpg" alt="" class="img-responsive"/></span></li>
-                                        <li><span><img src="images/des-2.jpg" alt="" class="img-responsive" /></span></li>
-                                        <li><span><img src="images/des-3.jpg" alt="" class="img-responsive" /></span></li>
-                                        <li><span><img src="images/des-b-4.jpg" alt="" class="img-responsive" /></span></li>
-                                         
+                                        <?php
+                                        $ATTRACTION_PHOTO = new AttractionPhoto(NULL);
+                                        foreach ($ATTRACTION_PHOTO->getAttractionPhotosById($id) as $attraction_photo) {
+                                            ?>
+                                            <li><span><img src="upload/attraction/gallery/thumb/<?php echo $attraction_photo['image_name'] ?>" alt="<?php echo $attraction_photo['caption'] ?>" /></span></li>
+                                        <?php } ?>
+
                                     </ul>
                                 </div>
                             </div>
@@ -76,7 +87,7 @@
                                 <div  id="location">
 
                                     <div class="list-location">
-                                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.536452450768!2d80.6393219147603!3d7.293460894735891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3662dc9c94c75%3A0xe1885fe2929d358!2zVGVtcGxlIG9mIHRoZSBUb290aCBNdXNldW0g4Lav4LeF4Laz4LePIOC2uOC3j-C2veC3kuC2nOC3j-C3gOC3miDgtprgt57gtq3gt5Tgtprgt4_gtpzgt4_gtrvgtro!5e0!3m2!1sen!2slk!4v1564658428036!5m2!1sen!2slk" style="border:0" height="200px"allowfullscreen></iframe>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.536452450768!2d80.6393219147603!3d7.293460894735891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3662dc9c94c75%3A0xe1885fe2929d358!2zVGVtcGxlIG9mIHRoZSBUb290aCBNdXNldW0g4Lav4LeF4Laz4LePIOC2uOC3j-C2veC3kuC2nOC3j-C3gOC3miDgtprgt57gtq3gt5Tgtprgt4_gtpzgt4_gtrvgtro!5e0!3m2!1sen!2slk!4v1564658428036!5m2!1sen!2slk" style="border:0" height="200px"allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div> 
@@ -84,97 +95,35 @@
                         <div class="row">
                             <div class="col-md-12 related-products">
                                 <h2>Description</h2>
-                                <p class="text-justify "> 
-                                    Curabitur lacinia erat quis nisi mollis, non pulvinar diam auctor. Integer ornare lobortis tristique. Vestibulum congue eleifend sapien, ac tristique nisi dapibus quis. Vivamus ligula erat, convallis nec leo vel, eleifend imperdiet lacus. Maecenas a euismod augue. Nam eu neque in velit fermentum finibus. Morbi sed lacus in odio ullamcorper facilisis. Vivamus maximus fringilla nisi, eget tristique elit mollis sit amet.
-
-                                    Mauris in enim sit amet erat consequat vulputate. Donec ut justo nec est congue cursus sit amet aliquet lorem. In at eros id nisi sollicitudin consectetur at vel risus. Integer elit sapien, posuere nec augue non, tempus molestie est. Ut quis congue dui. Quisque finibus rhoncus nulla, nec consectetur nibh finibus sit amet. Duis eget justo venenatis nisi interdum facilisis non eget purus
-                                </p>
+                                <?php echo $ATTRACTION->description ?> 
                             </div>
                         </div>
- <div class="row">
-                        <div class="related-products">
-                            <div class="col-md-12">
-                                <h3 class="mini-title">Related Destination</h3>
-                            </div>
-                            <div class="row" id="related-carousel">
-
-                                <div class="col-md-3">
-                                    <div class="product-box">
-                                        <div class="product-thumb">
-                                            <img src="images/destinations/1.jpg" alt="" class="img-responsive" />
-                                            <a href="#" title="">View</a>
-                                        </div>
-                                        <h3><a href="#" title="">Sigiriya</a></h3>
-
-                                    </div>
+                        <div class="row">
+                            <div class="related-products">
+                                <div class="col-md-12">
+                                    <h3 class="mini-title">Related Destination</h3>
                                 </div>
-                                <div class="col-md-3">
-                                    <div class="product-box">
-                                        <div class="product-thumb">
-                                            <img src="images/destinations/2.jpg" alt="" class="img-responsive"/>
-                                            <a href="#" title="">View</a>
+                                <div class="row" id="related-carousel">
+                                    <?php
+                                    foreach ($ATTRACTION->all() as $attraction) {
+                                        ?>
+                                        <div class="col-md-3">
+                                            <div class="product-box">
+                                                <div class="product-thumb">
+                                                    <img src="upload/attraction/<?php echo $attraction['image_name'] ?>" alt="" class="img-responsive" />
+                                                    <a href="view-destination.php?id=<?php echo $attraction['id'] ?>" title="">View</a>
+                                                </div>
+                                                <h3>
+                                                    <a href="view-destination.php?id=<?php echo $attraction['id'] ?>" title="">
+                                                        <?php echo $attraction['title'] ?>
+                                                    </a>
+                                                </h3>
+                                            </div>
                                         </div>
-                                        <h3><a href="#" title="">Nuwara Eliya</a></h3>
-                                    </div>
+                                    <?php } ?>
                                 </div>
-                                <div class="col-md-3">
-                                    <div class="product-box">
-                                        <div class="product-thumb">
-                                            <img src="images/destinations/3.jpg" alt="" class="img-responsive"/>
-                                            <a href="#" title="">View</a>
-                                        </div>
-                                        <h3><a href="#" title="">Anuradapura</a></h3>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="product-box">
-                                        <div class="product-thumb">
-                                            <img src="images/destinations/4.jpg" alt="" class="img-responsive"/>
-                                            <a href="#" title="">View</a>
-                                        </div>
-                                        <h3><a href="#" title="">Dambulla</a></h3>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="product-box">
-                                        <div class="product-thumb">
-                                            <img src="images/destinations/5.jpg" alt="" class="img-responsive"/>
-                                            <a href="#" title="">View</a>
-                                        </div>
-                                        <h3><a href="#" title="">Hikkaduwa</a></h3>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="product-box">
-                                        <div class="product-thumb">
-                                            <img src="images/destinations/6.jpg" alt="" class="img-responsive"/>
-                                            <a href="#" title="">View</a>
-                                        </div>
-                                        <h3><a href="#" title="">Pinnawala</a></h3>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="product-box">
-                                        <div class="product-thumb">
-                                            <img src="images/destinations/7.jpg" alt="" class="img-responsive"/>
-                                            <a href="#" title="">View</a>
-                                        </div>
-                                        <h3><a href="#" title="">Mirissa</a></h3>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="product-box">
-                                        <div class="product-thumb">
-                                            <img src="images/destinations/8.jpg" alt="" class="img-responsive" />
-                                            <a href="#" title="">View</a>
-                                        </div>
-                                        <h3><a href="#" title="">Jaffna</a></h3>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>                             
-                    </div> 
+                            </div>                             
+                        </div> 
                     </div> 
                 </div> 
             </div>

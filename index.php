@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+include './class/include.php';
+?>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,82 +55,22 @@
                         </ul>
                         <div id="tour" class="tab-content current search-width horizontal-bar"  >
                             <div class="description">
+                                <?php
+                                $ATTRACTION = new Attraction(NULL);
+                                foreach ($ATTRACTION->all() as $key => $attraction) {
+                                    if ($key < 12) {
+                                        ?> 
+                                        <div class="col-md-3">
+                                            <img src="upload/attraction/thumb/<?php echo $attraction['image_name'] ?>" alt="<?php echo $attraction['title'] ?>" class="img-responsive img-res-p "  />
+                                            <div class="carousel-caption padd-top-cap">
+                                                <p  class="white-color font-newsize-2">Kandy</p>
+                                            </div>
+                                        </div>
+                                        <?php
+                                    }
+                                }
+                                ?>
 
-                                <div class="col-md-3">
-                                    <img src="images/search/1.jpg" alt="" class="img-responsive img-res-p "  />
-                                    <div class="carousel-caption padd-top-cap">
-                                        <p  class="white-color font-newsize-2">Kandy</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3">
-                                    <img src="images/search/2.jpg" alt="" class="img-responsive img-res-p"  />
-                                    <div class="carousel-caption padd-top-cap">
-                                        <p  class="white-color font-newsize-2">koggala</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3">
-                                    <img src="images/search/3.jpg" alt="" class="img-responsive img-res-p"  />
-                                    <div class="carousel-caption padd-top-cap">
-                                        <p  class="white-color font-newsize-2">Mirissa</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3">
-                                    <img src="images/search/4.jpg" alt="" class="img-responsive img-res-p" />
-                                    <div class="carousel-caption padd-top-cap">
-                                        <p  class="white-color font-newsize-2">Colombo</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <img src="images/search/5.jpg" alt="" class="img-responsive img-res-p" />
-                                    <div class="carousel-caption padd-top-cap">
-                                        <p  class="white-color font-newsize-2">Udawalawa</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <img src="images/search/6.jpg" alt="" class="img-responsive img-res-p"  />
-                                    <div class="carousel-caption padd-top-cap">
-                                        <p  class="white-color font-newsize-2">Whale</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <img src="images/search/7.jpg" alt="" class="img-responsive img-res-p"  />
-                                    <div class="carousel-caption padd-top-cap">
-                                        <p  class="white-color font-newsize-2">Kithulgala</p>
-                                    </div>
-                                </div> 
-                                <div class="col-md-3">
-                                    <img src="images/search/8.jpg" alt="" class="img-responsive img-res-p"  />
-                                    <div class="carousel-caption padd-top-cap">
-                                        <p  class="white-color font-newsize-2">Kandy</p>
-                                    </div>
-                                </div> 
-                                <div class="col-md-3">
-                                    <img src="images/search/9.jpg" alt="" class="img-responsive img-res-p"  />
-                                    <div class="carousel-caption padd-top-cap">
-                                        <p  class="white-color font-newsize-2">Yala</p>
-                                    </div>
-                                </div> 
-                                <div class="col-md-3">
-                                    <img src="images/search/10.jpg" alt="" class="img-responsive img-res-p"  />
-                                    <div class="carousel-caption padd-top-cap">
-                                        <p  class="white-color font-newsize-2">Dambulla</p>
-                                    </div>
-                                </div> 
-                                <div class="col-md-3">
-                                    <img src="images/search/14.jpg" alt="" class="img-responsive img-res-p"  />
-                                    <div class="carousel-caption padd-top-cap">
-                                        <p  class="white-color font-newsize-2">Sigiriya</p>
-                                    </div>
-                                </div> 
-                                <div class="col-md-3">
-                                    <img src="images/search/12.jpg" alt="" class="img-responsive img-res-p"  />
-                                    <div class="carousel-caption padd-top-cap">
-                                        <p  class="white-color font-newsize-2">Ella</p>
-                                    </div>
-                                </div> 
 
                             </div>
                         </div>
@@ -258,138 +201,66 @@
                             <div class="recent-place-sec" id="places-carousel">
 
                                 <div class="row">
-                                    <div class="col-md-3 col-sm-4 col-xs-12"> 
-                                        <div class="category-box">
-                                            <a href="#" title=""><img src="images/destinations/1.jpg" alt="" /></a>
-                                            <div class="carousel-caption padd-top-cap">
-                                                <p  class="white-color font-newsize ">Sigiriya</p>
+                                    <?php
+                                    $ATTRACTION = new Attraction(NULL);
+                                    foreach ($ATTRACTION->all() as $key => $attraction) {
+                                        if ($key < 8) {
+                                            ?>
+                                            <div class="col-md-3 col-sm-4 col-xs-12"> 
+                                                <?php if ($key % 2 == 0) { ?>
+                                                    <div class="category-box">
+                                                        <a href="view-destination.php?id=<?php echo $attraction['id'] ?>" title=""><img src="upload/attraction/<?php echo $attraction['image_name'] ?>" alt="" /></a>
+                                                        <div class="carousel-caption padd-bottom-cap">
+                                                            <p  class="white-color font-newsize "><?php echo $attraction['title'] ?></p>
+                                                        </div>
+                                                    </div> 
+                                                <?php } else { ?>
+                                                    <div class="category-box">
+                                                        <a href="view-destination.php?id=<?php echo $attraction['id'] ?>" title=""><img src="upload/attraction/<?php echo $attraction['image_name'] ?>" alt="" /></a>
+                                                        <div class="carousel-caption padd-bottom-cap">
+                                                            <p  class="white-color font-newsize"><?php echo $attraction['title'] ?></p>
+                                                        </div>
+                                                    </div> 
+                                                    <?php
+                                                }
+                                                ?>
                                             </div>
-                                        </div> 
-
-                                        <div class="category-box">
-                                            <a href="#" title=""><img src="images/destinations/4.jpg" alt="" /></a>
-                                            <div class="carousel-caption padd-bottom-cap">
-                                                <p  class="white-color font-newsize">Dambulla</p>
-                                            </div>
-                                        </div> 
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-4 col-xs-12">
-                                        <div class="category-box">
-                                            <a href="#" title=""><img src="images/destinations/12.jpg" alt="" /></a>
-                                            <div class="carousel-caption padd-top-cap">
-                                                <p  class="white-color font-newsize">Galle</p>
-                                            </div>
-                                        </div>  
-                                        <div class="category-box">
-                                            <a href="#" title=""><img src="images/44.jpg" alt="" /></a>
-                                            <div class="carousel-caption padd-bottom-cap">
-                                                <p class="white-color font-newsize">Colombo</p>
-                                            </div>
-                                        </div> 
-                                    </div> 
-                                    <div class="col-md-3 col-sm-4 col-xs-12">
-
-                                        <div class="category-box">
-                                            <a href="#" title=""><img src="images/destinations/13.jpg" alt="" /></a>
-                                            <div class="carousel-caption padd-top-cap">
-                                                <p  class="white-color font-newsize">Yala National Park</p>
-                                            </div>
-                                        </div> 
-
-
-                                        <div class="category-box">
-                                            <a href="#" title=""><img src="images/destinations/3.jpg" alt="" /></a>
-                                            <div class="carousel-caption padd-bottom-cap">
-                                                <p  class="white-color font-newsize">Anuradapura</p>
-                                            </div>
-                                        </div> 
-                                    </div> 
-
-                                    <div class="col-md-3 col-sm-4 col-xs-12">
-                                        <div class="category-box">
-                                            <a href="#" title=""><img src="images/destinations/2.jpg" alt="" /></a>
-                                            <div class="carousel-caption padd-top-cap">
-                                                <p  class="white-color font-newsize">Nuwara Eliya</p>
-                                            </div>
-                                        </div> 
-
-
-                                        <div class="category-box">
-                                            <a href="#" title=""><img src="images/88.jpg" alt="" /></a>
-                                            <div class="carousel-caption padd-bottom-cap">
-                                                <p  class="white-color font-newsize">Kandy</p>
-                                            </div>
-                                        </div>   
-                                    </div>  
+                                            <?php
+                                        }
+                                    }
+                                    ?>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-3 col-sm-4 col-xs-12">
+                                    <?php
+                                    $ATTRACTION = new Attraction(NULL);
+                                    foreach ($ATTRACTION->all() as $key => $attraction) {
+                                        if ($key > 8 && $key < 17) {
+                                            ?>
+                                            <div class="col-md-3 col-sm-4 col-xs-12"> 
+                                                <?php if ($key % 2 == 0) { ?>
+                                                    <div class="category-box">
+                                                        <a href="view-destination.php?id=<?php echo $attraction['id'] ?>" title=""><img src="upload/attraction/<?php echo $attraction['image_name'] ?>" alt="" /></a>
+                                                        <div class="carousel-caption padd-bottom-cap">
+                                                            <p  class="white-color font-newsize"><?php echo $attraction['title'] ?></p>
 
+                                                        </div>
+                                                    </div>
+                                                <?php } else { ?>
+                                                    <div class="category-box">
+                                                        <a href="view-destination.php?id=<?php echo $attraction['id'] ?>" title=""><img src="upload/attraction/<?php echo $attraction['image_name'] ?>" alt="" /></a>
+                                                        <div class="carousel-caption padd-bottom-cap">
+                                                            <p  class="white-color font-newsize"><?php echo $attraction['title'] ?></p>
 
-                                        <div class="category-box">
-                                            <a href="#" title=""><img src="images/destinations/5.jpg" alt="" /></a>
-                                            <div class="carousel-caption padd-top-cap">
-                                                <p  class="white-color font-newsize">Hikkaduwa</p>
+                                                        </div>
+                                                    </div> 
+                                                    <?php
+                                                }
+                                                ?>
                                             </div>
-                                        </div>
-
-                                        <div class="category-box">
-                                            <a href="#" title=""><img src="images/destinations/6.jpg" alt="" /></a>
-                                            <div class="carousel-caption padd-bottom-cap">
-                                                <p  class="white-color font-newsize">Pinnawala</p>
-                                            </div>
-                                        </div> 
-                                    </div>
-                                    <div class="col-md-3 col-sm-4 col-xs-12">
-                                        <div class="category-box">
-                                            <a href="#" title=""><img src="images/destinations/7.jpg" alt="" /></a>
-                                            <div class="carousel-caption padd-top-cap">
-                                                <p  class="white-color font-newsize">Weligama</p>
-                                            </div>
-                                        </div>  
-
-                                        <div class="category-box">
-                                            <a href="#" title=""><img src="images/destinations/8.jpg" alt="" /></a>
-                                            <div class="carousel-caption padd-bottom-cap">
-                                                <p class="white-color font-newsize">Jaffna</p>
-                                            </div>
-                                        </div> 
-                                    </div> 
-                                    <div class="col-md-3 col-sm-4 col-xs-12">
-
-                                        <div class="category-box">
-                                            <a href="#" title=""><img src="images/destinations/9.jpg" alt="" /></a>
-                                            <div class="carousel-caption padd-top-cap">
-                                                <p  class="white-color font-newsize">Katharagama</p>
-                                            </div>
-                                        </div> 
-
-
-                                        <div class="category-box">
-                                            <a href="#" title=""><img src="images/destinations/10.jpg" alt="" /></a>
-                                            <div class="carousel-caption padd-bottom-cap ">
-                                                <p  class="white-color font-newsize">Ella</p>
-                                            </div>
-                                        </div> 
-                                    </div> 
-
-                                    <div class="col-md-3 col-sm-4 col-xs-12">
-                                        <div class="category-box">
-                                            <a href="#" title=""><img src="images/destinations/11.jpg" alt="" /></a>
-                                            <div class="carousel-caption padd-top-cap">
-                                                <p  class="white-color font-newsize">Sinharaja</p>
-                                            </div>
-                                        </div> 
-
-
-                                        <div class="category-box">
-                                            <a href="#" title=""><img src="images/77.jpg" alt="" /></a>
-                                            <div class="carousel-caption padd-bottom-cap">
-                                                <p  class="white-color font-newsize">Kithulgala<p>
-                                            </div>
-                                        </div>   
-                                    </div>  
+                                            <?php
+                                        }
+                                    }
+                                    ?>
                                 </div> 
                             </div>
                         </div>
@@ -411,118 +282,42 @@
                             </div>
                             <div class="listing-carousel">
                                 <div class="row" id="listing-carousel">
-                                    <div class="col-md-3">
-                                        <div class="listing-box">
-                                            <div class="listing-box-thumb">
-                                                <span class="price-list">2 Days</span>
-                                                <img src="images/tour/1-1.jpg" alt="" />
-                                                <div class="listing-box-title">
-                                                    <h3><a href="#" title="">Sigiriya and Dambulla</a></h3>
-
+                                    <?php
+                                    $TOUR_PACKAGE = new TourPackage(NULL);
+                                    foreach ($TOUR_PACKAGE->getTourPackagesByType(1) as $tour_package) {
+                                        ?>
+                                        <div class="col-md-3"> 
+                                            <a href="view-tour-packages.php?id=<?php echo $tour_package['id'] ?>" title="<?php echo $tour_package['title'] ?>">
+                                                <div class="listing-box">
+                                                    <div class="listing-box-thumb">
+                                                        <span class="price-list"><?php echo $tour_package['dates'] ?></span>
+                                                        <img src="upload/tour-package/<?php echo $tour_package['image_name'] ?>" alt="<?php echo $tour_package['title'] ?>" />
+                                                        <div class="listing-box-title">
+                                                            <h3> <?php echo $tour_package['title'] ?> </h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="listing-rate-share text-justify ">
+                                                        <p class="p-padd" > 
+                                                            <?php echo substr($tour_package['short_description'], 0, 140) ?>...
+                                                        </p>
+                                                        <div class="col-md-8   " id="p-padd-2">
+                                                            <h4 class="p--bottom">
+                                                                <strong>
+                                                                    US$: <?php echo $tour_package['price'] ?>
+                                                                </strong>
+                                                            </h4>
+                                                            <span>
+                                                                <p>Starting From</p>
+                                                            </span>
+                                                        </div>
+                                                        <div class="col-md-4 tour-btn"">
+                                                            <p  class="p-tab-b">View</p>
+                                                        </div>
+                                                    </div>  
                                                 </div>
-                                            </div>
-                                            <div class="listing-rate-share text-justify ">
-                                                <p class="p-padd" >  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
-                                                <div class="col-md-8   " id="p-padd-2">
-                                                    <h4 class="p--bottom">
-                                                        <strong>
-                                                            US$: 560.00</strong>
-                                                    </h4>
-                                                    <span>
-                                                        <p>Starting From</p>
-                                                    </span>
-                                                </div>
-                                                <div class="col-md-4" style="margin-top: 20px;">
-                                                    <p  class="p-tab-b">View</p>
-                                                </div>
-                                            </div> 
-
+                                            </a>
                                         </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="listing-box">
-                                            <div class="listing-box-thumb">
-                                                <span class="price-list">One Day</span>
-                                                <img src="images/tour/1-2.jpg" alt="" />
-                                                <div class="listing-box-title">
-                                                    <h3><a href="#" title="">Galle Tour</a></h3>
-
-                                                </div>
-                                            </div>
-                                            <div class="listing-rate-share text-justify ">
-                                                <p class="p-padd" >  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
-                                                <div class="col-md-8   " id="p-padd-2">
-                                                    <h4 class="p--bottom">
-                                                        <strong>
-                                                            US$: 700.00</strong>
-                                                    </h4>
-                                                    <span>
-                                                        <p>Starting From</p>
-                                                    </span>
-                                                </div>
-                                                <div class="col-md-4" style="margin-top: 20px;">
-                                                    <p  class="p-tab-b">View</p>
-                                                </div>
-                                            </div> 
-
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="listing-box">
-                                            <div class="listing-box-thumb">
-                                                <span class="price-list">One Day</span>
-                                                <img src="images/tour/1-3.jpg" alt="" />
-                                                <div class="listing-box-title">
-                                                    <h3><a href="#" title="">Kandy and Pinnawala</a></h3>
-
-                                                </div>
-                                            </div>
-                                            <div class="listing-rate-share text-justify ">
-                                                <p class="p-padd" >  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
-                                                <div class="col-md-8   " id="p-padd-2">
-                                                    <h4 class="p--bottom">
-                                                        <strong>
-                                                            US$: 1200.00</strong>
-                                                    </h4>
-                                                    <span>
-                                                        <p>Starting From</p>
-                                                    </span>
-                                                </div>
-                                                <div class="col-md-4" style="margin-top: 20px;">
-                                                    <p  class="p-tab-b">View</p>
-                                                </div>
-                                            </div> 
-
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="listing-box">
-                                            <div class="listing-box-thumb">
-                                                <span class="price-list">One Day</span>
-                                                <img src="images/tour/1-4.jpg" alt="" />
-                                                <div class="listing-box-title">
-                                                    <h3><a href="#" title="">City Tour</a></h3>
-
-                                                </div>
-                                            </div>
-                                            <div class="listing-rate-share text-justify ">
-                                                <p class="p-padd" >  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
-                                                <div class="col-md-8 " id="p-padd-2">
-                                                    <h4 class="p--bottom">
-                                                        <strong>
-                                                            US$: 800.00</strong>
-                                                    </h4>
-                                                    <span>
-                                                        <p>Starting From</p>
-                                                    </span>
-                                                </div>
-                                                <div class="col-md-4" style="margin-top: 20px;">
-                                                    <p  class="p-tab-b">View</p>
-                                                </div>
-                                            </div> 
-
-                                        </div>
-                                    </div>
+                                    <?php } ?>
                                 </div>
                             </div>
                         </div>
@@ -539,85 +334,34 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="heading">
-                                <h2>Top Things to do</h2>
+                                <h2>Things to do</h2>
                                 <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</span>
                             </div>
                             <div class="listing-carousel">
                                 <div class="row"  id="list-activity">
-                                    <div class="col-md-4 col-sm-6 col-xs-12">
-                                        <div class="blog-post-2 ">
-                                            <div class="blog-post-thumb"> 
-                                                <a href="view-destination.php" title=""><img src="images/destinations/des-1.jpg" alt="" /></a></div>
-                                            <div class="blog-detail">
+                                    <?php
+                                    $ACTIVITIES = new Activities(NULL);
+                                    foreach ($ACTIVITIES->all() as $key => $activity) {
+                                        ?>
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="blog-post-2 ">
+                                                <div class="blog-post-thumb"> 
+                                                    <a href="view-things-to-do.php?id=<?php echo $activity['id'] ?>" title=""><img src="images/destinations/des-1.jpg" alt="" /></a></div>
+                                                <div class="blog-detail">
 
-                                                <h3><a href="view-destination.php" title="">Kandy</a></h3>
-                                                <p class="text-justify">Dating is a part of the human mating process whereby two people meet sociallyDating is a part of the human mating process whereby two people meet socially for…</p>
-                                                <a href="view-destination.php">  
-                                                    <div class=" pull-right  des-with" >
-                                                        <p  class="p-tab-b">View</p>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div><!-- BLog Post  -->
-                                    </div>
-                                    <div class="col-md-4 col-sm-6 col-xs-12">
-                                        <div class="blog-post-2">
-                                            <div class="blog-post-thumb"> <a href="view-destination.php">  <img src="images/destinations/des-2.jpg" alt="" /></a></div>
-                                            <div class="blog-detail"> 
-                                                <h3><a href="#" title="">Dambulla </a></h3>
-                                                <p class="text-justify">Dating is a part of the human mating process whereby two people meet sociallyDating is a part of the human mating process whereby two people meet socially for…</p>
-                                                <a href="view-destination.php">  
-                                                    <div class=" pull-right  des-with" >
-                                                        <p  class="p-tab-b">View</p>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div><!-- BLog Post  -->
-                                    </div>
-                                    
-                                    <div class="col-md-4 col-sm-6 col-xs-12">
-                                        <div class="blog-post-2">
-                                            <div class="blog-post-thumb">  <a href="view-destination.php">  <img src="images/destinations/des-3.jpg" alt="" /></a></div>
-                                            <div class="blog-detail"> 
-                                                <h3><a href="#" title="">Polonnaruwa</a></h3>
-                                                <p class="text-justify">Dating is a part of the human mating process whereby two people meet sociallyDating is a part of the human mating process whereby two people meet socially for…</p>
-                                                <a href="view-destination.php">  
-                                                    <div class=" pull-right  des-with" >
-                                                        <p  class="p-tab-b">View</p>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div><!-- BLog Post  -->
-                                    </div>
-                                    <div class="col-md-4 col-sm-6 col-xs-12">
-                                        <div class="blog-post-2">
-                                            <div class="blog-post-thumb"> <a href="#" title=""><img src="images/destinations/des-4.jpg" alt="" /></a></div>
-                                            <div class="blog-detail"> 
-                                                <h3><a href="#" title="">Anuradapura</a></h3>
-                                                <p class="text-justify">Dating is a part of the human mating process whereby two people meet sociallyDating is a part of the human mating process whereby two people meet socially for…</p>
-                                                <a href="view-tour-packages.php">  
-                                                    <div class=" pull-right  des-with" >
-                                                        <p  class="p-tab-b">View</p>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div><!-- BLog Post  -->
-                                    </div>
-
-                                    <div class="col-md-4 col-sm-6 col-xs-12">
-                                        <div class="blog-post-2">
-                                            <div class="blog-post-thumb"> <a href="#" title=""><img src="images/destinations/des-5.jpg" alt="" /></a></div>
-                                            <div class="blog-detail"> 
-                                                <h3><a href="#" title="">Galle</a></h3>
-                                                <p class="text-justify">Dating is a part of the human mating process whereby two people meet sociallyDating is a part of the human mating process whereby two people meet socially for…</p>
-                                                <a href="view-tour-packages.php">  
-                                                    <div class=" pull-right  des-with" >
-                                                        <p  class="p-tab-b">View</p>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div><!-- BLog Post  -->
-                                    </div>
+                                                    <h3><a href="view-things-to-do.php?id=<?php echo $activity['id'] ?>" title=""><?php echo $activity['title'] ?></a></h3>
+                                                    <p class="text-justify">
+                                                        <?php echo substr($activity['short_description'], 0, 140) ?>...
+                                                    </p>
+                                                    <a href="view-things-to-do.php?id=<?php echo $activity['id'] ?>">  
+                                                        <div class=" pull-right  des-with" >
+                                                            <p  class="p-tab-b">View</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div><!-- BLog Post  -->
+                                        </div> 
+                                    <?php } ?>
                                 </div>
                             </div>
                         </div>
@@ -688,18 +432,17 @@
                         <div class="col-md-9">
 
                             <ul class="testimonial-sec">
-                                <li>
-                                    <img src="images/resource/t1.jpg" alt="" />
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eueget ante venenatis euismod. Etiam in odio mattis, suscipit ex sit amet, toroni inoui bibenidum risus. Suspendisse tempus vulputate nisl. tiam in odio mattis, suscipit ex sit amet, toroni inoui bibenidum risus. Suspendisse tempus vulputate nisl.</p>
-                                </li>
-                                <li>
-                                    <img src="images/resource/t1.jpg" alt="" />
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eueget ante venenatis euismod. Etiam in odio mattis, suscipit ex sit amet, toroni inoui bibenidum risus. Suspendisse tempus vulputate nisl. tiam in odio mattis, suscipit ex sit amet, toroni inoui bibenidum risus. Suspendisse tempus vulputate nisl.</p>
-                                </li>
-                                <li>
-                                    <img src="images/resource/t1.jpg" alt="" />
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eueget ante venenatis euismod. Etiam in odio mattis, suscipit ex sit amet, toroni inoui bibenidum risus. Suspendisse tempus vulputate nisl. tiam in odio mattis, suscipit ex sit amet, toroni inoui bibenidum risus. Suspendisse tempus vulputate nisl.</p>
-                                </li>
+                                <?php
+                                $COMMENT = new Comments(NULL);
+                                foreach ($COMMENT->activeComments() as $comment) {
+                                    ?>
+                                    <li>
+                                        <img src="upload/comments/<?php echo $comment['image_name'] ?>" alt="<?php echo $comment['title'] ?>" />
+
+                                        <?php echo $comment['comment'] ?> 
+
+                                    </li>
+                                <?php } ?>
                             </ul>
                         </div>
                         <div class="col-md-3 hidden-xs col-sm-3 " style=" margin-top: -113px;"> 

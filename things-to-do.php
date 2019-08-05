@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+include './class/include.php';
+?>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,101 +57,35 @@
                 <div class="container"> 
                     <div class="blog-sec">
                         <div class="row">
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="blog-post">
-                                    <div class="blog-post-thumb"> 
-                                        <a href="view-things-to-do.php" title=""><img src="images/destinations/des-1.jpg" alt="" /></a></div>
-                                    <div class="blog-detail">
+                            <?php
+                            $ACTIVITIES = new Activities(NULL);
+                            foreach ($ACTIVITIES->all() as $key => $activity) {
+                                ?>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="blog-post">
+                                        <div class="blog-post-thumb"> 
+                                            <a href="view-things-to-do.php?id=<?php echo $activity['id'] ?>" title=""><img src="images/destinations/des-1.jpg" alt="" /></a></div>
+                                        <div class="blog-detail">
 
-                                        <h3><a href="view-things-to-do.php" title="">Kandy</a></h3>
-                                        <p class="text-justify">Dating is a part of the human mating process whereby two people meet sociallyDating is a part of the human mating process whereby two people meet socially for…</p>
-                                        <a href="view-things-to-do.php">  
-                                            <div class=" pull-right  des-with" >
-                                                <p  class="p-tab-b">View</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div><!-- BLog Post  -->
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="blog-post">
-                                    <div class="blog-post-thumb"> <a href="view-things-to-do.php">  <img src="images/destinations/des-2.jpg" alt="" /></a></div>
-                                    <div class="blog-detail"> 
-                                        <h3><a href="#" title="">Dambulla </a></h3>
-                                        <p class="text-justify">Dating is a part of the human mating process whereby two people meet sociallyDating is a part of the human mating process whereby two people meet socially for…</p>
-                                      <a href="view-things-to-do.php">  
-                                            <div class=" pull-right  des-with" >
-                                                <p  class="p-tab-b">View</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div><!-- BLog Post  -->
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="blog-post">
-                                    <div class="blog-post-thumb">  <a href="view-things-to-do.php">  <img src="images/destinations/des-3.jpg" alt="" /></a></div>
-                                    <div class="blog-detail"> 
-                                        <h3><a href="#" title="">Polonnaruwa</a></h3>
-                                        <p class="text-justify">Dating is a part of the human mating process whereby two people meet sociallyDating is a part of the human mating process whereby two people meet socially for…</p>
-                                      <a href="view-things-to-do.php">  
-                                            <div class=" pull-right  des-with" >
-                                                <p  class="p-tab-b">View</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div><!-- BLog Post  -->
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="blog-post">
-                                    <div class="blog-post-thumb"> <a href="#" title=""><img src="images/destinations/des-4.jpg" alt="" /></a></div>
-                                    <div class="blog-detail"> 
-                                        <h3><a href="#" title="">Anuradapura</a></h3>
-                                        <p class="text-justify">Dating is a part of the human mating process whereby two people meet sociallyDating is a part of the human mating process whereby two people meet socially for…</p>
-                                       <a href="view-tour-packages.php">  
-                                            <div class=" pull-right  des-with" >
-                                                <p  class="p-tab-b">View</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div><!-- BLog Post  -->
-                            </div>
-
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="blog-post">
-                                    <div class="blog-post-thumb"> <a href="#" title=""><img src="images/destinations/des-5.jpg" alt="" /></a></div>
-                                    <div class="blog-detail"> 
-                                        <h3><a href="#" title="">Galle</a></h3>
-                                        <p class="text-justify">Dating is a part of the human mating process whereby two people meet sociallyDating is a part of the human mating process whereby two people meet socially for…</p>
-                                       <a href="view-tour-packages.php">  
-                                            <div class=" pull-right  des-with" >
-                                                <p  class="p-tab-b">View</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div><!-- BLog Post  -->
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <div class="blog-post">
-                                    <div class="blog-post-thumb"> <a href="#" title=""><img src="images/destinations/des-6.jpg" alt="" /></a></div>
-                                    <div class="blog-detail"> 
-                                        <h3><a href="#" title="">Sigiriya</a></h3>
-                                        <p class="text-justify">Dating is a part of the human mating process whereby two people meet sociallyDating is a part of the human mating process whereby two people meet socially for…</p>
-                                       <a href="view-tour-packages.php">  
-                                            <div class=" pull-right  des-with" >
-                                                <p  class="p-tab-b">View</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div><!-- BLog Post  -->
-                            </div>
-                        </div> 
-                    </div>    
+                                            <h3><a href="view-things-to-do.php?id=<?php echo $activity['id'] ?>" title=""><?php echo $activity['title'] ?></a></h3>
+                                            <p class="text-justify">   <?php echo substr($activity['short_description'], 0, 140) ?>...</p>
+                                            <a href="view-things-to-do.php?id=<?php echo $activity['id'] ?>">  
+                                                <div class=" pull-right  des-with" >
+                                                    <p  class="p-tab-b">View</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div><!-- BLog Post  -->
+                                </div>
+                            <?php }?>
+                            </div> 
+                        </div>    
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
 
-        <?php include './footer.php'; ?>
+            <?php include './footer.php'; ?>
 
     </div>
 

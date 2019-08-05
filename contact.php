@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+include './class/include.php';
+?>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +20,7 @@
     <link rel="stylesheet" href="css/colors/colors.css" type="text/css" /><!-- color -->		
 
     <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+    <link href="contact-form/style.css" rel="stylesheet" type="text/css"/>
 
 </head>
 <body>
@@ -55,7 +59,7 @@
                     <div class="col-md-12">
                         <div class="contact-map">
                             <div id="map-container">
-                                               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.3027715516478!2d79.87227641477318!3d6.973560894962106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25887f8019063%3A0x26e34665bca049a0!2sAPPLE+VACATIONS+(PVT)+Ltd!5e0!3m2!1sen!2slk!4v1520781827115" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.3027715516478!2d79.87227641477318!3d6.973560894962106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25887f8019063%3A0x26e34665bca049a0!2sAPPLE+VACATIONS+(PVT)+Ltd!5e0!3m2!1sen!2slk!4v1520781827115" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
                             </div>
                         </div>
@@ -71,16 +75,49 @@
                         <div class="col-md-8 column">
                             <h3 class="mini-title">Form</h3>
                             <div class="contactus-form"  id="contact">
-                                <div id="message"></div>
-                                <form method="post" action="https://grandetest.com/theme/prolist-html/contact.php" name="contactform" id="contactform">
-                                    <div class="row">
-                                        <div class="col-md-6"><input name="name" type="text" id="name" placeholder="Name" /></div>
-                                        <div class="col-md-6"><input  name="email" type="text" id="email" placeholder="Email"  /></div>
-                                        <div class="col-md-12"><input type="text" placeholder="Subject" /></div>
-                                        <div class="col-md-12"><textarea name="comments" id="comments" placeholder="Message"></textarea></div>
-                                        <div class="col-md-12"><input type="submit" id="submit" value="send message" /></div>
+
+                                <div class="row form-type">
+                                    <div class="col-md-6">
+                                        <input  type="text" name="txtFullName" id="txtFullName" placeholder="Name" />
+                                        <div class="col-lg-12">
+                                            <span id="spanFullName"></span>
+                                        </div>
                                     </div>
-                                </form>
+                                    <div class="col-md-6">
+                                        <input   type="text" name="txtEmail" id="txtEmail" placeholder="Email"  />
+                                        <div class="col-lg-12">
+                                            <span id="spanEmail"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="text" placeholder="Subject"name="txtSubject" id="txtSubject" />
+                                        <div class="col-lg-12">
+                                            <span id="spanSubject"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <textarea id="txtMessage" name="txtMessage" placeholder="Message"></textarea>
+                                        <div class="col-lg-12">
+                                            <span id="spanMessage"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4"   > 
+                                        <label for="comment">Security Code:</label>
+                                        <input  type="text" name="captchacode" id="captchacode"  placeholder="Enter the code " style="color: black">
+                                        <div class="col-lg-12">
+                                            <span id="capspan" ></span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="col-md-4" > 
+                                        <?php include("./contact-form/captchacode-widget.php"); ?> 
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <input type="submit" id="btnSubmit" value="send message" /> 
+                                    </div>
+                                </div> 
+
                             </div>
                         </div>
                         <div class="col-md-4 column">
@@ -139,6 +176,6 @@
 
     <script type="text/javascript" src="js/maps3.js"></script><!-- Nice Select -->
     <script type="text/javascript" src="js/jquery.jigowatt.js"></script><!-- Form -->
-
+    <script src="contact-form/scripts.js" type="text/javascript"></script>
 </body>
 </html>

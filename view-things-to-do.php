@@ -61,14 +61,14 @@
                                         <li><img src="images/des-b-2.jpg" alt="" class="img-responsive" /> </li>
                                         <li><img src="images/des-b-3.jpg" alt="" class="img-responsive" /> </li>
                                         <li><img src="images/des-4.jpg" alt="" class="img-responsive" /> </li>
-                                       
+
                                     </ul>
                                     <ul class="single-product-thumb">
                                         <li><span><img src="images/des-b-1.jpg" alt="" class="img-responsive"/></span></li>
                                         <li><span><img src="images/des-2.jpg" alt="" class="img-responsive" /></span></li>
                                         <li><span><img src="images/des-3.jpg" alt="" class="img-responsive" /></span></li>
                                         <li><span><img src="images/des-b-4.jpg" alt="" class="img-responsive" /></span></li>
-                                         
+
                                     </ul>
                                 </div>
                             </div>
@@ -76,7 +76,7 @@
                                 <div  id="location">
 
                                     <div class="list-location">
-                                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.536452450768!2d80.6393219147603!3d7.293460894735891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3662dc9c94c75%3A0xe1885fe2929d358!2zVGVtcGxlIG9mIHRoZSBUb290aCBNdXNldW0g4Lav4LeF4Laz4LePIOC2uOC3j-C2veC3kuC2nOC3j-C3gOC3miDgtprgt57gtq3gt5Tgtprgt4_gtpzgt4_gtrvgtro!5e0!3m2!1sen!2slk!4v1564658428036!5m2!1sen!2slk" style="border:0" height="200px"allowfullscreen></iframe>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.536452450768!2d80.6393219147603!3d7.293460894735891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3662dc9c94c75%3A0xe1885fe2929d358!2zVGVtcGxlIG9mIHRoZSBUb290aCBNdXNldW0g4Lav4LeF4Laz4LePIOC2uOC3j-C2veC3kuC2nOC3j-C3gOC3miDgtprgt57gtq3gt5Tgtprgt4_gtpzgt4_gtrvgtro!5e0!3m2!1sen!2slk!4v1564658428036!5m2!1sen!2slk" style="border:0" height="200px"allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div> 
@@ -91,90 +91,90 @@
                                 </p>
                             </div>
                         </div>
- <div class="row">
-                        <div class="related-products">
-                            <div class="col-md-12">
-                                <h3 class="mini-title">Related Things to do</h3>
-                            </div>
-                            <div class="row" id="related-carousel">
+                        <div class="row">
+                            <div class="related-products">
+                                <div class="col-md-12">
+                                    <h3 class="mini-title">Related Things to do</h3>
+                                </div>
+                                <div class="row" id="related-carousel">
 
-                                <div class="col-md-3">
-                                    <div class="product-box">
-                                        <div class="product-thumb">
-                                            <img src="images/destinations/1.jpg" alt="" class="img-responsive" />
-                                            <a href="#" title="">View</a>
-                                        </div>
-                                        <h3><a href="#" title="">Sigiriya</a></h3>
+                                    <div class="col-md-3">
+                                        <div class="product-box">
+                                            <div class="product-thumb">
+                                                <img src="images/destinations/1.jpg" alt="" class="img-responsive" />
+                                                <a href="#" title="">View</a>
+                                            </div>
+                                            <h3><a href="#" title="">Sigiriya</a></h3>
 
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="product-box">
-                                        <div class="product-thumb">
-                                            <img src="images/destinations/2.jpg" alt="" class="img-responsive"/>
-                                            <a href="#" title="">View</a>
                                         </div>
-                                        <h3><a href="#" title="">Nuwara Eliya</a></h3>
                                     </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="product-box">
-                                        <div class="product-thumb">
-                                            <img src="images/destinations/3.jpg" alt="" class="img-responsive"/>
-                                            <a href="#" title="">View</a>
+                                    <div class="col-md-3">
+                                        <div class="product-box">
+                                            <div class="product-thumb">
+                                                <img src="images/destinations/2.jpg" alt="" class="img-responsive"/>
+                                                <a href="#" title="">View</a>
+                                            </div>
+                                            <h3><a href="#" title="">Nuwara Eliya</a></h3>
                                         </div>
-                                        <h3><a href="#" title="">Anuradapura</a></h3>
                                     </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="product-box">
-                                        <div class="product-thumb">
-                                            <img src="images/destinations/4.jpg" alt="" class="img-responsive"/>
-                                            <a href="#" title="">View</a>
+                                    <div class="col-md-3">
+                                        <div class="product-box">
+                                            <div class="product-thumb">
+                                                <img src="images/destinations/3.jpg" alt="" class="img-responsive"/>
+                                                <a href="#" title="">View</a>
+                                            </div>
+                                            <h3><a href="#" title="">Anuradapura</a></h3>
                                         </div>
-                                        <h3><a href="#" title="">Dambulla</a></h3>
                                     </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="product-box">
-                                        <div class="product-thumb">
-                                            <img src="images/destinations/5.jpg" alt="" class="img-responsive"/>
-                                            <a href="#" title="">View</a>
+                                    <div class="col-md-3">
+                                        <div class="product-box">
+                                            <div class="product-thumb">
+                                                <img src="images/destinations/4.jpg" alt="" class="img-responsive"/>
+                                                <a href="#" title="">View</a>
+                                            </div>
+                                            <h3><a href="#" title="">Dambulla</a></h3>
                                         </div>
-                                        <h3><a href="#" title="">Hikkaduwa</a></h3>
                                     </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="product-box">
-                                        <div class="product-thumb">
-                                            <img src="images/destinations/6.jpg" alt="" class="img-responsive"/>
-                                            <a href="#" title="">View</a>
+                                    <div class="col-md-3">
+                                        <div class="product-box">
+                                            <div class="product-thumb">
+                                                <img src="images/destinations/5.jpg" alt="" class="img-responsive"/>
+                                                <a href="#" title="">View</a>
+                                            </div>
+                                            <h3><a href="#" title="">Hikkaduwa</a></h3>
                                         </div>
-                                        <h3><a href="#" title="">Pinnawala</a></h3>
                                     </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="product-box">
-                                        <div class="product-thumb">
-                                            <img src="images/destinations/7.jpg" alt="" class="img-responsive"/>
-                                            <a href="#" title="">View</a>
+                                    <div class="col-md-3">
+                                        <div class="product-box">
+                                            <div class="product-thumb">
+                                                <img src="images/destinations/6.jpg" alt="" class="img-responsive"/>
+                                                <a href="#" title="">View</a>
+                                            </div>
+                                            <h3><a href="#" title="">Pinnawala</a></h3>
                                         </div>
-                                        <h3><a href="#" title="">Mirissa</a></h3>
                                     </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="product-box">
-                                        <div class="product-thumb">
-                                            <img src="images/destinations/8.jpg" alt="" class="img-responsive" />
-                                            <a href="#" title="">View</a>
+                                    <div class="col-md-3">
+                                        <div class="product-box">
+                                            <div class="product-thumb">
+                                                <img src="images/destinations/7.jpg" alt="" class="img-responsive"/>
+                                                <a href="#" title="">View</a>
+                                            </div>
+                                            <h3><a href="#" title="">Mirissa</a></h3>
                                         </div>
-                                        <h3><a href="#" title="">Jaffna</a></h3>
                                     </div>
-                                </div>
+                                    <div class="col-md-3">
+                                        <div class="product-box">
+                                            <div class="product-thumb">
+                                                <img src="images/destinations/8.jpg" alt="" class="img-responsive" />
+                                                <a href="#" title="">View</a>
+                                            </div>
+                                            <h3><a href="#" title="">Jaffna</a></h3>
+                                        </div>
+                                    </div>
 
-                            </div>
-                        </div>                             
-                    </div> 
+                                </div>
+                            </div>                             
+                        </div> 
                     </div> 
                 </div> 
             </div>

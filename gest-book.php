@@ -1,11 +1,14 @@
 <!DOCTYPE html>
+<?php
+include './class/include.php';
+?>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="creativelayers">
-
+    <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
     <title>Gest Book - Apple vacation</title>
 
     <!-- Styles -->
@@ -16,8 +19,8 @@
     <link rel="stylesheet" href="css/responsive.css" type="text/css" /><!-- Responsive -->	
     <link rel="stylesheet" href="css/colors/colors.css" type="text/css" /><!-- color -->		
 
-    <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
 
+    <link href="comment/sweetalert.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
     <div class="page-loading">
@@ -39,7 +42,7 @@
                             <div class="inner-header">
                                 <h2>Gest Book</h2>
                                 <ul class="breadcrumbs">
-                                    <li><a href="#" title="">Home</a></li>
+                                    <li><a href="index.php" title="">Home</a></li>
                                     <li><a href="#" title="">Gest Book</a></li> 
                                 </ul>	
                             </div>
@@ -61,57 +64,49 @@
                                 <h3 class="mini-title">revıew</h3>
                             </div> 
                         </div> 
-                        <div class="row" style="margin-bottom: 30px;">
-                            <div class="col-md-2"></div>
-                            <div class="col-md-10">
-                                <div class="review-list-sec">  
-                                    <div class="review-list">
-                                        <div class="review-avatar">
-                                            <img src="images/resource/r1.jpg" alt="" />
+                        <?php
+                        $COMMENT = new Comments(NULL);
+                        foreach ($COMMENT->activeComments() as $key => $comment) {
+                            if ($key % 2 == 0) {
+                                ?>
+                                <div class="row M-row">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-10">
+                                        <div class="review-list-sec">  
+                                            <div class="review-list">
+                                                <div class="review-avatar">
+                                                    <img src="upload/comments/<?php echo $comment['image_name'] ?>" alt="<?php echo $comment['name'] ?>" />
+                                                </div>
+                                                <div class="reviewer-info">
+                                                    <h3><a href="#" title=""><?php echo $comment['name'] ?></a></h3>
+                                                    <span><?php echo $comment['title'] ?></span>
+                                                    <?php echo $comment['comment'] ?>                                                </div> 
+                                            </div>
                                         </div>
-                                        <div class="reviewer-info">
-                                            <h3><a href="#" title="">Jamies Giroux</a></h3>
-                                            <span>Title</span>
-                                            <p>Donec nec tristique sapien. Aliquam ante felis, sagittis sodales diam sollicitudin, dapibus semper turpis</p>
-                                        </div> 
-                                    </div>
-                                </div>
-                            </div> 
-                        </div> 
-                        <div class="row" style="margin-bottom: 30px;">
-                            <div class="col-md-10">
-                                <div class="review-list-sec">  
-                                    <div class="review-list">
-                                        <div class="review-avatar">
-                                            <img src="images/resource/r1.jpg" alt="" />
+                                    </div> 
+                                </div> 
+                            <?php } else { ?>
+                                <div class="row M-row">
+                                    <div class="col-md-10">
+                                        <div class="review-list-sec">  
+                                            <div class="review-list">
+                                                <div class="review-avatar">
+                                                    <img src="upload/comments/<?php echo $comment['image_name'] ?>" alt="<?php echo $comment['name'] ?>" />
+                                                </div>
+                                                <div class="reviewer-info">
+                                                    <h3><a href="#" title=""><?php echo $comment['name'] ?></a></h3>
+                                                    <span><?php echo $comment['title'] ?></span>
+                                                    <?php echo $comment['comment'] ?>            
+                                                </div> 
+                                            </div>
                                         </div>
-                                        <div class="reviewer-info">
-                                            <h3><a href="#" title="">Jamies Giroux</a></h3>
-                                            <span>Title</span>
-                                            <p>Donec nec tristique sapien. Aliquam ante felis, sagittis sodales diam sollicitudin, dapibus semper turpis</p>
-                                        </div> 
-                                    </div>
-                                </div>
-                            </div> 
-                            <div class="col-md-2"></div>
-                        </div> 
-                           <div class="row" style="margin-bottom: 30px;">
-                            <div class="col-md-2"></div>
-                            <div class="col-md-10">
-                                <div class="review-list-sec">  
-                                    <div class="review-list">
-                                        <div class="review-avatar">
-                                            <img src="images/resource/r1.jpg" alt="" />
-                                        </div>
-                                        <div class="reviewer-info">
-                                            <h3><a href="#" title="">Jamies Giroux</a></h3>
-                                            <span>Title</span>
-                                            <p>Donec nec tristique sapien. Aliquam ante felis, sagittis sodales diam sollicitudin, dapibus semper turpis</p>
-                                        </div> 
-                                    </div>
-                                </div>
-                            </div> 
-                        </div> 
+                                    </div> 
+                                    <div class="col-md-2"></div>
+                                </div> 
+                                <?php
+                            }
+                        }
+                        ?>
                     </div>  
                 </div> 
             </div>
@@ -124,15 +119,34 @@
             <div class="row">
                 <div class="col-md-12 column">
                     <h3 class="mini-title">Add Your Review</h3>
-                    <div class="contactus-form"  id="contact">
-                        <div id="message"></div>
-                        <form method="post" action="https://grandetest.com/theme/prolist-html/contact.php" name="contactform" id="contactform">
-                            <div class="row">
-                                <div class="col-md-6"><input name="name" type="text" id="name" placeholder="Name" /></div>
-                                <div class="col-md-6"><input  name="email" type="text" id="email" placeholder="Email"  /></div>
-                                <div class="col-md-12"><input type="text" placeholder="Subject" /></div>
-                                <div class="col-md-12"><textarea name="comments" id="comments" placeholder="Message"></textarea></div>
-                                <div class="col-md-12"><input type="submit" id="submit" value="send message" /></div>
+                    <div class="contactus-form"  id="contact"> 
+                        <form id="form-data" class="form-type">
+                            <div class="row ">
+                                <div class="col-md-6">
+                                    <input name="name" type="text" id="name" placeholder="Name" />
+                                </div>
+                                <div class="col-md-6">
+                                    <input  name="email" type="text" id="email" placeholder="Email"  />
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="file" name="image_name" id="image_name" />
+                                </div>
+                                <div class="col-md-12">
+                                    <textarea id="comment" name="comment"  placeholder="Message"></textarea>
+                                </div>                                
+                                <div class="col-lg-6 col-md-4 col-sm-6"  >
+                                    <label for="comment">Security Code:</label>
+                                    <input  type="text" name="captchacode" id="captchacode"   placeholder="Enter the code " style="color: black">
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-md-4"  style="margin-top: 20px;">
+                                    <?php include("./comment/captchacode-widget.php"); ?>
+                                </div>  
+                                <div class="  col-sm-6 col-md-4">   </div>  
+
+                                <div class="col-md-12">
+                                    <input type="submit"   value="send message" id="create"/>
+                                </div>
+
                             </div>
                         </form>
                     </div>
@@ -159,10 +173,10 @@
 <script type="text/javascript" src="js/sumoselect.js"></script><!-- Nice Select -->
 <script type="text/javascript" src="js/choosen.min.js"></script><!-- Nice Select -->
 <script type="text/javascript" src="js/rangeslider.js"></script><!-- Nice Select -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAz77U5XQuEME6TpftaMdX0bBelQxXRlM&amp;callback=initMap"type="text/javascript"></script>
 
 <script type="text/javascript" src="js/maps3.js"></script><!-- Nice Select -->
 <script type="text/javascript" src="js/jquery.jigowatt.js"></script><!-- Form -->
-
+<script src="comment/sweetalert.min.js" type="text/javascript"></script>
+<script src="comment/validation.js" type="text/javascript"></script>
 </body>
 </html>
