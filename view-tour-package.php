@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+include './class/include.php';
+?>
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +21,24 @@
     <link rel="stylesheet" href="css/colors/colors.css" type="text/css" /><!-- color -->		
 
     <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
-
+    <link href="booking-form/style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <style>
+        .tab-sec > .nav-tabs > li a {
+            border-bottom: 1px solid transparent;
+            border-bottom-color: transparent;
+            color: #8d99ae;
+            cursor: pointer;
+            float: left;
+            font-family: Roboto;
+            font-size: 20px;
+            padding: 20px 82px 20px;
+            width: 105%;
+            background: #eaeaea;
+            margin-right: -1px !important;
+            font-family: Oswald;
+        }
+    </style>
 </head>
 <body>
     <div class="page-loading">
@@ -90,7 +111,7 @@
                                                                             </div>
                                                                         </div>-->
                                     <div class="col-md-12">
-                                        <div class="custom-tabs">
+                                        <div id="custom-tabs" class="custom-tabs">
                                             <div class="tab-sec">
                                                 <ul class="nav nav-tabs">
                                                     <li><a class="current" data-tab="overview">Overview</a></li>
@@ -276,6 +297,12 @@
     <script type="text/javascript" src="js/scrolly.js"></script><!-- Slick -->
     <script type="text/javascript" src="js/userincr.js"></script><!-- Slick -->
 
-
+    <script src="booking-form/scripts.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $(".datepicker").datepicker({dateFormat: 'yy-mm-dd'});
+        });
+    </script> 
 </body>
 </html>
