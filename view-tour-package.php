@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <?php
 include './class/include.php';
+ 
+$id = '';
+$id = $_GET['id'];
+$TOUR_PACKAGE = new TourPackage($id);
+$TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
 ?>
 
 <head>
@@ -10,8 +15,7 @@ include './class/include.php';
     <meta name="keywords" content="">
     <meta name="author" content="creativelayers">
 
-    <title>Tour Package Name - Apple Vacation</title>
-
+    <title><?php echo $TOUR_PACKAGE->title ?> - Apple Vacation</title>
     <!-- Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" /><!-- Bootstrap -->
     <link rel="stylesheet" href="css/line-awesome.min.css" type="text/css" /><!-- Icons -->
@@ -58,10 +62,11 @@ include './class/include.php';
                     <div class="row">
                         <div class="col-md-12">
                             <div class="inner-header">
-                                <h2>Tour Package  Name</h2>
+                                <h2><?php echo $TOUR_PACKAGE->title ?> </h2>
                                 <ul class="breadcrumbs">
                                     <li><a href="#" title="">Home</a></li>
-                                    <li><a href="#" title="">Tour Packages </a></li>  
+                                    <li><a href="tour-package.php?id=<?php echo $TOUR_TYPES->id ?>" title=""><?php echo $TOUR_TYPES->name ?></a></li>  
+                                    <li><a href="#" title=""><?php echo $TOUR_PACKAGE->title ?> </a></li>  
                                 </ul>	
                             </div>
                         </div>

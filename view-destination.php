@@ -107,19 +107,24 @@ $ATTRACTION = new Attraction($id);
                                     <?php
                                     foreach ($ATTRACTION->all() as $attraction) {
                                         ?>
-                                        <div class="col-md-3">
-                                            <div class="product-box">
-                                                <div class="product-thumb">
-                                                    <img src="upload/attraction/<?php echo $attraction['image_name'] ?>" alt="" class="img-responsive" />
-                                                    <a href="view-destination.php?id=<?php echo $attraction['id'] ?>" title="">View</a>
-                                                </div>
-                                                <h3>
-                                                    <a href="view-destination.php?id=<?php echo $attraction['id'] ?>" title="">
-                                                        <?php echo $attraction['title'] ?>
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="blog-post">
+                                                <div class="blog-post-thumb"> 
+                                                    <a href="view-destination.php?id=<?php echo $attraction['id'] ?>" title=""><img src="upload/attraction/thumb/<?php echo $attraction['image_name'] ?>" alt="" /></a></div>
+                                                <div class="blog-detail">
+
+                                                    <h3><a href="view-destination.php?id=<?php echo $attraction['id'] ?>" title=""><?php echo $attraction['title'] ?></a></h3>
+                                                    <p class="text-justify">
+                                                        <?php echo substr($attraction['short_description'], 0, 140) ?>...
+                                                    </p>
+                                                    <a href="view-destination.php?id=<?php echo $attraction['id'] ?>">  
+                                                        <div class=" pull-right  des-with" >
+                                                            <p  class="p-tab-b">View</p>
+                                                        </div>
                                                     </a>
-                                                </h3>
-                                            </div>
-                                        </div>
+                                                </div>
+                                            </div><!-- BLog Post  -->
+                                        </div> 
                                     <?php } ?>
                                 </div>
                             </div>                             
