@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+include './class/include.php';
+?>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,30 +57,14 @@
                     <div class="  column"> 
                         <div class="container"> 
                         <div class="row">  
+                            <?php
+                            $ALBUM_PHOTO = new AlbumPhoto(1);
+                            foreach ($ALBUM_PHOTO->all() as $album_photo) {
+                                ?>
                             <div class="col-md-3 gallery gallery-padd"> 
-                                <a href="images/gallery/g-b-1.jpg" class="big"><img src="images/gallery/g-1.jpg" alt="Surfing Sri Lanka" title="Surfing Sri Lanka" class="img-responsive" /></a>
+                                <a href="upload/photo-album/gallery/<?php echo $album_photo['image_name'] ?>" class="big"><img src="upload/photo-album/gallery/thumb/<?php echo $album_photo['image_name'] ?>" alt="<?php echo $album_photo['caption'] ?>" title="<?php echo $album_photo['caption'] ?>" class="img-responsive" /></a>
                             </div>
-                            <div class="col-md-3 gallery gallery-padd"> 
-                                <a href="images/gallery/g-b-2.jpg" class="big"><img src="images/gallery/g-2.jpg" alt=" Pinnawala" title="Pinnawala " class="img-responsive"/></a>
-                            </div>
-                            <div class="col-md-3 gallery gallery-padd">
-                                <a href="images/gallery/g-b-3.jpg" class="big"><img src="images/gallery/g-3.jpg" alt="Sigiriya" title="Sigiriya" class="img-responsive"/></a>
-                            </div>
-                            <div class="col-md-3 gallery gallery-padd">
-                                <a href="images/gallery/g-b-4.jpg" class="big"><img src="images/gallery/g-4.jpg" alt="Yala National Park" title="Yala National Park" class="img-responsive"/></a>
-                            </div>
-                            <div class="col-md-3 gallery ">
-                                <a href="images/gallery/g-b-5.jpg" class="big"><img src="images/gallery/g-5.jpg" alt="Yala National Park" title="Yala National Park" class="img-responsive"/></a>
-                            </div>
-                            <div class="col-md-3 gallery">
-                                <a href="images/gallery/g-b-6.jpg" class="big"><img src="images/gallery/g-6.jpg" alt="Yala National Park" title="Yala National Park" class="img-responsive"/></a>
-                            </div>
-                            <div class="col-md-3 gallery">
-                                <a href="images/gallery/g-b-7.jpg" class="big"><img src="images/gallery/g-7.jpg" alt="Yala National Park" title="Yala National Park" class="img-responsive"/></a>
-                            </div>
-                            <div class="col-md-3 gallery">
-                                <a href="images/gallery/g-b-8.jpg" class="big"><img src="images/gallery/g-8.jpg" alt="Yala National Park" title="Yala National Park" class="img-responsive"/></a>
-                            </div>
+                             <?php } ?>
                         </div>                         
                     </div>
                 </div>

@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+include './class/include.php';
+$ABOUT_US = new Page(1);
+?>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,7 +43,7 @@
                             <div class="inner-header">
                                 <h2>About Us</h2>
                                 <ul class="breadcrumbs">
-                                    <li><a href="#" title="">Home</a></li>
+                                    <li><a href="index.php" title="">Home</a></li>
                                     <li><a href="#" title="">About Us</a></li> 
                                 </ul>	
                             </div>
@@ -56,13 +60,12 @@
                         <div class="col-md-8 col-sm-12 about-row">
                             <div class="about-padd">
                                 <span>Sri Lanka Tour with us</span>
-                            <h1 class="about-f"><span  class="about-f-color">Get started</span> your Tours</h1>
-                            <div class="text-justify"  >
-                                <p style="text-align: justify;">Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu. Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu. .....</p>                    
-                                <p style="text-align: justify;">Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu. Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat similique an usu. .....</p>                    
-                            </div> 
+                                <h1 class="about-f"><span  class="about-f-color">Get started</span> your Tours</h1>
+                                <div class="text-justify"  >
+                                    <?php echo $ABOUT_US->description ?>       
+                                </div> 
                             </div>
-                            
+
                         </div>
                         <div class="col-md-4 col-sm-6  "  style="  padding-left:  0px;">                         
                             <img src="images/about.jpg" class="img-responsive">                         
