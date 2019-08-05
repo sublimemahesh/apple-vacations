@@ -56,70 +56,58 @@
                         <div class="col-md-12 column">
                             <div class="shoping-detail-sec">
                                 <div class="row">
-                                    <div class="col-md-8">
-                                        <div class="single-product-gallery">
-                                            <ul class="single-product-images">
-                                                <li><img src="images/destinations/v-1.jpg" alt="" /> </li>
-                                                <li><img src="images/destinations/v-1.jpg" alt="" /> </li>
-                                                <li><img src="images/destinations/v-1.jpg" alt="" /> </li>
-                                                <li><img src="images/destinations/v-1.jpg" alt="" /> </li>
-                                                <li><img src="images/destinations/v-1.jpg" alt="" /> </li>
-                                            </ul>
-                                            <ul class="single-product-thumb">
-                                                <li><span><img src="images/destinations/v-2.jpg" alt="" /></span></li>
-                                                <li><span><img src="images/destinations/v-2.jpg" alt="" /></span></li>
-                                                <li><span><img src="images/destinations/v-2.jpg" alt="" /></span></li>
-                                                <li><span><img src="images/destinations/v-2.jpg" alt="" /></span></li>
-                                                <li><span><img src="images/destinations/v-2.jpg" alt="" /></span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="single-product-info">
-                                            <h3>Tour Package Name</h3>
-                                            <div class="rated-list">
-                                                <b class="la la-star"></b>
-                                                <b class="la la-star"></b>
-                                                <b class="la la-star"></b>
-                                                <b class="la la-star-o"></b>
-                                                <b class="la la-star-o"></b>
-                                                <span>03 customer review</span>
-                                            </div>
-                                            <span>$112.00</span>
-                                            <p>Mauris in enim sit amet erat consequat vulputate. Donec ut justo nec est congue cursus sit amet aliquet lorem. In at eros id nisi sollicitudin consectetur Ut quis congue dui. Quisque finibus rhoncus nulla, nec consectetur nibh finibus sit amet. Duis eget</p>
-                                            <div class="c-input-number">
-                                                <span><input id="box1" type="text" class="manual-adjust" value="0"/></span>
-                                            </div>
-                                            <a href="#" title=""><i class="la la-opencart"></i> Add to cart</a>
-                                            <div class="shop-category">
-                                                <span>Categories</span>
-                                                <a href="#" title="">Food</a>
-                                                <a href="#" title="">Wine</a>
-                                                <a href="#" title="">Drink</a>
-                                            </div>
-                                            <div class="shop-share">
-                                                <span>Share</span>
-                                                <a href="#" title=""><i class="la la-twitter"></i></a>
-                                                <a href="#" title=""><i class="la la-google-plus"></i></a>
-                                                <a href="#" title=""><i class="la la-linkedin"></i></a>
-                                                <a href="#" title=""><i class="la la-behance"></i></a>
-                                                <a href="#" title=""><i class="la la-pinterest"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-
+                                    <!--                                    <div class="col-md-4">
+                                                                            <div class="single-product-info">
+                                                                                <h3>Tour Package Name</h3>
+                                                                                <div class="rated-list">
+                                                                                    <b class="la la-star"></b>
+                                                                                    <b class="la la-star"></b>
+                                                                                    <b class="la la-star"></b>
+                                                                                    <b class="la la-star-o"></b>
+                                                                                    <b class="la la-star-o"></b>
+                                                                                    <span>03 customer review</span>
+                                                                                </div>
+                                                                                <span>$112.00</span>
+                                                                                <p>Mauris in enim sit amet erat consequat vulputate. Donec ut justo nec est congue cursus sit amet aliquet lorem. In at eros id nisi sollicitudin consectetur Ut quis congue dui. Quisque finibus rhoncus nulla, nec consectetur nibh finibus sit amet. Duis eget</p>
+                                                                                <div class="c-input-number">
+                                                                                    <span><input id="box1" type="text" class="manual-adjust" value="0"/></span>
+                                                                                </div>
+                                                                                <a href="#" title=""><i class="la la-opencart"></i> Add to cart</a>
+                                                                                <div class="shop-category">
+                                                                                    <span>Categories</span>
+                                                                                    <a href="#" title="">Food</a>
+                                                                                    <a href="#" title="">Wine</a>
+                                                                                    <a href="#" title="">Drink</a>
+                                                                                </div>
+                                                                                <div class="shop-share">
+                                                                                    <span>Share</span>
+                                                                                    <a href="#" title=""><i class="la la-twitter"></i></a>
+                                                                                    <a href="#" title=""><i class="la la-google-plus"></i></a>
+                                                                                    <a href="#" title=""><i class="la la-linkedin"></i></a>
+                                                                                    <a href="#" title=""><i class="la la-behance"></i></a>
+                                                                                    <a href="#" title=""><i class="la la-pinterest"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>-->
                                     <div class="col-md-12">
                                         <div class="custom-tabs">
                                             <div class="tab-sec">
                                                 <ul class="nav nav-tabs">
                                                     <li><a class="current" data-tab="overview">Overview</a></li>
                                                     <li><a data-tab="itinerary">Tour Itinerary</a></li>
-                                                    <li><a data-tab="location-map">Location Map</a></li>
                                                     <li><a data-tab="inclusion">Inclusion and Exclusion</a></li>
-                                                    <li><a data-tab="addition-information">Addition Information</a></li>
                                                     <li><a data-tab="booking-form">Booking Form</a></li>
                                                 </ul>
                                                 <div id="overview" class="tab-content current">
+                                                    <div class="mb">
+                                                        <ul id="places-carousel" class="slider-pl">
+                                                            <li><img src="images/destinations/v-1.jpg" alt="" /> </li>
+                                                            <li><img src="images/destinations/v-1.jpg" alt="" /> </li>
+                                                            <li><img src="images/destinations/v-1.jpg" alt="" /> </li>
+                                                            <li><img src="images/destinations/v-1.jpg" alt="" /> </li>
+                                                            <li><img src="images/destinations/v-1.jpg" alt="" /> </li>
+                                                        </ul>
+                                                    </div>
                                                     <div class="">
                                                         <p>Rounding up inland Sri Lanka’s sights from Colombo by yourself means self-driving or hopping between trains, buses, and cabs. 
                                                             This private 3-day tour takes away the transport hassles: providing a private chauffeured vehicle to ferry you from sight to sight. 
@@ -134,61 +122,48 @@
                                                     </div>
                                                 </div>
                                                 <div id="itinerary" class="tab-content">
-                                                    <div class="">
-                                                        <h5>Day 1: COLOMBO - KANDY </h5>
-                                                        <p><strong>Stop At:</strong> Temple of the Sacred Tooth Relic, Sri Dalada Veediya, Kandy 20000 Sri Lanka </p>
-                                                        <p>Sri Dalada Maligawa or the Temple of the Sacred Tooth Relic is a Buddhist temple in the city of Kandy, Sri Lanka. 
-                                                            It is located in the royal palace complex of the former Kingdom of Kandy, which houses the relic of the tooth of the Buddha </p>
-                                                        <p>Duration: 1 hour</p>
-
-                                                        <p><strong>Pass By:</strong> Kandy Lake, Centre of Kandy City, Kandy 20000 Sri Lanka </p>
-                                                        <p>Kandy Lake, also known as Kiri Muhuda or the Sea of Milk, is an artificial lake in the heart of the hill city of Kandy, Sri Lanka, 
-                                                            built in 1807 by King Sri Wickrama Rajasinghe next to the Temple of the Tooth. Over the years, it was reduced in size. It is a protected lake, with fishing banned</p>
-
-                                                        <p><strong>Stop At:</strong> Royal Botanical Gardens, Peradeniya Road, Peradeniya 20400 Sri Lanka </p>
-                                                        <p>Royal Botanic Gardens, Peradeniya are about 5.5 km to the west of the city of Kandy in the Central Province of Sri Lanka. 
-                                                            It attracts 2 million visitors annually. It is near the Mahaweli River. It is renowned for its collection of orchids. </p>
-                                                        <p>Duration: 1 hour</p>
-
-                                                        <p><strong>Stop At:</strong> Kandy View Point, Rajapihilla Mawatha, Kandy 20000 Sri Lanka </p>
-                                                        <p>Climb the hill by Kandy Lake to reach Kandy view point and receive a view of the city that cannot be beaten. 
-                                                            As a popular tourist spot, the area brings in a large amount of peddlers, though they often sell sub-par items. 
-                                                            The area also has a reputation for high pickpocket activity, so keep an eye on your belongings. 
-                                                            From the hill, you can enjoy great views over the lake and the city </p>
-                                                        <p>Duration: 10 minutes</p>
-
-                                                        <p><strong>Stop At:</strong> Kandy Lake Club - Cultural Dance Show, 7 Sangamitta Mawatha, Kandy 20000 Sri Lanka </p>
-                                                        <p>Kandy cultural show – Sri Lanka, a country rich with culture & tradition offers a very vibrant and unique show of Sri Lankan traditional dances, 
-                                                            in the form of Kandy cultural show. The beat a dancing from \"Salupliya\" depicting several demons, \"Thelme\" vibrant expression of low country rhythm, 
-                                                            Fire and Harvest dances accompanied by Ceremonial Drums and the Drum Orchestra rising and falling to the lively tempo. As many as 12 different folk and 
-                                                            traditional dances are performed by Kandy lake club dance troop within the span of one hour.</p>
-                                                        <p>Duration: 1 hour</p>
-
-                                                        <p><strong>Pass By:</strong> Galle Face Green, Galle Road, Colombo Sri Lanka </p>
-                                                        <p>This long open space traditionally faces a narrow beach and the sea. 
-                                                            This is the most popular beachfront park in Colombo city, to have a relaxing evening and see the sunset. 
-                                                            Not only that, there are many activities to do such as walking, jogging, tasting sr Lankan street foods, fly kites and enjoy the fresh air. 
-                                                            In the morning many people used to come to Galle face for exercising and in the fall of night street food vendors open their stalls where you can taste 
-                                                            Sri Lanka's most famous 'Kottu Rotti' and 'Isso Wade'</p>
-
-                                                        <p><strong>Pass By:</strong> Old Parliament Building, Fort, Colombo Sri Lanka </p>
-                                                        <p>This Neo-Baroque-style building was built during the British colonial era to house the Legislative Council of Ceylon. 
-                                                            It was built on an idea of Sir Henry McCallum, which led to a proposal made by a committee to construct the new building 
-                                                            for the Secretariat, Council Chamber and Government offices on reclaimed land at the northern end of Galle Face’ were accepted by the Government in 1920.</p>
-
-                                                    </div>
-                                                </div>
-                                                <div id="location-map" class="tab-content">
-                                                    <div class="">
-                                                        <p><iframe src="https://www.google.com/maps/d/embed?mid=1hIE-TSt0OxFwz9EKx_2NgbHxWKjUTbTf" width="640" height="500"></iframe> </p>
-                                                    </div>
+                                                    <div class="faqs-box">
+                                                        <h3><span class="day-color">DAY 01</span> - Arrival And Overnight Stay At Golden Star Beach Hotel, Negombo </h3>
+                                                        <div class="content-faq">
+                                                            <p>Upon Arrival to the Sri Lankan International Airport be greeted by your chauffer guide who shall take you by air conditioned vehicle to Negombo. This trip will take you only 20 minutes. </p>
+                                                        </div>
+                                                    </div><!-- FAQ'S Box -->
+                                                    <div class="faqs-box">
+                                                        <h3><span class="day-color">DAY 02</span> - Anuradhapura And Overnight Stay At Sorowwa Resort & Spa, Habarana</h3>
+                                                        <div class="content-faq">
+                                                            <p>
+                                                                Anuradhapura is one of the holiest cities in Sri Lanka. The holiest item is the Bodhi Tree. This Bodhi tree is a sampling of the original Tree at which the Buddha sat as he attained enlightenment.
+                                                                Afterwards proceed to Habarana, the hub of the cultural triangle.
+                                                            </p>
+                                                        </div>
+                                                    </div><!-- FAQ'S Box -->
+                                                    <div class="faqs-box">
+                                                        <h3><span class="day-color">DAY 03</span> - Sigiriya & Polonaruwa And Overnight Stay At Sorowwa Resort & Spa, Habarana</h3>
+                                                        <div class="content-faq">
+                                                            <p>After breakfast head to the ancient city of Polonaruwa. This medieval city, a UNESCO World Heritage Site, rose to fame as the capital (10th – 12th century AD) after the decline of Anuradhapura. In the afternoon head to Sigiriya.</p>
+                                                        </div>
+                                                    </div><!-- FAQ'S Box -->
+                                                    <div class="faqs-box">
+                                                        <h3><span class="day-color">DAY 04</span> - Kandy And Overnight Stay At Hotel Suisse, Kandy</h3>
+                                                        <div class="content-faq">
+                                                            <p>After breakfast you have the choice of embarking on the Hirawaduna Trek, a nature trail that gives you an insight into Sri Lankan village life. Visit an elephant watch tree house and enjoy a catamaran ride and a bullock cart ride
+                                                                Thereafter proceed onwards to Kandy, enroute visit the Spice Garden in Mattale, and visit the Temple of the Tooth Relic before retiring for the night
+                                                            </p>
+                                                        </div>
+                                                    </div><!-- FAQ'S Box -->
+                                                    <div class="faqs-box">
+                                                        <h3><span class="day-color">DAY 05</span> - Departure</h3>
+                                                        <div class="content-faq">
+                                                            <p>After breakfast proceed to the Airport in time for the connecting flight.</p>
+                                                        </div>
+                                                    </div><!-- FAQ'S Box -->
                                                 </div>
                                                 <div id="inclusion" class="tab-content">
                                                     <div class="">
                                                         <div class="col-md-6">
                                                             <h5>Inclusion</h5>
                                                             <ul>
-                                                                <li><i class="icon icon-pencil"></i>02 Nights 3*** Hotel Accommodation</li>
+                                                                <li>02 Nights 3*** Hotel Accommodation</li>
                                                                 <li>Transport by air-conditioned (Bus/ Van/ Car)</li>
                                                                 <li>Hotel pickup and drop-off</li>
                                                                 <li>English Speaking Chauffeur</li>
@@ -208,28 +183,12 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div id="addition-information" class="tab-content">
-                                                    <div class="">
-                                                        <ul>
-                                                            <li>A current valid passport is required on the day of travel</li>
-                                                            <li>No heart problems or other serious medical conditions</li>
-                                                            <li>Not wheelchair accessible</li>
-                                                            <li>Comfortable walking shoes recommended for this tour.</li>
-                                                            <li>All visitors to Buddhist and Hindu temples are expected to remove footwear and hats. Also shoulders and knees should be covered</li>
-                                                            <li>The duration of transfers are approximate, the exact duration will depend on the time of day and traffic conditions</li>
-                                                            <li>A current valid passport is required on the day of travel</li>
-                                                            <li>Subject to favorable weather conditions. If canceled due to poor weather, you will be given the option of an alternative date</li>
-                                                            <li>Infants must sit on laps</li>
-                                                            <li>Not recommended for travelers with back problems</li>
-                                                            <li>Not recommended for pregnant travelers</li>
-                                                            <li>Travelers should have a moderate physical fitness level</li>
-                                                            <li>This is a private tour/activity. Only your group will participate</li>
-                                                        </ul>
-                                                    </div>
+
+                                                <div id="booking-form" class="tab-content">
+                                                    <?php
+                                                    include 'booking-form.php';
+                                                    ?>
                                                 </div>
-                                                <?php
-                                                include 'booking-form.php';
-                                                ?>
                                             </div>
                                         </div>  
                                     </div>

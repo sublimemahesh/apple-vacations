@@ -1643,7 +1643,7 @@ header .SumoSelect > .optWrapper > .options > li.opt.selected label {
 }
 .menu-sec nav {
     float: right;
-    
+
 }
 .menu-sec nav > ul {
     float: left;
@@ -2498,7 +2498,7 @@ footer .block::before {
     font-family: Roboto;
     font-size: 14px;
     line-height: 24px;
-    
+
     width: 100%;
 }
 .about-widget > ul {
@@ -4594,7 +4594,7 @@ aside .widget{
     color: #8d99ae;
     float: left;
     font-family: Roboto;
-    font-size: 13px;
+    font-size: 15px;
     margin: 15px 0 20px;
     width: 100%;
 }
@@ -7104,7 +7104,7 @@ blockquote::before {
 }
 .tab-content.current {
     display: block;
-    margin-top: 70px;
+    margin-top: 100px;
 }
 .custom-tabs {
     float: left;
@@ -7132,10 +7132,12 @@ blockquote::before {
     cursor: pointer;
     float: left;
     font-family: Roboto;
-    font-size: 16px;
-    padding: 15px 35px 15px;
+    font-size: 20px;
+    padding: 20px 82px 20px;
     margin-right: -1px !important;
     font-family: Oswald;
+    width: 105%;
+    background: #eaeaea;
 }
 .tab-sec > .nav-tabs > li a:hover {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
@@ -7217,7 +7219,7 @@ blockquote::before {
 }
 .related-products {
     float: left;
-    margin-top: 50px;
+    margin-top: 80px;
     width: 100%;
 }
 .related-products #related-carousel {
@@ -8597,8 +8599,8 @@ section#map-with-listing {
     padding: 20px;
 }
 .about-row{
-     margin-top: 40px;
-     padding-right: 0px;
+    margin-top: 40px;
+    padding-right: 0px;
 }
 .text-align-p{
     text-align: right;
@@ -8608,4 +8610,16 @@ section#map-with-listing {
 }
 .gallery-padd{
     padding-bottom: 30px;
+}
+.mb{
+    margin-bottom: 30px;
+}
+.day-color{
+    color: #d90429;
+}
+.slider-pl{
+    padding-left: 10%;
+}
+.custom-tabs .nav-tabs > li > a {
+    border-radius: 0px 0px 0 0;
 }
