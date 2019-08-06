@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 include './class/include.php';
- 
+
 $id = '';
 $id = $_GET['id'];
 $TOUR_PACKAGE = new TourPackage($id);
@@ -41,6 +41,9 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
             background: #eaeaea;
             margin-right: -1px !important;
             font-family: Oswald;
+        }
+        .tab-content.current {
+            margin-top: 100px;
         }
     </style>
 </head>
@@ -211,81 +214,179 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                                                 </div>
 
                                                 <div id="booking-form" class="tab-content">
-                                                    <?php
-                                                    include 'booking-form.php';
-                                                    ?>
+                                                    <div class="add-review-box">
+                                                        <div class="add-review-form">
+                                                            <div class="form-type">
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label >Your Name <span class="red">*</span></label>
+                                                                        <input type="text" name="txtFullName" id="txtFullName" class="form-control input-validater" placeholder="">
+                                                                        <span id="spanFullName"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label >Your Email <span>*</span> </label>
+                                                                        <input type="email" name="txtEmail" id="txtEmail" class="form-control input-validater"  placeholder="">
+                                                                        <span id="spanEmail"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label >Contact Number <span class="red">*</span></label>
+                                                                        <input type="tel" class="form-control input-validater" id="txtPhone" name="txtPhone" placeholder="">
+                                                                        <span id="spanPhone"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label >Country <span class="red">*</span></label>
+                                                                        <input type="text" class="form-control input-validater" id="txtCountry" name="txtCountry" placeholder="">
+                                                                        <span id="spanCountry"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label >Tour Package <span class="red">*</span></label>
+                                                                        <input type="text" class="form-control input-validater" id="txtTour" name="txtTour" value="<?php echo $TOUR_PACKAGE->title ?>">
+                                                                        <span id="spanTour"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label >Airport Pickup <span class="red">*</span></label>
+                                                                        <select class="form-control h-booking input-validater" id="txtAirport" name="txtAirport">
+                                                                            <option value="">
+                                                                                -- Please Select one --
+                                                                            </option>
+                                                                            <option> Yes </option>
+                                                                            <option> No </option>
+                                                                        </select>
+                                                                        <span id="spanAirport"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label >Check In <span class="red">*</span></label>
+                                                                        <input type="date" class="form-control input-validater datepicker hasDatepicker" id="txtCheckIn" name="txtCheckIn" placeholder="dd-mm-yy">
+                                                                        <span id="spanCheckIn"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label >Check Out <span class="red">*</span></label>
+                                                                        <input type="date" class="form-control input-validater datepicker hasDatepicker" id="txtCheckOut" name="txtCheckOut" placeholder="dd-mm-yy">
+                                                                        <span id="spanCheckOut"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label >No of Adults <span class="red">*</span></label>
+                                                                        <input type="number" class="form-control input-validater" id="txtAdult" name="txtAdult" min="0">
+                                                                        <span id="spanAdult"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label >No of Children <span class="red">*</span></label>
+                                                                        <input type="number" class="form-control input-validater" id="txtChild" name="txtChild" min="0">
+                                                                        <span id="spanChild"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label for="comment" id="form-label">Security Code:<span class="red">*</span></label>
+                                                                    <input type="text" name="captchacode" id="captchacode" class="form-control input-validater" placeholder="Security code >> ">
+                                                                    <span id="capspan" ></span>
+                                                                </div>
+                                                                <div class="col-md-3"> 
+                                                                    <label></label>
+                                                                    <span><?php include("./booking-form/captchacode-widget.php"); ?></span>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                    <div class="div-check" >
+                                                                        <img src="./booking-form/img/checking.gif" id="checking"/>
+                                                                    </div> 
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <button type="submit" id="btnSubmit" class="btn submit-booking">Enquiry Now</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="dismessage" align="center"></div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>  
-                                    </div>
+                                            </div>  
+                                        </div>
 
-                                    <div class="col-md-12">
-                                        <div class="related-products">
-                                            <h3 class="mini-title">Related Tour Packages</h3>
-                                            <div class="row" id="related-carousel">
-                                                <div class="col-md-3">
-                                                    <div class="product-box">
-                                                        <div class="product-thumb">
-                                                            <img src="images/tour/1-1.jpg" alt="" />
-                                                            <a href="#" title="">VIEW PACKAGE</a>
+                                        <div class="col-md-12">
+                                            <div class="related-products">
+                                                <h3 class="mini-title">Related Tour Packages</h3>
+                                                <div class="row" id="related-carousel">
+                                                    <div class="col-md-3">
+                                                        <div class="product-box">
+                                                            <div class="product-thumb">
+                                                                <img src="images/tour/1-1.jpg" alt="" />
+                                                                <a href="#" title="">VIEW PACKAGE</a>
+                                                            </div>
+                                                            <h3><a href="#" title="">Tour Package Name</a></h3>
                                                         </div>
-                                                        <h3><a href="#" title="">Tour Package Name</a></h3>
                                                     </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <div class="product-box">
-                                                        <div class="product-thumb">
-                                                            <img src="images/tour/1-2.jpg" alt="" />
-                                                            <a href="#" title="">VIEW PACKAGE</a>
+                                                    <div class="col-md-3">
+                                                        <div class="product-box">
+                                                            <div class="product-thumb">
+                                                                <img src="images/tour/1-2.jpg" alt="" />
+                                                                <a href="#" title="">VIEW PACKAGE</a>
+                                                            </div>
+                                                            <h3><a href="#" title="">Tour Package Name</a></h3>
                                                         </div>
-                                                        <h3><a href="#" title="">Tour Package Name</a></h3>
                                                     </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <div class="product-box">
-                                                        <div class="product-thumb">
-                                                            <img src="images/tour/1-3.jpg" alt="" />
-                                                            <a href="#" title="">VIEW PACKAGE</a>
+                                                    <div class="col-md-3">
+                                                        <div class="product-box">
+                                                            <div class="product-thumb">
+                                                                <img src="images/tour/1-3.jpg" alt="" />
+                                                                <a href="#" title="">VIEW PACKAGE</a>
+                                                            </div>
+                                                            <h3><a href="#" title="">Tour Package Name</a></h3>
                                                         </div>
-                                                        <h3><a href="#" title="">Tour Package Name</a></h3>
                                                     </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <div class="product-box">
-                                                        <div class="product-thumb">
-                                                            <img src="images/tour/1-4.jpg" alt="" />
-                                                            <a href="#" title="">VIEW PACKAGE</a>
+                                                    <div class="col-md-3">
+                                                        <div class="product-box">
+                                                            <div class="product-thumb">
+                                                                <img src="images/tour/1-4.jpg" alt="" />
+                                                                <a href="#" title="">VIEW PACKAGE</a>
+                                                            </div>
+                                                            <h3><a href="#" title="">Tour Package Name</a></h3>
                                                         </div>
-                                                        <h3><a href="#" title="">Tour Package Name</a></h3>
                                                     </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <div class="product-box">
-                                                        <div class="product-thumb">
-                                                            <img src="images/tour/1-1.jpg" alt="" />
-                                                            <a href="#" title="">VIVE PACKAGE</a>
+                                                    <div class="col-md-3">
+                                                        <div class="product-box">
+                                                            <div class="product-thumb">
+                                                                <img src="images/tour/1-1.jpg" alt="" />
+                                                                <a href="#" title="">VIVE PACKAGE</a>
+                                                            </div>
+                                                            <h3><a href="#" title="">Tour Package Name</a></h3>
                                                         </div>
-                                                        <h3><a href="#" title="">Tour Package Name</a></h3>
                                                     </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <div class="product-box">
-                                                        <div class="product-thumb">
-                                                            <img src="images/tour/1-2.jpg" alt="" />
-                                                            <a href="#" title="">VIEW PACKAGE</a>
+                                                    <div class="col-md-3">
+                                                        <div class="product-box">
+                                                            <div class="product-thumb">
+                                                                <img src="images/tour/1-2.jpg" alt="" />
+                                                                <a href="#" title="">VIEW PACKAGE</a>
+                                                            </div>
+                                                            <h3><a href="#" title="">Tour Package Name</a></h3>
                                                         </div>
-                                                        <h3><a href="#" title="">Tour Package Name</a></h3>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div><!-- Shoping Detail Sec -->
+                                </div><!-- Shoping Detail Sec -->
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
 
         <?php include './footer.php'; ?>

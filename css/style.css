@@ -8624,3 +8624,23 @@ section#map-with-listing {
 .M-row{
     margin-bottom: 30px;
 }
+.submit-booking:hover {
+    background: #8d99ae;
+}
+.submit-booking {
+    border: medium none;
+    border-radius: 3px;
+    color: #ffffff;
+    float: left;
+    font-family: Oswald;
+    font-size: 18px;
+    margin: 0;
+    padding: 17px 50px;
+    text-align: center;
+    text-transform: uppercase;
+    width: auto;
+    background-color: #d90429;
+}
+input[type="date"].form-control{
+    line-height: 22px;
+}

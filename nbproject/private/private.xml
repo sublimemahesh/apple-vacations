@@ -5,9 +5,9 @@
         <group>
             <file>file:/C:/xampp/htdocs/apple-vacations/view-tour-package.php</file>
             <file>file:/C:/xampp/htdocs/apple-vacations/booking-form.php</file>
-            <file>file:/C:/xampp/htdocs/apple-vacations/js/slick.min.js</file>
-            <file>file:/C:/xampp/htdocs/apple-vacations/js/jquery-2.1.1.js</file>
-            <file>file:/C:/xampp/htdocs/apple-vacations/view-tour-packages.php</file>
+            <file>file:/C:/xampp/htdocs/apple-vacations/booking-form/send-email.php</file>
+            <file>file:/C:/xampp/htdocs/apple-vacations/booking-form/scripts.js</file>
+            <file>file:/C:/xampp/htdocs/apple-vacations/booking-form/mail-template.php</file>
             <file>file:/C:/xampp/htdocs/apple-vacations/css/style.css</file>
         </group>
     </open-files>
