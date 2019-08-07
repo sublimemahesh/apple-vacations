@@ -57,7 +57,28 @@ $ATTRACTION = new Attraction($id);
                             </div>
                             <div class="body">
                                 <form class="form-horizontal" method="post"  id="form-data" enctype="multipart/form-data"> 
+                                    <div class="col-md-12">
+                                        <div class="form-group form-float">
+                                            <div class="form-line">
+                                                <select class="form-control" name="city" id="city" >
+                                                    <option selected="" value="">-- Please select the city --</option>
+                                                    <?php
+                                                    $CITY = new City(NULL);
+                                                    foreach ($CITY->all() as $city) {
+                                                        if ($city['id'] == $ATTRACTION->city) {
+                                                            ?>
+                                                            <option value="<?php echo $city['id'] ?>" selected=""><?php echo $city['name'] ?></option>
+                                                        <?php } else { ?>
+                                                            <option value="<?php echo $city['id'] ?>"><?php echo $city['name'] ?></option>
+                                                        <?php
+                                                        }
+                                                    }
+                                                    ?>
+                                                </select>
 
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="col-md-12">
                                         <div class="form-group form-float">
                                             <div class="form-line">

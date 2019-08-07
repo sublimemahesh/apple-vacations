@@ -10,7 +10,7 @@ $ACTIVITIES = new Activities($id);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="author" content="creativelayers">
+    <meta name="author" content=" ">
 
     <title><?php echo $ACTIVITIES->title ?> - Apple Vacation</title>
 
@@ -73,7 +73,6 @@ $ACTIVITIES = new Activities($id);
                                     </ul>
                                     <ul class="single-product-thumb">
                                         <?php
-                                        $ACTIVITY_PHOTO = new ActivitiesPhoto(NULL);
                                         foreach ($ACTIVITY_PHOTO->getActivitiesPhotosById($id) as $activity_photo) {
                                             ?>
                                             <li><span><img src="upload/activity/gallery/thumb/<?php echo $activity_photo['image_name'] ?>" alt="<?php echo $activity_photo['caption'] ?>" /></span></li>
@@ -109,12 +108,12 @@ $ACTIVITIES = new Activities($id);
                                         <div class="col-md-4 col-sm-6 col-xs-12">
                                             <div class="blog-post-2 ">
                                                 <div class="blog-post-thumb"> 
-                                                    <a href="view-things-to-do.php?id=<?php echo $activity['id'] ?>" title=""><img src="images/destinations/des-1.jpg" alt="" /></a></div>
+                                                    <a href="view-things-to-do.php?id=<?php echo $activity['id'] ?>" title=""><img src="upload/activity/<?php echo $activity['image_name'] ?>" alt="" /></a></div>
                                                 <div class="blog-detail">
 
                                                     <h3><a href="view-things-to-do.php?id=<?php echo $activity['id'] ?>" title=""><?php echo $activity['title'] ?></a></h3>
                                                     <p class="text-justify">
-                                                        <?php echo substr($activity['short_description'], 0, 140) ?>...
+                                                        <?php echo substr($activity['short_description'], 0, 120) ?>...
                                                     </p>
                                                     <a href="view-things-to-do.php?id=<?php echo $activity['id'] ?>">  
                                                         <div class=" pull-right  des-with" >
@@ -132,21 +131,21 @@ $ACTIVITIES = new Activities($id);
                     </div> 
                 </div> 
             </div>
+
+
+            <?php include './footer.php'; ?>
+
     </div>
-</section>
-<?php include './footer.php'; ?>
 
-</div>
-
-<!-- Script -->
-<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="js/modernizr.js"></script><!-- Modernizer -->
-<script type="text/javascript" src="js/jquery-2.1.1.js"></script><!-- Jquery -->
-<script type="text/javascript" src="js/script.js"></script><!-- Script -->
-<script type="text/javascript" src="js/bootstrap.min.js"></script><!-- Bootstrap -->
-<script type="text/javascript" src="js/scrolltopcontrol.js"></script><!-- ScrollTopControl -->
-<script type="text/javascript" src="js/slick.min.js"></script><!-- Slick -->
-<script type="text/javascript" src="js/scrolly.js"></script><!-- Slick -->
-<script type="text/javascript" src="js/userincr.js"></script><!-- Slick -->
+    <!-- Script -->
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="js/modernizr.js"></script><!-- Modernizer -->
+    <script type="text/javascript" src="js/jquery-2.1.1.js"></script><!-- Jquery -->
+    <script type="text/javascript" src="js/script.js"></script><!-- Script -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script><!-- Bootstrap -->
+    <script type="text/javascript" src="js/scrolltopcontrol.js"></script><!-- ScrollTopControl -->
+    <script type="text/javascript" src="js/slick.min.js"></script><!-- Slick -->
+    <script type="text/javascript" src="js/scrolly.js"></script><!-- Slick -->
+    <script type="text/javascript" src="js/userincr.js"></script><!-- Slick -->
 
 
 </body>

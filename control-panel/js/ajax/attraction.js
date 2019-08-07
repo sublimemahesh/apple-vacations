@@ -4,8 +4,15 @@ $(document).ready(function () {
     $("#create").click(function (event) {
         event.preventDefault();
         tinymce.triggerSave();
-
-        if (!$('#title').val() || $('#title').val().length === 0) {
+        if (!$('#city').val() || $('#city').val().length === 0) {
+            swal({
+                title: "Error!",
+                text: "Please enter city..!",
+                type: 'error',
+                timer: 1500,
+                showConfirmButton: false
+            });
+        } else if (!$('#title').val() || $('#title').val().length === 0) {
             swal({
                 title: "Error!",
                 text: "Please enter title..!",

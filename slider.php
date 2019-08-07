@@ -1,14 +1,16 @@
  
-<section  >
+<section>
     <div class="block no-padding gray">
         <div class="row">
             <div class="col-md-12">
                 <div class="main-featured-sec">
                     <ul class="featured-bg-slide  tab_row_hide">
-                        <li><img src="images/slider/index.jpg" alt="" style="height: 100%" /></li>
-                        <li><img src="images/slider/2.jpg" alt="" /></li>
-                        <li><img src="images/slider/3.jpg" alt="" /></li>
-                        <li><img src="images/slider/4.jpg" alt="" /></li>
+                        <?php
+                        $SLIDER = new Slider(NULL);
+                        foreach ($SLIDER->all() as $slider) {
+                            ?>
+                            <li><img src="upload/slider/<?php echo $slider['image_name'] ?>" alt="<?php echo $slider['title'] ?>"/></li>
+                        <?php } ?>
                     </ul>
                     <div class="mian-featured-area">
                         <div class="main-featured-text tab_row_hide " id="text-scroll">
@@ -25,7 +27,7 @@
                                 </div>
                             </form>
                         </div>
- 
+
                     </div>
                 </div>
             </div>

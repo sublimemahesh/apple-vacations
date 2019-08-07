@@ -10,7 +10,7 @@ $ATTRACTION = new Attraction($id);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="author" content="creativelayers">
+    <meta name="author" content=" ">
 
     <title><?php echo $ATTRACTION->title ?> - Apple Vacation</title>
 
@@ -74,7 +74,6 @@ $ATTRACTION = new Attraction($id);
                                     </ul>
                                     <ul class="single-product-thumb">
                                         <?php
-                                        $ATTRACTION_PHOTO = new AttractionPhoto(NULL);
                                         foreach ($ATTRACTION_PHOTO->getAttractionPhotosById($id) as $attraction_photo) {
                                             ?>
                                             <li><span><img src="upload/attraction/gallery/thumb/<?php echo $attraction_photo['image_name'] ?>" alt="<?php echo $attraction_photo['caption'] ?>" /></span></li>
@@ -103,7 +102,7 @@ $ATTRACTION = new Attraction($id);
                                 <div class="col-md-12">
                                     <h3 class="mini-title">Related Destination</h3>
                                 </div>
-                                <div class="row" id="related-carousel">
+                                <div  id="related-carousel">
                                     <?php
                                     foreach ($ATTRACTION->all() as $attraction) {
                                         ?>
@@ -132,21 +131,21 @@ $ATTRACTION = new Attraction($id);
                     </div> 
                 </div> 
             </div>
+
+        </section>
+        <?php include './footer.php'; ?>
+
     </div>
-</section>
-<?php include './footer.php'; ?>
 
-</div>
-
-<!-- Script -->
-<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="js/modernizr.js"></script><!-- Modernizer -->
-<script type="text/javascript" src="js/jquery-2.1.1.js"></script><!-- Jquery -->
-<script type="text/javascript" src="js/script.js"></script><!-- Script -->
-<script type="text/javascript" src="js/bootstrap.min.js"></script><!-- Bootstrap -->
-<script type="text/javascript" src="js/scrolltopcontrol.js"></script><!-- ScrollTopControl -->
-<script type="text/javascript" src="js/slick.min.js"></script><!-- Slick -->
-<script type="text/javascript" src="js/scrolly.js"></script><!-- Slick -->
-<script type="text/javascript" src="js/userincr.js"></script><!-- Slick -->
+    <!-- Script -->
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="js/modernizr.js"></script><!-- Modernizer -->
+    <script type="text/javascript" src="js/jquery-2.1.1.js"></script><!-- Jquery -->
+    <script type="text/javascript" src="js/script.js"></script><!-- Script -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script><!-- Bootstrap -->
+    <script type="text/javascript" src="js/scrolltopcontrol.js"></script><!-- ScrollTopControl -->
+    <script type="text/javascript" src="js/slick.min.js"></script><!-- Slick -->
+    <script type="text/javascript" src="js/scrolly.js"></script><!-- Slick -->
+    <script type="text/javascript" src="js/userincr.js"></script><!-- Slick -->
 
 
 </body>

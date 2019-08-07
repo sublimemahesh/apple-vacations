@@ -51,6 +51,23 @@ include_once(dirname(__FILE__) . '/auth.php');
                                     <div class="col-md-12">
                                         <div class="form-group form-float">
                                             <div class="form-line">
+                                                <select class="form-control" name="city" id="city" >
+                                                    <option selected="" value="">-- Please select the city --</option>
+                                                    <?php
+                                                    $CITY = new City(NULL);
+                                                    foreach ($CITY->all() as $city) {
+                                                        ?>
+                                                        <option value="<?php echo $city['id'] ?>"><?php echo $city['name'] ?></option>
+                                                    <?php } ?>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-12">
+                                        <div class="form-group form-float">
+                                            <div class="form-line">
                                                 <input type="text" id="title" class="form-control"  autocomplete="off" name="title" required="true">
                                                 <label class="form-label">Title</label>
                                             </div>
