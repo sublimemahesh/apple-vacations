@@ -22,6 +22,14 @@ $(document).ready(function () {
                 showConfirmButton: false
             });
 
+        } else if (!$('#description').val() || $('#description').val().length === 0) {
+            swal({
+                title: "Error!",
+                text: "Please enter description..!",
+                type: 'error',
+                timer: 1500,
+                showConfirmButton: false
+            });
         } else {
             var formData = new FormData($('#form-data')[0]);
             $.ajax({
@@ -72,6 +80,14 @@ $(document).ready(function () {
                 showConfirmButton: false
             });
 
+        } else if (!$('#description').val() || $('#description').val().length === 0) {
+            swal({
+                title: "Error!",
+                text: "Please enter description..!",
+                type: 'error',
+                timer: 1500,
+                showConfirmButton: false
+            });
         } else {
             var formData = new FormData($('#form-data')[0]);
             $.ajax({

@@ -58,20 +58,20 @@ include './class/include.php';
                     <div class="blog-sec">
                         <div class="row">
                             <?php
-                            $ATTRACTIONS = new Attraction(NULL);
-                            foreach ($ATTRACTIONS->all() as $attraction) {
+                            $CITY = new City(NULL);
+                            foreach ($CITY->all() as $city) {
                                 ?>
                                 <div class="col-md-4 col-sm-6 col-xs-12">
                                     <div class="blog-post">
                                         <div class="blog-post-thumb"> 
-                                            <a href="view-destination.php?id=<?php echo $attraction['id'] ?>" title=""><img src="upload/attraction/thumb/<?php echo $attraction['image_name'] ?>" alt="" /></a></div>
+                                            <a href="view-city.php?id=<?php echo $city['id'] ?>" title=""><img src="upload/cities/<?php echo $city['image_name'] ?>" alt="" /></a></div>
                                         <div class="blog-detail">
 
-                                            <h3><a href="view-destination.php?id=<?php echo $attraction['id'] ?>" title=""><?php echo $attraction['title'] ?></a></h3>
+                                            <h3><a href="view-city.php?id=<?php echo $city['id'] ?>" title=""><?php echo $city['name'] ?></a></h3>
                                             <p class="text-justify">
-                                                <?php echo substr($attraction['short_description'], 0, 140) ?>...
+                                                <?php echo substr($city['description'], 0, 140) ?>...
                                             </p>
-                                            <a href="view-destination.php?id=<?php echo $attraction['id'] ?>">  
+                                            <a href="view-city.php?id=<?php echo $city['id'] ?>">  
                                                 <div class=" pull-right  des-with" >
                                                     <p  class="p-tab-b">View</p>
                                                 </div>

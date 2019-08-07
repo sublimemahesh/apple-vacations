@@ -68,14 +68,19 @@ $CITY = new City($id);
                                     </div>
                                     <div class="col-md-12">                                       
                                         <div class="form-group form-float">
-                                            <div class="form-line">
-                                                <input type="file"  class="form-control" value="<?php echo $CITY->image_name; ?>"  name="image">
-                                                <input type="hidden" id="image" class="form-control" value="<?php echo $CITY->image_name; ?>"  name="image">
-                                                <img src="../upload/cities/<?php echo $CITY->image_name; ?>" id="image" class="view-edit-img img img-responsive img-thumbnail" name="image" alt="old image">
-                                            </div>
+
+                                            <input type="file"  class="form-control" value="<?php echo $CITY->image_name; ?>"  name="image">
+                                            <input type="hidden" id="image" class="form-control" value="<?php echo $CITY->image_name; ?>"  name="image">
+                                            <img src="../upload/cities/<?php echo $CITY->image_name; ?>" id="image" class="view-edit-img img img-responsive img-thumbnail" name="image" alt="old image">
+
                                         </div>
                                     </div>
-                                     
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <label for="description">Description</label>
+                                        <div class="form-line">
+                                            <textarea id="description" name="description" class="form-control" rows="5"><?php echo $CITY->description; ?></textarea> 
+                                        </div>
+                                    </div>
                                     <div class="col-md-12">
                                         <input type="hidden" name="update"value="update"/>
                                         <input type="hidden" id="oldImageName" value="<?php echo $CITY->image_name; ?>" name="oldImageName"/>

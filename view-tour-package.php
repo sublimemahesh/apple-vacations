@@ -68,7 +68,7 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                                 <h2><?php echo $TOUR_PACKAGE->title ?> </h2>
                                 <ul class="breadcrumbs">
                                     <li><a href="#" title="">Home</a></li>
-                                    <li><a href="tour-package.php?id=<?php echo $TOUR_TYPES->id ?>" title=""><?php echo $TOUR_TYPES->name ?></a></li>  
+                                    <li><a href="view-tour-package.php?id=<?php echo $TOUR_TYPES->id ?>" title=""><?php echo $TOUR_TYPES->name ?></a></li>  
                                     <li><a href="#" title=""><?php echo $TOUR_PACKAGE->title ?> </a></li>  
                                 </ul>	
                             </div>
@@ -84,40 +84,7 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                     <div class="row">
                         <div class="col-md-12 column">
                             <div class="shoping-detail-sec">
-                                <div class="row">
-                                    <!--                                    <div class="col-md-4">
-                                                                            <div class="single-product-info">
-                                                                                <h3>Tour Package Name</h3>
-                                                                                <div class="rated-list">
-                                                                                    <b class="la la-star"></b>
-                                                                                    <b class="la la-star"></b>
-                                                                                    <b class="la la-star"></b>
-                                                                                    <b class="la la-star-o"></b>
-                                                                                    <b class="la la-star-o"></b>
-                                                                                    <span>03 customer review</span>
-                                                                                </div>
-                                                                                <span>$112.00</span>
-                                                                                <p>Mauris in enim sit amet erat consequat vulputate. Donec ut justo nec est congue cursus sit amet aliquet lorem. In at eros id nisi sollicitudin consectetur Ut quis congue dui. Quisque finibus rhoncus nulla, nec consectetur nibh finibus sit amet. Duis eget</p>
-                                                                                <div class="c-input-number">
-                                                                                    <span><input id="box1" type="text" class="manual-adjust" value="0"/></span>
-                                                                                </div>
-                                                                                <a href="#" title=""><i class="la la-opencart"></i> Add to cart</a>
-                                                                                <div class="shop-category">
-                                                                                    <span>Categories</span>
-                                                                                    <a href="#" title="">Food</a>
-                                                                                    <a href="#" title="">Wine</a>
-                                                                                    <a href="#" title="">Drink</a>
-                                                                                </div>
-                                                                                <div class="shop-share">
-                                                                                    <span>Share</span>
-                                                                                    <a href="#" title=""><i class="la la-twitter"></i></a>
-                                                                                    <a href="#" title=""><i class="la la-google-plus"></i></a>
-                                                                                    <a href="#" title=""><i class="la la-linkedin"></i></a>
-                                                                                    <a href="#" title=""><i class="la la-behance"></i></a>
-                                                                                    <a href="#" title=""><i class="la la-pinterest"></i></a>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>-->
+                                <div class="row"> 
                                     <div class="col-md-12">
                                         <div id="custom-tabs" class="custom-tabs">
                                             <div class="tab-sec">
@@ -130,62 +97,28 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                                                 <div id="overview" class="tab-content current">
                                                     <div class="mb">
                                                         <ul id="places-carousel" class="slider-pl">
-                                                            <li><img src="images/destinations/v-1.jpg" alt="" /> </li>
-                                                            <li><img src="images/destinations/v-1.jpg" alt="" /> </li>
-                                                            <li><img src="images/destinations/v-1.jpg" alt="" /> </li>
-                                                            <li><img src="images/destinations/v-1.jpg" alt="" /> </li>
-                                                            <li><img src="images/destinations/v-1.jpg" alt="" /> </li>
+                                                            <?php
+                                                            $TOUR_DATE = new TourDate(NULL);
+                                                            foreach ($TOUR_DATE->getTourDatesById($id) as $key => $tour_date) {
+                                                                ?>
+                                                            <li><img src="upload/tour-package/date/<?php echo $tour_date['image_name'] ?>" alt="" /> </li> 
+                                                            <?php } ?>
                                                         </ul>
                                                     </div>
-                                                    <div class="">
-                                                        <p>Rounding up inland Sri Lanka’s sights from Colombo by yourself means self-driving or hopping between trains, buses, and cabs. 
-                                                            This private 3-day tour takes away the transport hassles: providing a private chauffeured vehicle to ferry you from sight to sight. 
-                                                            Visit Pinnawala Elephant Orphanage, discover Kandy’s must-sees, and explore a tea plantation, Nuwara Eliya, and Sigiriya, all in one tour, with two nights' 3-star accommodation and breakfasts and dinners included.
-                                                        </p>
-                                                        <ul class="vcs-highlights">
-                                                            <li>Check off four Sri Lankan highlights in one private 3-day trip from Colombo</li>
-                                                            <li>Avoid public transport stresses and go in comfort by chauffeured private car</li>
-                                                            <li>Explore Kandy, Sigiriya, Pinnawela, and the tea country of Nuwara Eliya</li>
-                                                            <li>3-star Kandy hotel, breakfasts, dinners, and return hotel transfers included</li>
-                                                        </ul>
-                                                    </div>
+                                                    <?php echo $TOUR_PACKAGE->description ?>  
                                                 </div>
                                                 <div id="itinerary" class="tab-content">
-                                                    <div class="faqs-box">
-                                                        <h3><span class="day-color">DAY 01</span> - Arrival And Overnight Stay At Golden Star Beach Hotel, Negombo </h3>
-                                                        <div class="content-faq">
-                                                            <p>Upon Arrival to the Sri Lankan International Airport be greeted by your chauffer guide who shall take you by air conditioned vehicle to Negombo. This trip will take you only 20 minutes. </p>
-                                                        </div>
-                                                    </div><!-- FAQ'S Box -->
-                                                    <div class="faqs-box">
-                                                        <h3><span class="day-color">DAY 02</span> - Anuradhapura And Overnight Stay At Sorowwa Resort & Spa, Habarana</h3>
-                                                        <div class="content-faq">
-                                                            <p>
-                                                                Anuradhapura is one of the holiest cities in Sri Lanka. The holiest item is the Bodhi Tree. This Bodhi tree is a sampling of the original Tree at which the Buddha sat as he attained enlightenment.
-                                                                Afterwards proceed to Habarana, the hub of the cultural triangle.
-                                                            </p>
-                                                        </div>
-                                                    </div><!-- FAQ'S Box -->
-                                                    <div class="faqs-box">
-                                                        <h3><span class="day-color">DAY 03</span> - Sigiriya & Polonaruwa And Overnight Stay At Sorowwa Resort & Spa, Habarana</h3>
-                                                        <div class="content-faq">
-                                                            <p>After breakfast head to the ancient city of Polonaruwa. This medieval city, a UNESCO World Heritage Site, rose to fame as the capital (10th – 12th century AD) after the decline of Anuradhapura. In the afternoon head to Sigiriya.</p>
-                                                        </div>
-                                                    </div><!-- FAQ'S Box -->
-                                                    <div class="faqs-box">
-                                                        <h3><span class="day-color">DAY 04</span> - Kandy And Overnight Stay At Hotel Suisse, Kandy</h3>
-                                                        <div class="content-faq">
-                                                            <p>After breakfast you have the choice of embarking on the Hirawaduna Trek, a nature trail that gives you an insight into Sri Lankan village life. Visit an elephant watch tree house and enjoy a catamaran ride and a bullock cart ride
-                                                                Thereafter proceed onwards to Kandy, enroute visit the Spice Garden in Mattale, and visit the Temple of the Tooth Relic before retiring for the night
-                                                            </p>
-                                                        </div>
-                                                    </div><!-- FAQ'S Box -->
-                                                    <div class="faqs-box">
-                                                        <h3><span class="day-color">DAY 05</span> - Departure</h3>
-                                                        <div class="content-faq">
-                                                            <p>After breakfast proceed to the Airport in time for the connecting flight.</p>
-                                                        </div>
-                                                    </div><!-- FAQ'S Box -->
+                                                    <?php
+                                                    foreach ($TOUR_DATE->getTourDatesById($id) as $key => $tour_date) {
+                                                        $key++;
+                                                        ?>
+                                                        <div class="faqs-box">
+                                                            <h3><span class="day-color">DAY <?php echo $key ?></span> - <?php echo $tour_date['title'] ?></h3>
+                                                            <div class="content-faq">
+                                                                <p>Upon Arrival to the Sri Lankan International Airport be greeted by your chauffer guide who shall take you by air conditioned vehicle to Negombo. This trip will take you only 20 minutes. </p>
+                                                            </div>
+                                                        </div> 
+                                                    <?php } ?> 
                                                 </div>
                                                 <div id="inclusion" class="tab-content">
                                                     <div class="">
@@ -318,75 +251,55 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                                                     </div>
                                                 </div>
                                             </div>  
-                                        </div>
-
+                                        </div> 
+                                    </div>
+                                </div> 
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class=" gray "  style="padding-top: 10px;padding-bottom: 35px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 column">
+                            <div class="shoping-detail-sec">
+                                <div class="row"> 
+                                    <div class="col-md-12">
                                         <div class="col-md-12">
                                             <div class="related-products">
                                                 <h3 class="mini-title">Related Tour Packages</h3>
                                                 <div class="row" id="related-carousel">
-                                                    <div class="col-md-3">
-                                                        <div class="product-box">
-                                                            <div class="product-thumb">
-                                                                <img src="images/tour/1-1.jpg" alt="" />
-                                                                <a href="#" title="">VIEW PACKAGE</a>
+                                                    <?php
+                                                    $TOUR_PACKAGE = new TourPackage(NULL);
+                                                    foreach ($TOUR_PACKAGE->getTourPackagesByType($TOUR_TYPES->id) as $tour_package) {
+                                                        ?>
+                                                        <div class="col-md-3"> 
+                                                            <div class="product-box">
+                                                                <div class="product-thumb">
+                                                                    <img src="upload/tour-package/<?php echo $tour_package['image_name'] ?>" alt="" />
+                                                                    <a href="view-tour-package.php?id=<?php echo $tour_package['id'] ?>" title="">VIEW PACKAGE</a>
+                                                                </div>
+                                                                <h3> 
+                                                                    <a href="view-tour-package.php?id=<?php echo $tour_package['id'] ?>">  
+                                                                        <?php echo $tour_package['title'] ?>
+                                                                    </a>
+                                                                </h3>
                                                             </div>
-                                                            <h3><a href="#" title="">Tour Package Name</a></h3>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <div class="product-box">
-                                                            <div class="product-thumb">
-                                                                <img src="images/tour/1-2.jpg" alt="" />
-                                                                <a href="#" title="">VIEW PACKAGE</a>
-                                                            </div>
-                                                            <h3><a href="#" title="">Tour Package Name</a></h3>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <div class="product-box">
-                                                            <div class="product-thumb">
-                                                                <img src="images/tour/1-3.jpg" alt="" />
-                                                                <a href="#" title="">VIEW PACKAGE</a>
-                                                            </div>
-                                                            <h3><a href="#" title="">Tour Package Name</a></h3>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <div class="product-box">
-                                                            <div class="product-thumb">
-                                                                <img src="images/tour/1-4.jpg" alt="" />
-                                                                <a href="#" title="">VIEW PACKAGE</a>
-                                                            </div>
-                                                            <h3><a href="#" title="">Tour Package Name</a></h3>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <div class="product-box">
-                                                            <div class="product-thumb">
-                                                                <img src="images/tour/1-1.jpg" alt="" />
-                                                                <a href="#" title="">VIVE PACKAGE</a>
-                                                            </div>
-                                                            <h3><a href="#" title="">Tour Package Name</a></h3>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-3">
-                                                        <div class="product-box">
-                                                            <div class="product-thumb">
-                                                                <img src="images/tour/1-2.jpg" alt="" />
-                                                                <a href="#" title="">VIEW PACKAGE</a>
-                                                            </div>
-                                                            <h3><a href="#" title="">Tour Package Name</a></h3>
-                                                        </div>
-                                                    </div>
+                                                    <?php } ?>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> 
                                     </div>
-                                </div><!-- Shoping Detail Sec -->
+                                </div> 
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> 
+            </div>
         </section>
 
         <?php include './footer.php'; ?>

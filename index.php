@@ -56,16 +56,18 @@ include './class/include.php';
                         <div id="tour" class="tab-content current search-width horizontal-bar">
                             <div class="description">
                                 <?php
-                                $ATTRACTION = new Attraction(NULL);
-                                foreach ($ATTRACTION->all() as $key => $attraction) {
+                                $CITY = new City(NULL);
+                                foreach ($CITY->all() as $key => $city) {
                                     if ($key < 12) {
                                         ?> 
-                                        <div class="col-md-3">
-                                            <img src="upload/attraction/thumb/gallery/<?php echo $attraction['image_name'] ?>" alt="<?php echo $attraction['title'] ?>" class="img-responsive img-res-p "  />
+                                     <a href="view-city.php?id=<?php echo $city['id'] ?>" >  
+                                         <div class="col-md-3">
+                                            <img src="upload/cities/gallery/thumb/<?php echo $city['image_name'] ?>" alt="<?php echo $city['name'] ?>" class="img-responsive img-res-p "  />
                                             <div class="carousel-caption padd-top-cap">
-                                                <p  class="white-color font-newsize-2"><?php echo $attraction['title'] ?></p>
+                                                <p  class="white-color font-newsize-2"><?php echo $city['name'] ?></p>
                                             </div>
                                         </div>
+                                     </a>
                                         <?php
                                     }
                                 }
@@ -199,26 +201,26 @@ include './class/include.php';
                             <div class="recent-place-sec" id="places-carousel">
                                 <div class="row">
                                     <?php
-                                    $ATTRACTION = new Attraction(NULL);
-                                    foreach ($ATTRACTION->all() as $key => $attraction) {
+                                   
+                                    foreach ($CITY->all() as $key => $city) {
                                         if ($key < 8) {
                                             ?>
                                             <div class="col-md-3 col-sm-6 col-xs-6"> 
                                                 <?php if ($key % 2 == 0) { ?>
-                                                    <a href="view-destination.php?id=<?php echo $attraction['id'] ?>" title="<?php echo $attraction['title'] ?>"> 
+                                                    <a href="view-city.php?id=<?php echo $city['id'] ?>" title="<?php echo $city['name'] ?>"> 
                                                         <div class="category-box">
-                                                            <img src="upload/attraction/<?php echo $attraction['image_name'] ?>" alt="<?php echo $attraction['title'] ?>" />
+                                                            <img src="upload/cities/gallery/<?php echo $city['image_name'] ?>" alt="<?php echo $city['name'] ?>" />
                                                             <div class="carousel-caption padd-bottom-cap">
-                                                                <p  class="white-color font-newsize "><?php echo $attraction['title'] ?></p>
+                                                                <p  class="white-color font-newsize "><?php echo $city['name'] ?></p>
                                                             </div>
                                                         </div> 
                                                     </a>
                                                 <?php } else { ?>
-                                                    <a href="view-destination.php?id=<?php echo $attraction['id'] ?>" title="<?php echo $attraction['title'] ?>"> 
+                                                    <a href="view-city.php?id=<?php echo $city['id'] ?>" title="<?php echo $city['name'] ?>"> 
                                                         <div class="category-box">
-                                                            <img src="upload/attraction/<?php echo $attraction['image_name'] ?>" alt="<?php echo $attraction['title'] ?>" />
+                                                            <img src="upload/cities/gallery/<?php echo $city['image_name'] ?>" alt="<?php echo $city['name'] ?>" />
                                                             <div class="carousel-caption padd-bottom-cap">
-                                                                <p  class="white-color font-newsize"><?php echo $attraction['title'] ?></p>
+                                                                <p  class="white-color font-newsize"><?php echo $city['name'] ?></p>
                                                             </div>
                                                         </div> 
                                                     </a>
@@ -233,28 +235,27 @@ include './class/include.php';
                                 </div>
 
                                 <div class="row">
-                                    <?php
-                                    $ATTRACTION = new Attraction(NULL);
-                                    foreach ($ATTRACTION->all() as $key => $attraction) {
-                                        if ($key > 8 && $key < 17) {
+                                    <?php 
+                                    foreach ($CITY->all() as $key => $city) {
+                                        if ($key >= 8 && $key < 16) {
                                             ?>
                                             <div class="col-md-3 col-sm-6 col-xs-6"> 
                                                 <?php if ($key % 2 == 0) { ?>
-                                                    <a href="view-destination.php?id=<?php echo $attraction['id'] ?>" title="<?php echo $attraction['title'] ?>"> 
+                                                    <a href="view-city.php?id=<?php echo $city['id'] ?>" title="<?php echo $city['name'] ?>"> 
                                                         <div class="category-box">
-                                                            <img src="upload/attraction/<?php echo $attraction['image_name'] ?>" alt="<?php echo $attraction['title'] ?>" />
+                                                            <img src="upload/cities/gallery/<?php echo $city['image_name'] ?>" alt="<?php echo $city['name'] ?>" />
                                                             <div class="carousel-caption padd-bottom-cap">
-                                                                <p  class="white-color font-newsize"><?php echo $attraction['title'] ?></p>
+                                                                <p  class="white-color font-newsize"><?php echo $city['name'] ?></p>
 
                                                             </div>
                                                         </div>
                                                     </a>
                                                 <?php } else { ?>
-                                                    <a href="view-destination.php?id=<?php echo $attraction['id'] ?>" title="<?php echo $attraction['title'] ?>">
+                                                    <a href="view-city.php?id=<?php echo $city['id'] ?>" title="<?php echo $city['name'] ?>">
                                                         <div class="category-box">                                                   
-                                                            <img src="upload/attraction/<?php echo $attraction['image_name'] ?>" alt="<?php echo $attraction['title'] ?>" />
+                                                            <img src="upload/cities/gallery/<?php echo $city['image_name'] ?>" alt="<?php echo $city['name'] ?>" />
                                                             <div class="carousel-caption padd-bottom-cap">
-                                                                <p  class="white-color font-newsize"><?php echo $attraction['title'] ?></p>
+                                                                <p  class="white-color font-newsize"><?php echo $city['name'] ?></p>
 
                                                             </div>
                                                         </div> 
@@ -310,7 +311,7 @@ include './class/include.php';
                                                         <div class="col-md-8 col-xs-8  col-sm-8 " id="p-padd-2">
                                                             <h4 class="p--bottom">
                                                                 <strong>
-                                                                    US$: <?php echo $tour_package['price'] ?>
+                                                                    US$: <?php echo $tour_package['price'] ?>.00
                                                                 </strong>
                                                             </h4>
                                                             <span>
@@ -335,49 +336,7 @@ include './class/include.php';
         </section>
         <!--end tour Packages-->
 
-        <!--top Destination-->
-        <section>
-            <div class="block gray remove-top tab_row_hide">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="heading">
-                                <h2>Things to do</h2>
-                                <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</span>
-                            </div>
-                            <div class="listing-carousel">
-                                <div class="row"  id="list-activity">
-                                    <?php
-                                    $ACTIVITIES = new Activities(NULL);
-                                    foreach ($ACTIVITIES->all() as $key => $activity) {
-                                        ?>
-                                        <div class="col-md-4 col-sm-6 col-xs-12">
-                                            <div class="blog-post-2 ">
-                                                <div class="blog-post-thumb"> 
-                                                    <a href="view-things-to-do.php?id=<?php echo $activity['id'] ?>" title="<?php echo $activity['title'] ?>"><img src="upload/activity/<?php echo $activity['image_name'] ?>" alt="" /></a></div>
-                                                <div class="blog-detail">
-                                                    <h3><a href="view-things-to-do.php?id=<?php echo $activity['id'] ?>" title="<?php echo $activity['title'] ?>"><?php echo $activity['title'] ?></a></h3>
-                                                    <p class="text-justify">
-                                                        <?php echo substr($activity['short_description'], 0, 140) ?>...
-                                                    </p>
-                                                    <a href="view-things-to-do.php?id=<?php echo $activity['id'] ?>" title="<?php echo $activity['title'] ?>">  
-                                                        <div class=" pull-right  des-with" >
-                                                            <p  class="p-tab-b">View</p>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div> 
-                                        </div> 
-                                    <?php } ?> 
-                                </div>
-                                <a href="things-to-do.php" title="" id="white-color" class="view-all-blog">View More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> 
-        <!--end top Destination-->
+        
 
         <!--INSPIRATION-->
         <section id="scroll-here">
