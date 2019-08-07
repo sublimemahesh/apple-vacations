@@ -8,6 +8,7 @@ if (isset($_POST['create'])) {
     $VALID = new Validator();
 
 
+    $ATTRACTION->city = $_POST['city'];
     $ATTRACTION->title = $_POST['title'];
     $ATTRACTION->short_description = $_POST['short_description'];
     $ATTRACTION->description = $_POST['description'];
@@ -87,7 +88,7 @@ if (isset($_POST['update'])) {
     $dir_dest = '../../upload/attraction/';
     $dir_dest_thumb = '../../upload/attraction/thumb/';
     $dir_dest_thumb_gallery = '../../upload/attraction/thumb/gallery/';
-    
+
     $handle = new Upload($_FILES['image']);
 
     $img = $_POST ["oldImageName"];
@@ -125,7 +126,7 @@ if (isset($_POST['update'])) {
             $info = getimagesize($handle->file_dst_pathname);
             $img = $handle->file_dst_name;
         }
-        
+
         $handle->image_resize = true;
         $handle->file_new_name_body = TRUE;
         $handle->file_overwrite = TRUE;
@@ -145,6 +146,7 @@ if (isset($_POST['update'])) {
 
     $ATTRACTION = new Attraction($_POST['id']);
     $ATTRACTION->image_name = $_POST['oldImageName'];
+    $ATTRACTION->city = $_POST['city'];
     $ATTRACTION->title = $_POST['title'];
     $ATTRACTION->short_description = $_POST['short_description'];
     $ATTRACTION->description = $_POST['description'];

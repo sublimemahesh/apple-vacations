@@ -7,7 +7,7 @@ include './class/include.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="author" content="creativelayers">
+    <meta name="author" content=" ">
 
     <title>Tour Package Name  - Apple Vacation</title>
 
@@ -42,7 +42,7 @@ include './class/include.php';
                             <div class="inner-header">
                                 <h2>Gallery</h2>
                                 <ul class="breadcrumbs">
-                                    <li><a href="#" title="">Home</a></li>
+                                    <li><a href="index.php" title="">Home</a></li>
                                     <li><a href="#" title="">Gallery</a></li>  
                                 </ul>	
                             </div>
@@ -61,7 +61,7 @@ include './class/include.php';
                             $ALBUM_PHOTO = new AlbumPhoto(1);
                             foreach ($ALBUM_PHOTO->all() as $album_photo) {
                                 ?>
-                            <div class="col-md-3 gallery gallery-padd"> 
+                            <div class="col-md-3 col-xs-4 col-sm-6 gallery gallery-padd"> 
                                 <a href="upload/photo-album/gallery/<?php echo $album_photo['image_name'] ?>" class="big"><img src="upload/photo-album/gallery/thumb/<?php echo $album_photo['image_name'] ?>" alt="<?php echo $album_photo['caption'] ?>" title="<?php echo $album_photo['caption'] ?>" class="img-responsive" /></a>
                             </div>
                              <?php } ?>
@@ -70,8 +70,8 @@ include './class/include.php';
                 </div>
             </div>
         </section>
+        
         <?php include './footer.php'; ?>
-
     </div>
 
     <!-- Script -->

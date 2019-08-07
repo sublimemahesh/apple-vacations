@@ -7,7 +7,7 @@ include './class/include.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="author" content="creativelayers">
+    <meta name="author" content=" ">
 
     <title>Contact - Apple vacation</title>
 
@@ -43,8 +43,8 @@ include './class/include.php';
                             <div class="inner-header">
                                 <h2>Contact</h2>
                                 <ul class="breadcrumbs">
-                                    <li><a href="#" title="">Home</a></li>
-                                    <li><a href="#" title="">Contact</a></li> 
+                                    <li><a href="index.php" title="">Home</a></li>
+                                    <li><a href="#" title="">Contact Us</a></li> 
                                 </ul>	
                             </div>
                         </div>
@@ -107,7 +107,7 @@ include './class/include.php';
                                         <div class="col-lg-12">
                                             <span id="capspan" ></span>
                                         </div>
-                                        
+
                                     </div>
                                     <div class="col-md-4" > 
                                         <?php include("./contact-form/captchacode-widget.php"); ?> 
@@ -124,7 +124,7 @@ include './class/include.php';
                             <div class="contact-info-box">
                                 <h3 class="mini-title">Contact Information</h3>
                                 <div class="contact-box">
-                                    <ul>
+                                    <ul> 
                                         <li>
                                             <i class="la la-map-marker"></i>
                                             <h4>Address</h4>
@@ -135,15 +135,15 @@ include './class/include.php';
                                         <li>
                                             <i class="la la-phone"></i>
                                             <h4>Phone Number</h4>
-                                            <span>(+94) 11 433 8831 </span>
-                                            <span>(+94) 76 281 6641</span>
+                                            <span><a class="" target="_blank" href="tel:0114338831">(+94) 11 433 8831 </a></span>
+                                            <span><a class="" target="_blank" href="tel:0762816641">(+94) 76 281 6641</a></span>
                                         </li>
 
                                         <li>
                                             <i class="la la-envelope-o"></i>
                                             <h4>Email</h4>
                                             <span>
-                                                <a href="https://grandetest.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7e171018113e1a11131f1710501d1113">info@applevacations.com.co
+                                                <a href="mailto:" class="__cf_email__" data-cfemail="7e171018113e1a11131f1710501d1113">info@applevacations.com.co
                                                 </a>
                                             </span>
                                         </li>
@@ -154,9 +154,8 @@ include './class/include.php';
                     </div>
                 </div>
             </div>
-        </section>
-
-
+        </section> 
+        
         <?php include './footer.php'; ?>
 
     </div>

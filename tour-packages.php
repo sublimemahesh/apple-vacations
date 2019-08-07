@@ -10,7 +10,7 @@ $TOUR_TYPES = new TourType($id);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="author" content="creativelayers">
+    <meta name="author" content=" ">
 
     <title><?php echo $TOUR_TYPES->name ?> - Apple Vacation</title>
 
@@ -63,7 +63,7 @@ $TOUR_TYPES = new TourType($id);
                             $TOUR_PACKAGE = new TourPackage(NULL);
                             foreach ($TOUR_PACKAGE->getTourPackagesByType($id) as $tour_package) {
                                 ?>
-                                <div class="col-md-3" >
+                                <div class="col-md-3 col-xs-12 col-sm-6" >
                                     <a href="view-tour-package.php?id=<?php echo $tour_package['id'] ?>" title="<?php echo $tour_package['title'] ?>">  
                                         <div class="listing-box ">
                                             <div class="listing-box-thumb">
@@ -80,7 +80,7 @@ $TOUR_TYPES = new TourType($id);
                                                 <p class="p-padd" >  
                                                     <?php echo substr($tour_package['short_description'], 0, 140) ?>...
                                                 </p>
-                                                <div class="col-md-8   " id="p-padd-2">
+                                                <div class="col-md-6 col-xs-6 col-sm-6 " id="p-padd-2">
                                                     <h4 class="p--bottom">
                                                         <strong>
                                                             US$: <?php echo $tour_package['price'] ?>  
@@ -90,7 +90,7 @@ $TOUR_TYPES = new TourType($id);
                                                         <p>  Starting From</p>
                                                     </span>
                                                 </div>
-                                                <div class="col-md-4 tour-btn" >
+                                                <div class="col-md-6 col-xs-6 col-sm-6 tour-btn" >
                                                     <p  class="p-tab-b">View</p>
                                                 </div> 
                                             </div> 

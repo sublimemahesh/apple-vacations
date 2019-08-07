@@ -7,7 +7,7 @@ include './class/include.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="author" content="creativelayers">
+    <meta name="author" content=" ">
 
     <title>Things to do - Apple Vacation</title>
 
@@ -42,7 +42,7 @@ include './class/include.php';
                             <div class="inner-header">
                                 <h2>Things to do</h2>
                                 <ul class="breadcrumbs">
-                                    <li><a href="#" title="">Home</a></li>
+                                    <li><a href="index.php" title="">Home</a></li>
                                     <li><a href="#" title="">Things to do</a></li> 
                                 </ul>	
                             </div>
@@ -75,18 +75,15 @@ include './class/include.php';
                                                 </div>
                                             </a>
                                         </div>
-                                    </div><!-- BLog Post  -->
+                                    </div> 
                                 </div>
-                            <?php }?>
-                            </div> 
-                        </div>    
-                    </div>
+                            <?php } ?>
+                        </div> 
+                    </div>    
                 </div>
-            </section>
-
-
-            <?php include './footer.php'; ?>
-
+            </div>
+        </section> 
+        <?php include './footer.php'; ?> 
     </div>
 
     <!-- Script -->

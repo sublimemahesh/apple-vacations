@@ -8,7 +8,7 @@ $ABOUT_US = new Page(1);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="author" content="creativelayers">
+    <meta name="author" content=" ">
 
     <title>About us - Apple vacation</title>
 
@@ -57,17 +57,16 @@ $ABOUT_US = new Page(1);
             <div class="block gray  ">
                 <div class="container">
                     <div class="row" > 
-                        <div class="col-md-8 col-sm-12 about-row">
+                        <div class="col-md-8 col-sm-12 col-xs-12 about-row">
                             <div class="about-padd">
                                 <span>Sri Lanka Tour with us</span>
                                 <h1 class="about-f"><span  class="about-f-color">Get started</span> your Tours</h1>
                                 <div class="text-justify"  >
                                     <?php echo $ABOUT_US->description ?>       
                                 </div> 
-                            </div>
-
+                            </div> 
                         </div>
-                        <div class="col-md-4 col-sm-6  "  style="  padding-left:  0px;">                         
+                        <div class="col-md-4 col-sm-6 hidden-xs "  style="  padding-left:  0px;">                         
                             <img src="images/about.jpg" class="img-responsive">                         
                         </div>
                     </div>

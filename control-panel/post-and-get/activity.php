@@ -7,6 +7,7 @@ if (isset($_POST['create'])) {
     $ACTIVITY = new Activities(NULL);
     $VALID = new Validator();
 
+    $ACTIVITY->city = $_POST['city'];
     $ACTIVITY->title = $_POST['title'];
     $ACTIVITY->short_description = $_POST['short_description'];
     $ACTIVITY->description = $_POST['description'];
@@ -70,6 +71,7 @@ if (isset($_POST['update'])) {
 
     $ACTIVITY->image_name = $_POST['oldImageName'];
     $ACTIVITY->title = $_POST['title'];
+    $ACTIVITY->city = $_POST['city'];
     $ACTIVITY->short_description = $_POST['short_description'];
     $ACTIVITY->description = $_POST['description'];
     $ACTIVITY->update();
