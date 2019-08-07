@@ -14,7 +14,7 @@ $ALBUM_PHOTO = new AlbumPhoto($id);
     <head>
         <meta charset="UTF-8">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-        <title>Album-Photo</title>
+        <title>Gallery</title>
         <!-- Favicon-->
         <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
@@ -45,18 +45,16 @@ $ALBUM_PHOTO = new AlbumPhoto($id);
                         <div class="card">
                             <div class="header">
                                 <h2>
-                                    Edit Album Photo
+                                    Edit Gallery
                                 </h2>
 
                             </div>
                             <div class="body">
                                 <form class="form-horizontal" method="post" action="post-and-get/album-photo.php" enctype="multipart/form-data"> 
                                     <div class="col-md-12">                                       
-                                        <div class="form-group form-float">
-                                            <div class="form-line">
-                                                <input type="file" id="image" class="form-control" value="<?php echo $ALBUM_PHOTO->image_name; ?>"  name="image">
-                                                <img src="../upload/photo-album/gallery/<?php echo $ALBUM_PHOTO->image_name; ?>" id="image" class="view-edit-img img img-responsive img-thumbnail" name="image" alt="old image">
-                                            </div>
+                                        <div class="form-group form-float"> 
+                                            <input type="file" id="image" class="form-control" value="<?php echo $ALBUM_PHOTO->image_name; ?>"  name="image">
+                                            <img src="../upload/photo-album/gallery/<?php echo $ALBUM_PHOTO->image_name; ?>" id="image" class="view-edit-img img img-responsive img-thumbnail" name="image" alt="old image">
                                         </div>
                                     </div>
                                     <div class="col-md-12">

@@ -21,7 +21,7 @@ $ATTRACTION = new Attraction($id);
     <link rel="stylesheet" href="css/style.css" type="text/css" /><!-- Style -->	
     <link rel="stylesheet" href="css/responsive.css" type="text/css" /><!-- Responsive -->	
     <link rel="stylesheet" href="css/colors/colors.css" type="text/css" /><!-- color -->		
-
+    <link href="css/simplelightbox.min.css" rel="stylesheet" type="text/css"/>
     <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
 
 </head>
@@ -57,84 +57,34 @@ $ATTRACTION = new Attraction($id);
         </section>
 
         <section>
-            <div class="block gray ">
+            <div class="gray ">
                 <div class="container"> 
-                    <div class="  column"> 
+                    <div class="  column">  
                         <div class="row">
-                            <div class="col-md-8">
-                                <div class="single-product-gallery">
-                                    <ul class="single-product-images">
-                                        <?php
-                                        $ATTRACTION_PHOTO = new AttractionPhoto(NULL);
-                                        foreach ($ATTRACTION_PHOTO->getAttractionPhotosById($id) as $attraction_photo) {
-                                            ?>
-                                            <li><img src="upload/attraction/gallery/<?php echo $attraction_photo['image_name'] ?>" alt="<?php echo $attraction_photo['caption'] ?>" /> </li>
-                                        <?php } ?>
-
-                                    </ul>
-                                    <ul class="single-product-thumb">
-                                        <?php
-                                        foreach ($ATTRACTION_PHOTO->getAttractionPhotosById($id) as $attraction_photo) {
-                                            ?>
-                                            <li><span><img src="upload/attraction/gallery/thumb/<?php echo $attraction_photo['image_name'] ?>" alt="<?php echo $attraction_photo['caption'] ?>" /></span></li>
-                                        <?php } ?>
-
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div  id="location">
-
-                                    <div class="list-location">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.536452450768!2d80.6393219147603!3d7.293460894735891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3662dc9c94c75%3A0xe1885fe2929d358!2zVGVtcGxlIG9mIHRoZSBUb290aCBNdXNldW0g4Lav4LeF4Laz4LePIOC2uOC3j-C2veC3kuC2nOC3j-C3gOC3miDgtprgt57gtq3gt5Tgtprgt4_gtpzgt4_gtrvgtro!5e0!3m2!1sen!2slk!4v1564658428036!5m2!1sen!2slk" style="border:0" height="200px"allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div> 
-                        <div class="row">
-                            <div class="col-md-12 related-products">
+                            <div class="col-md-12  ">
                                 <h2>Description</h2>
                                 <?php echo $ATTRACTION->description ?> 
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="related-products">
-                                <div class="col-md-12">
-                                    <h3 class="mini-title">Related Destination</h3>
-                                </div>
-                                <div  id="related-carousel">
-                                    <?php
-                                    foreach ($ATTRACTION->all() as $attraction) {
-                                        ?>
-                                        <div class="col-md-4 col-sm-6 col-xs-12">
-                                            <div class="blog-post">
-                                                <div class="blog-post-thumb"> 
-                                                    <a href="view-destination.php?id=<?php echo $attraction['id'] ?>" title=""><img src="upload/attraction/thumb/<?php echo $attraction['image_name'] ?>" alt="" /></a></div>
-                                                <div class="blog-detail">
-
-                                                    <h3><a href="view-destination.php?id=<?php echo $attraction['id'] ?>" title=""><?php echo $attraction['title'] ?></a></h3>
-                                                    <p class="text-justify">
-                                                        <?php echo substr($attraction['short_description'], 0, 140) ?>...
-                                                    </p>
-                                                    <a href="view-destination.php?id=<?php echo $attraction['id'] ?>">  
-                                                        <div class=" pull-right  des-with" >
-                                                            <p  class="p-tab-b">View</p>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div><!-- BLog Post  -->
-                                        </div> 
-                                    <?php } ?>
-                                </div>
-                            </div>                             
                         </div> 
-                    </div> 
+                        <div class="row related-products">
+                            <?php
+                            $ATTRACTION_PHOTO = new AttractionPhoto(NULL);
+                            foreach ($ATTRACTION_PHOTO->getAttractionPhotosById($id) as $key => $attraction_photo) {
+                                if ($key < 4) {
+                                    ?>
+                                    <div class="col-md-3 col-xs-4 col-sm-6 gallery gallery-padd"> 
+                                        <a href="upload/attraction/gallery/<?php echo $attraction_photo['image_name'] ?>" class="big"><img src="upload/attraction/gallery/thumb/<?php echo $attraction_photo['image_name'] ?>" alt="<?php echo $attraction_photo['caption'] ?>" title="<?php echo $attraction_photo['caption'] ?>" class="img-responsive" /></a>
+                                    </div>
+                                    <?php
+                                }
+                            }
+                            ?>
+                        </div> 
+                    </div>  
                 </div> 
-            </div>
-
-        </section>
-        <?php include './footer.php'; ?>
-
+            </div> 
+        </section> 
+        <?php include './footer.php'; ?> 
     </div>
 
     <!-- Script -->
@@ -146,7 +96,9 @@ $ATTRACTION = new Attraction($id);
     <script type="text/javascript" src="js/slick.min.js"></script><!-- Slick -->
     <script type="text/javascript" src="js/scrolly.js"></script><!-- Slick -->
     <script type="text/javascript" src="js/userincr.js"></script><!-- Slick -->
-
+    <script src="js/simple-lightbox.min.js" type="text/javascript"></script>
+    <script src="js/simple-light-custome.js" type="text/javascript"></script>
 
 </body>
 </html>
+

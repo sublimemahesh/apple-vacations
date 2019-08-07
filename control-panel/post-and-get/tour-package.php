@@ -10,7 +10,9 @@ if (isset($_POST['create'])) {
 
 
     $TOUR_PACKAGE->tour_type = $_POST['tour_type'];
+    $TOUR_PACKAGE->price = $_POST['price'];
     $TOUR_PACKAGE->title = $_POST['title'];
+    $TOUR_PACKAGE->dates = $_POST['dates'];
     $TOUR_PACKAGE->short_description = $_POST['short_description'];
     $TOUR_PACKAGE->description = $_POST['description'];
     $TOUR_PACKAGE->map = $_POST['map'];
@@ -48,8 +50,8 @@ if (isset($_POST['create'])) {
         $handle->file_new_name_ext = 'jpg';
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body = $img;
-        $handle->image_x = 640;
-        $handle->image_y = 320;
+        $handle->image_x = 900;
+        $handle->image_y = 500;
 
         $handle->Process($dir_dest_thumb);
 
@@ -100,8 +102,8 @@ if (isset($_POST['update'])) {
         $handle->file_new_name_ext = FALSE;
         $handle->image_ratio_crop = 'C';
         $handle->file_new_name_body = $img;
-        $handle->image_x = 640;
-        $handle->image_y = 320;
+        $handle->image_x = 900;
+        $handle->image_y = 500;
 
         $handle->Process($dir_dest_thumb);
 
@@ -118,6 +120,8 @@ if (isset($_POST['update'])) {
     $TOUR_PACKAGE->tour_type = $_POST['tour_type'];
     $TOUR_PACKAGE->image_name = $_POST['oldImageName'];
     $TOUR_PACKAGE->title = $_POST['title'];
+    $TOUR_PACKAGE->dates = $_POST['dates'];
+    $TOUR_PACKAGE->price = $_POST['price'];
     $TOUR_PACKAGE->short_description = $_POST['short_description'];
     $TOUR_PACKAGE->description = $_POST['description'];
     $TOUR_PACKAGE->map = $_POST['map'];

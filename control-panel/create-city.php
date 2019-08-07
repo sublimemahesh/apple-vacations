@@ -64,7 +64,13 @@ include_once(dirname(__FILE__) . '/auth.php');
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <label for="description">Description</label>
+                                        <div class="form-line">
+                                            <textarea id="description" name="description" class="form-control" rows="5"></textarea> 
+                                        </div>
 
+                                    </div>
                                     <div class="col-md-12"> 
                                         <input type="hidden" name="create"value="create"/>
                                         <input type="submit" id="create" class="btn btn-primary m-t-15 waves-effect" value="create"/>
@@ -85,7 +91,7 @@ include_once(dirname(__FILE__) . '/auth.php');
                                                 <div class="img-caption">
                                                     <p class="maxlinetitle"><?php echo $city['name']; ?></p>
                                                     <div class="d">
-                                                        <a href="#" class="delete-album-photo" data-id="<?php echo $city['id']; ?>"> <button class="glyphicon glyphicon-trash delete-btn"></button></a>
+                                                        <a href="#" class="delete-city" data-id="<?php echo $city['id']; ?>"> <button class="glyphicon glyphicon-trash delete-btn"></button></a>
                                                         <a href="edit-city.php?id=<?php echo $city['id']; ?>"> <button class="glyphicon glyphicon-pencil edit-btn"></button></a>
                                                         <a href="arrange-city.php">  <button class="glyphicon glyphicon-random arrange-btn"></button></a>
                                                     </div>
@@ -103,11 +109,7 @@ include_once(dirname(__FILE__) . '/auth.php');
 
                         </div>
                     </div>
-                </div>
-
-
-                <!-- #END# Vertical Layout -->
-
+                </div>  
             </div>
         </section>
 
@@ -149,6 +151,7 @@ include_once(dirname(__FILE__) . '/auth.php');
 
         </script>
         <script src="js/ajax/city.js" type="text/javascript"></script>
+        <script src="delete/js/city.js" type="text/javascript"></script>
     </body>
 
 </html>

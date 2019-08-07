@@ -11,6 +11,7 @@ class City {
     //put your code here
     public $id;
     public $name;
+    public $description;
     public $image_name;
     public $sort;
 
@@ -26,6 +27,7 @@ class City {
             $this->id = $result['id'];
             $this->image_name = $result['image_name'];
             $this->name = $result['name'];
+            $this->description = $result['description'];
             $this->sort = $result['sort'];
 
             return $this;
@@ -34,9 +36,10 @@ class City {
 
     public function create() {
 
-        $query = "INSERT INTO `city` ( `name`,`image_name`, `sort`) VALUES  ('" .
-                $this->name . "',"
+        $query = "INSERT INTO `city` ( `name`,`image_name`,`description`,`sort`) VALUES  ("
+                . "'" . $this->name . "',"
                 . "'" . $this->image_name . "',"
+                . "'" . $this->description . "',"
                 . " '" . $this->sort . "')";
 
         $db = new Database();
@@ -70,6 +73,7 @@ class City {
 
         $query = "UPDATE  `city` SET "
                 . "`name` ='" . $this->name . "', "
+                . "`description` ='" . $this->description . "', "
                 . "`image_name` ='" . $this->image_name . "' "
                 . "WHERE `id` = '" . $this->id . "'";
 
@@ -84,6 +88,7 @@ class City {
     }
 
     public function delete() {
+
 
         $query = 'DELETE FROM `city` WHERE id="' . $this->id . '"';
 

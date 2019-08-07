@@ -29,8 +29,7 @@
                                         <li><a href="tour-packages.php?id=<?php echo $tour_type['id'] ?>" title="<?php echo $tour_type['name'] ?>"><?php echo $tour_type['name'] ?></a></li>
                                     <?php } ?>
                                 </ul> 
-                            </li>
-                            <li class="menu-item-has-children">  <a href="things-to-do.php" title="">Things to do</a> </li>
+                            </li> 
                             <li class="menu-item-has-children">  <a href="gallery.php" title="">Gallery</a>  </li>
                             <li class="menu-item-has-children">  <a href="gest-book.php" title="">Gest Book</a>  </li>
                             <li class="menu-item-has-children">  <a href="contact.php" title="">Contact US</a>  </li>

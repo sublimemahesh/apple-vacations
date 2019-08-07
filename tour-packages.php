@@ -83,7 +83,7 @@ $TOUR_TYPES = new TourType($id);
                                                 <div class="col-md-6 col-xs-6 col-sm-6 " id="p-padd-2">
                                                     <h4 class="p--bottom">
                                                         <strong>
-                                                            US$: <?php echo $tour_package['price'] ?>  
+                                                            US$: <?php echo $tour_package['price'] ?>.00  
                                                         </strong>
                                                     </h4>
                                                     <span>

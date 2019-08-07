@@ -7,7 +7,7 @@ $COUNT_ACTIVITY = count(Activities::all());
 $COUNT_ATTRACTION = count(Attraction::all());  
 $SLIDER_IMAGES = count(Slider::all());
 $COUNT_TOUR = count(TourPackage::all());
-$COUNT_GALLERY = count(AlbumPhoto::all());
+$COUNT_GALLERY = count(AlbumPhoto::getAlbumPhotosById(1));
 ?> 
 <!DOCTYPE html>
 <html> 
@@ -119,7 +119,7 @@ $COUNT_GALLERY = count(AlbumPhoto::all());
                         <div class="card">
                             <div class="header bg-blue-grey">
                                 <h2>
-                                    TOUR PACKAGES <small>   
+                                    Tour Packages <small>   
 
                                     </small>
                                 </h2>
@@ -140,7 +140,7 @@ $COUNT_GALLERY = count(AlbumPhoto::all());
                         <div class="card">
                             <div class="header bg-blue-grey">
                                 <h2>
-                                    ATTRACTIONS
+                                    Excursion
     <!--                                    <small>  </small>-->
                                 </h2>
                                 <ul class="header-dropdown m-r--5">
@@ -160,7 +160,7 @@ $COUNT_GALLERY = count(AlbumPhoto::all());
                         <div class="card">
                             <div class="header bg-blue-grey">
                                 <h2>
-                                    ACTIVITIES
+                                    Comment
     <!--                                    <small></small>-->
                                 </h2>
                                 <ul class="header-dropdown m-r--5">
@@ -169,9 +169,9 @@ $COUNT_GALLERY = count(AlbumPhoto::all());
                             </div>
                             <div class="body">
                                 <div class="list-group">
-                                    <a href="create-activity.php"><button type="button" class="list-group-item">Add new</button></a>
-                                    <a href="manage-activity.php"><button type="button" class="list-group-item">Manage</button></a>
-                                    <a href="arrange-activity.php"><button type="button" class="list-group-item">Arrange</button></a>
+                                    <a href="create-comment.php"><button type="button" class="list-group-item">Add new</button></a>
+                                    <a href="manage-comments.php"><button type="button" class="list-group-item">Manage</button></a>
+                                    <a href="arrange-comments.php"><button type="button" class="list-group-item">Arrange</button></a>
                                 </div>
                             </div>
                         </div>
@@ -180,7 +180,7 @@ $COUNT_GALLERY = count(AlbumPhoto::all());
                         <div class="card">
                             <div class="header bg-blue-grey">
                                 <h2>
-                                   ALBUM
+                                   Gallery
                                 </h2>
                                 <ul class="header-dropdown m-r--5">
                                     <div class="number count-to" data-from="0" data-to=" <?php echo $COUNT_GALLERY; ?>" data-speed="1500" data-fresh-interval="1"></div>
