@@ -15,15 +15,15 @@
 }
 
 @media (max-width: 1200px) {
-    .about-widget li {
-        float: left;
-        margin-right: 28px;
-        margin-bottom: 10px;
-    }
+
+ 
     .tour-btn{
         padding: 0px;
     }
-
+    .directory-searcher{
+        margin-bottom: 84px;
+        margin-top: 57px;
+    }
     .opening-hours-add h5 {width: 30%; }
     .apply-coupons > form input[type="submit"] {margin: 0; }
     .recent-place-thumb {width: 155px; }
@@ -49,6 +49,22 @@
 }
 
 @media (max-width: 980px) {
+    .tab-sec > .nav-tabs > li a {
+        padding: 10px 8px 15px;
+    }
+    .padd-row-background {
+        background-color: white;
+        margin-top: -92px;
+        padding-left: 0px;
+    }
+    .non-border {
+        border-radius: 0 !important;
+        width: 143px;
+    }
+    .main-featured-sec {
+        padding-bottom: 15px;
+        padding-top: 148px;
+    }
     .subscribe-sec > p {float: left; text-align: center; width: 100%; }
     .subscribe-sec form {display: inline-block; float: none; width: 100%; }
     .add-listing-map {margin-bottom: 50px; }
@@ -71,6 +87,11 @@
     .directory-searcher > form button{
         padding: 0px;
         font-size: 14px;
+        margin: 25px;
+    }
+    .directory-searcher{
+        margin: 7px 0px 130px 13px;
+
     }
     .dt-box{
         margin-top: 13px;
@@ -78,11 +99,7 @@
     #m-top{
         margin: 0px;
     }
-    .about-widget li{
-        float: left;
-        margin-right: 24px;
-        margin-bottom: 10px;
-    }
+     
     .about-row{
         padding-right: 15px;
     }
@@ -93,12 +110,8 @@
     .recent-place-thumb {width: 265px; }
     .directory-searcher.extra-margin {margin-bottom: 0; }
     .arrow-down {display: none; }
-    .main-featured-text h1 {font-size: 35px; }
-    .featured-bg-slide {display: none; }
-    .mian-featured-area {
-        background-size: auto;
-        background-repeat: no-repeat;
-        background-color: #00171f; background-image: url("../images/1.jpeg");   float: left;  position: relative; width: 100%; }
+    .main-featured-text h1 {font-size: 35px;margin-top: 83px; }
+
     .search-form-map {float: left; padding: 0 15px; position: static; -webkit-transform: none; -moz-transform: none; -ms-transform: none; -o-transform: none; transform: none; width: 100%; }
     .map-area .search-form-map form .field:last-child {width: 100%; }
     .subscribe-sec form {width: 100%; }
@@ -127,6 +140,10 @@
 }
 
 @media (max-width: 767px) {
+    .main-featured-text {
+
+        margin-top: 53px;
+    }
     .block-in-page-section{
         padding:30px 0px 0px 0px;
     }
@@ -146,7 +163,11 @@
     .how-it-works > .work-icon {display: inline-block; float: none; margin: 20px 0; padding: 0; width: 100%; }
     .work-detail {padding: 0 30px 40px; }
     .categories-sec > .row > div {float: left; width: 50%; }
-    .main-featured-text h1 {font-size: 35px; }
+    .main-featured-text h1 {
+        font-size: 35px;
+        margin-top: 110px;
+        margin-bottom: 12px;
+    }
     .do-tonight-sec {padding: 0 15px; }
     .heading h2 {font-size: 21px; }
     .testimonial-sec li p {padding: 30px 40px 70px; }
@@ -187,6 +208,10 @@
     .logo > a {
         float: left;
         background-color: transparent;
+    }
+    .directory-searcher{
+        margin: 7px 0px 0px 13px;
+
     }
 }
 
@@ -235,9 +260,26 @@
     .resp-btn-sec .open-search {margin: 0; }
     .resp-btn-sec .search-header form {margin-top: -10px; right: -115px; top: 100%; width: 230px; } 
     .error-sec h2 {font-size: 160px; }
-    .featured-bg-slide {display: none; } 
+    .directory-searcher {
+        margin-bottom: 24px;
+
+    }
+    .featured-bg-slide{
+        height: 100%;
+    }
     .logo > a {
         float: left;
         background-color: transparent;
+    }
+    .main-featured-text h1 {
+        font-size: 35px;
+        margin-top: -34px;
+
+    }
+}
+@media (max-width: 600px)  {
+
+    .directory-searcher {
+        margin-bottom: 39px;
     }
 }

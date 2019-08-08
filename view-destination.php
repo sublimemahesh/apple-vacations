@@ -46,7 +46,7 @@ $ATTRACTION = new Attraction($id);
                                 <h2><?php echo $ATTRACTION->title ?></h2>
                                 <ul class="breadcrumbs">
                                     <li><a href="index.php" title="">Home</a></li>
-                                    <li><a href="destination.php" title="">Destination</a></li>  
+<!--                                    <li><a href="destination.php" title="">Destination</a></li>  -->
                                     <li><a href="#" title=""> <?php echo $ATTRACTION->title ?></a></li>  
                                 </ul>	
                             </div>

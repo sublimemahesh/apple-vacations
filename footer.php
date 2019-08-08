@@ -10,15 +10,16 @@
                                 <li>
                                     <i class="la la-map"></i>
                                     <span>Address</span>
-                                    <span>Apple vacations(PVT) Ltd.<br>
-                                        162 1/1 Vystwyke Road,<br>
+                                    <span>Apple vacations(PVT) Ltd.<br> 
                                         Colombo 15.</span>
                                 </li>
                                 <li>
                                     <i class="la la-mobile"></i>
                                     <span>Cell Phone</span>
-                                    <span><a id="white-color" target="_blank" href="tel:0114338831">(+94) 11 433 8831 , </a><a id="white-color" target="_blank" href="tel:0114338831">(+94) 76 281 6641</a></span>
-                                    
+                                    <span><a id="white-color" target="_blank" href="tel:0114338831">(+94) 11 433 8831 </a></span>
+                                    <span> <a id="white-color" target="_blank" href="tel:0114338831">(+94) 76 281 6641</a></span>
+
+
                                 </li>
                                 <li>
                                     <i class="la la-envelope"></i>

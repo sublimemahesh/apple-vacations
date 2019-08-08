@@ -40,10 +40,10 @@ include './class/include.php';
         <?php include './slider.php'; ?>
 
 
-        <div class="container tab_row" style="  background-color: white;   width: 80%;  display: none;" >
+        <div class="container tab_row tab-panel-size"  >
             <div class="row gray ">
                 <div class="col-md-1 col-lg-1"></div>
-                <div class="col-md-10 col-lg-10" style="  background-color: white; margin-top: -258px; padding-left: 0px;">
+                <div class="col-md-8 col-lg-10 col-xs-12 col-sm-12 padd-row-background"  >
                     <div class="tab-sec">
                         <ul class="nav nav-tabs navbar-left right-border" style="width: 20%;">
                             <li class="bottom-border"><a class="current non-border" data-tab="tour">TOP DESTINATIONS</a></li>
@@ -61,7 +61,7 @@ include './class/include.php';
                                     if ($key < 12) {
                                         ?> 
                                      <a href="view-city.php?id=<?php echo $city['id'] ?>" >  
-                                         <div class="col-md-3">
+                                         <div class="col-md-3 col-xs-6 col-sm-6">
                                             <img src="upload/cities/gallery/thumb/<?php echo $city['image_name'] ?>" alt="<?php echo $city['name'] ?>" class="img-responsive img-res-p "  />
                                             <div class="carousel-caption padd-top-cap">
                                                 <p  class="white-color font-newsize-2"><?php echo $city['name'] ?></p>
@@ -292,7 +292,7 @@ include './class/include.php';
                                 <div class="row" id="listing-carousel">
                                     <?php
                                     $TOUR_PACKAGE = new TourPackage(NULL);
-                                    foreach ($TOUR_PACKAGE->getTourPackagesByType(1) as $tour_package) {
+                                    foreach ($TOUR_PACKAGE->all() as $tour_package) {
                                         ?>
                                         <div class="col-md-3 col-xs-12 col-sm-6"> 
                                             <a href="view-tour-package.php?id=<?php echo $tour_package['id'] ?>" title="<?php echo $tour_package['title'] ?>">
