@@ -1,19 +1,19 @@
  
-<header class="on-top" style="background-color: #0000001a;"  >
+<header class="on-top"   >
     <div class="container">
         <div class="row">
             <div class="col-md-4">
                 <div class="logo">
                     <a href="index.php" title="logo">
                         <center>
-                            <img src="images/logo.png" alt="logo" />
+                            <img src="images/logo_sticky_1.png" alt="logo" style="padding: 8px;"/>
                         </center>
 
                     </a>
                 </div>
             </div>
             <div class="col-md-8">
-                <div class="menu-sec pull-right"> 
+<!--                <div class="menu-sec pull-right"> 
                     <nav class="header-menu">
                         <ul> 
                             <li class="menu-item-has-children">   <a href="index.php" title="">HOME</a>  </li>
@@ -36,7 +36,7 @@
 
                         </ul>
                     </nav>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>

@@ -48,7 +48,7 @@ $ATTRACTION = new Attraction(NULL);
                                 <h2><?php echo $CITY->name ?></h2>
                                 <ul class="breadcrumbs">
                                     <li><a href="index.php" title="">Home</a></li>
-                                    <li><a href="destination.php" title="">Destination</a></li>  
+<!--                                    <li><a href="destination.php" title="">Destination</a></li>  -->
                                     <li><a href="#" title=""> <?php echo $CITY->name ?></a></li>  
                                 </ul>	
                             </div>
@@ -71,7 +71,7 @@ $ATTRACTION = new Attraction(NULL);
                         <div class="row">
                             <div class="related-products">
                                 <div class="col-md-12">
-                                    <h3 class="mini-title">Related Excursion</h3>
+                                    <h3 class="mini-title">Related Things to do</h3>
                                 </div>
                                 <div class="row" >
                                     <?php

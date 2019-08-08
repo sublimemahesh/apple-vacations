@@ -67,8 +67,8 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                             <div class="inner-header">
                                 <h2><?php echo $TOUR_PACKAGE->title ?> </h2>
                                 <ul class="breadcrumbs">
-                                    <li><a href="#" title="">Home</a></li>
-                                    <li><a href="view-tour-package.php?id=<?php echo $TOUR_TYPES->id ?>" title=""><?php echo $TOUR_TYPES->name ?></a></li>  
+                                    <li><a href="index.php" title="">Home</a></li>
+                                    <li><a href=" " title=""><?php echo $TOUR_TYPES->name ?></a></li>  
                                     <li><a href="#" title=""><?php echo $TOUR_PACKAGE->title ?> </a></li>  
                                 </ul>	
                             </div>
