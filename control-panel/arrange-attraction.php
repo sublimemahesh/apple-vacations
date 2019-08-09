@@ -1,7 +1,10 @@
 <?php
 include_once(dirname(__FILE__) . '/../class/include.php');
 include_once(dirname(__FILE__) . '/auth.php');
-
+$id = '';
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+}
 $ATTRACTION = new Attraction(NULL);
 ?>
 <!DOCTYPE html>
@@ -51,24 +54,21 @@ $ATTRACTION = new Attraction(NULL);
                                             <div class="col-md-12 arrange-container">
                                                 <ul id="sortable">
                                                     <?php
-                                                    if (count($ATTRACTION->all()) > 0) {
-                                                        foreach ($ATTRACTION->all() as $key => $img) {
-                                                            ?>
-                                                            <div class="col-md-3" style="list-style: none;">
-                                                                <li class="ui-state-default">
-                                                                    <span class="number-class">(<?php echo $key + 1; ?>)</span>
-                                                                    <img class="img-responsive" src="../upload/attraction/<?php echo $img["image_name"]; ?>" alt=""/>
-                                                                    <input type="hidden" name="sort[]"  value="<?php echo $img["id"]; ?>" class="sort-input"/>
+                                                    foreach ($ATTRACTION->getAttractionByCity($id) as $key => $img) {
+                                                        ?>
+                                                        <div class="col-md-3" style="list-style: none;">
+                                                            <li class="ui-state-default">
+                                                                <span class="number-class">(<?php echo $key + 1; ?>)</span>
+                                                                <img class="img-responsive" src="../upload/attraction/<?php echo $img["image_name"]; ?>" alt=""/>
+                                                                <input type="hidden" name="sort[]"  value="<?php echo $img["id"]; ?>" class="sort-input"/>
 
-                                                                </li>
-                                                            </div>
+                                                            </li>
+                                                        </div>
 
-                                                            <?php
-                                                        }
-                                                    } else {
-                                                        ?> 
-                                                        <b>No images in the database.</b> 
-                                                    <?php } ?> 
+                                                        <?php
+                                                    }
+                                                    ?> 
+
 
                                                 </ul>  
                                                 <div class="row">

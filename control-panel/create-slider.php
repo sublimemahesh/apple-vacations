@@ -68,10 +68,10 @@ include_once(dirname(__FILE__) . '/auth.php');
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden">
                                         <label for="description">Description</label>
                                         <div class="form-line">
-                                            <input type="text" id="description" class="form-control" name="description"  >
+                                            <input type="text" id="description" class="form-control" name="description" value="1" >
                                         </div> 
                                     </div> 
 

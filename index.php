@@ -45,7 +45,7 @@ include './class/include.php';
                 <div class="col-md-1 col-lg-1"></div>
                 <div class="col-md-8 col-lg-10 col-xs-12 col-sm-12 padd-row-background"  >
                     <div class="tab-sec">
-                        <ul class="nav nav-tabs navbar-left right-border" style="width: 20%;">
+                        <ul class="nav nav-tabs navbar-left right-border "  id="nav-section">
                             <li class="bottom-border"><a class="current non-border" data-tab="tour">TOP DESTINATIONS</a></li>
                             <li class="bottom-border"><a data-tab="round_tour"  class="non-border">ROUND TOURS</a> </li>
                             <li class="bottom-border"><a data-tab="one_day"  class="non-border">ONE DAY TOURS</a></li>
@@ -61,7 +61,7 @@ include './class/include.php';
                                     if ($key < 12) {
                                         ?> 
                                      <a href="view-city.php?id=<?php echo $city['id'] ?>" >  
-                                         <div class="col-md-3 col-xs-6 col-sm-6">
+                                         <div class="col-md-3 col-xs-4 col-sm-4">
                                             <img src="upload/cities/gallery/thumb/<?php echo $city['image_name'] ?>" alt="<?php echo $city['name'] ?>" class="img-responsive img-res-p "  />
                                             <div class="carousel-caption padd-top-cap">
                                                 <p  class="white-color font-newsize-2"><?php echo $city['name'] ?></p>

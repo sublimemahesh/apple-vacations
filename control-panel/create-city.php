@@ -77,40 +77,55 @@ include_once(dirname(__FILE__) . '/auth.php');
                                     </div>
                                 </form>
                                 <div class="row clearfix">  </div>
-                                <hr/>
-                                <div class="row clearfix">
-                                    <?php
-                                    $CITY = City::all();
-                                    if (count($CITY) > 0) {
-                                        foreach ($CITY as $key => $city) {
-                                            ?>
-                                            <div class="col-md-3"  id="div<?php echo $city['id']; ?>">
-                                                <div class="photo-img-container">
-                                                    <img src="../upload/cities/<?php echo $city['image_name']; ?>" class="img-responsive ">
-                                                </div>
-                                                <div class="img-caption">
-                                                    <p class="maxlinetitle"><?php echo $city['name']; ?></p>
-                                                    <div class="d">
-                                                        <a href="#" class="delete-city" data-id="<?php echo $city['id']; ?>"> <button class="glyphicon glyphicon-trash delete-btn"></button></a>
-                                                        <a href="edit-city.php?id=<?php echo $city['id']; ?>"> <button class="glyphicon glyphicon-pencil edit-btn"></button></a>
-                                                        <a href="arrange-city.php">  <button class="glyphicon glyphicon-random arrange-btn"></button></a>
+                                <hr/> 
+                            </div>
+                            </div>
+                            <div class="card">
+                                <div class="header">
+                                    <h2>Manage Cities</h2>
+                                    <ul class="header-dropdown">
+                                        <li class="">
+                                            <a href="manage-city.php">
+                                                <i class="material-icons">list</i> 
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="body">
+                                    <div class="row clearfix">
+                                        <?php
+                                        $CITY = City::all();
+                                        if (count($CITY) > 0) {
+                                            foreach ($CITY as $key => $city) {
+                                                ?>
+                                                <div class="col-md-3"  id="div<?php echo $city['id']; ?>">
+                                                    <div class="photo-img-container">
+                                                        <img src="../upload/cities/<?php echo $city['image_name']; ?>" class="img-responsive ">
+                                                    </div>
+                                                    <div class="img-caption">
+                                                        <p class="maxlinetitle"><?php echo $city['name']; ?></p>
+                                                        <div class="d">
+                                                            <a href="edit-city.php?id=<?php echo $city['id']; ?>"> <button class="glyphicon glyphicon-pencil edit-btn"></button></a> | 
+                                                            <a href="arrange-city.php">  <button class="glyphicon glyphicon-random arrange-btn"></button></a> | 
+                                                            <a href="create-attraction.php?id=<?php echo $city['id']; ?>">  <button class="glyphicon glyphicon-map-marker arrange-btn"></button></a> | 
+                                                            <a href="#" class="delete-city" data-id="<?php echo $city['id']; ?>"> <button class="glyphicon glyphicon-trash delete-btn"></button></a>
+
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <?php
-                                        }
-                                    } else {
-                                        ?> 
-                                        <b style="padding-left: 15px;">No Album photos in the database.</b> 
-                                    <?php } ?> 
+                                                <?php
+                                            }
+                                        } else {
+                                            ?> 
+                                            <b style="padding-left: 15px;">No Album photos in the database.</b> 
+                                        <?php } ?> 
 
+                                    </div>
                                 </div>
                             </div>
-
                         </div>
-                    </div>
-                </div>  
-            </div>
+                    </div>  
+                </div>
         </section>
 
         <!-- Jquery Core Js -->
