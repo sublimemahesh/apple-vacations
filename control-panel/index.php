@@ -70,7 +70,7 @@ $COUNT_GALLERY = count(AlbumPhoto::getAlbumPhotosById(1));
                                     <i class="material-icons">photo</i>
                                 </div>
                                 <div class="content">
-                                    <div class="text">Gallery Images</div>
+                                    <div class="text">GALLERY IMAGES</div>
                                     <div class="number count-to" data-from="0" data-to="<?php echo $COUNT_GALLERY; ?>" data-speed="1000" data-fresh-interval="20"></div>
                                 </div>
                             </div>
@@ -119,7 +119,7 @@ $COUNT_GALLERY = count(AlbumPhoto::getAlbumPhotosById(1));
                         <div class="card">
                             <div class="header bg-blue-grey">
                                 <h2>
-                                    Tour Packages <small>   
+                                    TOUR PACKAGES <small>   
 
                                     </small>
                                 </h2>
@@ -140,7 +140,7 @@ $COUNT_GALLERY = count(AlbumPhoto::getAlbumPhotosById(1));
                         <div class="card">
                             <div class="header bg-blue-grey">
                                 <h2>
-                                    Excursion
+                                    CITIES
     <!--                                    <small>  </small>-->
                                 </h2>
                                 <ul class="header-dropdown m-r--5">
@@ -149,9 +149,9 @@ $COUNT_GALLERY = count(AlbumPhoto::getAlbumPhotosById(1));
                             </div>
                             <div class="body">
                                 <div class="list-group">
-                                    <a href="create-attraction.php"><button type="button" class="list-group-item">Add new</button></a>
-                                    <a href="manage-attraction.php"><button type="button" class="list-group-item">Manage</button></a>
-                                    <a href="arrange-attraction.php"><button type="button" class="list-group-item">Arrange</button></a>
+                                    <a href="create-city.php"><button type="button" class="list-group-item">Add new</button></a>
+                                    <a href="#"><button type="button" class="list-group-item">Manage</button></a>
+                                    <a href="#"><button type="button" class="list-group-item">Arrange</button></a>
                                 </div>
                             </div>
                         </div>
@@ -160,7 +160,7 @@ $COUNT_GALLERY = count(AlbumPhoto::getAlbumPhotosById(1));
                         <div class="card">
                             <div class="header bg-blue-grey">
                                 <h2>
-                                    Comment
+                                    COMMENT
     <!--                                    <small></small>-->
                                 </h2>
                                 <ul class="header-dropdown m-r--5">
@@ -180,7 +180,7 @@ $COUNT_GALLERY = count(AlbumPhoto::getAlbumPhotosById(1));
                         <div class="card">
                             <div class="header bg-blue-grey">
                                 <h2>
-                                   Gallery
+                                   GALLERY
                                 </h2>
                                 <ul class="header-dropdown m-r--5">
                                     <div class="number count-to" data-from="0" data-to=" <?php echo $COUNT_GALLERY; ?>" data-speed="1500" data-fresh-interval="1"></div>
@@ -189,9 +189,9 @@ $COUNT_GALLERY = count(AlbumPhoto::getAlbumPhotosById(1));
                             <div class="body">
 
                                 <div class="list-group">
-                                    <a href="create-photo-album.php"><button type="button" class="list-group-item">Add new</button></a>
-                                    <a href="manage-photo-album.php"><button type="button" class="list-group-item">Manage</button></a>
-                                    <a href="arrange-photo-album.php"><button type="button" class="list-group-item">Arrange</button></a>
+                                    <a href="view-album-photos.php?id=1"><button type="button" class="list-group-item">Add new</button></a>
+                                    <a href="view-album-photos.php?id=1"><button type="button" class="list-group-item">Manage</button></a>
+                                    <a href="arrange-album-photos.php?id=1"><button type="button" class="list-group-item">Arrange</button></a>
 
                                 </div>
                             </div>

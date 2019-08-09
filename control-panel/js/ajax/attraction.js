@@ -61,7 +61,8 @@ $(document).ready(function () {
                         showConfirmButton: false
                     }, function () {
                         setTimeout(function () {
-                            window.location.replace("create-attraction.php");
+                            window.location.replace("create-attraction.php?id=" + result.id);
+                            
                         }, 1500);
                     });
                 },

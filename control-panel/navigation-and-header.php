@@ -306,7 +306,7 @@
                 <li class="qqq">
                     <a href="create-city.php" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
-                        <span>City</span>
+                        <span>Cities</span>
                     </a>
                      
                 </li>
@@ -362,7 +362,7 @@
                         </li>
                     </ul>
                 </li>
-                 <li class="qqq">
+<!--                 <li class="qqq">
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
                         <span>Excursion</span>
@@ -387,7 +387,7 @@
                             </a>
                         </li>
                     </ul>
-                </li>
+                </li>-->
 <!--                              <li class="qqq">
                                     <a href="javascript:void(0);" class="menu-toggle">
                                         <i class="material-icons">chevron_right</i>

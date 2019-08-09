@@ -1,6 +1,12 @@
 <?php
 include_once(dirname(__FILE__) . '/../class/include.php');
 include_once(dirname(__FILE__) . '/auth.php');
+
+$id = '';
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+}
+$CITY = new City($id);
 ?>
 <!DOCTYPE html>
 <html> 
@@ -48,23 +54,29 @@ include_once(dirname(__FILE__) . '/auth.php');
                             </div>
                             <div class="body">
                                 <form class="form-horizontal"  method="post"  id="form-data" enctype="multipart/form-data"> 
+                                    <!--                                    <div class="col-md-12">
+                                                                            <div class="form-group form-float">
+                                                                                <div class="form-line">
+                                                                                    <select class="form-control" name="city" id="city" >
+                                                                                        <option selected="" value="">-- Please select the city --</option>
+                                                                                        
+                                                                                            <option value="<?php echo $city['id'] ?>"><?php echo $city['name'] ?></option>
+                                                                                      
+                                                                                    </select>
+                                    
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>-->
+
                                     <div class="col-md-12">
                                         <div class="form-group form-float">
                                             <div class="form-line">
-                                                <select class="form-control" name="city" id="city" >
-                                                    <option selected="" value="">-- Please select the city --</option>
-                                                    <?php
-                                                    $CITY = new City(NULL);
-                                                    foreach ($CITY->all() as $city) {
-                                                        ?>
-                                                        <option value="<?php echo $city['id'] ?>"><?php echo $city['name'] ?></option>
-                                                    <?php } ?>
-                                                </select>
-
+                                                <input type="text"  class="form-control"  autocomplete="off"  id="city" value="<?php echo $CITY->name ?>" required="true">
+                                                <input type="hidden"  class="form-control"  autocomplete="off"  name="city" value="<?php echo $CITY->id ?>" required="true">
+                                                <label class="form-label">City</label>
                                             </div>
                                         </div>
                                     </div>
-                                    
                                     <div class="col-md-12">
                                         <div class="form-group form-float">
                                             <div class="form-line">
@@ -105,6 +117,50 @@ include_once(dirname(__FILE__) . '/auth.php');
                                 </form>
                                 <div class="row">  </div>
                                 </form>
+                            </div>
+
+
+                        </div>
+                        <div class="card">
+                            <div class="header">
+                                <h2>Manage Destination</h2>
+                                <ul class="header-dropdown">
+                                    <li class="">
+                                        <a href="manage-attraction.php">
+                                            <i class="material-icons">list</i> 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="body">
+                                <!--                                <div class="table-responsive">-->
+                                <div>
+                                    <div class="row clearfix">
+                                        <?php
+                                        $ATTRACTION = new Attraction(NULL);
+                                        
+                                            foreach ($ATTRACTION->getAttractionByCity($id) as $key => $attraction) {
+                                                ?>
+                                                <div class="col-md-3"  id="div<?php echo $attraction['id']; ?>">
+                                                    <div class="photo-img-container">
+                                                        <img src="../upload/attraction/<?php echo $attraction['image_name']; ?>" class="img-responsive ">
+                                                    </div>
+                                                    <div class="img-caption">
+                                                        <p class="maxlinetitle"><?php echo $attraction['title']; ?></p>
+                                                        <div class="d">
+                                                            <a href="#"  class="delete-attraction" data-id="<?php echo $attraction['id']; ?>"> <button class="glyphicon glyphicon-trash delete-btn"></button></a>
+                                                            <a href="edit-attraction.php?id=<?php echo $attraction['id']; ?>"> <button class="glyphicon glyphicon-pencil edit-btn"></button></a>
+                                                            <a href="arrange-attraction.php?id=<?php echo $id; ?>">  <button class="glyphicon glyphicon-random arrange-btn"></button></a>
+                                                            <a href="view-attraction-photos.php?id=<?php echo $attraction['id']; ?>">  <button class="glyphicon glyphicon-picture arrange-btn"></button></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                               
+                                        <?php } ?> 
+
+                                    </div>
+                                </div>
+                                <!--                                </div>-->
                             </div>
                         </div>
                     </div>
@@ -157,6 +213,7 @@ include_once(dirname(__FILE__) . '/auth.php');
 
         </script>
         <script src="js/ajax/attraction.js" type="text/javascript"></script>
+        <script src="delete/js/attraction.js" type="text/javascript"></script>
     </body>
 
 </html>

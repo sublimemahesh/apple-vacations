@@ -15,7 +15,7 @@ if (isset($_POST['create'])) {
 
 
     $dir_dest = '../../upload/attraction/';
-   
+
 
     $handle = new Upload($_FILES['image']);
 
@@ -23,7 +23,7 @@ if (isset($_POST['create'])) {
     $img = Helper::randamId();
 
     if ($handle->uploaded) {
-        
+
 
         $handle->image_resize = true;
         $handle->file_new_name_body = TRUE;
@@ -44,8 +44,8 @@ if (isset($_POST['create'])) {
 
     $ATTRACTION->image_name = $imgName;
     $ATTRACTION->create();
-
-    $result = ["status" => 'success'];
+    $result = ["status" => 'success', "id" => $_POST['city']];
+   
     echo json_encode($result);
     exit();
 }
@@ -54,13 +54,13 @@ if (isset($_POST['update'])) {
 
 
     $dir_dest = '../../upload/attraction/';
-    
+
 
     $handle = new Upload($_FILES['image']);
 
     $img = $_POST ["oldImageName"];
 
-    if ($handle->uploaded) { 
+    if ($handle->uploaded) {
 
         $handle->image_resize = true;
         $handle->file_new_name_body = TRUE;

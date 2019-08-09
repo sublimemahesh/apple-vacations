@@ -58,15 +58,15 @@
 
 <div class="responive-header hidden-lg">
     <div class="logo ">
-        <a href="#" title="">
+        <a href="index.php" title="logo">
             <img src="images/logo_sticky_1.png" alt=""   /> 
         </a>
     </div>
     <span class="open-responsive-btn">
-        <span class="m-nav" onclick="openNav()">&#9776; </span>
-    </span>
+<!--        <span class="m-nav" onclick="openNav()">&#9776; </span>-->
+    </span> 
 
-    <div class="responisve-menu"> 
+<!--    <div class="responisve-menu"> 
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="index.php">Home</a>
@@ -86,7 +86,7 @@
             <a href="gest-book.php">Gest Book</a>
             <a href="contact.php">Contact Us</a>
         </div>
-    </div>
+    </div>-->
 </div>
 
 
