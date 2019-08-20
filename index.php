@@ -407,8 +407,11 @@ include './class/include.php';
                                 <?php } ?>
                             </ul>
                         </div>
-
-                        <div class="col-md-3 hidden-xs col-sm-4 " style=" margin-top: -113px;"> 
+                        
+                        <div class="col-md-3 col-sm-4 " style=" margin-top: 42px;">
+                            <a href="https://www.tripadvisor.com/Attraction_Review-g293962-d13827740-Reviews-Apple_Vacations_Srilanka-Colombo_Western_Province.html" target="blank"><img src="images/tripadvisor.png" alt="" /></a>
+                        </div>
+<!--                        <div class="col-md-3 hidden-xs col-sm-4 " style=" margin-top: -113px;"> 
                             <a href="https://www.tripadvisor.com/Attraction_Review-g293962-d13827740-Reviews-Apple_Vacations_Srilanka-Colombo_Western_Province.html">
                                 <img  src="images/rec-trip.png" class="img-responsive pull-right" width="90%"/>
                             </a>
@@ -421,7 +424,7 @@ include './class/include.php';
                                 </ul>
                             </div>
                             <script async src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=837&amp;locationId=13827740&amp;lang=en_US&amp;rating=true&amp;nreviews=0&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=false&amp;border=true&amp;display_version=2" data-loadtrk onload="this.loadtrk = true"></script>
-                        </div> 
+                        </div> -->
                     </div>
                 </div>
             </div>
