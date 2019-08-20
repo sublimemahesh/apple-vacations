@@ -7137,6 +7137,7 @@ blockquote::before {
 .tab-sec > .nav-tabs > li a:hover {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border-color: transparent;
+   
 
 }
 .tab-sec > .nav-tabs > li a.current {
@@ -7145,7 +7146,7 @@ blockquote::before {
     background-color: #d90429;
     font-weight: 600;
     font-family: Oswald;
-}
+} 
 .description {
     float: left;
     margin-top: 10px;
