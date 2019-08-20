@@ -14,8 +14,7 @@
 
 }
 
-@media (max-width: 1200px) {
-
+@media (max-width: 1200px) { 
 
     .tour-btn{
         padding: 0px;
@@ -311,6 +310,9 @@
         font-size: 35px;
         margin-top: -34px;
 
+    }
+    #topcontrol { 
+        display: none;
     }
 }
 @media (max-width: 600px)  {

@@ -45,6 +45,58 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
         .tab-content.current {
             margin-top: 100px;
         }
+        .tab-sec > .nav-tabs > li a.current{
+            background: url(images/back-img.jpg) no-repeat 50% 50% ;
+        }
+
+        .tab-sec > .nav-tabs > li a:hover {
+            background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+            color: white;
+            transition: all 0.2s;
+            float:left;
+            -ms-transition: all 0.8s;
+            -webkit-transition: all 0.8s;
+            -ms-transition: all 0.2s;
+            -webkit-transition: all 0.2s;
+            background: url(images/back-img.jpg) no-repeat 50% 50% #fff;
+        }
+        .iternery{
+            background-color: #666666;height: 37px;
+        }
+        .iternery-padd{
+            background-color: white; padding: 6px;
+        }
+        .iternery-padd-text{
+            font-size: 16px; 
+            color: white;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        @media (min-width: 900px) and (max-width: 1200px){
+            .tab-sec > .nav-tabs > li a {
+                padding: 20px 54px 20px;
+                width: 118%;
+            }             
+        }
+        @media (min-width: 600px) and (max-width: 900px){
+            .tab-sec > .nav-tabs > li a {
+                padding: 20px 24px 20px;
+                width: 118%;
+            }
+            .tab-sec > .nav-tabs > li a{
+                font-size: 14px;
+            }
+        }
+
+        @media (min-width: 360px) and (max-width: 600px){
+            .tab-sec > .nav-tabs > li a {
+                padding: 15px 10px 15px;
+                width: 100%;
+            }
+            .tab-sec > .nav-tabs > li a{
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -68,7 +120,7 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                                 <h2><?php echo $TOUR_PACKAGE->title ?> </h2>
                                 <ul class="breadcrumbs">
                                     <li><a href="index.php" title="">Home</a></li>
-                                    <li><a href=" " title=""><?php echo $TOUR_TYPES->name ?></a></li>  
+                                    <li><a href="#" title=""><?php echo $TOUR_TYPES->name ?></a></li>  
                                     <li><a href="#" title=""><?php echo $TOUR_PACKAGE->title ?> </a></li>  
                                 </ul>	
                             </div>
@@ -85,7 +137,7 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                         <div class="col-md-12 column">
                             <div class="shoping-detail-sec">
                                 <div class="row"> 
-                                    <div class="col-md-12">
+                                    <div class="col-md-12 col-xs-12">
                                         <div id="custom-tabs" class="custom-tabs">
                                             <div class="tab-sec">
                                                 <ul class="nav nav-tabs">
@@ -95,17 +147,44 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                                                     <li><a data-tab="booking-form">Booking Form</a></li>
                                                 </ul>
                                                 <div id="overview" class="tab-content current">
-                                                    <div class="mb">
-                                                        <ul id="places-carousel" class="slider-pl">
+                                                    <div class="mb col-md-8 col-xs-12" style="padding-left:  0px">
+                                                        <ul id="places-carousel" style="padding: 0px">
                                                             <?php
                                                             $TOUR_DATE = new TourDate(NULL);
                                                             foreach ($TOUR_DATE->getTourDatesById($id) as $key => $tour_date) {
                                                                 ?>
-                                                            <li><img src="upload/tour-package/date/<?php echo $tour_date['image_name'] ?>" alt="" /> </li> 
-                                                            <?php } ?>
+                                                                <li><img src="upload/tour-package/date/<?php echo $tour_date['image_name'] ?>" alt="" width="100%"/> </li> 
+                                                            <?php }
+                                                            ?>
                                                         </ul>
                                                     </div>
-                                                    <?php echo $TOUR_PACKAGE->description ?>  
+                                                    <div class="col-md-4 hidden-xs " style="background-color:#f5f5f5;padding-bottom: 30px; ">
+                                                        <h3>From $98.00</h3>
+                                                        <h4 style="color: #007db3">Lowest Price Guarantee</h4>
+                                                        <hr>
+                                                        <h2>Select Date and Travelers</h2>
+                                                        <hr>
+                                                        <div class="form-type">
+                                                            <div class="form-group" style="padding-bottom: 15px;"> 
+                                                                <input type="text"  class="form-control input-validater datepicker-available" placeholder="select date">
+                                                                <span id="spanFullName"></span>
+                                                            </div> 
+                                                            <div class="form-group"  style="padding-bottom: 15px;"> 
+                                                                <input type="text"  class="form-control input-validater" placeholder="Number of traveler">
+                                                                <span id="spanFullName"></span>
+                                                            </div>
+                                                            <div style="margin-bottom: 25px; margin-top: 15px">
+                                                                <div class="form-group">
+                                                                    <button type="submit"  class="btn submit-booking">Check Availability</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <?php echo $TOUR_PACKAGE->description ?>  
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div id="itinerary" class="tab-content">
                                                     <?php
@@ -113,8 +192,17 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                                                         $key++;
                                                         ?>
                                                         <div class="faqs-box">
-                                                            <h3><span class="day-color">DAY <?php echo $key ?></span> - <?php echo $tour_date['title'] ?></h3>
+                                                            <div class="iternery">
+                                                                <h3>
+                                                                    <span class="day-color iternery-padd" >DAY <?php echo $key ?>  </span> 
+                                                                    <span class="pull-right iternery-padd-text"  >  Dinner and overnight stay at Mount lavinia Hotel</span>
+                                                                </h3>
+                                                            </div>
+
                                                             <div class="content-faq">
+                                                                <h3>
+                                                                    <?php echo $tour_date['title'] ?>
+                                                                </h3>
                                                                 <p>Upon Arrival to the Sri Lankan International Airport be greeted by your chauffer guide who shall take you by air conditioned vehicle to Negombo. This trip will take you only 20 minutes. </p>
                                                             </div>
                                                         </div> 
@@ -135,6 +223,7 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                                                                 <li>Breakfast (2)</li>
                                                             </ul>
                                                         </div>
+
                                                         <div class="col-md-6">
                                                             <h5>Exclusion</h5>
                                                             <ul>
@@ -152,76 +241,76 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                                                             <div class="form-type">
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
-                                                                        <label >Your Name <span class="red">*</span></label>
+                                                                        <label>Your Name <span class="red">*</span></label>
                                                                         <input type="text" name="txtFullName" id="txtFullName" class="form-control input-validater" placeholder="">
                                                                         <span id="spanFullName"></span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
-                                                                        <label >Your Email <span>*</span> </label>
+                                                                        <label>Your Email <span>*</span> </label>
                                                                         <input type="email" name="txtEmail" id="txtEmail" class="form-control input-validater"  placeholder="">
                                                                         <span id="spanEmail"></span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
-                                                                        <label >Contact Number <span class="red">*</span></label>
+                                                                        <label>Contact Number <span class="red">*</span></label>
                                                                         <input type="tel" class="form-control input-validater" id="txtPhone" name="txtPhone" placeholder="">
                                                                         <span id="spanPhone"></span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
-                                                                        <label >Country <span class="red">*</span></label>
+                                                                        <label>Country <span class="red">*</span></label>
                                                                         <input type="text" class="form-control input-validater" id="txtCountry" name="txtCountry" placeholder="">
                                                                         <span id="spanCountry"></span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
-                                                                        <label >Tour Package <span class="red">*</span></label>
+                                                                        <label>Tour Package <span class="red">*</span></label>
                                                                         <input type="text" class="form-control input-validater" id="txtTour" name="txtTour" value="<?php echo $TOUR_PACKAGE->title ?>">
                                                                         <span id="spanTour"></span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
-                                                                        <label >Airport Pickup <span class="red">*</span></label>
+                                                                        <label>Airport Pickup <span class="red">*</span></label>
                                                                         <select class="form-control h-booking input-validater" id="txtAirport" name="txtAirport">
                                                                             <option value="">
                                                                                 -- Please Select one --
                                                                             </option>
-                                                                            <option> Yes </option>
-                                                                            <option> No </option>
+                                                                            <option value="Yes"> Yes </option>
+                                                                            <option value="No"> No </option>
                                                                         </select>
                                                                         <span id="spanAirport"></span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
-                                                                        <label >Check In <span class="red">*</span></label>
+                                                                        <label>Check In <span class="red">*</span></label>
                                                                         <input type="date" class="form-control input-validater datepicker hasDatepicker" id="txtCheckIn" name="txtCheckIn" placeholder="dd-mm-yy">
                                                                         <span id="spanCheckIn"></span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
-                                                                        <label >Check Out <span class="red">*</span></label>
+                                                                        <label>Check Out <span class="red">*</span></label>
                                                                         <input type="date" class="form-control input-validater datepicker hasDatepicker" id="txtCheckOut" name="txtCheckOut" placeholder="dd-mm-yy">
                                                                         <span id="spanCheckOut"></span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
-                                                                        <label >No of Adults <span class="red">*</span></label>
+                                                                        <label>No of Adults <span class="red">*</span></label>
                                                                         <input type="number" class="form-control input-validater" id="txtAdult" name="txtAdult" min="0">
                                                                         <span id="spanAdult"></span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
-                                                                        <label >No of Children <span class="red">*</span></label>
+                                                                        <label>No of Children <span class="red">*</span></label>
                                                                         <input type="number" class="form-control input-validater" id="txtChild" name="txtChild" min="0">
                                                                         <span id="spanChild"></span>
                                                                     </div>
@@ -232,7 +321,6 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                                                                     <span id="capspan" ></span>
                                                                 </div>
                                                                 <div class="col-md-3"> 
-                                                                    <label></label>
                                                                     <span><?php include("./booking-form/captchacode-widget.php"); ?></span>
                                                                 </div>
                                                                 <div class="col-md-3">
@@ -260,6 +348,7 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                 </div>
             </div>
         </section>
+
         <section>
             <div class=" gray "  style="padding-top: 10px;padding-bottom: 35px;">
                 <div class="container">
@@ -300,10 +389,8 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                     </div>
                 </div> 
             </div>
-        </section>
-
-        <?php include './footer.php'; ?>
-
+        </section> 
+        <?php include './footer.php'; ?> 
     </div>
 
     <!-- Script -->
@@ -321,6 +408,10 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
     <script>
         $(function () {
             $(".datepicker").datepicker({dateFormat: 'yy-mm-dd'});
+            $(".datepicker-available").datepicker({
+                dateFormat: 'yy-mm-dd',
+                minDate: 'today',
+            });
         });
     </script> 
 </body>
