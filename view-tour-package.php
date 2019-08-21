@@ -46,7 +46,7 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
             margin-top: 100px;
         }
         .tab-sec > .nav-tabs > li a.current{
-            background: url(images/back-img.jpg) no-repeat 50% 50% ;
+            background: url(images/tab-bg.jpg) no-repeat 50% 50% ;
         }
 
         .tab-sec > .nav-tabs > li a:hover {
@@ -58,7 +58,18 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
             -webkit-transition: all 0.8s;
             -ms-transition: all 0.2s;
             -webkit-transition: all 0.2s;
-            background: url(images/back-img.jpg) no-repeat 50% 50% #fff;
+            background: url(images/tab-bg.jpg) no-repeat 50% 50% #fff;
+        }
+        .tab-sec > .nav-tabs > li {
+            float: left;
+            border: 1px solid #fff;
+        }
+        .tab-sec > .nav-tabs > li a.current {
+            border: 1px solid #fff !important;
+            color: #fff;
+            background-color: #d90429;
+            font-weight: 400;
+            font-family: Oswald;
         }
         .iternery{
             background-color: #666666;height: 37px;
@@ -71,6 +82,60 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
             color: white;
             margin-top: 10px;
             margin-right: 10px;
+        }
+        .itinerary-day {
+            padding-left: 0;
+            padding-right: 0;
+            width: 10%;
+            height: 50px;
+            font-size: 20px;
+            color: #ffffff;
+            background: #d90429;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 12px 0;
+        }
+        .itinerary-title {
+            padding-left: 0;
+            padding-right: 0;
+            width: 90%;
+            height: 50px;
+            padding: 15px;
+            font-size: 15px;
+            text-align: right;
+            color: #ffffff;
+            background: #666666;
+        }
+        .mt-itenary{
+            margin-top: 30px;
+        }
+        #overview .pd-slide{
+            padding-left: 0px;
+        }
+        .faqs-box {
+            background: #f7f7f7 none repeat scroll 0 0;
+        }
+        .h5, h5 {
+            font-size: 18px;
+        }
+        @media (max-width: 768px){
+            .itinerary-day {
+                width: 100%;
+            }
+            .itinerary-title {
+                width: 100%;
+                padding: 5px;
+                text-align: center;
+            }
+            .tab-sec > .nav-tabs {
+                margin-bottom: 30px;
+            }
+            #overview p{
+                text-align: justify;
+            }
+            #overview .pd-slide{
+                padding-left: 15px;
+            }
         }
         @media (min-width: 900px) and (max-width: 1200px){
             .tab-sec > .nav-tabs > li a {
@@ -147,7 +212,7 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                                                     <li><a data-tab="booking-form">Booking Form</a></li>
                                                 </ul>
                                                 <div id="overview" class="tab-content current">
-                                                    <div class="mb col-md-8 col-xs-12" style="padding-left:  0px">
+                                                    <div class="mb col-md-8 col-xs-12 pd-slide">
                                                         <ul id="places-carousel" style="padding: 0px">
                                                             <?php
                                                             $TOUR_DATE = new TourDate(NULL);
@@ -159,18 +224,22 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                                                         </ul>
                                                     </div>
                                                     <div class="col-md-4 hidden-xs " style="background-color:#f5f5f5;padding-bottom: 30px; ">
-                                                        <h3>From $98.00</h3>
-                                                        <h4 style="color: #007db3">Lowest Price Guarantee</h4>
+                                                        <h3 style="color: #007db3">From $98.00</h3>
+                                                        <!--<h4 style="color: #007db3">Lowest Price Guarantee</h4>-->
                                                         <hr>
                                                         <h2>Select Date and Travelers</h2>
                                                         <hr>
                                                         <div class="form-type">
-                                                            <div class="form-group" style="padding-bottom: 15px;"> 
+                                                            <div class="form-group" style="padding-bottom: 5px;"> 
                                                                 <input type="text"  class="form-control input-validater datepicker-available" placeholder="select date">
                                                                 <span id="spanFullName"></span>
                                                             </div> 
-                                                            <div class="form-group"  style="padding-bottom: 15px;"> 
-                                                                <input type="text"  class="form-control input-validater" placeholder="Number of traveler">
+                                                            <div class="form-group"  style="padding-bottom: 5px;"> 
+                                                                <input type="number"  class="form-control input-validater" min="0" placeholder="Number of Adults">
+                                                                <span id="spanFullName"></span>
+                                                            </div>
+                                                            <div class="form-group"  style="padding-bottom: 5px;"> 
+                                                                <input type="number"  class="form-control input-validater" min="0" placeholder="Number of Children">
                                                                 <span id="spanFullName"></span>
                                                             </div>
                                                             <div style="margin-bottom: 25px; margin-top: 15px">
@@ -193,16 +262,17 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                                                         ?>
                                                         <div class="faqs-box">
                                                             <div class="iternery">
-                                                                <h3>
-                                                                    <span class="day-color iternery-padd" >DAY <?php echo $key ?>  </span> 
-                                                                    <span class="pull-right iternery-padd-text"  >  Dinner and overnight stay at Mount lavinia Hotel</span>
-                                                                </h3>
+                                                                <!--                                                                <h3>
+                                                                                                                                    <span class="day-color iternery-padd" >DAY <?php echo $key ?>  </span> 
+                                                                                                                                    <span class="pull-right iternery-padd-text"  >  Dinner and overnight stay at Mount lavinia Hotel</span>
+                                                                                                                                </h3>-->
+                                                                <div class="mt-itenary">
+                                                                    <div class="col-xs-1 itinerary-day">DAY<?php echo $key ?></div>
+                                                                    <div class="col-xs-11 itinerary-title">Overnight stay in Golden Star Beach Hotel, Negombo</div>
+                                                                </div>
                                                             </div>
 
                                                             <div class="content-faq">
-                                                                <h3>
-                                                                    <?php echo $tour_date['title'] ?>
-                                                                </h3>
                                                                 <p>Upon Arrival to the Sri Lankan International Airport be greeted by your chauffer guide who shall take you by air conditioned vehicle to Negombo. This trip will take you only 20 minutes. </p>
                                                             </div>
                                                         </div> 
