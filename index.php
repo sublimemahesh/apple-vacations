@@ -408,7 +408,7 @@ include './class/include.php';
                         </div>
 
                         <div class="col-md-3 col-sm-4 " style=" margin-top: 42px;">
-                            <a href="https://www.tripadvisor.com/Attraction_Review-g293962-d13827740-Reviews-Apple_Vacations_Srilanka-Colombo_Western_Province.html" target="blank"><img src="images/tripadvisor.png" alt="" class="img-thumbnail"/></a>
+                            <a href="https://www.tripadvisor.com/Attraction_Review-g293962-d13827740-Reviews-Apple_Vacations_Srilanka-Colombo_Western_Province.html" target="blank"><img src="images/tripadvisor.png" alt="" style="width: 100%" class="img-thumbnail"/></a>
                         </div>
                         <!--                        <div class="col-md-3 hidden-xs col-sm-4 " style=" margin-top: -113px;"> 
                                                     <a href="https://www.tripadvisor.com/Attraction_Review-g293962-d13827740-Reviews-Apple_Vacations_Srilanka-Colombo_Western_Province.html">
