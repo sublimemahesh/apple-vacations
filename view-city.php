@@ -3,9 +3,8 @@
 include './class/include.php';
 $id = '';
 $id = $_GET['id'];
-$CITY = new City($id); 
+$CITY = new City($id);
 $ATTRACTION = new Attraction(NULL);
-
 ?>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -26,6 +25,32 @@ $ATTRACTION = new Attraction(NULL);
 
     <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
 
+    <style>
+        .recentitem {
+            float: left;
+            margin-bottom: 20px;
+            width: 100%;
+            border: 1px solid #d0d0d0;
+            box-shadow: rgba(0, 0, 0, 0.21) 0px 2px 4px 0px;
+        }
+        .recentitem > a {
+            border-radius: 0px;
+            float: left;
+            margin-right: 17px;
+            overflow: hidden;
+        }
+        .recentitem > h3 {
+            color: #8d99ae;
+            display: block;
+            font-family: Roboto;
+            font-size: 15px;
+            font-weight: normal;
+            margin-top: 15px;
+        }
+        .recentitem:last-child {
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
     <div class="page-loading">
@@ -48,7 +73,7 @@ $ATTRACTION = new Attraction(NULL);
                                 <h2><?php echo $CITY->name ?></h2>
                                 <ul class="breadcrumbs">
                                     <li><a href="index.php" title="">Home</a></li>
-<!--                                    <li><a href="destination.php" title="">Destination</a></li>  -->
+                                    <!--                                    <li><a href="destination.php" title="">Destination</a></li>  -->
                                     <li><a href="#" title=""> <?php echo $CITY->name ?></a></li>  
                                 </ul>	
                             </div>
@@ -73,33 +98,23 @@ $ATTRACTION = new Attraction(NULL);
                                 <div class="col-md-12">
                                     <h3 class="mini-title">Related Things to do</h3>
                                 </div>
-                                <div class="row" >
-                                    <?php
-                                    foreach ($ATTRACTION->getAttractionByCity($id) as $attraction) {
-                                        ?>
-                                        <div class="col-md-4 col-sm-6 col-xs-12">
-                                            <div class="blog-post">
-                                                <div class="blog-post-thumb"> 
-                                                    <a href="view-destination.php?id=<?php echo $attraction['id'] ?>" title=""><img src="upload/attraction/<?php echo $attraction['image_name'] ?>" alt="" /></a></div>
-                                                <div class="blog-detail">
-
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <?php
+                                        foreach ($ATTRACTION->getAttractionByCity($id) as $attraction) {
+                                            ?>
+                                            <div class="col-md-3 col-sm-6 col-xs-12">
+                                                <div class="recentitem">
+                                                    <a href="view-destination.php?id=<?php echo $attraction['id'] ?>" title=""> <img src="upload/attraction/<?php echo $attraction['image_name'] ?>" alt="" style="width: 100px;" /> </a>
                                                     <h3><a href="view-destination.php?id=<?php echo $attraction['id'] ?>" title=""><?php echo $attraction['title'] ?></a></h3>
-                                                    <p class="text-justify">
-                                                        <?php echo substr($attraction['short_description'], 0, 140) ?>...
-                                                    </p>
-                                                    <a href="view-destination.php?id=<?php echo $attraction['id'] ?>">  
-                                                        <div class=" pull-right  des-with" >
-                                                            <p  class="p-tab-b">View</p>
-                                                        </div>
-                                                    </a>
                                                 </div>
-                                            </div><!-- BLog Post  -->
-                                        </div> 
-                                    <?php } ?>
-                                </div>
+                                            </div>
+                                        <?php } ?>
+                                    </div>
+                                </div>          
                             </div>                             
                         </div> 
-                         
+
                     </div> 
                 </div> 
             </div>

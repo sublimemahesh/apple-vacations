@@ -54,7 +54,7 @@ include_once(dirname(__FILE__) . '/auth.php');
                                             <div class="form-line">
                                                 <select class="form-control" name="tour_type" id="tour_type" value="1">
                                                     <option value=""> --Please Select the tour type -- </option>
-                                    
+
                                                     <?php
                                                     $TOUR_TYPE = new TourType(NULL);
                                                     foreach ($TOUR_TYPE->all() as $key => $tour_type) {
@@ -66,7 +66,7 @@ include_once(dirname(__FILE__) . '/auth.php');
 
 
                                                 </select>
-                                                
+
                                             </div>
                                         </div>
                                     </div>
@@ -94,7 +94,7 @@ include_once(dirname(__FILE__) . '/auth.php');
                                             </div>
                                         </div>
                                     </div>
-                                     
+
                                     <div class="col-md-12">                                       
                                         <div class="form-group form-float">
                                             <div class="form-line">
@@ -120,11 +120,20 @@ include_once(dirname(__FILE__) . '/auth.php');
                                     </div>
 
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <label for="description">map code</label>
+                                        <label for="includes">Includes</label>
                                         <div class="form-line">
-                                            <textarea  name="map" class="form-control" rows="5"></textarea> 
+                                            <textarea id="description-1" name="includes" class="form-control tinymce" rows="5"></textarea> 
                                         </div>
+
                                     </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <label for="excludes">Excludes</label>
+                                        <div class="form-line">
+                                            <textarea id="description-2" name="excludes" class="form-control tinymce" rows="5"></textarea> 
+                                        </div>
+
+                                    </div>
+
 
                                     <div class="col-md-12"> 
                                         <input type="hidden" name="create"value="create"/>
@@ -158,6 +167,56 @@ include_once(dirname(__FILE__) . '/auth.php');
         <script>
             tinymce.init({
                 selector: "#description",
+                // ===========================================
+                // INCLUDE THE PLUGIN
+                // ===========================================
+
+                plugins: [
+                    "advlist autolink lists link image charmap print preview anchor",
+                    "searchreplace visualblocks code fullscreen",
+                    "insertdatetime media table contextmenu paste"
+                ],
+                // ===========================================
+                // PUT PLUGIN'S BUTTON on the toolbar
+                // ===========================================
+
+                toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image jbimages",
+                // ===========================================
+                // SET RELATIVE_URLS to FALSE (This is required for images to display properly)
+                // ===========================================
+
+                relative_urls: false
+
+            });
+        </script>
+        <script>
+            tinymce.init({
+                selector: "#description-1",
+                // ===========================================
+                // INCLUDE THE PLUGIN
+                // ===========================================
+
+                plugins: [
+                    "advlist autolink lists link image charmap print preview anchor",
+                    "searchreplace visualblocks code fullscreen",
+                    "insertdatetime media table contextmenu paste"
+                ],
+                // ===========================================
+                // PUT PLUGIN'S BUTTON on the toolbar
+                // ===========================================
+
+                toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image jbimages",
+                // ===========================================
+                // SET RELATIVE_URLS to FALSE (This is required for images to display properly)
+                // ===========================================
+
+                relative_urls: false
+
+            });
+        </script>
+        <script>
+            tinymce.init({
+                selector: "#description-2",
                 // ===========================================
                 // INCLUDE THE PLUGIN
                 // ===========================================

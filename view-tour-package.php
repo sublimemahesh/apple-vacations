@@ -118,6 +118,9 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
         .h5, h5 {
             font-size: 18px;
         }
+        .content-faq p {
+            margin: 10px 0 10px;
+        }
         @media (max-width: 768px){
             .itinerary-day {
                 width: 100%;
@@ -267,13 +270,13 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                                                                                                                                     <span class="pull-right iternery-padd-text"  >  Dinner and overnight stay at Mount lavinia Hotel</span>
                                                                                                                                 </h3>-->
                                                                 <div class="mt-itenary">
-                                                                    <div class="col-xs-1 itinerary-day">DAY<?php echo $key ?></div>
-                                                                    <div class="col-xs-11 itinerary-title">Overnight stay in Golden Star Beach Hotel, Negombo</div>
+                                                                    <div class="col-xs-1 itinerary-day">DAY <?php echo $key ?></div>
+                                                                    <div class="col-xs-11 itinerary-title"><?php echo $tour_date['title']; ?></div>
                                                                 </div>
                                                             </div>
 
                                                             <div class="content-faq">
-                                                                <p>Upon Arrival to the Sri Lankan International Airport be greeted by your chauffer guide who shall take you by air conditioned vehicle to Negombo. This trip will take you only 20 minutes. </p>
+                                                                <p><?php echo $tour_date['description']; ?></p>
                                                             </div>
                                                         </div> 
                                                     <?php } ?> 
@@ -283,23 +286,14 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                                                         <div class="col-md-6">
                                                             <h5>Inclusion</h5>
                                                             <ul>
-                                                                <li>02 Nights 3*** Hotel Accommodation</li>
-                                                                <li>Transport by air-conditioned (Bus/ Van/ Car)</li>
-                                                                <li>Hotel pickup and drop-off</li>
-                                                                <li>English Speaking Chauffeur</li>
-                                                                <li>Bottle Water</li>
-                                                                <li>Complimentary WiFi Excess During the Travel (Subjected To Availability)</li>
-                                                                <li>DINNER (2)</li>
-                                                                <li>Breakfast (2)</li>
+                                                                <?php echo $TOUR_PACKAGE->includes ?>
                                                             </ul>
                                                         </div>
 
                                                         <div class="col-md-6">
                                                             <h5>Exclusion</h5>
                                                             <ul>
-                                                                <li>Food and drinks, unless specified</li>
-                                                                <li>Lunch</li>
-                                                                <li>Gratuities</li>
+                                                                <?php echo $TOUR_PACKAGE->excludes ?>
                                                             </ul>
                                                         </div>
                                                     </div>
