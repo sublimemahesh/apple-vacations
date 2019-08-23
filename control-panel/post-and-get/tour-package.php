@@ -15,7 +15,8 @@ if (isset($_POST['create'])) {
     $TOUR_PACKAGE->dates = $_POST['dates'];
     $TOUR_PACKAGE->short_description = $_POST['short_description'];
     $TOUR_PACKAGE->description = $_POST['description'];
-    $TOUR_PACKAGE->map = $_POST['map'];
+    $TOUR_PACKAGE->includes = $_POST['includes'];
+    $TOUR_PACKAGE->excludes = $_POST['excludes'];
 
     $dir_dest = '../../upload/tour-package/';
     $dir_dest_thumb = '../../upload/tour-package/thumb/';
@@ -124,7 +125,8 @@ if (isset($_POST['update'])) {
     $TOUR_PACKAGE->price = $_POST['price'];
     $TOUR_PACKAGE->short_description = $_POST['short_description'];
     $TOUR_PACKAGE->description = $_POST['description'];
-    $TOUR_PACKAGE->map = $_POST['map'];
+    $TOUR_PACKAGE->includes = $_POST['includes'];
+    $TOUR_PACKAGE->excludes = $_POST['excludes'];
     $TOUR_PACKAGE->update();
 
     $result = ["id" => $_POST['id']];

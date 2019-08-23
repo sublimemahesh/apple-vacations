@@ -56,7 +56,7 @@ $TOUR_DATE = new TourDate($id);
                                         <div class="form-group form-float">
                                             <div class="form-line">
                                                 <input type="text" id="title" class="form-control"  value="<?php echo $TOUR_DATE->title; ?>"  name="title"  required="TRUE">
-                                                <label class="form-label">Title</label>
+                                                <label class="form-label">Stay</label>
                                             </div>
                                         </div>
                                     </div>

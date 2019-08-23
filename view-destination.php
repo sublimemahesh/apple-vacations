@@ -24,6 +24,33 @@ $ATTRACTION = new Attraction($id);
     <link href="css/simplelightbox.min.css" rel="stylesheet" type="text/css"/>
     <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
 
+    <style>
+        .recentitem {
+            float: left;
+            margin-bottom: 20px;
+            width: 100%;
+            border: 1px solid #d0d0d0;
+            box-shadow: rgba(0, 0, 0, 0.21) 0px 2px 4px 0px;
+        }
+        .recentitem > a {
+            border-radius: 0px;
+            float: left;
+            margin-right: 17px;
+            overflow: hidden;
+        }
+        .recentitem > h3 {
+            color: #8d99ae;
+            display: block;
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: normal;
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+        .recentitem:last-child {
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 <body>
     <div class="page-loading">
@@ -46,7 +73,7 @@ $ATTRACTION = new Attraction($id);
                                 <h2><?php echo $ATTRACTION->title ?></h2>
                                 <ul class="breadcrumbs">
                                     <li><a href="index.php" title="">Home</a></li>
-<!--                                    <li><a href="destination.php" title="">Destination</a></li>  -->
+                                    <!--                                    <li><a href="destination.php" title="">Destination</a></li>  -->
                                     <li><a href="#" title=""> <?php echo $ATTRACTION->title ?></a></li>  
                                 </ul>	
                             </div>
@@ -81,6 +108,26 @@ $ATTRACTION = new Attraction($id);
                             ?>
                         </div> 
                     </div>  
+                    <div class="related-products">
+                        <h3 class="mini-title">Related Tour Packages</h3>
+                        <div class="row" id="related-carousel">
+                            <?php
+                            $TOUR_PACKAGE = new TourPackage(NULL);
+                            foreach ($TOUR_PACKAGE->all() as $tour_package) {
+                                ?>
+                                <div class="col-md-3 col-sm-6 col-xs-12">
+                                    <div class="recentitem">
+                                        <a href="view-tour-package.php?id=<?php echo $tour_package['id'] ?>" title=""> <img src="upload/tour-package/thumb/<?php echo $tour_package['image_name'] ?>" alt="" style="width: 100px; height: 75px;" /> </a>
+                                        <h3><a href="view-tour-package.php?id=<?php echo $tour_package['id'] ?>" title=""><?php echo $tour_package['title'] ?></a></h3>
+                                    </div>
+                                </div>
+                                <?php
+                            }
+                            ?>
+                        </div>
+                    </div>
+                    <br>
+
                 </div> 
             </div> 
         </section> 

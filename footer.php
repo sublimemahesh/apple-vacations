@@ -38,7 +38,7 @@
                             <ul>
                                 <li><a href="index.php" title="">Home</a></li>
                                 <li><a href="about-us.php" title="">Who we are?</a></li>
-                                <li><a href="tour-packages.php?id=1" title="">Tour Packages</a></li>
+                                <li><a href="tour-packages.php" title="">Tour Packages</a></li>
                                 <li><a href="destination.php" title="">Destination</a></li>
                                 <li><a href="gallery.php" title="">Gallery</a></li>
                                 <li><a href="gest-book.php" title="">Gest Book</a></li>

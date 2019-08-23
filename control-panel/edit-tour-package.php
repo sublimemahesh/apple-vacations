@@ -75,7 +75,7 @@ $TOUR_PACKAGE = new TourPackage($id);
                                                             <option value=" <?php echo $tour_type['id'] ?>"  >
                                                                 <?php echo $tour_type['name'] ?>
                                                             </option> 
-                                                        <?php
+                                                            <?php
                                                         }
                                                     }
                                                     ?>
@@ -113,10 +113,10 @@ $TOUR_PACKAGE = new TourPackage($id);
 
                                     <div class="col-md-12">                                       
                                         <div class="form-group form-float"> 
-                                                <input type="file"   class="form-control" value="<?php echo $TOUR_PACKAGE->image_name; ?>"  name="image">
-                                                <input type="hidden" id="image" class="form-control" value="<?php echo $TOUR_PACKAGE->image_name; ?>"  name="image">
-                                                <img src="../upload/tour-package/<?php echo $TOUR_PACKAGE->image_name; ?>" id="image" class="view-edit-img img img-responsive img-thumbnail" name="image" alt="old image">
-                                           
+                                            <input type="file"   class="form-control" value="<?php echo $TOUR_PACKAGE->image_name; ?>"  name="image">
+                                            <input type="hidden" id="image" class="form-control" value="<?php echo $TOUR_PACKAGE->image_name; ?>"  name="image">
+                                            <img src="../upload/tour-package/<?php echo $TOUR_PACKAGE->image_name; ?>" id="image" class="view-edit-img img img-responsive img-thumbnail" name="image" alt="old image">
+
                                         </div>
                                     </div>
 
@@ -135,13 +135,25 @@ $TOUR_PACKAGE = new TourPackage($id);
                                             <textarea id="description" name="description" class="form-control" rows="5"><?php echo $TOUR_PACKAGE->description; ?></textarea> 
                                         </div>
                                     </div>
-
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <label for="description">map code</label>
+                                        <label for="includes">Includes</label>
                                         <div class="form-line">
-                                            <textarea  name="map" class="form-control" rows="5"><?php echo $TOUR_PACKAGE->map; ?></textarea> 
+                                            <textarea id="description-1" name="includes" class="form-control" rows="5"><?php echo $TOUR_PACKAGE->includes; ?></textarea> 
                                         </div>
                                     </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <label for="excludes">Excludes</label>
+                                        <div class="form-line">
+                                            <textarea id="description-2" name="excludes" class="form-control" rows="5"><?php echo $TOUR_PACKAGE->excludes; ?></textarea> 
+                                        </div>
+                                    </div>
+
+                                    <!--                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                            <label for="description">map code</label>
+                                                                            <div class="form-line">
+                                                                                <textarea  name="map" class="form-control" rows="5"><?php echo $TOUR_PACKAGE->map; ?></textarea> 
+                                                                            </div>
+                                                                        </div>-->
                                     <div class="col-md-12">
                                         <input type="hidden" value="update" name="update"/>
                                         <input type="hidden" id="oldImageName" value="<?php echo $TOUR_PACKAGE->image_name; ?>" name="oldImageName"/>
@@ -174,6 +186,56 @@ $TOUR_PACKAGE = new TourPackage($id);
         <script>
             tinymce.init({
                 selector: "#description",
+                // ===========================================
+                // INCLUDE THE PLUGIN
+                // ===========================================
+
+                plugins: [
+                    "advlist autolink lists link image charmap print preview anchor",
+                    "searchreplace visualblocks code fullscreen",
+                    "insertdatetime media table contextmenu paste"
+                ],
+                // ===========================================
+                // PUT PLUGIN'S BUTTON on the toolbar
+                // ===========================================
+
+                toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image jbimages",
+                // ===========================================
+                // SET RELATIVE_URLS to FALSE (This is required for images to display properly)
+                // ===========================================
+
+                relative_urls: false
+
+            });
+        </script>
+        <script>
+            tinymce.init({
+                selector: "#description-1",
+                // ===========================================
+                // INCLUDE THE PLUGIN
+                // ===========================================
+
+                plugins: [
+                    "advlist autolink lists link image charmap print preview anchor",
+                    "searchreplace visualblocks code fullscreen",
+                    "insertdatetime media table contextmenu paste"
+                ],
+                // ===========================================
+                // PUT PLUGIN'S BUTTON on the toolbar
+                // ===========================================
+
+                toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image jbimages",
+                // ===========================================
+                // SET RELATIVE_URLS to FALSE (This is required for images to display properly)
+                // ===========================================
+
+                relative_urls: false
+
+            });
+        </script>
+        <script>
+            tinymce.init({
+                selector: "#description-2",
                 // ===========================================
                 // INCLUDE THE PLUGIN
                 // ===========================================

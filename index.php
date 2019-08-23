@@ -326,7 +326,7 @@ include './class/include.php';
                                         </div>
                                     <?php } ?> 
                                 </div>
-                                <a href="tour-packages.php?id=1" title="" id="white-color" class="view-all-blog">View More</a>
+                                <a href="tour-packages.php" title="" id="white-color" class="view-all-blog">View More</a>
                             </div>
                         </div>
                     </div>

@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <?php
 include './class/include.php';
-$id = '';
-$id = $_GET['id'];
-$TOUR_TYPES = new TourType($id);
+ 
 ?>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -43,10 +41,10 @@ $TOUR_TYPES = new TourType($id);
                     <div class="row">
                         <div class="col-md-12">
                             <div class="inner-header">
-                                <h2><?php echo $TOUR_TYPES->name ?></h2>
+                                <h2>Tour Packages</h2>
                                 <ul class="breadcrumbs">
                                     <li><a href="index.php" title="">Home</a></li>
-                                    <li><a href="#" title=""><?php echo $TOUR_TYPES->name ?></a></li> 
+                                    <li><a href="#" title="">Tour packages</a></li> 
                                 </ul>	
                             </div>
                         </div>
@@ -61,7 +59,7 @@ $TOUR_TYPES = new TourType($id);
                         <div class="row"  >
                             <?php
                             $TOUR_PACKAGE = new TourPackage(NULL);
-                            foreach ($TOUR_PACKAGE->getTourPackagesByType($id) as $tour_package) {
+                            foreach ($TOUR_PACKAGE->all() as $tour_package) {
                                 ?>
                                 <div class="col-md-3 col-xs-12 col-sm-6" >
                                     <a href="view-tour-package.php?id=<?php echo $tour_package['id'] ?>" title="<?php echo $tour_package['title'] ?>">  
@@ -78,7 +76,7 @@ $TOUR_TYPES = new TourType($id);
 
                                             <div class="tour-list-bottom text-justify ">
                                                 <p class="p-padd" >  
-                                                    <?php echo substr($tour_package['short_description'], 0, 140) ?>...
+                                                    <?php echo substr($tour_package['short_description'], 0, 150) ?>...
                                                 </p>
                                                 <div class="col-md-6 col-xs-6 col-sm-6 " id="p-padd-2">
                                                     <h4 class="p--bottom">
