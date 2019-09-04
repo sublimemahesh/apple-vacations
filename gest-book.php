@@ -9,7 +9,7 @@ include './class/include.php';
     <meta name="keywords" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
-    <title>Gest Book - Apple vacation</title>
+    <title>Guest Book - Apple vacation</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" /><!-- Bootstrap -->
@@ -37,10 +37,10 @@ include './class/include.php';
                 <div class="row">
                     <div class="col-md-12">
                         <div class="inner-header">
-                            <h2>Gest Book</h2>
+                            <h2>Guest Book</h2>
                             <ul class="breadcrumbs">
                                 <li><a href="index.php" title="">Home</a></li>
-                                <li><a href="#" title="">Gest Book</a></li> 
+                                <li><a href="#" title="">Guest Book</a></li> 
                             </ul>	
                         </div>
                     </div>
