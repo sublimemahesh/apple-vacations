@@ -37,12 +37,12 @@
                         <div class="link-widget">
                             <ul>
                                 <li><a href="index.php" title="">Home</a></li>
-                                <li><a href="about-us.php" title="">Who we are?</a></li>
+                                <li><a href="about-us.php" title="">Who We Are?</a></li>
                                 <li><a href="tour-packages.php" title="">Tour Packages</a></li>
                                 <li><a href="destination.php" title="">Destination</a></li>
                                 <li><a href="gallery.php" title="">Gallery</a></li>
-                                <li><a href="gest-book.php" title="">Gest Book</a></li>
-                                <li><a href="contact.php" title="">Contact US</a></li>
+                                <li><a href="gest-book.php" title="">Guest Book</a></li>
+                                <li><a href="contact.php" title="">Contact Us</a></li>
                                 <li><a href="#" title="">Careers</a></li>
                                 <li><a href="#" title="">Partner With Us</a></li>
                                 <li><a href="#" title="">Help</a></li>
@@ -52,9 +52,10 @@
                 </div>
                 <div class="col-md-4 col-xs-6 col-sm-6  ">
                     <div class="widget">
-                        <h3 class="footer-title">Who we are?</h3>
+                        <h3 class="footer-title">Who We Are?</h3>
                         <div class="about-widget">
-                            <p class="text-justify">  Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. octus civibus efficiantur in.Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. octus civibus efficiantur in.Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, vix erat audiam ei. Cum doctus civibus efficiantur in. octus civibus efficiantur in.Lorem ipsum dolor sit amet, </p>
+                            <p class="text-justify">Apple Vacations ( Pvt) Ltd is one of the Local Tour Operators In Sri Lanka. Established in 2017, located in Colombo Sri Lanka. Apple Vacations is specialized in customized Sri Lanka tour packages, Sri Lanka Transport, Tours, vacations and holidays in Sri Lanka.
+                                We operate with our own fleet of vehicles to maintain our high standards of services together with our team of professional licensed tourist guides and chauffeurs who are fluent in most of the major languages required for tours.</p>
                             <ul class="footer-social-link "  >
                                 <li class="social-icon" >
                                     <a href="https://api.whatsapp.com/send?phone=">

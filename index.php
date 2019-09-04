@@ -196,7 +196,7 @@ include './class/include.php';
                         <div class="col-md-12">
                             <div class="heading">
                                 <h2>TOP DESTINATIONS</h2>                  
-                                <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</span>
+                                <span>Discover the most beautiful and wonderful sights in Sri Lanka</span>
                             </div>
                             <div class="recent-place-sec" id="places-carousel">
                                 <div class="row">
@@ -285,7 +285,7 @@ include './class/include.php';
                         <div class="col-md-12">
                             <div class="heading">
                                 <h2>Tour Packages</h2>
-                                <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</span>
+                                <span>Explore a range of exciting tour packages from Sri Lanka </span>
                             </div>
                             <div class="listing-carousel">
                                 <div class="row" id="listing-carousel">
@@ -345,7 +345,7 @@ include './class/include.php';
                         <div class="col-md-12">
                             <div class="heading  ">
                                 <h2>TRAVEL INSPIRATION</h2>
-                                <span>Discover & connect with great local businesses in Toronto.</span>
+                                <span>See more ideas about Sri lanka, Things to do and Things to make.</span>
                             </div>
                         </div>
                     </div>
@@ -390,7 +390,7 @@ include './class/include.php';
                         <div class="col-md-12">
                             <div class="heading">
                                 <h2>What Our ClIents Say</h2>
-                                <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium    </span>
+                                <span>Thanks so much for your remarks during our visit to Sri Lanka.</span>
                             </div>
                         </div>
                         <div class="col-md-9 col-sm-8">
@@ -438,7 +438,7 @@ include './class/include.php';
                         <div class="col-md-12">
                             <div class="heading">
                                 <h2>Our Partners</h2>                  
-                                <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</span>
+                                <span>Great communication is great for business.</span>
                             </div>
                         </div>
                     </div> 
