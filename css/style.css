@@ -7137,7 +7137,7 @@ blockquote::before {
 .tab-sec > .nav-tabs > li a:hover {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border-color: transparent;
-   
+
 
 }
 .tab-sec > .nav-tabs > li a.current {
@@ -8666,4 +8666,24 @@ input[type="date"].form-control{
 }
 #nav-section{
     width: 20%;
+}
+.padd-btm{
+    padding-bottom: 5px;
+}
+.color-black{
+    color: black
+}
+.header-color{
+    color: #007db3;
+}
+.btn-check-padd{
+    margin-bottom: 25px; 
+    margin-top: 15px
+}
+.check-div{
+    background-color:#f5f5f5;
+    padding-bottom: 30px;
+}
+.red{
+    color: red;
 }
