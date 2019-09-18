@@ -199,8 +199,12 @@ $TOUR_PACKAGE = new TourPackage($id);
                                             foreach ($PRICE_NAME as $price_name) {
                                                 ?>
                                                 <tr>
-                                                    <td><?php echo $price_name->pax ?></td>
-                                                    <td><?php echo number_format($price_name->price, 2) ?></td>
+                                                    <td><?php echo $price_name->pax ?>
+                                                     <input type="hidden" name="name[]" value="<?php echo $price_name->pax?>"/>
+                                                    </td>
+                                                    <td><?php echo number_format($price_name->price, 2) ?>
+                                                        <input type="hidden" name="price[]" value="<?php echo $price_name->price?>"/>
+                                                    </td>
                                                     <td><div class="delete-pages btn btn-sm btn-danger remove-col" data-id=""> <i class="waves-effect glyphicon glyphicon-trash" data-type="cancel"></i></div></td>
                                                 </tr> <?php } ?> 
                                         </table>  

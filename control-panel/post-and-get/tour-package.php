@@ -134,6 +134,7 @@ if (isset($_POST['update'])) {
     $TOUR_PACKAGE = new TourPackage($_POST['id']);
 
     if (isset($_POST['name'])) {
+        
         foreach ($_POST['name'] as $name) {
             foreach ($_POST['price'] as $price) {
                 $result = array(
@@ -144,12 +145,9 @@ if (isset($_POST['update'])) {
             array_push($price_array, $result);
         }
           
-        $merge_user = json_encode(array(json_decode($TOUR_PACKAGE->price), $price_array));
-        dd($merge_user);
-        $TOUR_PACKAGE->price = $merge_user;
-    } else {
         
-    }
+        $TOUR_PACKAGE->price = json_encode($price_array);
+    }  
 
 
     $TOUR_PACKAGE->tour_type = $_POST['tour_type'];
