@@ -375,6 +375,14 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                                                                         <span id="spanCheckOut"></span>
                                                                     </div>
                                                                 </div>
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label>Message <span class="red">*</span></label>
+                                                                        <textarea type="text" class="form-control input-validater" row="6" id="txtMessage" name="txtMessage" placeholder="Message">
+                                                                        </textarea>  
+                                                                        <span id="spanMessage"></span>
+                                                                    </div>
+                                                                </div>
                                                                 <!--                                                                <div class="col-md-6">
                                                                                                                                     <div class="form-group">
                                                                                                                                         <label>Num of Adults <span class="red">*</span></label>
@@ -392,7 +400,7 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
                                                                         <label>Num of Pax and Price <span class="red">*</span></label>
-                                                                        <input type="text" class="form-control input-validater" id="txtPax" name="txtAdult" min="0"  >
+                                                                        <input type="text" class="form-control input-validater" id="txtAdult" name="txtAdult" placeholder="Num of Pax and Price "  >
                                                                         <span id="spanAdult"></span>
                                                                     </div>
                                                                 </div>
@@ -493,6 +501,11 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
 
     <script src="booking-form/scripts.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+            $(function () {
+                $(".datepicker").datepicker();
+            });
+        </script>
 
     <!--booking form script-->
     <script src="js/tour-package.js" type="text/javascript"></script>

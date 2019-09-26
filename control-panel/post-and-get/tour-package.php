@@ -5,27 +5,12 @@ include_once(dirname(__FILE__) . '/../../class/include.php');
 
 if (isset($_POST['create'])) {
 
-    $price_array = array();
-
-
     $TOUR_PACKAGE = new TourPackage(NULL);
     $VALID = new Validator();
 
 
-    foreach ($_POST['name'] as $name) {
-        foreach ($_POST['price'] as $price) {
-
-            $result = array(
-                "pax" => $name,
-                'price' => $price
-            );
-        }
-        array_push($price_array, $result);
-    }
-
     $TOUR_PACKAGE->tour_type = $_POST['tour_type'];
-    $TOUR_PACKAGE->price = json_encode($price_array);
-
+    $TOUR_PACKAGE->price = $_POST['price'];
     $TOUR_PACKAGE->title = $_POST['title'];
     $TOUR_PACKAGE->dates = $_POST['dates'];
     $TOUR_PACKAGE->short_description = $_POST['short_description'];
@@ -86,8 +71,6 @@ if (isset($_POST['create'])) {
 
 if (isset($_POST['update'])) {
 
-    $price_array = array();
-
     $dir_dest = '../../upload/tour-package/';
     $dir_dest_thumb = '../../upload/tour-package/thumb/';
 
@@ -131,29 +114,15 @@ if (isset($_POST['update'])) {
         }
     }
 
+
+
     $TOUR_PACKAGE = new TourPackage($_POST['id']);
-
-    if (isset($_POST['name'])) {
-        
-        foreach ($_POST['name'] as $name) {
-            foreach ($_POST['price'] as $price) {
-                $result = array(
-                    "pax" => $name,
-                    'price' => $price
-                );
-            }
-            array_push($price_array, $result);
-        }
-          
-        
-        $TOUR_PACKAGE->price = json_encode($price_array);
-    }  
-
 
     $TOUR_PACKAGE->tour_type = $_POST['tour_type'];
     $TOUR_PACKAGE->image_name = $_POST['oldImageName'];
     $TOUR_PACKAGE->title = $_POST['title'];
     $TOUR_PACKAGE->dates = $_POST['dates'];
+    $TOUR_PACKAGE->price = $_POST['price'];
     $TOUR_PACKAGE->short_description = $_POST['short_description'];
     $TOUR_PACKAGE->description = $_POST['description'];
     $TOUR_PACKAGE->includes = $_POST['includes'];
