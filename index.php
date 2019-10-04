@@ -47,13 +47,13 @@ include './class/include.php';
                     <div class="tab-sec">
                         <ul class="nav nav-tabs navbar-left right-border "  id="nav-section">
                             <li class="bottom-border"><a class="current non-border" data-tab="tour">TOP DESTINATIONS</a></li>
-<!--                            <li class="bottom-border"><a data-tab="round_tour"  class="non-border">ONE DAY TOURS </a> </li>
-                        -->
+                            <!--                            <li class="bottom-border"><a data-tab="round_tour"  class="non-border">ONE DAY TOURS </a> </li>
+                            -->
                             <li class="bottom-border"><a data-tab="one_day"  class="non-border">ROUND TOURS</a></li>
-<!--                            <li class="bottom-border"><a data-tab="airport"  class="non-border">AIRPORT TRANSFER</a></li>
-                            <li class="bottom-border"><a data-tab="wild"  class="non-border">WILD LIFE SAFARI</a></li>
-                            <li class="bottom-border"><a data-tab="adventure"  class="non-border">ADVENTURE</a></li>
-                      -->
+                            <!--                            <li class="bottom-border"><a data-tab="airport"  class="non-border">AIRPORT TRANSFER</a></li>
+                                                        <li class="bottom-border"><a data-tab="wild"  class="non-border">WILD LIFE SAFARI</a></li>
+                                                        <li class="bottom-border"><a data-tab="adventure"  class="non-border">ADVENTURE</a></li>
+                            -->
                         </ul>
                         <div id="tour" class="tab-content current search-width horizontal-bar">
                             <div class="description">
@@ -147,50 +147,50 @@ include './class/include.php';
                                     </div> 
                                 </div> 
                             </div>
-<!--                            <div id="wild" class="tab-content search-width">
-                                <div class="review-list-sec">
-                                    <div class="col-md-6">
-                                        <ul class="additional-information"> 
-                                            <li><strong>WILD LIFE SAFARI</strong> </li>
-                                            <li><strong>WILD LIFE SAFARI</strong> </li>
-                                            <li><strong>WILD LIFE SAFARI</strong> </li>
-                                            <li><strong>WILD LIFE SAFARI</strong> </li>
-                                            <li><strong>WILD LIFE SAFARI</strong> </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <ul class="additional-information"> 
-                                            <li><strong>WILD LIFE SAFARI</strong> </li>
-                                            <li><strong>WILD LIFE SAFARI</strong> </li>
-                                            <li><strong>WILD LIFE SAFARI</strong> </li>
-                                            <li><strong>WILD LIFE SAFARI</strong> </li>
-                                            <li><strong>WILD LIFE SAFARI</strong> </li>
-                                        </ul>
-                                    </div>
-                                </div> 
-                            </div>-->
-<!--                            <div id="adventure" class="tab-content search-width">
-                                <div class="review-list-sec">
-                                    <div class="col-md-6">
-                                        <ul class="additional-information"> 
-                                            <li><strong>ADVENTURE</strong> </li>
-                                            <li><strong>ADVENTURE</strong> </li>
-                                            <li><strong>ADVENTURE</strong> </li>
-                                            <li><strong>ADVENTURE</strong> </li>
-                                            <li><strong>ADVENTURE</strong> </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <ul class="additional-information"> 
-                                            <li><strong>ADVENTURE</strong> </li>
-                                            <li><strong>ADVENTURE</strong> </li>
-                                            <li><strong>ADVENTURE</strong> </li>
-                                            <li><strong>ADVENTURE</strong> </li>
-                                            <li><strong>ADVENTURE</strong> </li>
-                                        </ul>
-                                    </div>
-                                </div> 
-                            </div>-->
+                            <!--                            <div id="wild" class="tab-content search-width">
+                                                            <div class="review-list-sec">
+                                                                <div class="col-md-6">
+                                                                    <ul class="additional-information"> 
+                                                                        <li><strong>WILD LIFE SAFARI</strong> </li>
+                                                                        <li><strong>WILD LIFE SAFARI</strong> </li>
+                                                                        <li><strong>WILD LIFE SAFARI</strong> </li>
+                                                                        <li><strong>WILD LIFE SAFARI</strong> </li>
+                                                                        <li><strong>WILD LIFE SAFARI</strong> </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <ul class="additional-information"> 
+                                                                        <li><strong>WILD LIFE SAFARI</strong> </li>
+                                                                        <li><strong>WILD LIFE SAFARI</strong> </li>
+                                                                        <li><strong>WILD LIFE SAFARI</strong> </li>
+                                                                        <li><strong>WILD LIFE SAFARI</strong> </li>
+                                                                        <li><strong>WILD LIFE SAFARI</strong> </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div> 
+                                                        </div>-->
+                            <!--                            <div id="adventure" class="tab-content search-width">
+                                                            <div class="review-list-sec">
+                                                                <div class="col-md-6">
+                                                                    <ul class="additional-information"> 
+                                                                        <li><strong>ADVENTURE</strong> </li>
+                                                                        <li><strong>ADVENTURE</strong> </li>
+                                                                        <li><strong>ADVENTURE</strong> </li>
+                                                                        <li><strong>ADVENTURE</strong> </li>
+                                                                        <li><strong>ADVENTURE</strong> </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <ul class="additional-information"> 
+                                                                        <li><strong>ADVENTURE</strong> </li>
+                                                                        <li><strong>ADVENTURE</strong> </li>
+                                                                        <li><strong>ADVENTURE</strong> </li>
+                                                                        <li><strong>ADVENTURE</strong> </li>
+                                                                        <li><strong>ADVENTURE</strong> </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div> 
+                                                        </div>-->
                         </div> 
                     </div>
                     <div class="col-md-1 col-lg-1"></div>
@@ -203,9 +203,9 @@ include './class/include.php';
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="heading">
-                                    <h2>TOP DESTINATIONS</h2>                  
-                                    <span>Discover the most beautiful and wonderful sights in Sri Lanka</span>
+                                <div class="heading  padd-top">
+                                    <h2>Things To Know</h2>                  
+                                    <span>Learn About Your Top Sri Lanka Destinations</span>
                                 </div>
                                 <div class="recent-place-sec" id="places-carousel">
                                     <div class="row">
@@ -288,11 +288,11 @@ include './class/include.php';
 
             <!--tour Packages-->
             <section>
-                <div class="block gray remove-top tab_row_hide">
+                <div class="block   remove-top tab_row_hide gray-sec">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="heading">
+                                <div class="heading padd-top">
                                     <h2>Tour Packages</h2>
                                     <span>Explore a range of exciting tour packages from Sri Lanka </span>
                                 </div>
@@ -335,7 +335,7 @@ include './class/include.php';
                                             </div>
                                         <?php } ?> 
                                     </div>
-                                    <a href="tour-packages.php" title="" id="white-color" class="view-all-blog">View More</a>
+                                    <a href="tour-packages.php" title="" id="white-color" class="view-all-blog m-padd"  >View More</a>
                                 </div>
                             </div>
                         </div>
@@ -346,50 +346,50 @@ include './class/include.php';
 
 
 
-            <!--INSPIRATION-->
-            <section id="scroll-here">
-                <div class="block gray tab_row_hide remove-top">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="heading  ">
-                                    <h2>TRAVEL INSPIRATION</h2>
-                                    <span>See more ideas about Sri lanka, Things to do and Things to make.</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="do-tonight-sec">
-                            <div class="row">
-                                <div class="col-md-8 col-xs-8">
+            <!--            INSPIRATION
+                        <section id="scroll-here">
+                            <div class="block gray tab_row_hide remove-top">
+                                <div class="container">
                                     <div class="row">
-                                        <div class="col-md-12 col-xs-12">
-                                            <div class="dt-box">
-                                                <a href="#" title=""><img src="images/1.jpeg" alt="wild life" class="img-responsive"/><span>Wild Life </span></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-xs-6">
-                                            <div class="dt-box">
-                                                <a href="#" title=""><img src="images/3.jpg" alt="cultural" /><span>Cultural</span></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-xs-6">
-                                            <div class="dt-box">
-                                                <a href="#" title=""><img src="images/2.jpg" alt="ella" /><span>Ella</span></a>
+                                        <div class="col-md-12">
+                                            <div class="heading  ">
+                                                <h2>TRAVEL INSPIRATION</h2>
+                                                <span>See more ideas about Sri lanka, Things to do and Things to make.</span>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-4 col-xs-4">
-                                    <div class="dt-box">
-                                        <a href="#" title=""><img src="images/resource/dt4.jpg" alt="adventure" /><span>Adventure</span></a>
+                                    <div class="do-tonight-sec">
+                                        <div class="row">
+                                            <div class="col-md-8 col-xs-8">
+                                                <div class="row">
+                                                    <div class="col-md-12 col-xs-12">
+                                                        <div class="dt-box">
+                                                            <a href="#" title=""><img src="images/1.jpeg" alt="wild life" class="img-responsive"/><span>Wild Life </span></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-xs-6">
+                                                        <div class="dt-box">
+                                                            <a href="#" title=""><img src="images/3.jpg" alt="cultural" /><span>Cultural</span></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-xs-6">
+                                                        <div class="dt-box">
+                                                            <a href="#" title=""><img src="images/2.jpg" alt="ella" /><span>Ella</span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-xs-4">
+                                                <div class="dt-box">
+                                                    <a href="#" title=""><img src="images/resource/dt4.jpg" alt="adventure" /><span>Adventure</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--INSPIRATION-->
+                        </section>
+                        INSPIRATION-->
 
             <!--comment-->  
             <section>
@@ -397,9 +397,9 @@ include './class/include.php';
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="heading">
-                                    <h2>What Our ClIents Say</h2>
-                                    <span>Thanks so much for your remarks during our visit to Sri Lanka.</span>
+                                <div class="heading  padd-top">
+                                    <h2>Testimonials</h2>
+                                    <span>Behind each review is an experience that matters about our Services</span>
                                 </div>
                             </div>
                             <div class="col-md-9 col-sm-8">
@@ -445,9 +445,9 @@ include './class/include.php';
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="heading">
+                                <div class="heading  padd-top">
                                     <h2>Our Distribution Partners</h2>                  
-                                    <span>Great communication is great for business.</span>
+                                    <span>Trusted Top rated Partner in World Biggest Travel Sites</span>
                                 </div>
                             </div>
                         </div> 
@@ -456,17 +456,17 @@ include './class/include.php';
                                 <div id="listing-carousel-company"> 
                                     <div class=" col-md-3">
                                         <a target="_blank"  href="https://www.getyourguide.com/apple-vacations-s51111/" >
-                                        <img src="images/partners/get-tour-guide.png" alt=""  class="img-responsive"/>
+                                            <img src="images/partners/get-tour-guide.png" alt=""  class="img-responsive"/>
                                         </a>
                                     </div>
                                     <div class=" col-md-3">
                                         <a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g293962-d13827740-Reviews-Apple_Vacations_Srilanka-Colombo_Western_Province.html">
-                                        <img src="images/partners/tripadvisor.png" alt=""  class="img-responsive"/>
+                                            <img src="images/partners/tripadvisor.png" alt=""  class="img-responsive"/>
                                         </a>
                                     </div>
                                     <div class=" col-md-3">
                                         <a target="_blank" href="https://www.viator.com/operator/68395 ">
-                                        <img src="images/partners/vaitor.png" alt=""  class="img-responsive"/>
+                                            <img src="images/partners/vaitor.png" alt=""  class="img-responsive"/>
                                         </a>
                                     </div>
                                     <div class="col-md-3">
@@ -478,7 +478,7 @@ include './class/include.php';
                                     <div class=" col-md-3">
                                         <img src="images/partners/expedia.png" alt="" class="img-responsive" />
                                     </div>
-                             
+
                                 </div> 
                             </div>
                         </div>
@@ -502,6 +502,7 @@ include './class/include.php';
         <script type="text/javascript" src="js/sumoselect.js"></script><!-- Nice Select -->
         <script type="text/javascript" src="js/choosen.min.js"></script><!-- Nice Select -->
         <script type="text/javascript" src="js/waypoints.js"></script><!-- Nice Select -->
+        <script type="text/javascript" src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=3fd3d93d-2ab1-4ff9-aec5-c5071443f013" async></script>
 
         <script>
             $(document).ready(function () {

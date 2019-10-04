@@ -14,7 +14,8 @@
 
 }
 
-@media (max-width: 1200px) { 
+@media (max-width: 1200px) {
+
 
     .tour-btn{
         padding: 0px;
@@ -200,7 +201,7 @@
         font-size: 12px;
     }
     .padd-top-cap {
-        top: -10%;
+        top: -25%;
         bottom: auto;
     }
     .do-tonight-sec {padding: 0 15px; }
@@ -310,9 +311,6 @@
         font-size: 35px;
         margin-top: -34px;
 
-    }
-    #topcontrol { 
-        display: none;
     }
 }
 @media (max-width: 600px)  {
