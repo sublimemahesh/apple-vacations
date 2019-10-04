@@ -23,10 +23,10 @@ include './class/include.php';
     <link href="contact-form/style.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-   
+
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="css/countrySelect.min.css" rel="stylesheet" type="text/css"/>
-    
+
     <style> 
 
 
@@ -251,15 +251,15 @@ include './class/include.php';
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <input  type="text" name="txtFullName" id="txtFullName" class="datepicker" placeholder="Travel Date" />
+                                                        <input  type="text" name="txtTravelDate" id="txtTravelDate" class="datepicker" placeholder="Travel Date" />
                                                         <div class="col-lg-12">
-                                                            <span id="spanFullName"></span>
+                                                            <span id="spanTravelDate"></span>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <input  type="text" name="txtFullName" id="txtFullName" class="datepicker" placeholder="Booking Reference" />
+                                                        <input  type="text" name="txtBooking" id="txtBooking"   placeholder="Booking Reference" />
                                                         <div class="col-lg-12">
-                                                            <span id="spanFullName"></span>
+                                                            <span id="spanBooking"></span>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
@@ -269,9 +269,9 @@ include './class/include.php';
                                                         </div>
                                                     </div>
                                                     <div class="col-md-12">
-                                                        <input type="text" placeholder="Phone Number" name="txtSubject" id="txtSubject"  />
+                                                        <input type="text" placeholder="Phone Number" name="txtMobile" id="txtMobile"  />
                                                         <div class="col-lg-12">
-                                                            <span id="spanSubject"></span>
+                                                            <span id="spanMobile"></span>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-12">
@@ -294,7 +294,12 @@ include './class/include.php';
 
                                                     <div class="col-md-12">
                                                         <input type="submit" id="btnSubmit" value="send message" /> 
+
                                                     </div>
+                                                    <div class="col-md-12" style="margin-top: 20px;">
+                                                        <div id="dismessage" align="center"></div>
+                                                    </div>
+
                                                 </div> 
 
                                             </div>
@@ -302,57 +307,55 @@ include './class/include.php';
 
                                                 <div class="row form-type">
                                                     <div class="col-md-6">
-                                                        <input  type="text" name="txtFullName" id="txtFullName" placeholder="Name" />
+                                                        <input  type="text" name="txtfullName" id="txtfullName" placeholder="Name" />
                                                         <div class="col-lg-12">
-                                                            <span id="spanFullName"></span>
+                                                            <span id="spanfullName"></span>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <input  type="text" name="txtFullName" id="txtFullName" class="datepicker" placeholder="Travel Date" />
+                                                        <input  type="text" name="txttravelDate" id="txttravelDate" class="datepicker" placeholder="Travel Date" />
                                                         <div class="col-lg-12">
-                                                            <span id="spanFullName"></span>
+                                                            <span id="spantravelDate"></span>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <input  type="number" name="txtFullName" id="txtFullName"   min="0"  placeholder="Number of Adults" />
-                                                        <div class="col-lg-12">
-                                                            <span id="spanFullName"></span>
-                                                        </div>
+                                                        <input  type="number" name="txtnumAdults" id="txtnumAdults"   min="0"  placeholder="Number of Adults" />
+
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <input  type="number" name="txtFullName" id="txtFullName"  min="0" placeholder="Number of Children" />
+                                                        <input  type="number" name="txtnumChild" id="txtnumChild"  min="0" placeholder="Number of Children" />
                                                         <div class="col-lg-12">
-                                                            <span id="spanFullName"></span>
+
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <input type="text" id="country"  name="country"  placeholder="City"  > 
-                                                         
+
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <input   type="text" name="txtEmail" id="txtEmail" placeholder="Email"  />
+                                                        <input   type="text" name="txtemail" id="txtemail" placeholder="Email"  />
                                                         <div class="col-lg-12">
-                                                            <span id="spanEmail"></span>
+                                                            <span id="spanemail"></span>
                                                         </div>
                                                     </div>
 
                                                     <div class="col-md-12">
-                                                        <input type="text" placeholder="Phone Number "name="txtSubject" id="txtSubject" />
+                                                        <input type="text" placeholder="Phone Number "name="txtmobile" id="txtmobile" />
                                                         <div class="col-lg-12">
-                                                            <span id="spanSubject"></span>
+                                                            <span id="spanmobile"></span>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-12">
-                                                        <textarea id="txtMessage" name="txtMessage" placeholder="Your Requirements"></textarea>
+                                                        <textarea id="txtmessage" name="txtmessage" placeholder="Your Requirements"></textarea>
                                                         <div class="col-lg-12">
-                                                            <span id="spanMessage"></span>
+                                                            <span id="spanmessage"></span>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-4"   > 
                                                         <label for="comment">Security Code:</label>
-                                                        <input  type="text" name="captchacode" id="captchacode"  placeholder="Enter the code " style="color: black">
+                                                        <input  type="text" name="captChacode" id="captChacode"  placeholder="Enter the code " style="color: black">
                                                         <div class="col-lg-12">
-                                                            <span id="capspan" ></span>
+                                                            <span id="capSpan" ></span>
                                                         </div>
 
                                                     </div>
@@ -361,7 +364,7 @@ include './class/include.php';
                                                     </div>
 
                                                     <div class="col-md-12">
-                                                        <input type="submit" id="btnSubmit" value="send message" /> 
+                                                        <input type="submit" id="btnSubmit_2" value="send message" /> 
                                                     </div>
                                                 </div> 
 
@@ -391,18 +394,16 @@ include './class/include.php';
                                     <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                         <div class="panel-body">
                                             <div class="row">
-                                                <div class="col-md-2">Hotline:-</div>
-                                                <div class="col-md-10 pull-left">+94 (11) 4338831</div>
+
+                                                <div class="col-md-12 pull-left">+94 (11) 4338831</div>
 
                                             </div>
                                             <div class="row">
-                                                <div class="col-md-2">Hotline:-</div>
-                                                <div class="col-md-10 pull-left">+94 (76) 805 0501</div>
+                                                <div class="col-md-12 pull-left">+94 (76) 805 0501</div>
 
                                             </div>
                                             <div class="row">
-                                                <div class="col-md-2">Hotline:-</div>
-                                                <div class="col-md-10 pull-left">+94 (76) 281 6641</div>
+                                                <div class="col-md-12 pull-left">+94 (76) 281 6641</div>
 
                                             </div>
 
@@ -430,14 +431,10 @@ include './class/include.php';
                                     <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                                         <div class="panel-body">
                                             <div class="row">
-                                                <div class="col-md-3">Whats app:-</div>
-                                                <div class="col-md-9 pull-left">+94 (76) 281 6641</div>
-
+                                                <div class="col-md-12 pull-left">+94 (76) 281 6641</div>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-md-3">Whats app:-</div>
-                                                <div class="col-md-9 pull-left">+94 (76) 805 0501</div>
-
+                                            <div class="row">                                               
+                                                <div class="col-md-12 pull-left">+94 (76) 805 0501</div>
                                             </div>
                                         </div>
                                     </div>
@@ -471,7 +468,8 @@ include './class/include.php';
 
     <script type="text/javascript" src="js/maps3.js"></script><!-- Nice Select -->
     <script type="text/javascript" src="js/jquery.jigowatt.js"></script><!-- Form -->
-    <script src="contact-form/scripts.js" type="text/javascript"></script>
+    <script src="contact-form/scripts.js" type="text/javascript"></script> 
+    <script src="contact-form/scripts_1.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/countrySelect.min.js" type="text/javascript"></script>
     <script>
@@ -503,12 +501,15 @@ include './class/include.php';
             });
         });
 
-        $(function () {
-            $(".datepicker").datepicker({dateFormat: 'yy-mm-dd'});
 
-        });
 
 
     </script>
+
+    <script>
+        $(function () {
+            $(".datepicker").datepicker({dateFormat: 'yy-mm-dd'});
+        });
+    </script> 
 </body>
 </html>
