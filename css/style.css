@@ -2556,6 +2556,10 @@ footer .block::before {
     float: left;
     width: 100%;
 }
+.contact-widgets {
+    float: left;
+    width: 100%;
+}
 .contact-widget > ul {
     float: left;
     list-style: outside none none;
@@ -6503,7 +6507,7 @@ blockquote::before {
     width: 100%;
 }
 .contactus-form  .form-type input, .contactus-form .form-type textarea {
-    border: 1px solid #dedede;
+    border: 1px solid #000;
 
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -8686,4 +8690,25 @@ input[type="date"].form-control{
 }
 .red{
     color: red;
+}
+.gray-sec{
+    background-color: #aaa8a82b;
+}
+.padd-top{
+    padding-top: 50px;
+} 
+.m-padd{
+    margin-top: -60px;
+}
+.f-bottom{
+    background-color: black; 
+    background-repeat: no-repeat;  
+    background-size: auto;
+}
+.padd-left-li{
+    padding-left: 0px!important;
+}
+.padd-a-f{
+    float: left;
+    padding: 0px 10px 0px 0px!important;
 }

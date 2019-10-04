@@ -1,81 +1,121 @@
 <footer >
-    <div class="block remove-bottom"  style="  background: url(images/resource/footer.png);  background-repeat: no-repeat;   background-size: auto;" >
+    <div class="block remove-bottom f-bottom" >
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-xs-6 col-sm-6">
                     <div class="widget">
-                        <h3 class="footer-title  ">CONTACT INFORMATION</h3>
+                        <h3 class="footer-title  ">Why Us</h3>
                         <div class="contact-widget">
+
                             <ul>
-                                <li>
-                                    <i class="la la-map"></i>
-                                    <span>Address</span>
-                                    <span>Apple vacations(PVT) Ltd.<br> 
-                                        Colombo 15.</span>
+                                <li class="padd-left-li"> 
+                                    <span> - It is a long established fact that a reader will be distracted by the readable content</span>
                                 </li>
-                                <li>
-                                    <i class="la la-mobile"></i>
-                                    <span>Cell Phone</span>
-                                    <span><a id="white-color" target="_blank" href="tel:0114338831">(+94) 11 433 8831 </a></span>
-                                    <span> <a id="white-color" target="_blank" href="tel:0114338831">(+94) 76 281 6641</a></span>
+                                <li class="padd-left-li"> 
+                                    <span> - It is a long established fact that a reader will be distracted by the readable content</span>
+                                </li>
+                                <li class="padd-left-li"> 
+                                    <span> - It is a long established fact that a reader will be distracted by the readable content</span>
+                                </li >
+                                <li class="padd-left-li"> 
+                                    <span> - It is a long established fact that a reader will be distracted by the readable content</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-1">
+                </div>
+
+                <div class="col-md-2 col-xs-6 col-sm-6">
+                    <div class="widget">
+                        <h3 class="footer-title">Company</h3>
+                        <div class="contact-widget">
+
+                            <ul>
+                                <li class="padd-left-li"> 
+                                    <span> - About Us</span>
+                                </li>
+                                <a href="term-condition.php">
+                                    <li class="padd-left-li"> 
+                                        <span> -  Term and condition</span>
+                                    </li>
+                                </a>
+                                <li class="padd-left-li"> 
+                                    <span> - Privacy and Policy</span>
+                                </li>
+                                <li class="padd-left-li"> 
+                                    <span> - Gallery</span>
+                                </li >
 
 
+                            </ul>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-2 col-xs-6 col-sm-6">
+                    <div class="widget">
+                        <h3 class="footer-title">Support</h3>
+                        <div class="contact-widget">
+
+                            <ul>
+
+                                <li class="padd-left-li"> 
+                                    <a href="contact.php">                                        
+                                        <span> - Contact Us</span>
+                                    </a>
                                 </li>
-                                <li>
-                                    <i class="la la-envelope"></i>
-                                    <span>E-mail Address</span>
-                                    <span><a href="mailto:" ><span class="__cf_email__" data-cfemail="036a6d656c4373716c6f6a70772d606c6e">info@applevacations.com.co</span></a> 
+                                <li class="padd-left-li"> 
+                                    <span> -  Book Online</span>
                                 </li>
+                                <li class="padd-left-li"> 
+                                    <span> - Pay on line</span>
+                                </li>
+                                <li class="padd-left-li"> 
+                                    <span> - Help</span>
+                                </li > 
                             </ul>
                         </div>
                     </div> 
                 </div>
 
-                <div class="col-md-4 hidden-xs hidden-sm ">
+
+
+                <div class="col-md-3 col-xs-6 col-sm-6  ">
                     <div class="widget">
-                        <h3 class="footer-title">Quick Link</h3>
-                        <div class="link-widget">
-                            <ul>
-                                <li><a href="index.php" title="">Home</a></li>
-                                <li><a href="about-us.php" title="">Who We Are?</a></li>
-                                <li><a href="tour-packages.php" title="">Tour Packages</a></li>
-                                <li><a href="destination.php" title="">Destination</a></li>
-                                <li><a href="gallery.php" title="">Gallery</a></li>
-                                <li><a href="gest-book.php" title="">Guest Book</a></li>
-                                <li><a href="contact.php" title="">Contact Us</a></li>
-                                <li><a href="#" title="">Careers</a></li>
-                                <li><a href="#" title="">Partner With Us</a></li>
-                                <li><a href="#" title="">Help</a></li>
+                        <h3 class="footer-title" style="margin-left: 38px;">Way you can pay</h3>
+                        <div class="contact-widgets" >
+                            <ul style="list-style: none">
+                                <li class="padd-left-li"> 
+
+                                    <img src="images/paypal-cards.png" alt="" /> 
+                                </li>
                             </ul>
-                        </div>
-                    </div><!-- Widget -->
-                </div>
-                <div class="col-md-4 col-xs-6 col-sm-6  ">
-                    <div class="widget">
-                        <h3 class="footer-title">Who We Are?</h3>
-                        <div class="about-widget">
-                            <p class="text-justify">Apple Vacations ( Pvt) Ltd is one of the Local Tour Operators In Sri Lanka. Established in 2017, located in Colombo Sri Lanka. Apple Vacations is specialized in customized Sri Lanka tour packages, Sri Lanka Transport, Tours, vacations and holidays in Sri Lanka.
-                                We operate with our own fleet of vehicles to maintain our high standards of services together with our team of professional licensed tourist guides and chauffeurs who are fluent in most of the major languages required for tours.</p>
-                            <ul class="footer-social-link "  >
-                                <li class="social-icon" >
+
+                            <ul  style="list-style: none">
+                                <li style="padding-left: 0px; color: white; padding-bottom: 10px;"> 
+                                    <span> - Social Media</span>
+                                </li >
+                                <li  class="padd-a-f" >
                                     <a href="https://api.whatsapp.com/send?phone=">
                                         <img src="images/socia/001-whatsapp.png" alt=""/>
                                     </a>
                                 </li>
-                                <li class="social-icon">
+                                <li class="padd-a-f" >
                                     <a href="viber://chat?number= ">
                                         <img src="images/socia/002-viber.png" alt=""/>
                                     </a>
                                 </li>
-                                <li class="social-icon"><a href="" target="_blank">
+                                <li class="padd-a-f"><a href="" target="_blank">
                                         <img src="images/socia/003-facebook.png" alt=""/>
                                     </a>
                                 </li>
-                                <li class="social-icon"><a href=" ">
+                                <li class="padd-a-f"><a href=" ">
                                         <img src="images/socia/twitter.png" alt=""/>
                                     </a>
                                 </li>
-                            </ul>
+                            </ul> 
                         </div>
                     </div> 
                 </div>
@@ -96,3 +136,5 @@
         </div>
     </div>
 </footer>
+
+
