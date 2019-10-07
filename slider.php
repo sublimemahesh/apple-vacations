@@ -9,7 +9,7 @@
                         $SLIDER = new Slider(NULL);
                         foreach ($SLIDER->all() as $slider) {
                             ?>
-                            <li><img src="upload/slider/<?php echo $slider['image_name'] ?>" alt="<?php echo $slider['title'] ?>"/></li>
+                        <li><img src="upload/slider/<?php echo $slider['image_name'] ?>" alt="<?php echo $slider['title'] ?>" style="background: linear-gradient(to bottom, rgb(85, 135, 236)10%, rgba(32, 28, 28, 0.0) 90%);"/></li>
                         <?php } ?>
                     </ul>
                     <div class="mian-featured-area">
