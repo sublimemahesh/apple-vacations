@@ -401,7 +401,7 @@ iframe{
 /* Mian Featured Sec */
 .main-featured-sec {
     float: left;
-    padding: 198px 50px 144px;
+    padding: 198px 50px 5px;
     position: relative;
     width: 100%;
 }
@@ -6508,7 +6508,6 @@ blockquote::before {
 }
 .contactus-form  .form-type input, .contactus-form .form-type textarea {
     border: 1px solid #000;
-
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
