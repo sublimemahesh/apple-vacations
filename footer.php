@@ -9,13 +9,14 @@
 
                             <ul>
                                 <li class="padd-left-li"> 
-                                    <span>It is a long established fact that a reader will be distracted by the readable content</span>
+                                    <span>
+                                          By offering 24/7 customer support For guarantee that our customers will receive support & assistance whenever necessary.</span>
                                 </li>
                                 <li class="padd-left-li"> 
-                                    <span>It is a long established fact that a reader will be distracted by the readable content</span>
+                                    <span>Rate match Guaranteed</span>
                                 </li>
                                 <li class="padd-left-li"> 
-                                    <span>It is a long established fact that a reader will be distracted by the readable content</span>
+                                    <span>we strive to offer our customers competitive Tour Cost with High-Quality Service. If you do find a better deal for the same we do match it.</span>
                                 </li >
                                 <li class="padd-left-li"> 
                                     <span>It is a long established fact that a reader will be distracted by the readable content</span>
@@ -67,7 +68,9 @@
                                     </a>
                                 </li>
                                 <li class="padd-left-li"> 
+                                    <a href="tour-package.php">
                                     <span>Book Online</span>
+                                    </a>
                                 </li>
                                 <li class="padd-left-li"> 
                                     <span>Pay on line</span>
