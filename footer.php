@@ -9,16 +9,16 @@
 
                             <ul>
                                 <li class="padd-left-li"> 
-                                    <span> - It is a long established fact that a reader will be distracted by the readable content</span>
+                                    <span>It is a long established fact that a reader will be distracted by the readable content</span>
                                 </li>
                                 <li class="padd-left-li"> 
-                                    <span> - It is a long established fact that a reader will be distracted by the readable content</span>
+                                    <span>It is a long established fact that a reader will be distracted by the readable content</span>
                                 </li>
                                 <li class="padd-left-li"> 
-                                    <span> - It is a long established fact that a reader will be distracted by the readable content</span>
+                                    <span>It is a long established fact that a reader will be distracted by the readable content</span>
                                 </li >
                                 <li class="padd-left-li"> 
-                                    <span> - It is a long established fact that a reader will be distracted by the readable content</span>
+                                    <span>It is a long established fact that a reader will be distracted by the readable content</span>
                                 </li>
 
                             </ul>
@@ -35,18 +35,18 @@
 
                             <ul>
                                 <li class="padd-left-li"> 
-                                    <span> - About Us</span>
+                                    <span>About Us</span>
                                 </li>
                                 <a href="term-condition.php">
                                     <li class="padd-left-li"> 
-                                        <span> -  Term and condition</span>
+                                        <span>Term and condition</span>
                                     </li>
                                 </a>
                                 <li class="padd-left-li"> 
-                                    <span> - Privacy and Policy</span>
+                                    <span>Privacy and Policy</span>
                                 </li>
                                 <li class="padd-left-li"> 
-                                    <span> - Gallery</span>
+                                    <span>Gallery</span>
                                 </li >
 
 
@@ -63,17 +63,17 @@
 
                                 <li class="padd-left-li"> 
                                     <a href="contact.php">                                        
-                                        <span> - Contact Us</span>
+                                        <span>Contact Us</span>
                                     </a>
                                 </li>
                                 <li class="padd-left-li"> 
-                                    <span> -  Book Online</span>
+                                    <span>Book Online</span>
                                 </li>
                                 <li class="padd-left-li"> 
-                                    <span> - Pay on line</span>
+                                    <span>Pay on line</span>
                                 </li>
                                 <li class="padd-left-li"> 
-                                    <span> - Help</span>
+                                    <span>Help</span>
                                 </li > 
                             </ul>
                         </div>

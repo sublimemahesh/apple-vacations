@@ -394,19 +394,29 @@ include './class/include.php';
                                     <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                         <div class="panel-body">
                                             <div class="row">
-
-                                                <div class="col-md-12 pull-left">+94 (11) 4338831</div>
-
+                                                <div class="col-md-12 pull-left">
+                                                    <a href="tel:+9476 805 0501">
+                                                        +94 (76) 805 0501
+                                                    </a>
+                                                </div>
                                             </div>
+                                            
                                             <div class="row">
-                                                <div class="col-md-12 pull-left">+94 (76) 805 0501</div>
 
+                                                <div class="col-md-12 pull-left">
+                                                    <a href="tel:+9411 4338831">
+                                                          +94 (11) 433 8831
+                                                    </a>
+                                                  </div>
                                             </div>
+                                            
                                             <div class="row">
-                                                <div class="col-md-12 pull-left">+94 (76) 281 6641</div>
-
+                                                <div class="col-md-12 pull-left">
+                                                     <a href="tel:+9476 281 6641">
+                                                         +94 (76) 281 6641
+                                                    </a>
+                                                    </div>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
@@ -422,7 +432,7 @@ include './class/include.php';
                                                 <span class="color-black">
                                                     Message / Call us using WhatsApp <br>
                                                     <h4 class="h-s color-black">
-                                                        We currently support chat only 
+                                                        We currently support Chat / Call us only 
                                                     </h4>
                                                 </span>
                                             </a>
@@ -430,11 +440,20 @@ include './class/include.php';
                                     </div>
                                     <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                                         <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-md-12 pull-left">+94 (76) 281 6641</div>
-                                            </div>
+                                          
                                             <div class="row">                                               
-                                                <div class="col-md-12 pull-left">+94 (76) 805 0501</div>
+                                                <div class="col-md-12 pull-left">
+                                                    <a href="tel:+9476 805 0501">
+                                                        +94 (76) 805 0501
+                                                    </a>
+                                                </div>
+                                            </div>
+                                              <div class="row">
+                                                <div class="col-md-12 pull-left">
+                                                     <a href="tel:+9476 281 6641">
+                                                        +94 (76) 281 6641
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -469,7 +488,7 @@ include './class/include.php';
     <script type="text/javascript" src="js/maps3.js"></script><!-- Nice Select -->
     <script type="text/javascript" src="js/jquery.jigowatt.js"></script><!-- Form -->
     <script src="contact-form/scripts.js" type="text/javascript"></script> 
-    <script src="contact-form/scripts_1.js" type="text/javascript"></script>
+    <script src="contact-form/contact-form-2/scripts.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/countrySelect.min.js" type="text/javascript"></script>
     <script>
