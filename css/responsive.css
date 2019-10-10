@@ -89,8 +89,9 @@
     }
     .directory-searcher > form button{
         padding: 0px;
-        font-size: 14px;
-        margin: 25px;
+        font-size: 13px;
+
+        margin: 0px 0px 0px 0px;
     }
     .directory-searcher{
         margin: 7px 0px 130px 13px;
@@ -308,8 +309,37 @@
         background-color: transparent;
     }
     .main-featured-text h1 {
-        font-size: 35px;
+        font-size: 20px;
         margin-top: -34px;
+
+    }
+
+    .triangle {
+        position: absolute;
+
+        z-index: 999;
+
+        margin-top: 0px;
+
+        margin-left: 0px;
+
+        width: 40%;
+    }
+    .triangle-2 {
+        position: absolute;
+        width: 83px;
+        margin-left: 230px;
+        margin-top: 16px;
+        width: 40%;
+    }
+    .padd-top {
+
+        padding-top: 15px;
+
+    }
+    .m-padd {
+
+        margin-top: 15px;
 
     }
 }

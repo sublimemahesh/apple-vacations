@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 include './class/include.php';
-$ABOUT_US = new Page(1);
+$PAGES = new Page(3);
 ?>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -10,7 +10,7 @@ $ABOUT_US = new Page(1);
     <meta name="keywords" content="">
     <meta name="author" content=" ">
 
-    <title>About us - Apple vacation</title>
+    <title>Privacy and Policy - Apple vacation</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" /><!-- Bootstrap -->
@@ -21,6 +21,8 @@ $ABOUT_US = new Page(1);
     <link rel="stylesheet" href="css/colors/colors.css" type="text/css" /><!-- color -->		
 
     <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+    <link href="contact-form/style.css" rel="stylesheet" type="text/css"/>
+
 
 </head>
 <body>
@@ -41,40 +43,41 @@ $ABOUT_US = new Page(1);
                     <div class="row">
                         <div class="col-md-12">
                             <div class="inner-header">
-                                <h2>About Us</h2>
+                                <h2> Privacy and Policy</h2>
                                 <ul class="breadcrumbs">
                                     <li><a href="index.php" title="">Home</a></li>
-                                    <li><a href="#" title="">About Us</a></li> 
+                                    <li><a href="#" title="">Privacy and Policy</a></li> 
                                 </ul>	
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
 
         <section>
-            <div class="block gray  ">
+            <div class="block gray">
                 <div class="container">
-                    <div class="row" > 
-                        <div class="col-md-8 col-sm-12 col-xs-12 about-row">
-                            <div class="about-padd">
-                                <span>Sri Lanka Tour with us</span>
-                                <h1 class="about-f"><span  class="about-f-color">Get started</span> your Tours</h1>
-                                <div class="text-justify"  >
-                                    <?php echo $ABOUT_US->description ?>       
-                                </div> 
-                            </div> 
+                    <div class="row">  
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h2 class="text-center">
+                                    Privacy and Policy
+                                </h2> 
+                            </div>
+                            <div class="panel-body">
+                                
+                               <?php echo $PAGES->description?>
+                            
+                            </div>
                         </div>
-                        <div class="col-md-4 col-sm-6 hidden-xs "  style="  padding-left:  0px;">                         
-                            <img src="images/about.jpg" class="img-responsive">                         
-                        </div>
+
                     </div>
                 </div>
-            </div>
-        </section>
-         
 
+            </div>
+
+        </section> 
 
         <?php include './footer.php'; ?>
 
@@ -91,10 +94,11 @@ $ABOUT_US = new Page(1);
     <script type="text/javascript" src="js/sumoselect.js"></script><!-- Nice Select -->
     <script type="text/javascript" src="js/choosen.min.js"></script><!-- Nice Select -->
     <script type="text/javascript" src="js/rangeslider.js"></script><!-- Nice Select -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAz77U5XQuEME6TpftaMdX0bBelQxXRlM&amp;callback=initMap"type="text/javascript"></script>
 
     <script type="text/javascript" src="js/maps3.js"></script><!-- Nice Select -->
     <script type="text/javascript" src="js/jquery.jigowatt.js"></script><!-- Form -->
+    <script src="contact-form/scripts.js" type="text/javascript"></script>
+
 
 </body>
 </html>

@@ -9,7 +9,7 @@
                    </div>
                   
                     <div class="triangle">
-                        <img src="images/p-1.png">
+                        <img src="images/p-1.png" style="width: 100%;">
                     </div>
                        
                     <ul class="featured-bg-slide  tab_row_hide" style="">
@@ -37,10 +37,10 @@
 
                         </div>
 
-                        <img src="images/logo.png" alt="" class=" pull-right"   style="margin-top: 200px;position: inherit;
+                        <img src="images/logo.png" alt="" class=" pull-right hidden-sm hidden-xs"   style="margin-top: 200px;position: inherit;
                              margin-right: -37px;  z-index: 999;"/>
                         <div class="triangle-2">
-                            <img src="images/p-2.png">
+                            <img src="images/p-2.png" style="width: 100%;">
                         </div>
                     </div>
 
