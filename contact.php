@@ -27,6 +27,149 @@ include './class/include.php';
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="css/countrySelect.min.css" rel="stylesheet" type="text/css"/>
 
+    <style> 
+
+
+        div[class*='col-'] {
+            padding: 0 30px;
+        }
+
+        .wrap {
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+            border-radius: 4px;
+        }
+
+
+
+        .panel {
+            border-width: 0 0 1px 0;
+            border-style: solid;
+            border-color: #fff;
+            background: none;
+            box-shadow: none;
+        }
+
+        .panel:last-child {
+            border-bottom: none;
+        }
+
+        .panel-group > .panel:first-child .panel-heading {
+            border-radius: 4px 4px 0 0;
+        }
+
+        .panel-group .panel {
+            border-radius: 0;
+        }
+
+        .panel-group .panel + .panel {
+            margin-top: 0;
+        }
+
+        .panel-heading {
+            background-color: #fff;
+            border-radius: 0;
+            border: none;
+            color: #fff;
+            padding: 0;
+        }
+
+        .panel-title a {
+            display: block;
+            color: #fff;
+            padding: 15px;
+            position: relative;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .panel-body {
+            background: #fff;
+        }
+
+        .panel:last-child .panel-body {
+            border-radius: 0 0 4px 4px;
+        }
+
+        .panel:last-child .panel-heading {
+            border-radius: 0 0 4px 4px;
+            transition: border-radius 0.3s linear 0.2s;
+        }
+
+        .panel:last-child .panel-heading.active {
+            border-radius: 0;
+            transition: border-radius linear 0s;
+        }
+        /* #bs-collapse icon scale option */
+
+        .panel-heading a:before {
+            content: '\e146';
+            position: absolute;
+            font-family: 'Material Icons';
+            right: 5px;
+            top: 10px;
+            font-size: 24px;
+            transition: all 0.5s;
+            transform: scale(1);
+        }
+
+        .panel-heading.active a:before {
+            content: ' ';
+            transition: all 0.5s;
+            transform: scale(0);
+        }
+
+        #bs-collapse .panel-heading a:after {
+            content: ' ';
+            font-size: 24px;
+            position: absolute;
+            font-family: 'Material Icons';
+            right: 5px;
+            top: 10px;
+            transform: scale(0);
+            transition: all 0.5s;
+        }
+
+        #bs-collapse .panel-heading.active a:after {
+            content: '\e909';
+            transform: scale(1);
+            transition: all 0.5s;
+        }
+        /* #accordion rotate icon option */
+
+        #accordion .panel-heading a:before {
+            content: '\e316';
+            font-size: 24px;
+            position: absolute;
+            font-family: 'Material Icons';
+            right: 5px;
+            top: 10px;
+            transform: rotate(180deg);
+            transition: all 0.5s;
+            color: black;
+        }
+
+        #accordion .panel-heading.active a:before {
+            transform: rotate(0deg);
+            transition: all 0.5s;
+        }
+        .h-s{
+            margin-top: 1px; 
+            margin-bottom: 1px;
+            padding-bottom:5px;
+            margin-left: 26px;
+            text-align: left;
+            color: white
+        }
+        .color-black{
+            color: black;
+        }
+        .bor-d{
+            border: 1px solid;
+
+
+            border-color: #0d0d0d;
+        }
+    </style>
 
 </head>
 <body>
@@ -212,7 +355,7 @@ include './class/include.php';
 
                                                     </div>
                                                     <div class="col-md-4" > 
-                                                        <?php include("./contact-form/captchacode-widget.php"); ?> 
+                                                        <?php include("./contact-form-2/captchacode-widget.php"); ?> 
                                                     </div>
 
                                                     <div class="col-md-12">
@@ -338,7 +481,7 @@ include './class/include.php';
     <script type="text/javascript" src="js/maps3.js"></script><!-- Nice Select -->
     <script type="text/javascript" src="js/jquery.jigowatt.js"></script><!-- Form -->
     <script src="contact-form/scripts.js" type="text/javascript"></script> 
-    <script src="contact-form/contact-form-2/scripts.js" type="text/javascript"></script>
+    <script src="contact-form-2/scripts.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/countrySelect.min.js" type="text/javascript"></script>
     <script>

@@ -51,6 +51,7 @@ include './class/include.php';
                                 <div class="recent-place-sec" id="places-carousel">
                                     <div class="row">
                                         <?php
+                                        $CITY = new City(NULL);
                                         foreach ($CITY->all() as $key => $city) {
                                             if ($key < 8) {
                                                 ?>
@@ -260,20 +261,7 @@ include './class/include.php';
                             <div class="col-md-3 col-sm-4 " style=" margin-top: 42px;">
                                 <a href="https://www.tripadvisor.com/Attraction_Review-g293962-d13827740-Reviews-Apple_Vacations_Srilanka-Colombo_Western_Province.html" target="blank"><img src="images/tripadvisor.png" alt="" style="width: 100%" class="img-thumbnail"/></a>
                             </div>
-                            <!--                        <div class="col-md-3 hidden-xs col-sm-4 " style=" margin-top: -113px;"> 
-                                                        <a href="https://www.tripadvisor.com/Attraction_Review-g293962-d13827740-Reviews-Apple_Vacations_Srilanka-Colombo_Western_Province.html">
-                                                            <img  src="images/rec-trip.png" class="img-responsive pull-right" width="90%"/>
-                                                        </a>
-                                                        <div id="TA_selfserveprop837" class="TA_selfserveprop tripadvisor-v pull-right">
-                                                            <ul id="KEWHRuWIMV" class="TA_links JexZnt">
-                                                                <li id="jgAYPb" class="l6iiPyjaMW">
-                                                                    <a target="_blank" href="https://www.tripadvisor.com/"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/150_logo-11900-2.png" alt="TripAdvisor"/>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <script async src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=837&amp;locationId=13827740&amp;lang=en_US&amp;rating=true&amp;nreviews=0&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=false&amp;border=true&amp;display_version=2" data-loadtrk onload="this.loadtrk = true"></script>
-                                                    </div> -->
+                            
                         </div>
                     </div>
                 </div>
@@ -345,22 +333,6 @@ include './class/include.php';
         <script type="text/javascript" src="js/waypoints.js"></script><!-- Nice Select -->
         <script type="text/javascript" src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=3fd3d93d-2ab1-4ff9-aec5-c5071443f013" async></script>
 
-        <script>
-            $(document).ready(function () {
-                $('.search').click(function () {
-                    $('.tab_row').show();
-                    $('html, body').animate({
-                        scrollTop: $("#text-scroll").offset().top
-                    }, 1000);
-                });
-
-
-                $('.tab_row_hide').click(function () {
-                    $('.tab_row').hide();
-                });
-
-            });
-
-        </script>
+         
 </body>
 </html>
