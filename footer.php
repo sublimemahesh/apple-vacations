@@ -47,8 +47,11 @@
                                     </a>
 
                                 </li>
-                                <li class="padd-left-li"> 
-                                    <span>Gallery</span>
+                                <li class="padd-left-li">
+                                    <a href="gallery.php">
+                                         <span>Gallery</span>
+                                    </a>
+                                   
                                 </li >
 
 
@@ -92,19 +95,19 @@
                     <div class="widget">
                         <h3 class="footer-title" style="margin-left: 38px;">Way you can pay</h3>
                         <div class="contact-widgets" >
-                            <ul style="list-style: none" class="col-xs-6 col-sm-6">
+                            <ul style="list-style: none" class="col-xs-6 col-sm-12">
                                 <li class="padd-left-li"> 
 
                                     <img src="images/paypal-cards.png" alt="" /> 
                                 </li>
                             </ul>
 
-                            <ul  style="list-style: none" class="col-xs-6 col-sm-6">
+                            <ul  style="list-style: none" class="col-xs-6 col-sm-12">
                                 <li style="padding-left: 0px; color: white; padding-bottom: 10px;"> 
                                     <span> - Social Media</span>
                                 </li >
                                 <li  class="padd-a-f" >
-                                    <a href="https://api.whatsapp.com/send?phone=">
+                                    <a href="https://api.whatsapp.com/send?phone=076 805 0501">
                                         <img src="images/socia/001-whatsapp.png" alt=""/>
                                     </a>
                                 </li>
@@ -131,10 +134,10 @@
             <div class="container">
                 <div class="row bootom-padd">
                     <div class="col-md-6 col-xs-12 col-sm-12 ">
-                        <p class=" white-color pull-left "><?php echo date('Y') ?> @ Own by Apple Vacations </p>
+                        <p class=" white-color pull-left "></p>
                     </div> 
                     <div class="col-md-6 col-xs-6  col-sm-6 ">
-                        <p class="  white-color pull-right">      </p>
+                        <p class="  white-color pull-right"> Copy right  &copy; <?php echo date('Y') ?> Own by Apple Vacations      </p>
                     </div>
                 </div> 
             </div>

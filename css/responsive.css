@@ -328,8 +328,8 @@
     .triangle-2 {
         position: absolute;
         width: 83px;
-        margin-left: 230px;
-        margin-top: 16px;
+        margin-left: 216px;
+        margin-top: 52px;
         width: 40%;
     }
     .padd-top {
@@ -341,6 +341,9 @@
 
         margin-top: 15px;
 
+    }
+    #topcontrol{
+        display: none;
     }
 }
 @media (max-width: 600px)  {
