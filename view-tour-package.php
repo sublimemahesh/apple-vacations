@@ -27,6 +27,8 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
     <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
     <link href="booking-form/style.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="control-panel/plugins/sweetalert/sweetalert.css" rel="stylesheet" type="text/css"/>
+    
     <style>
         .tab-sec > .nav-tabs > li a {
             border-bottom: 1px solid transparent;
@@ -509,6 +511,6 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
 
     <!--booking form script-->
     <script src="js/tour-package.js" type="text/javascript"></script>
-
+    <script src="control-panel/plugins/sweetalert/sweetalert.min.js" type="text/javascript"></script>
 </body>
 </html>

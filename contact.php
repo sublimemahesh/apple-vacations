@@ -20,7 +20,7 @@ include './class/include.php';
     <link rel="stylesheet" href="css/colors/colors.css" type="text/css" /><!-- color -->		
 
     <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
-    <link href="contact-form/style.css" rel="stylesheet" type="text/css"/>
+    <link href="contact-form/style.css" rel="stylesheet" type="text/css"/> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -324,8 +324,10 @@ include './class/include.php';
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <input type="text" id="country"  name="country"  placeholder="City"  > 
-
+                                                        <input type="text" id="txtNationality"  name="txtNationality"  placeholder="Nationality "  > 
+                                                        <div class="col-lg-12">
+                                                            <span id="spannumNationality"></span>
+                                                        </div>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <input   type="text" name="txtemail" id="txtemail" placeholder="Email"  />
@@ -361,6 +363,9 @@ include './class/include.php';
                                                     <div class="col-md-12">
                                                         <input type="submit" id="btnSubmit_2" value="send message" /> 
                                                     </div>
+                                                    <div class="col-md-12" style="margin-top: 20px;">
+                                                        <div id="dismessage" align="center"></div>
+                                                    </div>
                                                 </div> 
 
                                             </div>
@@ -390,8 +395,15 @@ include './class/include.php';
                                         <div class="panel-body">
                                             <div class="row">
                                                 <div class="col-md-12 pull-left">
+                                                    <a href="tel:+9476 281 6641">
+                                                        <h5> Hot Line      :- +94 (76) 281 6641</h5>  
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 pull-left">
                                                     <a href="tel:+9476 805 0501">
-                                                        +94 (76) 805 0501
+                                                    <h5> Reservation :- +94 (76) 805 0501</h5> 
                                                     </a>
                                                 </div>
                                             </div>
@@ -400,18 +412,12 @@ include './class/include.php';
 
                                                 <div class="col-md-12 pull-left">
                                                     <a href="tel:+9411 4338831">
-                                                        +94 (11) 433 8831
+                                                      <h5> Inquiries :- +94 (11) 433 8831</h5>     
                                                     </a>
                                                 </div>
                                             </div>
 
-                                            <div class="row">
-                                                <div class="col-md-12 pull-left">
-                                                    <a href="tel:+9476 281 6641">
-                                                        +94 (76) 281 6641
-                                                    </a>
-                                                </div>
-                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -427,7 +433,7 @@ include './class/include.php';
                                                 <span class="color-black">
                                                     Message / Call us using WhatsApp <br>
                                                     <h4 class="h-s color-black">
-                                                        We currently support Chat / Call us only 
+                                                        We currently support Chat / Call 
                                                     </h4>
                                                 </span>
                                             </a>
@@ -435,20 +441,21 @@ include './class/include.php';
                                     </div>
                                     <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                                         <div class="panel-body">
-                                            <div class="row">                                               
-                                                <div class="col-md-12 pull-left">
-                                                    <a href="tel:+9476 805 0501">
-                                                        +94 (76) 805 0501
-                                                    </a>
-                                                </div>
-                                            </div>
                                             <div class="row">
                                                 <div class="col-md-12 pull-left">
-                                                    <a href="tel:+9476 281 6641">
-                                                        +94 (76) 281 6641
+                                                    <a href="https://api.whatsapp.com/send?phone=076 281 6641">
+                                                        <h5> Number 1 :- +94 (76) 281 6641</h5>  
                                                     </a>
                                                 </div>
                                             </div>
+                                            <div class="row">                                               
+                                                <div class="col-md-12 pull-left">
+                                                    <a href="https://api.whatsapp.com/send?phone=076 805 0501">
+                                                        <h5> Number 2 :- +94 (76) 805 0501</h5>  
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </div> 

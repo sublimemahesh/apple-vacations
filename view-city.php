@@ -73,7 +73,7 @@ $ATTRACTION = new Attraction(NULL);
                                 <h2><?php echo $CITY->name ?></h2>
                                 <ul class="breadcrumbs">
                                     <li><a href="index.php" title="">Home</a></li>
-                                    <!--                                    <li><a href="destination.php" title="">Destination</a></li>  -->
+                                    <li><a href="destination.php" title="">Things To Know</a></li>  
                                     <li><a href="#" title=""> <?php echo $CITY->name ?></a></li>  
                                 </ul>	
                             </div>

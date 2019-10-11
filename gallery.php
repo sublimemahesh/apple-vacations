@@ -9,7 +9,7 @@ include './class/include.php';
     <meta name="keywords" content="">
     <meta name="author" content=" ">
 
-    <title>Tour Package Name  - Apple Vacation</title>
+    <title>Gallery  - Apple Vacation</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" /><!-- Bootstrap -->
@@ -53,7 +53,7 @@ include './class/include.php';
         </section>
 
         <section>
-            <div class="block gray "> 
+            <div class="block gray " style="margin-top: 35px;"> 
                     <div class="  column"> 
                         <div class="container"> 
                         <div class="row">  
