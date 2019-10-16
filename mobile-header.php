@@ -59,7 +59,7 @@
 <div class="responive-header hidden-lg">
     <div class="logo ">
         <a href="index.php" title="logo">
-            <img src="images/logo_sticky_1.png" alt=""   /> 
+            <img src="images/logo_sticky_2.png" alt=""   /> 
         </a>
     </div>
     <span class="open-responsive-btn">

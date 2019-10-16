@@ -52,9 +52,7 @@
                                          <span>Gallery</span>
                                     </a>
                                    
-                                </li >
-
-
+                                </li > 
                             </ul>
                         </div>
                     </div> 
@@ -65,7 +63,6 @@
                         <div class="contact-widget">
 
                             <ul>
-
                                 <li class="padd-left-li"> 
                                     <a href="contact.php">                                        
                                         <span>Contact Us</span>
@@ -107,7 +104,7 @@
                                     <span> - Social Media</span>
                                 </li >
                                 <li  class="padd-a-f" >
-                                    <a href="https://api.whatsapp.com/send?phone=076 805 0501">
+                                    <a href="https://api.whatsapp.com/send?phone=94768050501">
                                         <img src="images/socia/001-whatsapp.png" alt=""/>
                                     </a>
                                 </li>

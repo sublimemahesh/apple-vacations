@@ -100,15 +100,7 @@ $TOUR_PACKAGE = new TourPackage($id);
                                                 <label class="form-label">Dates</label>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group form-float">
-                                            <div class="form-line">
-                                                <input type="text" id="price" class="form-control"  value="<?php echo $TOUR_PACKAGE->price; ?>"  name="price"  required="TRUE">
-                                                <label class="form-label">Price</label>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </div> 
 
 
                                     <div class="col-md-12">                                       
@@ -154,6 +146,69 @@ $TOUR_PACKAGE = new TourPackage($id);
                                                                                 <textarea  name="map" class="form-control" rows="5"><?php echo $TOUR_PACKAGE->map; ?></textarea> 
                                                                             </div>
                                                                         </div>-->
+
+                                    <div class="col-md-12">
+                                        <div   style="margin-bottom: 15px;">
+                                            <h2 style="font-size: 16px;">Manage Prices</h2> 
+                                        </div> 
+
+                                        <div class="col-md-5">
+                                            <div class="form-group form-float">
+                                                <div class="form-line">
+                                                    <input type="text" id="name" class="form-control"  autocomplete="off"   required="true">
+                                                    <label class="form-label">Pax</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="form-group form-float">
+                                                <div class="form-line">
+                                                    <input type="number" id="price_val" class="form-control"  autocomplete="off"   required="true">
+                                                    <label class="form-label">Price</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group form-float">
+                                                <div class="form-line">
+                                                    <input type="button" id="append" class="form-control btn btn-primary"   value=" + Add">
+
+                                                </div>
+                                            </div>
+                                        </div> 
+
+                                        <table class=" table table-bordered table-striped table-hover js-basic-example dataTable" id="myTable"  >
+                                            <thead>
+                                                <tr>
+                                                    <th>Pax</th>
+                                                    <th>Price</th> 
+                                                    <th>Option</th>
+                                                </tr>
+                                            </thead>
+                                            <tfoot> 
+                                                <tr>
+                                                    <th>Pax</th>
+                                                    <th>Price</th>  
+                                                    <th>Option</th>
+                                                </tr> 
+                                            </tfoot>
+                                            <tbody class="inc"  >
+                                            </tbody>
+                                            <?php
+                                            $PRICE_NAME = json_decode($TOUR_PACKAGE->price);
+                                            foreach ($PRICE_NAME as $price_name) {
+                                                ?>
+                                                <tr>
+                                                    <td><?php echo $price_name->pax ?>
+                                                     <input type="hidden" name="edit_name[]" value="<?php echo $price_name->pax?>"/>
+                                                    </td>
+                                                    <td><?php echo number_format($price_name->price, 2) ?>
+                                                        <input type="hidden" name="edit_price[]" value="<?php echo $price_name->price?>"/>
+                                                    </td>
+                                                    <td><div class="delete-pages btn btn-sm btn-danger remove-col" data-id=""> <i class="waves-effect glyphicon glyphicon-trash" data-type="cancel"></i></div></td>
+                                                </tr> <?php } ?> 
+                                        </table>  
+                                    </div>
                                     <div class="col-md-12">
                                         <input type="hidden" value="update" name="update"/>
                                         <input type="hidden" id="oldImageName" value="<?php echo $TOUR_PACKAGE->image_name; ?>" name="oldImageName"/>
@@ -207,8 +262,7 @@ $TOUR_PACKAGE = new TourPackage($id);
                 relative_urls: false
 
             });
-        </script>
-        <script>
+
             tinymce.init({
                 selector: "#description-1",
                 // ===========================================
@@ -232,8 +286,7 @@ $TOUR_PACKAGE = new TourPackage($id);
                 relative_urls: false
 
             });
-        </script>
-        <script>
+
             tinymce.init({
                 selector: "#description-2",
                 // ===========================================
@@ -258,7 +311,18 @@ $TOUR_PACKAGE = new TourPackage($id);
 
             });
 
+            $("#append").click(function () {
 
+                var name = $('#name').val();
+                var price = $('#price_val').val();
+
+                $(".inc").append('<tr><td> ' + name + '  </td>  <input type="hidden" name="name[]" value="' + name + '"/>     <td> ' + price + ' </td> <input type="hidden" name="price[]" value="' + price + '"/>  <td ><div class="delete-pages btn btn-sm btn-danger remove-col" data-id=""> <i class="waves-effect glyphicon glyphicon-trash" data-type="cancel"></i></div>   </td> </tr> \n\
+                 ');
+            });
+
+            $("#myTable").on('click', '.remove-col', function () {
+                $(this).closest('tr').remove();
+            });
         </script>
         <script src="js/ajax/tour-package.js" type="text/javascript"></script>
     </body>

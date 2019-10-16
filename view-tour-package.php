@@ -28,7 +28,7 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
     <link href="booking-form/style.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="control-panel/plugins/sweetalert/sweetalert.css" rel="stylesheet" type="text/css"/>
-    
+
     <style>
         .tab-sec > .nav-tabs > li a {
             border-bottom: 1px solid transparent;
@@ -318,42 +318,42 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
                                                                         <label>Your Name <span class="red">*</span></label>
-                                                                        <input type="text" name="txtFullName" id="txtFullName" class="form-control input-validater" placeholder="Enter the name">
+                                                                        <input type="text" name="txtFullName" id="txtFullName" class="form-control input-validater" placeholder="Enter the name" autocomplete="off">
                                                                         <span id="spanFullName"></span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
                                                                         <label>Your Email <span>*</span> </label>
-                                                                        <input type="email" name="txtEmail" id="txtEmail" class="form-control input-validater"  placeholder="Enter the email">
+                                                                        <input type="email" name="txtEmail" id="txtEmail" class="form-control input-validater"  placeholder="Enter the email" autocomplete="off">
                                                                         <span id="spanEmail"></span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
                                                                         <label>Contact Number <span class="red">*</span></label>
-                                                                        <input type="tel" class="form-control input-validater" id="txtPhone" name="txtPhone" placeholder="Enter mobile number">
+                                                                        <input type="tel" class="form-control input-validater" id="txtPhone" name="txtPhone" placeholder="Enter mobile number" autocomplete="off">
                                                                         <span id="spanPhone"></span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
                                                                         <label>Country <span class="red">*</span></label>
-                                                                        <input type="text" class="form-control input-validater" id="txtCountry" name="txtCountry" placeholder="Enter the country">
+                                                                        <input type="text" class="form-control input-validater" id="txtCountry" name="txtCountry" placeholder="Enter the country" autocomplete="off">
                                                                         <span id="spanCountry"></span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
                                                                         <label>Tour Package <span class="red">*</span></label>
-                                                                        <input type="text" class="form-control input-validater" id="txtTour" name="txtTour" value="<?php echo $TOUR_PACKAGE->title ?>" readonly="">
+                                                                        <input type="text" class="form-control input-validater" id="txtTour" name="txtTour" value="<?php echo $TOUR_PACKAGE->title ?>" readonly="" autocomplete="off"> 
                                                                         <span id="spanTour"></span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
                                                                         <label>Airport Pickup <span class="red">*</span></label>
-                                                                        <select class="form-control h-booking input-validater" id="txtAirport" name="txtAirport">
+                                                                        <select class="form-control h-booking input-validater" id="txtAirport" name="txtAirport" autocomplete="off">
                                                                             <option value="" selected="">
                                                                                 -- Please Select one --
                                                                             </option>
@@ -366,53 +366,42 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
                                                                         <label>Check In <span class="red">*</span></label>
-                                                                        <input type="text" class="form-control input-validater datepicker  " id="txtCheckIn" name="txtCheckIn" placeholder="yyyy-mm-dd">
+                                                                        <input type="text" class="form-control input-validater datepicker  " id="txtCheckIn" name="txtCheckIn" placeholder="yyyy-mm-dd" autocomplete="off">
                                                                         <span id="spanCheckIn"></span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
                                                                         <label>Check Out <span class="red">*</span></label>
-                                                                        <input type="text" class="form-control input-validater datepicker " id="txtCheckOut" name="txtCheckOut" placeholder="yyyy-mm-dd">
+                                                                        <input type="text" class="form-control input-validater datepicker " id="txtCheckOut" name="txtCheckOut" placeholder="yyyy-mm-dd" autocomplete="off">
                                                                         <span id="spanCheckOut"></span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-md-12">
                                                                     <div class="form-group">
                                                                         <label>Message <span class="red">*</span></label>
-                                                                        <textarea type="text" class="form-control input-validater" row="6" id="txtMessage" name="txtMessage" placeholder="Message">
-                                                                        </textarea>  
+                                                                        <textarea type="text" class="form-control input-validater" row="6" id="txtMessage" name="txtMessage" placeholder="Message"></textarea>  
                                                                         <span id="spanMessage"></span>
                                                                     </div>
                                                                 </div>
-                                                                <!--                                                                <div class="col-md-6">
-                                                                                                                                    <div class="form-group">
-                                                                                                                                        <label>Num of Adults <span class="red">*</span></label>
-                                                                                                                                        <input type="number" class="form-control input-validater" id="txtAdult" name="txtAdult" min="0" placeholder="Number of adults">
-                                                                                                                                        <span id="spanAdult"></span>
-                                                                                                                                    </div>
-                                                                                                                                </div>
-                                                                                                                                <div class="col-md-6">
-                                                                                                                                    <div class="form-group">
-                                                                                                                                        <label>Num of Children <span class="red">*</span></label>
-                                                                                                                                        <input type="number" class="form-control input-validater" id="txtChild" name="txtChild" min="0" placeholder="Number of childs">
-                                                                                                                                        <span id="spanChild"></span>
-                                                                                                                                    </div>
-                                                                                                                                </div>-->
+
                                                                 <div class="col-md-6">
                                                                     <div class="form-group">
                                                                         <label>Num of Pax and Price <span class="red">*</span></label>
-                                                                        <input type="text" class="form-control input-validater" id="txtAdult" name="txtAdult" placeholder="Num of Pax and Price "  >
+                                                                        <select class="form-control h-booking input-validater" id="txtAdult" name="txtAdult" autocomplete="off">
+                                                                            <?php
+                                                                            $PRICE_NAME = json_decode($TOUR_PACKAGE->price);
+                                                                            foreach ($PRICE_NAME as $price_name) {
+                                                                                ?>
+                                                                                <option   value="<?php echo $price_name->pax . ' Rs: ' . number_format($price_name->price, 2) ?>" >  <?php echo $price_name->pax ?>    Rs: <?php echo number_format($price_name->price, 2) ?> </option>
+                                                                            <?php } ?>
+                                                                        </select>
+
+
                                                                         <span id="spanAdult"></span>
                                                                     </div>
                                                                 </div>
-                                                                <!--                                                                <div class="col-md-6">
-                                                                                                                                    <div class="form-group">
-                                                                                                                                        <label>Price <span class="red">*</span></label>
-                                                                                                                                        <input type="text" class="form-control input-validater"   name=" " min="0" >
-                                                                                                                                        
-                                                                                                                                    </div>
-                                                                                                                                </div>-->
+
                                                                 <div class="col-md-3">
                                                                     <label for="comment" id="form-label">Security Code:<span class="red">*</span></label>
                                                                     <input type="text" name="captchacode" id="captchacode" class="form-control input-validater" placeholder="Security code >> ">
@@ -431,8 +420,14 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
                                                                         <img src="./booking-form/img/checking.gif" id="checking"/>
                                                                     </div> 
                                                                 </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                            <div id="dismessage" align="center"></div>
+                                                                    </div>
+                                                                </div>
+                                                            
                                                             </div>
-                                                            <div id="dismessage" align="center"></div>
+                                                            
                                                         </div>
                                                     </div>
                                                 </div>
@@ -503,11 +498,11 @@ $TOUR_TYPES = new TourType($TOUR_PACKAGE->tour_type);
 
     <script src="booking-form/scripts.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <script>
-            $(function () {
-                $(".datepicker").datepicker();
-            });
-        </script>
+    <script>
+        $(function () {
+            $(".datepicker").datepicker();
+        });
+    </script>
 
     <!--booking form script-->
     <script src="js/tour-package.js" type="text/javascript"></script>

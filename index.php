@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <?php
 include './class/include.php';
+ error_reporting(0);
+ini_set('display_errors', 0);
 ?>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Apple Vacations ( Pvt) Ltd is one of the Local Tour Operators In Sri Lanka. Established in 2017, located in Colombo Sri Lanka. Apple Vacations is specialized in customized Sri Lanka tour packages, Sri Lanka Transport, Tours, vacations and holidays in Sri Lanka. ">
     <meta name="keywords" content="">
     <meta name="author" content="">
 
@@ -44,7 +46,7 @@ include './class/include.php';
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="heading  padd-top">
+                                <div class="heading ">
                                     <h2>Things To Know</h2>                  
                                     <span>Learn About Your Top Sri Lanka Destinations</span>
                                 </div>
@@ -159,14 +161,8 @@ include './class/include.php';
                                                                 <?php echo substr($tour_package['short_description'], 0, 140) ?>...
                                                             </p>
                                                             <div class="col-md-8 col-xs-8  col-sm-8 " id="p-padd-2">
-                                                                <h4 class="p--bottom">
-                                                                    <strong>
-                                                                        US$: <?php echo $tour_package['price'] ?>.00
-                                                                    </strong>
-                                                                </h4>
-                                                                <span>
-                                                                    <p>Starting From</p>
-                                                                </span>
+                                                                 
+                                                                 
                                                             </div>
                                                             <div class="col-md-4 col-xs-4 col-sm-4 tour-btn"">
                                                                 <p  class="p-tab-b">View</p>

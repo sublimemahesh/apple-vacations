@@ -238,44 +238,44 @@ include './class/include.php';
                                                 </center>  
                                             </div>
                                             <div class="contactus-form"  id="contact" style="display: none" >
-                                                <div class="row form-type">
-                                                    <div class="col-md-6">
-                                                        <input  type="text" name="txtFullName" id="txtFullName" placeholder="Name" />
+                                                <div class="row form-type" >
+                                                    <div class="col-md-6" style=" z-index: 9999;">
+                                                        <input  type="text" name="txtFullName" id="txtFullName" placeholder="Name" autocomplete="off"/>
                                                         <div class="col-lg-12">
                                                             <span id="spanFullName"></span>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-6">
-                                                        <input  type="text" name="txtTravelDate" id="txtTravelDate" class="datepicker" placeholder="Travel Date" />
+                                                    <div class="col-md-6" style=" z-index: 9999;">
+                                                        <input  type="text" name="txtTravelDate" id="txtTravelDate" class="datepicker" placeholder="Travel Date" autocomplete="off"/>
                                                         <div class="col-lg-12">
                                                             <span id="spanTravelDate"></span>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-6">
-                                                        <input  type="text" name="txtBooking" id="txtBooking"   placeholder="Booking Reference" />
+                                                    <div class="col-md-6" style=" z-index: 9999;">
+                                                        <input  type="text" name="txtBooking" id="txtBooking"   placeholder="Booking Reference" autocomplete="off"/>
                                                         <div class="col-lg-12">
                                                             <span id="spanBooking"></span>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-6">
-                                                        <input   type="text" name="txtEmail" id="txtEmail" placeholder="Email"  />
+                                                    <div class="col-md-6" style=" z-index: 9999;">
+                                                        <input   type="text" name="txtEmail" id="txtEmail" placeholder="Email" autocomplete="off" />
                                                         <div class="col-lg-12">
                                                             <span id="spanEmail"></span>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-12">
-                                                        <input type="text" placeholder="Phone Number" name="txtMobile" id="txtMobile"  />
+                                                    <div class="col-md-12" style=" z-index: 9999;">
+                                                        <input type="text" placeholder="Phone Number" name="txtMobile" id="txtMobile" autocomplete="off" />
                                                         <div class="col-lg-12">
                                                             <span id="spanMobile"></span>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-12">
+                                                    <div class="col-md-12" style=" z-index: 9999;">
                                                         <textarea id="txtMessage" name="txtMessage" placeholder="Message"></textarea>
                                                         <div class="col-lg-12">
                                                             <span id="spanMessage"></span>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-4"   > 
+                                                    <div class="col-md-4" style=" z-index: 999;"> 
                                                         <label for="comment">Security Code:</label>
                                                         <input  type="text" name="captchacode" id="captchacode"  placeholder="Enter the code " style="color: black">
                                                         <div class="col-lg-12">
@@ -287,7 +287,7 @@ include './class/include.php';
                                                         <?php include("./contact-form/captchacode-widget.php"); ?> 
                                                     </div>
 
-                                                    <div class="col-md-12">
+                                                    <div class="col-md-12" style=" z-index: 9999;">
                                                         <input type="submit" id="btnSubmit" value="send message" /> 
 
                                                     </div>
@@ -300,44 +300,44 @@ include './class/include.php';
                                             </div>
                                             <div class="contactus-form"  id="contact-form" style="display: none">
 
-                                                <div class="row form-type">
+                                                <div class="row form-type" style=" z-index: 9999;">
                                                     <div class="col-md-6">
-                                                        <input  type="text" name="txtfullName" id="txtfullName" placeholder="Name" />
+                                                        <input  type="text" name="txtfullName" id="txtfullName" placeholder="Name" autocomplete="off"/>
                                                         <div class="col-lg-12">
                                                             <span id="spanfullName"></span>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <input  type="text" name="txttravelDate" id="txttravelDate" class="datepicker" placeholder="Travel Date" />
+                                                        <input  type="text" name="txttravelDate" id="txttravelDate" class="datepicker" placeholder="Travel Date" autocomplete="off" />
                                                         <div class="col-lg-12">
                                                             <span id="spantravelDate"></span>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <input  type="number" name="txtnumAdults" id="txtnumAdults"   min="0"  placeholder="Number of Adults" />
+                                                        <input  type="number" name="txtnumAdults" id="txtnumAdults"   min="0"  placeholder="Number of Adults" autocomplete="off"/>
 
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <input  type="number" name="txtnumChild" id="txtnumChild"  min="0" placeholder="Number of Children" />
+                                                        <input  type="number" name="txtnumChild" id="txtnumChild"  min="0" placeholder="Number of Children" autocomplete="off"/>
                                                         <div class="col-lg-12">
 
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <input type="text" id="txtNationality"  name="txtNationality"  placeholder="Nationality "  > 
+                                                        <input type="text" id="txtNationality"  name="txtNationality"  placeholder="Nationality " autocomplete="off" > 
                                                         <div class="col-lg-12">
                                                             <span id="spannumNationality"></span>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <input   type="text" name="txtemail" id="txtemail" placeholder="Email"  />
+                                                        <input   type="text" name="txtemail" id="txtemail" placeholder="Email"  autocomplete="off"/>
                                                         <div class="col-lg-12">
                                                             <span id="spanemail"></span>
                                                         </div>
                                                     </div>
 
                                                     <div class="col-md-12">
-                                                        <input type="text" placeholder="Phone Number "name="txtmobile" id="txtmobile" />
+                                                        <input type="text" placeholder="Phone Number "name="txtmobile" id="txtmobile" autocomplete="off"/>
                                                         <div class="col-lg-12">
                                                             <span id="spanmobile"></span>
                                                         </div>
@@ -354,7 +354,6 @@ include './class/include.php';
                                                         <div class="col-lg-12">
                                                             <span id="capSpan" ></span>
                                                         </div>
-
                                                     </div>
                                                     <div class="col-md-4" > 
                                                         <?php include("./contact-form-2/captchacode-widget.php"); ?> 
@@ -364,12 +363,10 @@ include './class/include.php';
                                                         <input type="submit" id="btnSubmit_2" value="send message" /> 
                                                     </div>
                                                     <div class="col-md-12" style="margin-top: 20px;">
-                                                        <div id="dismessage" align="center"></div>
+                                                        <div id="dismessage_2" align="center"></div>
                                                     </div>
                                                 </div> 
-
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
@@ -443,14 +440,14 @@ include './class/include.php';
                                         <div class="panel-body">
                                             <div class="row">
                                                 <div class="col-md-12 pull-left">
-                                                    <a href="https://api.whatsapp.com/send?phone=076 281 6641">
+                                                    <a href="https://api.whatsapp.com/send?phone=94762816641">
                                                         <h5> Number 1 :- +94 (76) 281 6641</h5>  
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="row">                                               
                                                 <div class="col-md-12 pull-left">
-                                                    <a href="https://api.whatsapp.com/send?phone=076 805 0501">
+                                                    <a href="https://api.whatsapp.com/send?phone=94768050501">
                                                         <h5> Number 2 :- +94 (76) 805 0501</h5>  
                                                     </a>
                                                 </div>
@@ -487,8 +484,8 @@ include './class/include.php';
 
     <script type="text/javascript" src="js/maps3.js"></script><!-- Nice Select -->
     <script type="text/javascript" src="js/jquery.jigowatt.js"></script><!-- Form -->
-    <script src="contact-form/scripts.js" type="text/javascript"></script> 
-    <script src="contact-form-2/scripts.js" type="text/javascript"></script>
+    <script src="contact-form/scripts.js" type="text/javascript"></script>  
+    <script src="contact-form-2/scripts.js" type="text/javascript"></script>  
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/countrySelect.min.js" type="text/javascript"></script>
     <script>

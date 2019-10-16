@@ -78,7 +78,6 @@ $SLIDER = new Slider($id);
                                             </div>
                                         </div>
                                     </div>
-                                    
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden">
                                         <label for="description">Description</label>
                                         <div class="form-line">
