@@ -5,14 +5,14 @@
             <div class="col-md-12">
                 <div class="main-featured-sec" >
                    <div class="logo">
-                       <img src="images/logo_sticky_1.png" alt="logo"  class="l-logo"/>
+                       <img src="images/logo_sticky_2.png" alt="logo"  class="l-logo"/>
                    </div>
                   
                     <div class="triangle">
                         <img src="images/p-1.png" style="width: 100%;">
                     </div>
                        
-                    <ul class="featured-bg-slide  tab_row_hide" style="">
+                    <ul class="featured-bg-slide  tab_row_hide">
                         <?php
                         $SLIDER = new Slider(NULL);
                         foreach ($SLIDER->all() as $slider) {
@@ -22,7 +22,7 @@
                             </li>
                         <?php } ?>
                     </ul>
-                    <div class="mian-featured-area">
+                    <div class="mian-featured-area"  >
                         <div class="main-featured-text tab_row_hide " id="text-scroll">
                             <h1>Handpick Tour Experience</h1>
                             <span class="hidden-xs">Find and book stunning activities restrictive cost.</span>
@@ -37,7 +37,7 @@
 
                         </div>
 
-                        <img src="images/logo.png" alt="" class=" pull-right hidden-sm hidden-xs"   style="margin-top: 200px;position: inherit;
+                        <img src="images/logo.png" alt="" class=" pull-right hidden-sm hidden-xs"   style="margin-top: 160px;position: inherit;
                              margin-right: -37px;  z-index: 999;"/>
                         <div class="triangle-2">
                             <img src="images/p-2.png" style="width: 100%;">

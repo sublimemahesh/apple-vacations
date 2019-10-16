@@ -6,22 +6,16 @@
                 <div class="logo">
                     <a href="index.php" title="logo">
                         <center>
-                            <img src="images/logo_sticky_1.png" alt="logo" style="padding: 8px;"/>
+                            <img src="images/logo_sticky_1.png" alt="logo" style="padding: 8px;
+                                margin-top: -5px;"/>
                         </center>
-
                     </a>
                 </div>
-
-              
             </div>
             <div class="col-md-4">
             </div>
             <div class="col-md-4">
             </div>
-           
-
         </div>
     </div>
-
-
 </header>

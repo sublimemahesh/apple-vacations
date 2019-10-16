@@ -78,14 +78,7 @@ include_once(dirname(__FILE__) . '/auth.php');
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group form-float">
-                                            <div class="form-line">
-                                                <input type="text" id="price" class="form-control"  autocomplete="off" name="price" required="true">
-                                                <label class="form-label">Price</label>
-                                            </div>
-                                        </div>
-                                    </div>
+
                                     <div class="col-md-12">
                                         <div class="form-group form-float">
                                             <div class="form-line">
@@ -134,7 +127,58 @@ include_once(dirname(__FILE__) . '/auth.php');
 
                                     </div>
 
+                                    <div class="col-md-12">
+                                        <div   style="margin-bottom: 15px;">
+                                            <h2 style="font-size: 16px;">Manage Prices</h2> 
+                                        </div> 
 
+                                        <div class="col-md-5">
+                                            <div class="form-group form-float">
+                                                <div class="form-line">
+                                                    <input type="text" id="name" class="form-control"  autocomplete="off"   required="true">
+                                                    <label class="form-label">Pax</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="form-group form-float">
+                                                <div class="form-line">
+                                                    <input type="number" id="price" class="form-control"  autocomplete="off"   required="true">
+                                                    <label class="form-label">Price</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group form-float">
+                                                <div class="form-line">
+                                                    <input type="button" id="append" class="form-control btn btn-primary"   value=" + Add">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12" >
+                                            <div class="form-group form-float"> 
+                                                <table class="table table-bordered table-striped table-hover js-basic-example dataTable" id="myTable" style="display: none;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Pax</th>
+                                                            <th>Price</th> 
+                                                            <th>Option</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tfoot>
+                                                        <tr>
+                                                            <th>Pax</th>
+                                                            <th>Price</th>  
+                                                            <th>Option</th>
+                                                        </tr>
+                                                    </tfoot>
+                                                    <tbody class="inc">
+                                                    </tbody>
+
+                                                </table> 
+                                            </div>
+                                        </div> 
+                                    </div>
                                     <div class="col-md-12"> 
                                         <input type="hidden" name="create"value="create"/>
                                         <input type="submit" id="create" class="btn btn-primary m-t-15 waves-effect" value="create"/>
@@ -145,11 +189,8 @@ include_once(dirname(__FILE__) . '/auth.php');
                             </div>
                         </div>
                     </div>
-                </div>
-
-
-                <!-- #END# Vertical Layout -->
-
+                </div> 
+                <!-- #END# Vertical Layout --> 
             </div>
         </section>
 
@@ -188,8 +229,6 @@ include_once(dirname(__FILE__) . '/auth.php');
                 relative_urls: false
 
             });
-        </script>
-        <script>
             tinymce.init({
                 selector: "#description-1",
                 // ===========================================
@@ -213,8 +252,6 @@ include_once(dirname(__FILE__) . '/auth.php');
                 relative_urls: false
 
             });
-        </script>
-        <script>
             tinymce.init({
                 selector: "#description-2",
                 // ===========================================
@@ -238,8 +275,24 @@ include_once(dirname(__FILE__) . '/auth.php');
                 relative_urls: false
 
             });
+        </script>
+        <script>
+            $(document).ready(function () {
+                $("#append").click(function () {
+
+                    var name = $('#name').val();
+                    var price = $('#price').val();
+
+                    $('table').show();
+                    $(".inc").append('<tr><td> ' + name + '  </td>  <input type="hidden" name="name[]" value="' + name + '"/>     <td> ' + price + ' </td> <input type="hidden" name="price[]" value="' + price + '"/>  <td ><div class="delete-pages btn btn-sm btn-danger remove-col" data-id=""> <i class="waves-effect glyphicon glyphicon-trash" data-type="cancel"></i></div>   </td> </tr> \n\
+                 ');
+                });
 
 
+                $("#myTable").on('click', '.remove-col', function () {
+                    $(this).closest('tr').remove();
+                });
+            });
         </script>
         <script src="js/ajax/tour-package.js" type="text/javascript"></script>
     </body>

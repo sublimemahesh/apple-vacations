@@ -30,3 +30,5 @@
 [02-Oct-2018 23:46:57 America/New_York] PHP Notice:  Undefined index: subject in /home/gallnwxt/sites/samaraadvertising/contact-form/send-email.php on line 27
 [02-Oct-2018 23:49:16 America/New_York] PHP Notice:  Undefined index: subject in /home/gallnwxt/sites/samaraadvertising/contact-form/send-email.php on line 27
 [03-Oct-2018 05:42:42 America/New_York] PHP Notice:  Undefined index: subject in /home/gallnwxt/sites/samaraadvertising/contact-form/send-email.php on line 27
+[26-Sep-2019 04:30:03 America/New_York] PHP Notice:  Undefined index: visitor_child in /home/islapiiu/sites/applevacation/booking-form/send-email.php on line 53
+[26-Sep-2019 04:30:29 America/New_York] PHP Notice:  Undefined index: visitor_child in /home/islapiiu/sites/applevacation/booking-form/send-email.php on line 53
