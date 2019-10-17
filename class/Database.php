@@ -16,16 +16,16 @@ class Database {
 
 
 
-    private $host = 'localhost';
-    private $name = 'i0hjx2m7_apple_vacation';
-    private $user = 'i0hjx2m7_apple';
-    private $password = 'GqZ9*h]=4l8;';
+//    private $host = 'localhost';
+//    private $name = 'i0hjx2m7_apple_vacation';
+//    private $user = 'i0hjx2m7_apple';
+//    private $password = 'GqZ9*h]=4l8;';
 
 
-    // private $host = 'localhost';
-    // private $name = 'applevacation';
-    // private $user = 'root';
-    // private $password = '';
+     private $host = 'localhost';
+     private $name = 'applevacation';
+     private $user = 'root';
+    private $password = '';
 
     public function __construct() {
 

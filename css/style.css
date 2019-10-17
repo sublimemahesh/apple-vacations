@@ -8736,3 +8736,9 @@ input[type="date"].form-control{
 .logo-w{
     width: 100%;
 }
+.slider-r-logo{
+    margin-top: 160px;
+    position: inherit;
+    margin-right: -37px;
+    z-index: 999;
+}

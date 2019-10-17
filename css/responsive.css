@@ -1,6 +1,24 @@
   
 
 
+@media (max-width: 1500px) {
+
+    .triangle-2{
+        float: right;
+        margin-left: 926px;
+        margin-top: -102px;
+    }
+
+}
+@media (max-width: 1480px) {
+
+    .triangle-2{
+        float: right;
+        margin-left: 888px;
+        margin-top: -101px;
+    }
+
+}
 @media (max-width: 1366px) {
     header.on-top {padding: 0 30px; }
     header.dark .menu-sec nav {float: right; margin: 0 20px 0 0; }
@@ -12,11 +30,47 @@
     .top-bar-content {padding: 0 30px; }
     .center-menu-sec {padding: 0 30px; }
 
+    .triangle-2{
+        position: absolute;
+        margin-left: 799px; 
+        float: right;
+        margin-top: -101px;
+    }
+    .slider-r-logo {
+        margin-top: 102px;
+        position: inherit;
+        margin-right: -37px;
+        z-index: 999;
+    }
+
 }
 
+@media (max-width: 1300px) {
+    .triangle-2{
+        position: absolute;
+        width: 455px;
+        margin-left: 751px;
+    }
+    .slider-r-logo {
+        margin-top: 93px;
+        position: inherit;
+        margin-right: -37px;
+        z-index: 999;
+    }
+}
 @media (max-width: 1200px) {
 
-
+    .triangle-2{
+        position: absolute;
+        width: 532px;
+        margin-left: 762px;
+    }
+    .slider-r-logo {
+        margin-top: 102px;
+        position: inherit;
+        margin-right: -37px;
+        z-index: 999;
+    }
     .tour-btn{
         padding: 0px;
     }
@@ -346,6 +400,12 @@
     #topcontrol{
         display: none;
     }
+    .c-zindex{
+        z-index: 9999; 
+    }
+    .c-zindex-2{
+        z-index: 999; 
+    }
 }
 @media (max-width: 600px)  {
 
@@ -374,9 +434,19 @@
     }
 }
 @media (max-width: 548px) and (min-width: 740px){
-    
+
     .logo-w{
-          width: 34%;
+        width: 34%;
     }
-  
+
+
+}
+
+@media (max-width: 360px) and (min-width: 740px){
+
+    .logo-w{
+        width: 34%;
+    }
+
+
 }
