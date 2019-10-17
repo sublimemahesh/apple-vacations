@@ -1,12 +1,10 @@
  
 <section>
-    <div class="block no-padding gray">
+    <div class="block no-padding gray container-fluid">
         <div class="row">
             <div class="col-md-12">
                 <div class="main-featured-sec" >
-                   <div class="logo">
-                       <img src="images/logo_sticky_2.png" alt="logo"  class="l-logo"/>
-                   </div>
+                   
                   
                     <div class="triangle">
                         <img src="images/p-1.png" style="width: 100%;">
@@ -37,10 +35,9 @@
 
                         </div>
 
-                        <img src="images/logo.png" alt="" class=" pull-right hidden-sm hidden-xs"   style="margin-top: 160px;position: inherit;
-                             margin-right: -37px;  z-index: 999;"/>
-                        <div class="triangle-2">
-                            <img src="images/p-2.png" style="width: 100%;">
+                         
+                        <div class="triangle-2 pull-right">
+                            <img src="images/p-2.png"  >
                         </div>
                     </div>
 
