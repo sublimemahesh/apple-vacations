@@ -59,7 +59,7 @@ $ABOUT_US = new Page(1);
                     <div class="row" > 
                         <div class="col-md-8 col-sm-12 col-xs-12 about-row">
                             <div class="about-padd">
-                                <span>Sri Lanka Tour with us</span>
+                                
                                 <h1 class="about-f"><span  class="about-f-color">Get started</span> your Tours</h1>
                                 <div class="text-justify"  >
                                     <?php echo $ABOUT_US->description ?>       

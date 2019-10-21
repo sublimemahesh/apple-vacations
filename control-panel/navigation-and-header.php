@@ -283,6 +283,13 @@
 
                 </li>
                 <li class="qqq">
+                    <a href="manage-email.php" class="menu-toggle">
+                        <i class="material-icons">chevron_right</i>
+                        <span>Bookings</span>
+                    </a>
+                     
+                </li>
+                <li class="qqq">
                     <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">chevron_right</i>
                         <span>Pages</span>
