@@ -5,13 +5,12 @@ include './class/include.php';
 ini_set('display_errors', 0);
 ?>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Apple Vacations ( Pvt) Ltd is one of the Local Tour Operators In Sri Lanka. Established in 2017, located in Colombo Sri Lanka. Apple Vacations is specialized in customized Sri Lanka tour packages, Sri Lanka Transport, Tours, vacations and holidays in Sri Lanka. ">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-
-    <title>Apple Vacation - Home </title>
+    <meta name="keywords" content="sri lanka travels,sri lanka tours,sri lanka drivers,sri lanka tour drivers,tour drivers sri lanka ,sri lanka tour packages,things to do in sri lanka,sri lanka round tours, sri lanka one day tours ,one day excursions in sri lanka,sri lanka one day excursions,colombo city tours,travel agents in sri lanka,tour companies in sri lanka,sri lanka private driver,tour operators in sri lanka,sri lanka tour packages,sri lanka travel guides,sri lanka holiday packages,rent a car with a driver in sri lanka">
+ 
+    <title>Sri Lanka Tours - Sri Lanka Day Excursions |  Apple Vacations Pvt Ltd - Home </title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" /><!-- Bootstrap -->

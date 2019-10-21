@@ -4,12 +4,12 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="main-featured-sec" >
-                   
-                  
+
+
                     <div class="triangle">
                         <img src="images/p-1.png" style="width: 100%;">
                     </div>
-                       
+
                     <ul class="featured-bg-slide  tab_row_hide">
                         <?php
                         $SLIDER = new Slider(NULL);
@@ -27,17 +27,24 @@
                         </div>
                         <div class="directory-searcher">
                             <form action="tour-package.php">
-                                 
+
+                                
                                 <div class="field">
-                                    <button type="submit"  > Find your Tours , Attraction and Activities.</button>
+                                    <button type="submit"  > <p style="color: #ffffff;
+                                                                margin-top: 8px;
+                                                                float: right;
+                                                                font-family: Oswald;
+                                                                font-size: 21px;">
+                                            Find your Tours , Attraction and Activities.
+                                        </p></button>
                                 </div> 
                             </form>
 
                         </div>
 
-                         
+
                         <div class="triangle-2 pull-right">
-                            <img src="images/p-2.png"  >
+                            <img src="images/p-2.png" class="c-w" >
                         </div>
                     </div>
 

@@ -14,8 +14,8 @@
 
     .triangle-2{
         float: right;
-        margin-left: 888px;
-        margin-top: -101px;
+        margin-left: 873px;
+        margin-top: 24px;
     }
 
 }
@@ -34,7 +34,7 @@
         position: absolute;
         margin-left: 799px; 
         float: right;
-        margin-top: -101px;
+        margin-top: -7px;
     }
     .slider-r-logo {
         margin-top: 102px;
@@ -209,7 +209,7 @@
     }
     .main-featured-text {
 
-        margin-top: 53px;
+        margin-top: 38px;
     }
     .block-in-page-section{
         padding:30px 0px 0px 0px;
@@ -382,10 +382,13 @@
     }
     .triangle-2 {
         position: absolute;
-        width: 83px;
-        margin-left: 216px;
-        margin-top: 52px;
-        width: 40%;
+       
+        margin-left: 163px;
+        margin-top: -21px;
+        
+    }
+    .c-w{
+        width: 38%;
     }
     .padd-top {
 
@@ -410,10 +413,10 @@
 @media (max-width: 600px)  {
 
     .directory-searcher {
-        margin-bottom: 39px;
+        margin-bottom: 9px;
     }
     .mian-featured-area{
-        margin-top: 0px;
+        margin-bottom: 12px;
     }
     .directory-searcher > form button {
 
